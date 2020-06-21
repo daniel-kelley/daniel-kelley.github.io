@@ -1,0 +1,179 @@
+/* YRX style */
+
+/* default portrait */
+.top     { width: 345px; }
+.display { width: 340px; }
+.message { width: 340px; }
+.dialog  { width: 255px; }
+.annunciator-panel { width: 340px; }
+.display-panel { width: 340px; }
+.key {
+    width: 57px;
+    height: 38px;
+    font-size: 15px;
+    padding: 0 8px;
+}
+.keylist { height: 200px; }
+
+/* default landscape; Samsung S3 */
+@media (max-height: 300px) {
+    .top     { width: 640px; }
+    .display { width: 620px; }
+    .message { width: 620px; }
+    .dialog  { width: 255px; }
+    .annunciator-panel { width: 620px; }
+    .display-panel { width: 620px; }
+    .key {
+        width: 52px;
+        height: 35px;
+        font-size: 12px;
+        padding: 0 8px;
+    }
+    .keylist { height: 100px; }
+}
+
+/* see http://stephen.io/mediaqueries/ */
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+    .body    { margin: 4px; }
+    .top     { width: 316px; }
+    .display { width: 310px; }
+    .message { width: 310px; }
+    .dialog  { width: 255px; }
+    .annunciator-panel { width: 310px; }
+    .display-panel { width: 310px; }
+    .key {
+        width: 52px;
+        height: 35px;
+        font-size: 12px;
+        padding: 0 8px;
+    }
+}
+
+/* iPhone 5  */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+    .top     { width: 552px; }
+    .display { width: 550px; }
+    .message { width: 550px; }
+    .dialog  { width: 255px; }
+    .annunciator-panel { width: 550px; }
+    .display-panel { width: 550px; }
+    .key {
+        width: 44px;
+        height: 29px;
+        font-size: 12px;
+        padding: 0 8px;
+    }
+    .keylist { height: 100px; }
+}
+
+.top {
+    font-size: 15px;
+    z-index: 0;
+}
+
+.clear {
+    clear: left;
+}
+
+.display {
+    height: 25px;
+}
+
+.message {
+    height: 25px;
+    border: 1px solid #cccccc;
+}
+
+.dialog {
+    background-color: #ffffff;
+    border: 3px solid black;
+    display: inline-block;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+    position: fixed;
+    text-align: justify;
+    z-index: 1;
+}
+
+.annunciator-panel {
+    overflow: auto;
+}
+
+.display-panel {
+    overflow: auto;
+    border: 1px solid #cccccc;
+}
+
+.key {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.annunciator {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    float: left;
+    font-size: 16px;
+}
+
+.keypad {
+}
+
+.keylist {
+    width: 100%;
+    overflow: auto;
+    border: 1px solid #181A20;
+}
+
+.dialog-section {
+    width: 100%;
+}
+
+.overlay {
+     background-color: rgba(0, 0, 0, 0.5);
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     z-index: 1;
+}
+
+.dialog-title {
+    background: #cccccc;
+}
+
+.label {
+    width: 40px;
+    float: left;
+}
+
+.editing {
+    background: #dddddd;
+}
+
+
+/*
+ * disable selection on button so long presses work on android
+ * touch-action: disable zoom on double tap
+ */
+button {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+}

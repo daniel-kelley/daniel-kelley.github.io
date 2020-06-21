@@ -1,0 +1,162 @@
+<!DOCTYPE xhtml>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>yrx</title>
+  <link href="style.css" rel="stylesheet" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body class="body">
+  <div class="top" style="display: none;" data-bind="visible: true">
+    <div class="display-panel" data-bind="foreach: display">
+      <div class="display" data-bind="html: value, css: editing"></div>
+    </div>
+    <div class="annunciator-panel">
+      <div data-bind="foreach: annunciator">
+        <div class="annunciator" data-bind="html: label"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="keypad">
+      <div data-bind="foreach: key">
+        <button class="key"
+                data-bind="html: label,
+                         event: {
+                             mousedown: $parent.down,
+                             mouseup: $parent.up,
+                             touchstart: $parent.t_start,
+                             touchend: $parent.t_end}"></button>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="message-panel">
+      <div class="message" data-bind="html: message"></div>
+    </div>
+    <div id="about-container" class="overlay" data-bind="with: about, visible: about.v">
+      <div id="about" class="dialog">
+        <div class="dialog-section">
+            <div class="dialog-title">About</div>
+        </div>
+        <div class="dialog-section">
+            The YRX programmable RPN calculator
+        </div>
+        <div class="dialog-section">
+            <a target="_blank" href="manual.html">Manual</a>
+        </div>
+        <div data-bind="text: t1"></div>
+        <div data-bind="text: t2"></div>
+        <div data-bind="text: t3"></div>
+        <button data-bind="click: ok">OK</button>
+      </div>
+    </div>
+    <div id="config-container" class="overlay" data-bind="with: config, visible: config.v">
+      <div id="config" class="dialog">
+        <div class="dialog-section">
+            <div class="dialog-title">Config</div>
+        </div>
+        <div><input type="number" data-bind="value: nd.cur, min: md.min, max:nd.max"></input></div>
+        <button data-bind="click: ok">OK</button>
+        <button data-bind="click: cancel">Cancel</button>
+      </div>
+    </div>
+    <div id="key-editor-container" class="overlay" data-bind="with: key_editor, visible: key_editor.v">
+      <div id="key-editor" class="dialog">
+        <div class="dialog-section">
+          <div class="dialog-title">Edit Key</div>
+        </div>
+        <div data-bind="visible: current.v">
+          <div class="dialog-section">
+            <button class="key" data-bind="html: current.label"></button>   <!-- Current button -->
+            <button class="key" data-bind="click: current.create">New</button> <!-- Request create desc -->
+            <div class="clear"></div>
+          </div>
+          <div class="dialog-section">
+            <div class="keylist" data-bind="foreach: current.desc">
+              <button class="key" data-bind="html: label, click: $root.select_key"></button>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="dialog-section">
+            <div class="label">label</div>
+            <div data-bind="text: current.selected.label"></div>
+            <div class="clear"></div>
+          </div>
+          <div class="dialog-section">
+            <div class="label">op</div>
+            <div data-bind="text: current.selected.op"></div>
+            <div class="clear"></div>
+          </div>
+          <div class="dialog-section">
+            <div class="label">arg</div>
+            <div data-bind="text: current.selected.arg"></div>
+            <div class="clear"></div>
+          </div>
+          <div class="dialog-section">
+            <div class="label">help</div>
+            <div data-bind="text: current.selected.help"></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div data-bind="visible: create.v">
+            <div class="dialog-title">Create Key Desc</div>
+            <div class="dialog-section">
+              <select data-bind="options: create.creators, value: create.selection, click: create.sel"></select>
+            </div>
+            <div class="dialog-section">
+              <div class="label">label</div>
+              <input data-bind="value: create.label"></input>
+              <div class="clear"></div>
+            </div>
+            <div class="dialog-section">
+              <div class="label">arg</div>
+              <input data-bind="value: create.input.arg, visible: create.input.v"></input>
+              <div class="clear"></div>
+              <select data-bind="options: create.dialog.entries, value: create.dialog.arg, visible: create.dialog.v"></select>
+              <select data-bind="options: create.edit.keys, value: create.edit.arg, visible: create.edit.v"></select>
+            </div>
+            <div class="dialog-section">
+              <div class="label">help</div>
+              <input data-bind="value: create.help"></input>
+              <div class="clear"></div>
+            </div>
+            <div data-bind="text: $root.message"></div>
+        </div>
+        <button data-bind="click: ok">OK</button>
+        <button data-bind="click: cancel">Cancel</button>
+      </div>
+    </div>
+    <div id="reset-container" class="overlay" data-bind="with: reset, visible: reset.v">
+      <div id="reset" class="dialog">
+        <div class="dialog-section">
+            <div class="dialog-title">Reset</div>
+        </div>
+<p>Restore default configuration?</p>
+        <button data-bind="click: ok">OK</button>
+        <button data-bind="click: cancel">Cancel</button>
+      </div>
+    </div>
+    <div id="config-data-container" class="overlay" data-bind="with: cdata, visible: cdata.v">
+      <div id="config-data-dialog" class="dialog">
+        <div class="dialog-section">
+            <div class="dialog-title">Config data</div>
+        </div>
+        <div class="dialog-section">
+          <textarea data-bind="value: data"></textarea>
+        </div>
+        <button data-bind="click: ok">OK</button>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="knockout-3.4.2.js"></script>
+  <script type="text/javascript" src="../script/decimal.js"></script>
+  <script type="text/javascript" src="../script/yreal.js"></script>
+  <script type="text/javascript" src="../script/yrational.js"></script>
+  <script type="text/javascript" src="../script/ycomplex.js"></script>
+  <script type="text/javascript" src="../script/ynumber.js"></script>
+  <script type="text/javascript" src="../script/yrx.js"></script>
+  <script type="text/javascript" src="../script/yvm.js"></script>
+  <script type="text/javascript" src="../script/yrx-model.js"></script>
+  <script type="text/javascript" src="../script/yrx-m32-config.js"></script>
+  <script type="text/javascript" src="../script/yrx-m32.js"></script>
+</body>
+</html>
