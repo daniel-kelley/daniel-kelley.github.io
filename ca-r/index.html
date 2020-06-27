@@ -11,13 +11,17 @@
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
 </head>
 <body>
-  <h3>California Estimated R by County as of 19 June 2020</h3>
+  <h3>California Estimated R by County as of 26 June 2020</h3>
   <!-- style="width: 350px; height: 350px;" -->
   <div id="mapid" class="map" ></div>
 
-  <canvas id="canvas"></canvas>
+  <div class="canvas">
+    <canvas id="canvas" width="500px"></canvas>
+  </div>
   <h4>References</h4>
-  <a href='https://data.chhs.ca.gov/dataset/california-covid-19-hospital-data-and-case-statistics'>COVID-19 Data</a>
+  <a href='https://github.com/daniel-kelley/ca-r'>Source</a>
+  <br/>
+  <a href='https://data.chhs.ca.gov/dataset/'>COVID-19 Data</a>
   <br/>
   <a href='https://eric.clst.org/tech/usgeojson/'>Cartographic Data</a>
   <br/>
@@ -28,26 +32,18 @@
 
   <script src="CA_5m.js" type="text/javascript"></script>
   <script src="app_data.js" type="text/javascript"></script>
+  <script src="ca_color.js" type="text/javascript"></script>
 
   <script>
     var mymap = L.map('mapid').setView([37.5, -120], 5);
 
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
-    const r_color = [
-        [0.8810876, '#f0f9e8'],
-        [1.0, '#0868ac'],
-        [1.430957, '#feebe2'],
-        [2.107366, '#fbb4b9'],
-        [3.721892, '#f768a1'],
-        [9.221268, '#c51b8a'],
-        [14.0, '#7a0177']
-    ];
 
     // convert estimated R to color
     function est_R_colormap(n) {
-        for (var i=0; i<r_color.length; i++) {
-            var est_r = r_color[i];
+        for (var i=0; i<ca_color.length; i++) {
+            var est_r = ca_color[i];
             if (n < est_r[0]) {
                 return est_r[1];
             }
@@ -65,9 +61,9 @@
         var swatch_h = 20;
         var label_x1 = 40;
         var label_y1 = 25;
-
-        for (var i=0; i<r_color.length; i++) {
-            var est_r = r_color[i];
+        var shift_x = 200;
+        for (var i=0; i<ca_color.length; i++) {
+            var est_r = ca_color[i];
             var color = est_r[1];
             var cur_est_r = est_r[0];
             var s = prev_est_r + ' <= R < ' + cur_est_r
@@ -78,6 +74,12 @@
             prev_est_r = cur_est_r;
             swatch_y1 += swatch_h;
             label_y1 += swatch_h;
+            if (i == 4) {
+                swatch_x1 += shift_x;
+                swatch_y1 = 10;
+                label_x1 += shift_x;
+                label_y1 = 25;
+            }
         };
 
         ctx.fillStyle = '#b1b1b1';
