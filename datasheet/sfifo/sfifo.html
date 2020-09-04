@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="author" content="Daniel Kelley" />
+<meta name="generator" content="LaTeX lwarp package" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<title>Simple Synchronous FIFO</title>
+<link rel="stylesheet" type="text/css" href="lwarp.css" />
+</head>
+<body>
+<header>
+
+
+</header>
+<div class="bodywithoutsidetoc" >
+
+<div class="bodycontainer" >
+
+<section class="textbody" >
+
+<a id="autopage-1"></a>
+<div class="titlepage" >
+
+<h1>
+<div class="center" >
+<p>
+Simple Synchronous FIFO
+</p>
+
+</div>
+
+<p>
+</h1>
+<div class="author" >
+
+<div class="oneauthor" >
+<div class="flushleft" >
+
+<p>
+Daniel Kelley
+</p>
+</div>
+
+</div>
+
+</div>
+<div class="titledate" >
+<div class="flushleft" >
+
+<p>
+20 August 2020
+</p>
+</div>
+
+</div>
+
+</div>
+<h4 id="autosec-6"><span class="sectionnumber" >0.1&#x2003;</span>Introduction</h4>
+<a id="autopage-6"></a>
+
+
+<p>
+The Simple Synchronous FIFO is a First In First Out (FIFO) memory with a common clock and a synchronous reset. The data width and memory depth is parameterizable.
+</p>
+
+<p>
+<span
+      id="lateximage-sfifo-1"
+      class="lateximagesource"
+><!--
+  clk
+  rst
+w_en
+  full
+  din                a   b   c               d   e
+
+ r_en
+empty
+ dout                                            a                   b    c    d         e
+
+Cycle    0   1   2   3   4   5   6   7   8   9   10   11   12   13   14   15   16   17   18   19
+--><img
+   src="sfifo-images/image-1.svg"
+   alt="(image)"
+   style=""
+   class="lateximage"
+></span>
+</p>
+<table>
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">Signal</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Direction</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Description</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-top: 4px double; border-left: 1px solid black; border-right: 1px solid black">dout</td>
+<td class="tdl tvertbarr" style="border-top: 4px double; border-right: 1px solid black">Output</td>
+<td class="tdl tvertbarr" style="border-top: 4px double; border-right: 1px solid black">Read Data</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">full</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Output</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Write full</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">empty</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Output</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Read empty</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">din</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Input</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Data in</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">w_en</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Input</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Write Enable</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">r_en</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Input</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Read Enable</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">clk</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Input</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Clock</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">rst</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Input</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Reset</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl"></td>
+<td class="tdl"></td>
+<td class="tdl"></td>
+</tr>
+
+</table>
+<h4 id="autosec-10"><span class="sectionnumber" >0.2&#x2003;</span>Verilog</h4>
+<a id="autopage-10"></a>
+
+
+<div class="figurecaption" >
+
+</div>
+<pre class="programlisting">
+  module sfifo
+ #(parameter DW = 8,
+      parameter AW = 4)
+  (output [DW-1:0] dout,
+      output      full,
+      output      empty,
+      input [DW-1:0] din,
+      input       w_en,
+      input       r_en,
+      input       clk,
+      input       rst);
+</pre>
+
+
+<p>
+
+
+</p>
+<div class="figurecaption" >
+</div>
+
+</section>
+
+</div>
+
+</div>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
