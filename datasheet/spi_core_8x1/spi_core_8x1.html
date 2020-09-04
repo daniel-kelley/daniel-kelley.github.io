@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="author" content="Daniel Kelley" />
+<meta name="generator" content="LaTeX lwarp package" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<title>SPI Core 8x1</title>
+<link rel="stylesheet" type="text/css" href="lwarp.css" />
+</head>
+<body>
+<header>
+
+
+</header>
+<div class="bodywithoutsidetoc" >
+
+<div class="bodycontainer" >
+
+<section class="textbody" >
+
+<a id="autopage-1"></a>
+<div class="titlepage" >
+
+<h1>
+<div class="center" >
+<p>
+SPI Core 8x1
+</p>
+
+</div>
+
+<p>
+</h1>
+<div class="author" >
+
+<div class="oneauthor" >
+<div class="flushleft" >
+
+<p>
+Daniel Kelley
+</p>
+</div>
+
+</div>
+
+</div>
+<div class="titledate" >
+<div class="flushleft" >
+
+<p>
+09 August 2020
+</p>
+</div>
+
+</div>
+
+</div>
+<h4 id="autosec-6"><span class="sectionnumber" >0.1&#x2003;</span>Introduction</h4>
+<a id="autopage-6"></a>
+
+
+<p>
+SPI Core 8x1 is a set of Verilog modules implementing a Serial Peripherial Interface (SPI) with an 8 bit parallel interface and a 1 bit serial interface.
+</p>
+<h4 id="autosec-7"><span class="sectionnumber" >0.2&#x2003;</span>Protocol</h4>
+<a id="autopage-7"></a>
+
+
+<p>
+There is no specific industry standard specification for SPI. This implementation is primarily intended as a slave receiver of 8 bit byte streams driven by microcontroller SPI masters in SPI mode 0.
+</p>
+
+<p>
+<span
+      id="lateximage-spi_core_8x1-1"
+      class="lateximagesource"
+><!--
+SCK
+MISO
+MOSI
+  SS
+--><img
+   src="spi_core_8x1-images/image-1.svg"
+   alt="(image)"
+   style=""
+   class="lateximage"
+></span>
+</p>
+<table>
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black"></td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Master</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Slave</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black"></td>
+</tr>
+
+
+<tr>
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">Signal</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Direction</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Direction</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Description</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-top: 4px double; border-left: 1px solid black; border-right: 1px solid black">SCK</td>
+<td class="tdl tvertbarr" style="border-top: 4px double; border-right: 1px solid black">Output</td>
+<td class="tdl tvertbarr" style="border-top: 4px double; border-right: 1px solid black">Input</td>
+<td class="tdl tvertbarr" style="border-top: 4px double; border-right: 1px solid black">Clock</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">MISO</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Input</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Output</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Serial IO</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">MOSI</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Output</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Input</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Serial IO</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">SS</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Output</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Input</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Select</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl"></td>
+<td class="tdl"></td>
+<td class="tdl"></td>
+<td class="tdl"></td>
+</tr>
+
+</table>
+
+<p>
+For SPI mode 0, data is sampled on the SCK rising edge (red) and shifted on the SCK trailing edge (blue). Serial transfer data is ignored if SS is not asserted.
+</p>
+<h4 id="autosec-11"><span class="sectionnumber" >0.3&#x2003;</span>spi_core_8x1 Signals</h4>
+<a id="autopage-11"></a>
+
+
+<p>
+<span
+      id="lateximage-spi_core_8x1-2"
+      class="lateximagesource"
+><!--
+     clk
+     rst
+
+
+     sck
+      ss
+
+
+      si
+si_ready
+ si_data        A5        5A   00
+
+
+
+
+      so
+so_ready
+ so_data   C9        55
+--><img
+   src="spi_core_8x1-images/image-2.svg"
+   alt="(image)"
+   style=""
+   class="lateximage"
+></span>
+</p>
+<table>
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">Signal</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Direction</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Description</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-top: 4px double; border-left: 1px solid black; border-right: 1px solid black">clk</td>
+<td class="tdl tvertbarr" style="border-top: 4px double; border-right: 1px solid black">Input</td>
+<td class="tdl tvertbarr" style="border-top: 4px double; border-right: 1px solid black">System clock</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">rst</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Input</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">System reset</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">sck</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Input</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">SPI clock</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">ss</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Input</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">SPI select</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">si</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Input</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">SPI serial input</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">si_ready</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Output</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">SPI input byte ready</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">si_data</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Output</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">SPI input byte data</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">so</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Output</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">SPI serial output</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">so_ready</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Output</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">SPI output byte ready</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl tvertbarl tvertbarr" style="border-left: 1px solid black; border-right: 1px solid black">so_data</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">Input</td>
+<td class="tdl tvertbarr" style="border-right: 1px solid black">SPI output byte data</td>
+</tr>
+
+
+<tr class="hline" >
+<td class="tdl"></td>
+<td class="tdl"></td>
+<td class="tdl"></td>
+</tr>
+
+</table>
+<h4 id="autosec-15"><span class="sectionnumber" >0.4&#x2003;</span>Verilog</h4>
+<a id="autopage-15"></a>
+
+
+<div class="figurecaption" >
+
+</div>
+<pre class="programlisting">
+module  spi_core_8x1
+ (input sck,
+  input ss,
+  input si,
+  input so,
+  output si_ready,
+  output si_data,
+  output so_ready,
+  input so_data,
+  input clk,
+  input rst);
+</pre>
+
+
+<div class="figurecaption" >
+</div>
+
+</section>
+
+</div>
+
+</div>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
