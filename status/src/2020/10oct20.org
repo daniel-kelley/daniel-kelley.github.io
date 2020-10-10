@@ -1,0 +1,65 @@
+03 October 2020 - 09 October 2020
+
+* Live Oak Weather Station
+
+** Raspberry Pi Zero W
+
+Got Buildroot running on Raspberry Pi Zero W. It's a continuing
+mystery why the MAC address changed a couple of times; setting the MAC
+explicitly appears to stop it from changing.
+
+See
+
+ https://raspberrypi.stackexchange.com/questions/68513/pi-using-a-random-mac-address-after-every-reboot-how-do-i-stop-this-behavior
+
+Interfacing the sensors to the RPI0W is going to require another board
+because the particle sensor needs a UART and I don't want to use a
+soft UART or the console UART for it, and the anenometer needs an A/D.
+
+I'd love to write the whole weather-station suite, but I'll probably
+just get WeeWX running instead which is what I use for my Alum Rock
+weather station.
+
+** Adafruit ESP8266
+
+I was originally going to use the Adafruit ESP8266 board, but it stopped
+working on RIOT OS because of https://github.com/RIOT-OS/RIOT/issues/15137
+
+The search continues for a small 802.11 interface with no binary blobs.
+
+** Sensor bringup
+
+Sensors are being brought up on a Nucleo-F303RE using RIOT OS.
+
+| Plantower PMS5003 Particulate Monitor | done             |
+| BME 680                               | done             |
+| Sparkfun DS-15901 Rain Gauge          | TODO             |
+| Sparkfun DS-15901 Wind Vane           | hooked up to ADC |
+| Sparkfun DS-15901 Anenometer          | TODO             |
+| VEML6075 UV Sensor                    | TODO             |
+
+This will probably change to something Arduino-like for RPI0W
+interfacing via SPI.
+
+Apparently the VEML6075 is no longer in production. An outstanding
+question is how to protect the sensor from the elements. My original
+plan was to break apart some old UV-erasble EPROMS for the quartz
+windows, but an app-note for Si1133 UV sensor ("Not recommended for
+new designs" but don't know what the replacement is) uses Teflon FEP
+films. Looking at Teflon datasheets does appear to show that some
+Teflon films are reasonably transparent to UV. The question here is
+how to avoid spending $50 for a square inch of cover.
+
+** Sensor Enclosure
+
+Planning to hang the sensors off the DS-15901 mast, using something
+that looks like a circular Stevenson screen. There's a name for it
+that I can't find right now. Started outlining the design using
+swocer.
+
+** Location
+
+Trish suggested using the roof corner off the quilt room as there's an
+electrical outlet below the corner. I can use some 1/2 EMT to attach
+the mast to the eaves. Did a 24hr test communications run with the
+RPI0W outside. Link not terrible.
