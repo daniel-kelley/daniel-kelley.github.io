@@ -1,0 +1,132 @@
+10 October 2020 - 17 October 2020
+
+Loma Preita Day
+https://en.wikipedia.org/wiki/1989_Loma_Prieta_earthquake
+
+* Live Oak Weather Station
+
+** RIOT veml6075 UV sensor driver complete
+** All sensors interfaced to Nucleo-F303re
+** SPI transmitter interface started
+
+* Alum Rock Data Center
+
+Long overdue DNS update to avoid my outgoing email from being marked as
+"spam" by Google Gmail. Thanks to Elena for bringing this to my
+attention.
+
+** Added SPF records to GMP DNS
+http://www.open-spf.org/SPF_Record_Syntax/
+https://support.google.com/a/answer/33786
+https://support.google.com/mail/answer/81126
+** Added google-site-verification TXT record
+https://support.google.com/mail/answer/6227174
+
+* Skywater 130
+
+Initial Framework released
+https://github.com/efabless/caravel
+
+Looks like it has a SPI block I can use as a reference.
+
+I'm not sure I have enough time to put something together for the
+Nov. shuttle - not that I expect it would be accepted, but I think
+it's worth it to at least give it a whirl.
+
+
+* Interesting reading
+
+https://www.mattblaze.org/blog/neinnines/
+
+* CA Election Law fun
+
+See generally
+
+https://oag.ca.gov/news/press-releases/attorney-general-becerra-and-secretary-state-padilla-send-cease-and-desist
+
+about "unofficial ballot drop off boxes".
+
+Seems to me that "Secure Ballot Drop Off Location" (attachment 1A) is
+OK but not "Official Ballot Drop Off Box" (attachment 3 and 4A) if in
+fact it is not "Official".
+
+Interesting factoid: There is apparently a difference between the
+Santa Clara County and Santa Cruz County mail-in ballot design where
+(according to Trish's memory - she sent her ballot in already) on the
+Santa Cruz ballot, the "Ballot Signature" section and the "Voter
+Authorization" section (for designating a third party to return the
+ballot) are *under* a sealable flap. Santa Clara County has it
+*outside* the sealable flap.
+
+Section 3011 says what's on the ballot envelope, not the construction
+
+http://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3011&lawCode=ELEC
+
+Interestingly, 3011.11(c) says
+
+"Notwithstanding paragraphs (9) to (11), inclusive, of subdivision
+(a), a ballot shall not be disqualified solely because the person
+authorized to return it did not provide on the identification envelope
+his or her name, relationship to the voter, or signature."
+
+Section 3017 says how to deliver the ballot
+
+http://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=3017&lawCode=ELEC
+
+and one of the ways is
+
+  "Designate a person to return the ballot to the elections official
+  who issued the ballot..."
+
+Nothing is said about whether the "Voter Authorization" for such
+designation is witnessed by the voter or not. Seems that the Santa
+Cruz County ballot envelope construction facilitates such witnessing;
+Santa Clara County ballot envelope construction does not.
+
+Not sure what the point of "Voter Authorization" is now, given
+3011.11(c).
+
+See history of AB 306 which caused 3011.11(c).
+
+https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180AB306
+
+Clearly, the requirements of "Voter Authorization" have been diluted
+over time, from "member of household" to apparently "anybody".
+
+As long as the drop off box doesn't claim to be an official county
+election drop off box, I can't see how an unofficial drop off box would
+be illegal, as long as the ballots are delivered to election officials
+before the close of polls in accordance applicable CA election law, as
+there is no longer any penalty for delivering such ballots three days
+after they were dropped off or without a "Voter Authorization"
+signature.
+
+It would be amusing if the political party that voted against AB 306
+is able to use 3011.11(c) in their favor.
+
+It would also be amusing if the ballots from the unofficial ballot
+drop off boxes were mailed in to avoid a potentially unpleasant
+conversation with an election official.
+
+I look forward to any lawsuits that would answer this question.
+
+Update:
+
+https://www.sos.ca.gov/administration/news-releases-and-advisories/2020-news-releases-and-advisories/ap20099-title
+
+According to the press release, the issue is "chain of custody", but what I
+don't see is what specific law is being broken.
+
+Also
+
+https://calvoter.org/content/cvf-resources-voters-and-upcoming-events
+
+and
+
+https://www.abc10.com/article/news/politics/elections/yes-ballot-harvesting-is-legal-in-california/103-067a65c5-9bde-4ff4-a815-97dee5597597
+
+referenced therein.
+
+Kim Alexander's point that there's a "grey area" in California
+Election law with respect to chain of custody requirements is well
+taken.
