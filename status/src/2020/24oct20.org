@@ -1,0 +1,51 @@
+18 October 2020 - 24 October 2020
+
+* Live Oak Weather Station
+
+Raspberry PI zero W was turning into a pain - I really didn't want to
+deal with writing a SPI slave driver (there's a pun in there somewhere).
+
+Instead, I'll just do something similar to the SJ station, which uses
+a Beaglebone Black and a Argent WS-1. Here I'll use a Beaglebone Green
+Wireless and an Argent WS-1, plus interfaces for the PM, UV, and
+BME680 gas sensor.
+
+** Beaglebone green wireless configured
+The challenge here was working out which of the at least four different
+ways to configure 802.11 for the Beaglebone was the one to actually use.
+"connman" seemed to do the trick.
+
+** BBG SD Boot
+Wiring up the "user" button to be permanently pressed seems to be
+reliable - there was conflicting information whether just booting once
+off of SD somehow makes the boot configuration permanent.
+
+There was some evidence that the power button needed to be pressed
+after a powered shutdown but I haven't been able to reproduce the
+problem.
+
+** I2C bus configured
+Fun with device tree overlays.
+
+** Sensor shelter
+Three sections printed. May need one more section.
+
+* Math puzzle
+
+Spent *way* more time solving a math puzzle - first puzzle from:
+
+https://www.quantamagazine.org/three-math-puzzles-inspired-by-john-horton-conway-20201015/
+
+Started to solve by hand using a "tree search", but failed to find the
+solution. I then solved it programatically, and then generated a
+search graph in 'dot'.
+
+https://daniel-kelley.github.io/misc/3816547290.html
+
+* Inmate search
+
+Just in case someone needs to know:
+
+https://www2.illinois.gov/idoc/Offender/Pages/InmateSearch.aspx
+
+https://www.bop.gov/inmateloc/
