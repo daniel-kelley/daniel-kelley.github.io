@@ -1,0 +1,99 @@
+25 October 2020 - 31 October 2020
+
+Happy Halloween!
+
+* Live Oak Weather Station
+
+Finishing sensors, starting packaging
+
+** PM interface
+Ported user space driver from RIOT
+** UV interface
+User space driver in progress
+** BME680 interface
+Using Linux I2C IIO driver
+** Argent WS-1
+Using ancient MOS7703 serial dongle and random drive on github
+
+https://github.com/tomszilagyi/mos7703
+
+** Sensor shelter
+
+One more section, plus top and bottom cover printed.
+
+Need to build wiring harness and connectorization.
+
+** System shelter
+
+3x8x8 1/2" oak veneer ply finished with 3 coats of varathane
+
+** Sensor mount
+
+1/2" EMT with a 90 degree bend
+
+Mast attached to EMT with (3) 4-40 screws
+
+Mount will be attached to underside of corner eave.
+
+* Three sided coin
+
+From:
+
+https://www.quantamagazine.org/l-mahadevan-finds-math-inspiration-in-the-mundane-20201026/
+
+turned a "three sided coin" out of aluminum.
+
+Need to work out a repeatable coin flipper for such a thick
+coin. Flipping by hand (or by the small catapult my sister Maureen got
+me for Christmas last year) shows a strong bias for the side, but I
+need to rule out problems the flipping process first.
+
+* Fedora 33 update
+Always an adventure to see what breaks
+** SSH
+Need additional configuration to connect to decrepit SSH servers:
+KexAlgorithms=+diffie-hellman-group1-sha1
+PubkeyAcceptedKeyTypes +ssh-rsa
+
+** x.org
+Something decided to change the name of display outputs, so the 30-monitor
+configuration was updated
+** Firefox
+Speaking of decrepit, I still need to connect to TLS 1.0 servers, which
+new firefox refuses. I think update-crypto-policies is the trick:
+
+  update-crypto-policies --set LEGACY
+
+as indeed it is.
+
+I need to address the aforementioned decrepitude, too.
+
+* Alum Rock Data Center
+** Windstorm
+Last Sunday's windstorm gifted me with a large branch on the ground from my
+lovely Chinese Elm. Fortunately there was no collateral damage.
+** Skylight
+Replaced the skylight without falling of the roof.
+* Trips
+Drove my sister Colleen to Kelsyville. First trip outside of Santa
+Cruz and Santa Clara Counties since last year.
+* Speaking of pandemic
+While cleaning out my car, I found the receipt from Target for a half
+gallon of organic milk that I bought on 06 March 2020 at the beginning
+of the Great San Jose Grocery COVID-19 Pandemic Panic because my mom
+asked me to pick up some milk for dinner that evening. This is
+memorable because:
+
+(a) This was the fourth store I went to, after trying Save Mart,
+Seafood City and Walgreens - all had long lines and no milk).
+
+(b) This was the second-to-last think of milk in the store.
+
+(c) It was organic, which I hardly ever buy.
+
+(d) I used self-checkout - for the first time ever.
+
+(e) Buying groceries with a credit card - I usually pay cash.
+
+So many principles violated!
+
