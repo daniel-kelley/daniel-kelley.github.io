@@ -13,7 +13,7 @@ User space driver in progress
 ** BME680 interface
 Using Linux I2C IIO driver
 ** Argent WS-1
-Using ancient MOS7703 serial dongle and random drive on github
+Using ancient MOS7703 serial dongle and random driver on github
 
 https://github.com/tomszilagyi/mos7703
 
@@ -52,8 +52,10 @@ need to rule out problems the flipping process first.
 Always an adventure to see what breaks
 ** SSH
 Need additional configuration to connect to decrepit SSH servers:
+
 KexAlgorithms=+diffie-hellman-group1-sha1
-PubkeyAcceptedKeyTypes +ssh-rsa
+
+PubkeyAcceptedKeyTypes=+ssh-rsa
 
 ** x.org
 Something decided to change the name of display outputs, so the 30-monitor
@@ -73,27 +75,26 @@ I need to address the aforementioned decrepitude, too.
 Last Sunday's windstorm gifted me with a large branch on the ground from my
 lovely Chinese Elm. Fortunately there was no collateral damage.
 ** Skylight
-Replaced the skylight without falling of the roof.
+Replaced the skylight without falling off the roof.
 * Trips
 Drove my sister Colleen to Kelsyville. First trip outside of Santa
 Cruz and Santa Clara Counties since last year.
 * Speaking of pandemic
 While cleaning out my car, I found the receipt from Target for a half
 gallon of organic milk that I bought on 06 March 2020 at the beginning
-of the Great San Jose Grocery COVID-19 Pandemic Panic because my mom
-asked me to pick up some milk for dinner that evening. This is
-memorable because:
+of the Great San Jose Grocery Store Shortage COVID-19 Pandemic Panic
+because my mom asked me to pick up some milk for dinner that
+evening. This is memorable because:
 
-(a) This was the fourth store I went to, after trying Save Mart,
-Seafood City and Walgreens - all had long lines and no milk).
+(a) This was the fourth store I tried, after trying Save Mart,
+Seafood City and Walgreens - all had *very* long lines and no milk.
 
-(b) This was the second-to-last think of milk in the store.
+(b) It was the second-to-last carton of milk in the store.
 
 (c) It was organic, which I hardly ever buy.
 
 (d) I used self-checkout - for the first time ever.
 
-(e) Buying groceries with a credit card - I usually pay cash.
+(e) Bought groceries with a credit card - I usually pay cash.
 
 So many principles violated!
-
