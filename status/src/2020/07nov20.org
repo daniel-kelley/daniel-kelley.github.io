@@ -1,0 +1,19 @@
+01 November 2020 - 07 November 2020
+
+Election Fun. Ugh.
+
+* Live Oak Weather Station
+
+Packaging done. Still have to finish up SW.
+
+* Halloween
+
+Total bust. No trick-or-treaters.
+
+* Swocer
+
+Swocer (SWIG/Ruby bindings for OpenCascade Community Edition) needed
+some love so I can calculate the volume of an oval 25mL dishwasher
+detergent spoon.
+
+Adding OCE classes BRepGProp, GPropGProps, GPropPrincipalProps, GpPln.
