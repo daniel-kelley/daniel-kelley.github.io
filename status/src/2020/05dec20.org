@@ -1,0 +1,48 @@
+23 November 2020 - 05 December 2020
+
+First Week of Advent
+
+* Live Oak Weather Station
+
+** /dev/ttyUSB0 not found after reboot
+https://github.com/daniel-kelley/sczwx/issues/2
+
+* Mahogany Napkin holder
+Actually without dovetails, finished with tung oil.
+
+* Neighborhood fence building
+On hiatus.
+
+* Waffle Trivet
+Need to make something for "Trish the Younger".
+
+* EPICS
+
+** Various applications built (medm,vdct)
+** Studying IOC construction
+Most straightforward approach to integrating ersatz pieces of equipment
+is to use SCPI interfaces (already started for the U3HV) for the devices,
+and then EPICS StreamDevice IOCs for the EPICS interface.
+
+
+* AVB networking
+
+Noticed some IETF RFCs on "DETNET" (Deterministic Networking)
+
+https://www.rfc-editor.org/rfc/rfc8655.txt
+
+I initially thought that this had something to do with Daniel
+E. Talayco, but then realized it is built on top of, for example,
+802.1 AVB/TSN.
+
+Resurveying the GMP2K networking landscape from 2018, I see that nothing
+much has changed; it's still over $500 for an AVB switch.
+
+Interestingly, Microchip has a very nice 7 port 100Mb AVB switch part
+with 5 PHYs and a 1000 Mb RGMII uplink for around $10 from Digikey, so
+from a BOM cost perspective, why isn't there a little 5-10 port AVB
+switch for ~$100?, other than no one thinks there's a market for
+one. Unlike *some* companies I am familiar with, the datasheet is not
+under NDA and has what looks like complete register descriptions.
+
+https://ww1.microchip.com/downloads/en/DeviceDoc/KSZ8567S-Data-Sheet-DS00002391C.pdf
