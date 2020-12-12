@@ -1,0 +1,45 @@
+06 December 2020 - 12 December 2020
+
+Second Week of Advent
+
+* Waffle Trivet
+Done.
+
+* AVB networking
+
+Concluded (again) that for my purposes AES3id if a better fit for
+distributed audio synchronization than 802.1AV.
+
+* Datasheet template
+
+Some breakage (perhaps) after upgrading to Fedora 33:
+
+https://github.com/daniel-kelley/datasheet/issues/2
+
+Not completely fixed, as latex processing gets stuck in a loop when
+using the Stix math font.
+
+* Santa's Workshop
+
+** Three sided coin
+
+With tests!
+
+https://github.com/daniel-kelley/three_sided_coin/
+
+** Oak Napkin holder
+
+Going to try dovetails for real.
+
+* Alum Rock Data Center
+
+Redhat announces that CentOS 8 will convert to CentOS streams at the
+end of the year. Thank you IBM!
+
+I *was* planning on moving to CentOS 8, so now I'll stick with CentOS 7
+and see what the fallout will be.
+
+Looks like my squirrelmail days are numbered, so will likely move to
+roundcube/sqlite.
+
+Finally got Kiki's SSH key on piper.
