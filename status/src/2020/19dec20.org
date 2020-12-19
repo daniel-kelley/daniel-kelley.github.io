@@ -1,0 +1,21 @@
+13 December 2020 - 19 December 2020
+
+Third Week of Advent
+
+* Santa Cruz Weather Station
+** /dev/ttyUSB0 not found after reboot
+https://github.com/daniel-kelley/sczwx/issues/2
+Fixed. What a pain. Thought it could be fixed using systemd init,
+but landed up with a wait loop in the serial port open.
+** Add forecast link
+https://github.com/daniel-kelley/sczwx/issues/5
+Something simple! Added a link to NWS forecast.
+* Github
+Finally converted development repositories to SSH.
+* EPICS
+Mostly worked out SCPI command structure for U3HV for all commands.
+* Santa's Workshop
+** Oak Napkin holder
+Pieces done. Dovetails laid out and cut.
+** Low Angle Block Plane Drawing
+Trish needed a line drawing of a low angle block plane
