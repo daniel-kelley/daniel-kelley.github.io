@@ -1,0 +1,45 @@
+20 December 2020 - 26 December 2020
+
+Fourth Week of Advent and Christmas
+
+* EPICS
+Started mapping out SCPI to EPICS PVs
+* Santa's Workshop
+** Oak Napkin holder
+Done!
+** Cryptic Quilt Quotes
+Stocking Stuffer book of substitution cipher quotations about
+quilting. Example:
+
+  The only place where housework comes before needlework is in the
+  dictionary.
+** Pentomino Puzzle
+Little 1/4" unit square pentominos arranged in a 6x10 square.
+* Political Science
+Imaginary reconfiguration of the US into 4-6 smaller countries.
+Kind of a depressing exercise, but GMT
+
+  https://www.generic-mapping-tools.org/
+
+has some really nice facilities for generating the maps.
+
+Reminds me to put a robust interface to DCW (Digital Chart of the
+World) on the project list.
+
+* Words
+
+Started a little program to find sets of three letter words that share the
+last two letters (such as "she" and "the"). It's not clear to me why
+/usr/share/dict/words has "words" like "zo-" and "zZt", so while I failed
+in the original goal of "Give me a couple of minutes", filtering various
+words with 'aspell' at least got rid of the worst offenders, I still get
+stuff like "biz viz wiz" and "bro fro pro".
+
+Might look at https://github.com/dwyl/english-words/ or
+https://wordnet.princeton.edu/
+
+* Other
+
+Saw a really nice documentary on Claude Shannon:
+
+  https://thebitplayer.com/
