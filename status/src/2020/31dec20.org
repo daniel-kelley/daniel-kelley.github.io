@@ -1,0 +1,45 @@
+27 December 2020 - 31 December 2020
+
+Farewell 2020
+
+* EPICS
+No progress - too many other distractions
+* Workshop
+** Clock weights
+Two 1Kg steel weights from ~2" round stock. Failed basic arithmetic
+somehow because they came out to be ~1.9Kg. Need to cut down next week
+to proper weight.
+* Political Science
+Imaginary reconfiguration of the US into 3 smaller countries: G-Land, R-Land,
+and B-Land:
+
+  https://daniel-kelley.github.io/misc/du-2a.png
+
+It definitely was kind of a depressing exercise.
+
+* Words
+
+wordnet is supported as a Fedora package, but crashes with some command line
+arguments. Was not fun to debug - clear array out of bounds error, but
+not clear why.
+
+* Brini Tracker II
+
+Picking up long stalled GPS tracker project, and simplify to just a tracker;
+previous iteration was also going to have a graphics display.
+
+* Dodecahedron Mapping
+
+Worked out approximate procedure to project spherical maps onto
+dodecahedron polyhedral nets. Essentially, each polyhedral face is a
+separate oblique orthographic projection centered and clipped to the
+face. Need a good 2d library; maybe GEOS http://trac.osgeo.org/geos/
+
+* Books
+
+** The End of Everything
+Katie Mack
+https://www.simonandschuster.com/books/The-End-of-Everything/Katie-Mack/9781982103545
+** Neutron Stars: The Quest to Understand the Zombies of the Cosmos
+Katia Moskvitch
+https://www.thespacereview.com/article/4042/1
