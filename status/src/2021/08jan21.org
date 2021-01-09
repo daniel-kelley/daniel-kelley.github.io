@@ -1,0 +1,35 @@
+01 January 2021 - 08 January 2021
+
+Happy New Year - from Pandemic to Pandemonium
+
+* EPICS
+** Continue mapping U3-HV input configuration to SCPI ROUTE commands
+** Exploring alternatives to 'gschem' for abstract schematics
+'gschem' appears to have bit-rotted significantly in Fedora, and
+doesn't appear to work right when built from source (older schematics
+have some wires misplaced). Kicad is great for real parts; I just
+don't see a good set of simple abstract symbols out of the
+box. xcircuit is a lot closer, but I really don't want to learn
+another schematic entry tool if I don't have to. I'll probably just
+build some simple abstract symbols for Kicad, maybe with proper
+IEEE-91 distinguished symbol proportions. This is an 'EPICS' items
+because I wanted to update the U3-HV SCPI input structure diagram
+in gschem.
+
+* Workshop
+** Clock weights
+Cut down to 1kg.
+** Drill press bench
+Cleaned off. *someone* (not me!) left a gallon of muriatic acid on the
+bench (since moved outside), which significantly rusted the grinder,
+intermittent motion machine, and a bit of a quad box extension cord
+and the "Dave Bartlett Memorial" kiln.
+
+* Brini Tracker II
+
+Took *way* too long to get three display pushbuttons mapped to SAUL
+variables. GPS is intermittent and ADCs don't work right. Going back to
+U3-HV SCPI because I can use it to debug the peripheral bringup.
+
+Some much for a 'quick' project!
+
