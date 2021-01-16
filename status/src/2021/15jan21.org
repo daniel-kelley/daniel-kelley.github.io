@@ -1,0 +1,39 @@
+#+TITLE: 09 January 2021 - 15 January 2021
+
+Sedition fallout
+
+* Abstract schematic symbols
+
+Started. Seems to more-or-less work, but the OR symbols aren't perfect.
+
+https://github.com/daniel-kelley/kicad-generic-digital
+
+The math for the OR symbols seems to be sorted out, but took longer
+than expected.
+
+* EPICS
+
+** U3-HV input configuration abstract schematic
+
+* Brini Tracker II
+Seems to have hung up as the display is no longer responsive.
+
+* Dodecahedron
+Worked out a 4-coloring. How to do this programmatically? How many
+distinct 4-colerings are there?
+
+* ca-r
+
+Want to add tier data. Likely to be a PITA because the data file
+location changes when updated.
+
+* GEOS
+
+Started studying the GOES 2D geometry API.
+
+* Books
+Finished a couple of classics from my library:
+** A Mathematician Reads The Newspaper
+https://www.barnesandnoble.com/w/a-mathematician-reads-the-newspaper-john-allen-paulos/1000285396
+** The Logic of Failure
+https://www.barnesandnoble.com/w/the-logic-of-failure-dietrich-dorner/1113141155?ean=9780201479485
