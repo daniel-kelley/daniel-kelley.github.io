@@ -1,0 +1,41 @@
+#+TITLE: 16 January 2021 - 22 January 2021
+
+A Page is Turned
+
+* EPICS
+
+u3hv-scpi guts torn out and started rebuild toward new SCPI command
+structure. Added an API layer between SCPI command handling and U3A
+library device interfaces. Debugging U3A read_defaults command problem
+where the "current" U3 state is not returned correctly. There was at
+least a problem in the read_default opcode construction, so this is
+not a well-tested area. Fixed some U3A memory leaks. libusb seems to
+be a bit leaky itself. Did I ever tell you I hate USB?
+
+* Brini Tracker II
+Buttons work after a week of runtime. GPS display update still stops
+responding after a few minutes.
+
+* Dodecahedron
+Generating a polyhedron net using plotrb. Fixed plotrb GCC warning
+with ruby 2.7.2p137. Nice to see this library getting some use again.
+
+* ca-r
+
+Added tier data. Have to scrape web page to get CSV data.
+Disappointing that the distributed CSV file isn't directly parsable
+because of the way the CSV header is constructed.
+
+* GEOS
+
+No progress.
+
+* Books
+A couple of books received at Christmas:
+** The Fabric of Civilization
+Excellent discussion of how fabric technology influences global civilization
+from prehistory to now.
+https://www.barnesandnoble.com/w/fabric-of-civilization-virginia-postrel/1136665703
+** League of Regrettable Superheros
+What some people will do to get a kid's dime. Hilarious!
+https://gone-and-forgotten.blogspot.com/2014/10/the-league-of-regrettable-superheroes.html
