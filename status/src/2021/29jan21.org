@@ -1,0 +1,25 @@
+#+TITLE: 23 January 2021 - 29 January 2021
+
+Settling down to a dull roar
+
+* Santa Cruz Weather Station
+Mast sensor stack stopped responding during a downpour. This caused
+the weewx server loop to exit, so ~6 hours of rain data was lost.
+Disabled mast sensor and AQI reads in weewx.conf in the meantime.
+Need to debug hardware failure. Need to see how to keep mast sensor
+failures from killing the server loop.
+
+* EPICS
+
+u3hv-scpi server loop updated. New architecture allows for direct
+stdin/stdout SCPI command IO, and using SCPI commands in a file for
+initial configuration. Refined SCPI command architecture. SCPI
+commands separated into implementation tiers. First tier commands (ADC
+and digital) are documented. Initial U3HV state recovery
+implemented. Determined that the U3 ReadCurrent opcode returned state
+problem is reproducible using LabJack software with the latest U3
+firmware, so probably is a U3 firmware problem.
+
+* Brini Tracker II
+Buttons still work after two weeks week of runtime. GPS display update
+seems to be intermittent as it is working at this moment.
