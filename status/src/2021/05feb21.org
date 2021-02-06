@@ -1,0 +1,26 @@
+#+TITLE: 30 January 2021 - 05 February 2021
+
+Beautiful February Days
+
+* Santa Cruz Weather Station
+Mast sensors still broken
+* EPICS
+
+Found feedback unpacking bug in U3A library.
+
+There is a mismatch between the asynchronous U3A IO and the
+synchronous SCPI parser where the device response occurs after the
+requesting function returns. This mismatch causes the carriage return
+of the SCPI output to occur *before* the response string.
+
+Either the requesting function has to poll the U3 response directly,
+in addition to the server loop poll for USB maintenance, or there
+needs to be a new synchronous U3 API that runs the U3 code as a
+separate process or thread. Although the poll approach may be more
+expedient, it's not very elegant. Evaluating synchronous U3 API built
+on top of U3A async APIs. Thanks to Dan Talayco for a fruitful
+discussion on this topic.
+
+* Brini Tracker II
+Buttons still work after three weeks week of runtime. GPS display update
+seems to be intermittent as it is working at this moment.
