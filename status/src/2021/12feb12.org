@@ -1,0 +1,20 @@
+#+TITLE: 06 February 2021 - 12 February 2021
+
+I Apparently Am An Unthinking Person
+
+* Santa Cruz Weather Station
+Mast sensors still broken
+* EPICS
+
+Created u3s threaded synchronous U3 API library. ASAN,TSAN clean and
+with ruby FFI interface.
+
+Refactored u3a library data interfaces and feedback APIs to facilitate
+u3s.  Fixed shared library naming and linking problems; improved
+sanitizer Makefile interface.
+
+Reworked u3hv-scpi to use u3s.
+
+* Brini Tracker II
+Buttons still work after four weeks week of runtime. GPS display update
+seems to be intermittent as it is not working at this moment.

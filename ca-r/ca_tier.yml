@@ -1,813 +1,813 @@
 ---
 Alameda:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 5.2
-  adjusted_case_rate: 23.1
-  unadjusted_case_rate: 27.5
-  adjustment_factor: 0.839
-  tests_per_100k: 634.6
-  population: 1685886
-  HEQ_positivity: 8.2
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 4.7
+  population: 18
+  HEQ_positivity: 20.4
 Alpine:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 3
-  previous_tier: 2
+  previous_tier: 3
   starting_date: 02-01-2021
-  current_tier: 4
+  current_tier: 0
+  test_positivity: 1.0
+  adjusted_case_rate: 1.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 4.0
+  tests_per_100k: 0.0
+  population: 0
+  HEQ_positivity: 0.0
+Amador:
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
+  final_tier: 1
+  previous_tier: 1
+  starting_date: 12-07-2020
+  current_tier: 0
+  test_positivity: 9.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 5.4
+  population: 17
+  HEQ_positivity: 17.8
+Butte:
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
+  final_tier: 1
+  previous_tier: 1
+  starting_date: 11-16-2020
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 7.2
+  population: 22
+  HEQ_positivity: 20.0
+Calaveras:
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
+  final_tier: 1
+  previous_tier: 1
+  starting_date: 11-28-2020
+  current_tier: 0
+  test_positivity: 10.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 8.1
+  population: 18
+  HEQ_positivity: 18.1
+Colusa:
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
+  final_tier: 1
+  previous_tier: 1
+  starting_date: 11-24-2020
+  current_tier: 0
+  test_positivity: 11.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 13.4
+  population: 32
+  HEQ_positivity: 32.2
+Contra Costa:
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
+  final_tier: 1
+  previous_tier: 1
+  starting_date: 11-16-2020
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 5.7
+  population: 21
+  HEQ_positivity: 21.7
+Del Norte:
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
+  final_tier: 2
+  previous_tier: 1
+  starting_date: 02-08-2021
+  current_tier: 0
   test_positivity: 0.0
   adjusted_case_rate: 0.0
   unadjusted_case_rate: 0.0
-  adjustment_factor: 0.0
-  tests_per_100k: 537.2
-  population: 1117
-  HEQ_positivity: 0.0
-Amador:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
-  final_tier: 1
-  previous_tier: 1
-  starting_date: 12-07-2020
-  current_tier: 1
-  test_positivity: 3.1
-  adjusted_case_rate: 12.2
-  unadjusted_case_rate: 12.2
-  adjustment_factor: 0.0
-  tests_per_100k: 461.2
-  population: 38531
-  HEQ_positivity: 0.0
-Butte:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
-  final_tier: 1
-  previous_tier: 1
-  starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 7.8
-  adjusted_case_rate: 25.5
-  unadjusted_case_rate: 23.2
-  adjustment_factor: 1.098
-  tests_per_100k: 362.8
-  population: 217769
-  HEQ_positivity: 7.3
-Calaveras:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
-  final_tier: 1
-  previous_tier: 1
-  starting_date: 11-28-2020
-  current_tier: 1
-  test_positivity: 10.2
-  adjusted_case_rate: 34.2
-  unadjusted_case_rate: 34.2
-  adjustment_factor: 0.0
-  tests_per_100k: 377.1
-  population: 44289
-  HEQ_positivity: 0.0
-Colusa:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
-  final_tier: 1
-  previous_tier: 1
-  starting_date: 11-24-2020
-  current_tier: 1
-  test_positivity: 16.2
-  adjusted_case_rate: 57.5
-  unadjusted_case_rate: 57.5
-  adjustment_factor: 0.0
-  tests_per_100k: 289.6
-  population: 22593
-  HEQ_positivity: 0.0
-Contra Costa:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
-  final_tier: 1
-  previous_tier: 1
-  starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 7.0
-  adjusted_case_rate: 29.3
-  unadjusted_case_rate: 31.4
-  adjustment_factor: 0.935
-  tests_per_100k: 542.6
-  population: 1160099
-  HEQ_positivity: 11.5
-Del Norte:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
-  final_tier: 1
-  previous_tier: 1
-  starting_date: 11-24-2020
-  current_tier: 2
-  test_positivity: 1.6
-  adjusted_case_rate: 5.7
-  unadjusted_case_rate: 5.7
-  adjustment_factor: 0.0
-  tests_per_100k: 561.9
-  population: 27558
-  HEQ_positivity: 0.0
+  adjustment_factor: 3.0
+  tests_per_100k: 0.7
+  population: 3
+  HEQ_positivity: 3.1
 El Dorado:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 7.6
-  adjusted_case_rate: 23.8
-  unadjusted_case_rate: 20.9
-  adjustment_factor: 1.14
-  tests_per_100k: 312.1
-  population: 193098
-  HEQ_positivity: 10.5
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 1.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 4.3
+  population: 10
+  HEQ_positivity: 9.0
 Fresno:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 11.4
-  adjusted_case_rate: 41.4
-  unadjusted_case_rate: 41.7
-  adjustment_factor: 0.993
-  tests_per_100k: 487.0
-  population: 1032227
-  HEQ_positivity: 13.2
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 9.7
+  population: 30
+  HEQ_positivity: 28.8
 Glenn:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 12.8
-  adjusted_case_rate: 37.5
-  unadjusted_case_rate: 37.5
-  adjustment_factor: 0.0
-  tests_per_100k: 327.1
-  population: 29348
-  HEQ_positivity: 0.0
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 9.5
+  population: 23
+  HEQ_positivity: 23.4
 Humboldt:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 01-11-2021
-  current_tier: 1
-  test_positivity: 7.4
-  adjusted_case_rate: 22.7
-  unadjusted_case_rate: 20.9
-  adjustment_factor: 1.089
-  tests_per_100k: 373.4
-  population: 134098
-  HEQ_positivity: 5.2
+  current_tier: 0
+  test_positivity: 4.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 5.2
+  population: 16
+  HEQ_positivity: 15.9
 Imperial:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: '08-31-2020'
-  current_tier: 1
-  test_positivity: 10.6
-  adjusted_case_rate: 31.6
-  unadjusted_case_rate: 28.3
-  adjustment_factor: 1.114
-  tests_per_100k: 342.5
-  population: 191649
-  HEQ_positivity: 12.3
+  current_tier: 0
+  test_positivity: 24.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 7.9
+  population: 22
+  HEQ_positivity: 20.5
 Inyo:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 12-14-2020
-  current_tier: 1
-  test_positivity: 8.8
-  adjusted_case_rate: 43.4
-  unadjusted_case_rate: 43.4
-  adjustment_factor: 0.0
-  tests_per_100k: 503.2
-  population: 18453
-  HEQ_positivity: 0.0
+  current_tier: 0
+  test_positivity: 8.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 8.1
+  population: 38
+  HEQ_positivity: 38.7
 Kern:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 14.5
-  adjusted_case_rate: 45.4
-  unadjusted_case_rate: 42.2
-  adjustment_factor: 1.076
-  tests_per_100k: 389.0
-  population: 927251
-  HEQ_positivity: 18.8
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 12.5
+  population: 35
+  HEQ_positivity: 31.2
 Kings:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 13.2
-  adjusted_case_rate: 53.6
-  unadjusted_case_rate: 62.7
-  adjustment_factor: 0.855
-  tests_per_100k: 619.0
-  population: 156444
-  HEQ_positivity: 19.0
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 11.0
+  population: 42
+  HEQ_positivity: 45.4
 Lake:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-28-2020
-  current_tier: 1
-  test_positivity: 6.7
-  adjusted_case_rate: 20.9
-  unadjusted_case_rate: 20.9
-  adjustment_factor: 0.0
-  tests_per_100k: 450.3
-  population: 64871
-  HEQ_positivity: 0.0
+  current_tier: 0
+  test_positivity: 10.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 6.8
+  population: 17
+  HEQ_positivity: 17.8
 Lassen:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-24-2020
-  current_tier: 1
-  test_positivity: 3.8
-  adjusted_case_rate: 29.5
-  unadjusted_case_rate: 29.5
-  adjustment_factor: 0.0
-  tests_per_100k: 827.3
-  population: 30065
-  HEQ_positivity: 0.0
+  current_tier: 0
+  test_positivity: 11.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 1.9
+  population: 15
+  HEQ_positivity: 15.2
 Los Angeles:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: '08-31-2020'
-  current_tier: 1
-  test_positivity: 11.3
-  adjusted_case_rate: 38.7
-  unadjusted_case_rate: 61.2
-  adjustment_factor: 0.633
-  tests_per_100k: 832.0
-  population: 10257557
-  HEQ_positivity: 15.0
+  current_tier: 0
+  test_positivity: 24.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 9.5
+  population: 31
+  HEQ_positivity: 42.5
 Madera:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: '08-31-2020'
-  current_tier: 1
-  test_positivity: 13.6
-  adjusted_case_rate: 44.6
-  unadjusted_case_rate: 41.5
-  adjustment_factor: 1.074
-  tests_per_100k: 390.9
-  population: 160089
-  HEQ_positivity: 15.5
+  current_tier: 0
+  test_positivity: 24.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 10.7
+  population: 30
+  HEQ_positivity: 26.9
 Marin:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 12-07-2020
-  current_tier: 1
-  test_positivity: 3.4
-  adjusted_case_rate: 14.7
-  unadjusted_case_rate: 18.1
-  adjustment_factor: 0.808
-  tests_per_100k: 663.6
-  population: 260800
-  HEQ_positivity: 5.2
+  current_tier: 0
+  test_positivity: 9.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 3.6
+  population: 15
+  HEQ_positivity: 18.3
 Mariposa:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 2
   previous_tier: 2
   starting_date: 11-28-2020
-  current_tier: 1
-  test_positivity: 3.3
-  adjusted_case_rate: 8.0
-  unadjusted_case_rate: 8.0
-  adjustment_factor: 0.0
-  tests_per_100k: 336.4
-  population: 17795
-  HEQ_positivity: 0.0
+  current_tier: 0
+  test_positivity: 10.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 2.9
+  population: 9
+  HEQ_positivity: 9.6
 Mendocino:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 5.6
-  adjusted_case_rate: 19.9
-  unadjusted_case_rate: 19.9
-  adjustment_factor: 0.0
-  tests_per_100k: 418.0
-  population: 88439
-  HEQ_positivity: 0.0
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 6.7
+  population: 17
+  HEQ_positivity: 17.4
 Merced:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 11.0
-  adjusted_case_rate: 47.2
-  unadjusted_case_rate: 54.5
-  adjustment_factor: 0.866
-  tests_per_100k: 608.1
-  population: 287420
-  HEQ_positivity: 10.1
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 9.9
+  population: 41
+  HEQ_positivity: 46.3
 Modoc:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-28-2020
-  current_tier: 1
-  test_positivity: 2.3
-  adjusted_case_rate: 10.6
-  unadjusted_case_rate: 10.6
-  adjustment_factor: 0.0
-  tests_per_100k: 259.3
-  population: 9475
-  HEQ_positivity: 0.0
+  current_tier: 0
+  test_positivity: 10.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 5.1
+  population: 18
+  HEQ_positivity: 18.1
 Mono:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-30-2020
-  current_tier: 1
-  test_positivity: 9.1
-  adjusted_case_rate: 29.7
-  unadjusted_case_rate: 29.7
-  adjustment_factor: 0.0
-  tests_per_100k: 439.0
-  population: 13961
-  HEQ_positivity: 0.0
+  current_tier: 0
+  test_positivity: 10.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 6.6
+  population: 17
+  HEQ_positivity: 17.4
 Monterey:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: '08-31-2020'
-  current_tier: 1
-  test_positivity: 13.3
-  adjusted_case_rate: 52.3
-  unadjusted_case_rate: 52.4
-  adjustment_factor: 0.998
-  tests_per_100k: 481.6
-  population: 448732
-  HEQ_positivity: 19.1
+  current_tier: 0
+  test_positivity: 24.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 11.1
+  population: 38
+  HEQ_positivity: 37.2
 Napa:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 6.4
-  adjusted_case_rate: 28.5
-  unadjusted_case_rate: 43.1
-  adjustment_factor: 0.663
-  tests_per_100k: 803.5
-  population: 139652
-  HEQ_positivity: 9.8
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 5.4
+  population: 22
+  HEQ_positivity: 29.3
 Nevada:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 7.3
-  adjusted_case_rate: 26.3
-  unadjusted_case_rate: 26.3
-  adjustment_factor: 0.0
-  tests_per_100k: 391.9
-  population: 98710
-  HEQ_positivity: 0.0
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 6.5
+  population: 16
+  HEQ_positivity: 16.1
 Orange:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 10.9
-  adjusted_case_rate: 39.0
-  unadjusted_case_rate: 43.1
-  adjustment_factor: 0.905
-  tests_per_100k: 571.1
-  population: 3228519
-  HEQ_positivity: 13.9
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 9.4
+  population: 29
+  HEQ_positivity: 29.4
 Placer:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 6.6
-  adjusted_case_rate: 21.3
-  unadjusted_case_rate: 18.9
-  adjustment_factor: 1.123
-  tests_per_100k: 332.4
-  population: 400434
-  HEQ_positivity: 6.6
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 6.2
+  population: 17
+  HEQ_positivity: 15.0
 Plumas:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-28-2020
-  current_tier: 1
-  test_positivity: 4.2
-  adjusted_case_rate: 18.0
-  unadjusted_case_rate: 18.0
-  adjustment_factor: 0.0
-  tests_per_100k: 449.7
-  population: 18997
-  HEQ_positivity: 0.0
+  current_tier: 0
+  test_positivity: 10.0
+  adjusted_case_rate: 1.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 2.0
+  tests_per_100k: 2.2
+  population: 6
+  HEQ_positivity: 6.8
 Riverside:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 10-19-2020
-  current_tier: 1
-  test_positivity: 16.6
-  adjusted_case_rate: 62.3
-  unadjusted_case_rate: 70.7
-  adjustment_factor: 0.881
-  tests_per_100k: 593.6
-  population: 2468145
-  HEQ_positivity: 18.5
+  current_tier: 0
+  test_positivity: 17.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 14.4
+  population: 44
+  HEQ_positivity: 44.8
 Sacramento:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-09-2020
-  current_tier: 1
-  test_positivity: 8.5
-  adjusted_case_rate: 30.6
-  unadjusted_case_rate: 28.7
-  adjustment_factor: 1.065
-  tests_per_100k: 401.7
-  population: 1567975
-  HEQ_positivity: 12.2
+  current_tier: 0
+  test_positivity: 14.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 7.5
+  population: 24
+  HEQ_positivity: 22.8
 San Benito:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 10.4
-  adjusted_case_rate: 53.1
-  unadjusted_case_rate: 53.1
-  adjustment_factor: 0.0
-  tests_per_100k: 662.7
-  population: 64022
-  HEQ_positivity: 0.0
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 9.0
+  population: 36
+  HEQ_positivity: 36.1
 San Bernardino:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: '08-31-2020'
-  current_tier: 1
-  test_positivity: 12.7
-  adjusted_case_rate: 50.2
-  unadjusted_case_rate: 59.4
-  adjustment_factor: 0.845
-  tests_per_100k: 629.0
-  population: 2217398
-  HEQ_positivity: 13.9
+  current_tier: 0
+  test_positivity: 24.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 10.6
+  population: 32
+  HEQ_positivity: 33.2
 San Diego:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-09-2020
-  current_tier: 1
-  test_positivity: 10.5
-  adjusted_case_rate: 42.5
-  unadjusted_case_rate: 50.5
-  adjustment_factor: 0.842
-  tests_per_100k: 631.3
-  population: 3370418
-  HEQ_positivity: 14.0
+  current_tier: 0
+  test_positivity: 14.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 9.1
+  population: 34
+  HEQ_positivity: 35.4
 San Francisco:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-28-2020
-  current_tier: 1
-  test_positivity: 2.9
-  adjusted_case_rate: 12.5
-  unadjusted_case_rate: 19.2
-  adjustment_factor: 0.652
-  tests_per_100k: 814.2
-  population: 892280
-  HEQ_positivity: 5.2
+  current_tier: 0
+  test_positivity: 10.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 2.7
+  population: 11
+  HEQ_positivity: 15.6
 San Joaquin:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 10.9
-  adjusted_case_rate: 40.0
-  unadjusted_case_rate: 38.3
-  adjustment_factor: 1.044
-  tests_per_100k: 427.0
-  population: 782545
-  HEQ_positivity: 13.2
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 9.1
+  population: 31
+  HEQ_positivity: 29.8
 San Luis Obispo:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 5.9
-  adjusted_case_rate: 22.6
-  unadjusted_case_rate: 41.0
-  adjustment_factor: 0.552
-  tests_per_100k: 909.9
-  population: 278862
-  HEQ_positivity: 6.6
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 1.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 4.5
+  population: 19
+  HEQ_positivity: 30.2
 San Mateo:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-28-2020
-  current_tier: 1
-  test_positivity: 4.4
-  adjusted_case_rate: 17.9
-  unadjusted_case_rate: 31.4
-  adjustment_factor: 0.571
-  tests_per_100k: 891.8
-  population: 778001
-  HEQ_positivity: 7.9
+  current_tier: 0
+  test_positivity: 10.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 3.8
+  population: 15
+  HEQ_positivity: 25.4
 Santa Barbara:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 11.2
-  adjusted_case_rate: 47.2
-  unadjusted_case_rate: 63.8
-  adjustment_factor: 0.74
-  tests_per_100k: 729.2
-  population: 456373
-  HEQ_positivity: 16.7
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 10.2
+  population: 36
+  HEQ_positivity: 40.1
 Santa Clara:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 4.9
-  adjusted_case_rate: 21.5
-  unadjusted_case_rate: 32.3
-  adjustment_factor: 0.665
-  tests_per_100k: 801.2
-  population: 1967585
-  HEQ_positivity: 9.4
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 4.0
+  population: 15
+  HEQ_positivity: 21.7
 Santa Cruz:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 5.6
-  adjusted_case_rate: 24.4
-  unadjusted_case_rate: 31.0
-  adjustment_factor: 0.787
-  tests_per_100k: 684.5
-  population: 273999
-  HEQ_positivity: 13.1
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 4.9
+  population: 18
+  HEQ_positivity: 22.7
 Shasta:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-02-2020
-  current_tier: 1
-  test_positivity: 4.9
-  adjusted_case_rate: 25.0
-  unadjusted_case_rate: 22.4
-  adjustment_factor: 1.114
-  tests_per_100k: 343.2
-  population: 177925
-  HEQ_positivity: 4.1
+  current_tier: 0
+  test_positivity: 14.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 5.5
+  population: 23
+  HEQ_positivity: 20.2
 Sierra:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 3
   previous_tier: 3
   starting_date: 11-16-2020
-  current_tier: 2
-  test_positivity: 4.2
-  adjusted_case_rate: 4.6
-  unadjusted_case_rate: 4.6
-  adjustment_factor: 0.0
-  tests_per_100k: 220.1
-  population: 3115
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 3.0
+  tests_per_100k: 2.1
+  population: 0
   HEQ_positivity: 0.0
 Siskiyou:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 9.1
-  adjusted_case_rate: 14.3
-  unadjusted_case_rate: 14.3
-  adjustment_factor: 0.0
-  tests_per_100k: 183.0
-  population: 43956
-  HEQ_positivity: 0.0
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 12.3
+  population: 14
+  HEQ_positivity: 14.6
 Solano:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 7.5
-  adjusted_case_rate: 32.6
-  unadjusted_case_rate: 33.1
-  adjustment_factor: 0.984
-  tests_per_100k: 495.2
-  population: 444255
-  HEQ_positivity: 8.6
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 6.3
+  population: 26
+  HEQ_positivity: 26.4
 Sonoma:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: '08-31-2020'
-  current_tier: 1
-  test_positivity: 6.5
-  adjusted_case_rate: 27.2
-  unadjusted_case_rate: 28.9
-  adjustment_factor: 0.942
-  tests_per_100k: 535.9
-  population: 496668
-  HEQ_positivity: 10.8
+  current_tier: 0
+  test_positivity: 24.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 5.5
+  population: 21
+  HEQ_positivity: 20.8
 Stanislaus:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 11.3
-  adjusted_case_rate: 45.1
-  unadjusted_case_rate: 45.0
-  adjustment_factor: 1.002
-  tests_per_100k: 477.4
-  population: 562303
-  HEQ_positivity: 13.8
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 9.1
+  population: 35
+  HEQ_positivity: 34.5
 Sutter:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 13.2
-  adjusted_case_rate: 40.9
-  unadjusted_case_rate: 40.9
-  adjustment_factor: 0.0
-  tests_per_100k: 316.7
-  population: 105747
-  HEQ_positivity: 0.0
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 12.7
+  population: 36
+  HEQ_positivity: 36.3
 Tehama:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 10-05-2020
-  current_tier: 1
-  test_positivity: 14.5
-  adjusted_case_rate: 39.5
-  unadjusted_case_rate: 39.5
-  adjustment_factor: 0.0
-  tests_per_100k: 329.4
-  population: 65885
-  HEQ_positivity: 0.0
-Trinity:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
-  final_tier: 3
-  previous_tier: 2
-  starting_date: 02-01-2021
-  current_tier: 3
-  test_positivity: 2.8
+  current_tier: 0
+  test_positivity: 19.0
   adjusted_case_rate: 0.0
   unadjusted_case_rate: 0.0
-  adjustment_factor: 0.0
-  tests_per_100k: 77.0
-  population: 13354
-  HEQ_positivity: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 13.8
+  population: 36
+  HEQ_positivity: 36.9
+Trinity:
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
+  final_tier: 3
+  previous_tier: 3
+  starting_date: 02-01-2021
+  current_tier: 0
+  test_positivity: 1.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 3.0
+  tests_per_100k: 4.0
+  population: 1
+  HEQ_positivity: 1.1
 Tulare:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: '08-31-2020'
-  current_tier: 1
-  test_positivity: 12.2
-  adjusted_case_rate: 47.3
-  unadjusted_case_rate: 47.2
-  adjustment_factor: 1.002
-  tests_per_100k: 478.0
-  population: 484423
-  HEQ_positivity: 14.6
+  current_tier: 0
+  test_positivity: 24.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 9.9
+  population: 34
+  HEQ_positivity: 33.3
 Tuolumne:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 6.0
-  adjusted_case_rate: 21.6
-  unadjusted_case_rate: 21.6
-  adjustment_factor: 0.0
-  tests_per_100k: 548.2
-  population: 52351
-  HEQ_positivity: 0.0
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 5.5
+  population: 15
+  HEQ_positivity: 15.0
 Ventura:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 10.9
-  adjusted_case_rate: 44.2
-  unadjusted_case_rate: 79.7
-  adjustment_factor: 0.554
-  tests_per_100k: 907.6
-  population: 852747
-  HEQ_positivity: 15.3
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 10.5
+  population: 41
+  HEQ_positivity: 61.8
 Yolo:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 3.6
-  adjusted_case_rate: 18.8
-  unadjusted_case_rate: 31.2
-  adjustment_factor: 0.602
-  tests_per_100k: 861.8
-  population: 223612
-  HEQ_positivity: 9.6
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 2.8
+  population: 13
+  HEQ_positivity: 21.5
 Yuba:
-  assessment_date: 02-01-2021
-  ending_date: 01-23-2021
+  assessment_date: 02-08-2021
+  ending_date: 01-30-2021
   final_tier: 1
   previous_tier: 1
   starting_date: 11-16-2020
-  current_tier: 1
-  test_positivity: 13.0
-  adjusted_case_rate: 39.1
-  unadjusted_case_rate: 39.1
-  adjustment_factor: 0.0
-  tests_per_100k: 317.6
-  population: 79290
-  HEQ_positivity: 0.0
+  current_tier: 0
+  test_positivity: 12.0
+  adjusted_case_rate: 0.0
+  unadjusted_case_rate: 0.0
+  adjustment_factor: 1.0
+  tests_per_100k: 10.7
+  population: 24
+  HEQ_positivity: 24.0
