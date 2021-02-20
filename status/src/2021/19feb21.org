@@ -1,0 +1,33 @@
+#+TITLE: 13 February 2021 - 19 February 2021
+
+Perseverance Lands at Jezero Crater!
+
+* Santa Cruz Weather Station
+Mast sensors still broken
+* EPICS
+
+u3hv-scpi has analog voltage IO, and digital output.
+started u3hv-scpi unit test
+u3s Ruby code is rubocop clean
+
+* Brini Tracker II
+Buttons still work after five weeks week of runtime. GPS display update
+seems to be intermittent as it is not working at this moment.
+
+* Gaia Data
+
+Starting looking at the Gaia Catalog of Nearest Stars.
+
+  https://arxiv.org/pdf/2012.02061.pdf
+
+Using a JRuby interface to IVOA Virtual Observatory
+
+  https://ivoa.net/
+
+tables bundled with Gaia Sky (which itself may become a time sink)
+
+  https://zah.uni-heidelberg.de/gaia/outreach/gaiasky/
+
+via Java libraries bundled with Topcat
+
+  http://www.star.bristol.ac.uk/~mbt/topcat/
