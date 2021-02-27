@@ -1,0 +1,33 @@
+#+TITLE: 20 February 2021 - 26 February 2021
+
+Perseverance takes a look around
+
+* Santa Cruz Weather Station
+Mast sensors still broken
+* EPICS
+
+Established unit test methodology
+Started digital output
+
+* Brini Tracker II
+Buttons still work after six weeks week of runtime. GPS display update
+seems to be intermittent as it is not working at this moment.
+
+* WKT to SVG converter
+
+basically libgeos to libplot
+
+WKT may be well known but perhaps not consistently implemented as
+libgeos could only parse a few of the "*.wkt" files laying around.
+
+Works well enough for my purposes.
+
+https://github.com/daniel-kelley/wktplot
+
+* Perseverance mapping
+
+Started planning on mapping Perseverance EDL Mars surface images from
+the JPL EDL video on to a Mars surface map. Looks like GRASS GIS is
+the way to go, which is great because I am already somewhat familiar
+with it - although it sure has gotten fancier in the years since I
+looked at it last.
