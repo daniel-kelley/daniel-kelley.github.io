@@ -1,0 +1,47 @@
+#+TITLE: 27 February 2021 - 05 March 2021
+
+Happy Birthday to Trish!
+
+* Santa Cruz Weather Station
+Mast sensors still broken
+* EPICS
+
+No progress - other projects had priority.
+
+* Brini Tracker II
+Buttons still work after seven weeks week of runtime. GPS display update
+seems to be intermittent as it is not working at this moment. But the date
+*is* correct.
+
+* Perseverance mapping
+
+EDL video frames extracted and converted to TIF. Some thirty some-odd
+frames (every 100 frames at 30 frames per second) roughly georectified
+to TRN base map using GRASS. May investigate using image correlation
+to finalize rectification. Realized that there was probably some
+significant video postprocessing of the downlook video to make the
+final JPL video, so recovery of the original downlook camera matrix
+for camera pose determination may not be possible. Have to think about
+this some more.
+
+* Looks Interesting
+
+Forgot to mention the "Looks Interesting" analysis, which uses data from
+Directory of Open Access Journals (https://doaj.org), and catalog metadata
+from the Library of Congress to construct an index of academic journal
+references that may be "interesting to look at". One of the interesting
+things was Acta Futura:
+
+  https://www.esa.int/gsp/ACT/resources/acta_futura/
+
+which indeed "Looks Interesting".
+
+There's also a lot of other places with what appears to be "write
+only" journaling, too.
+
+* Birthday Projects
+
+For Trish's birthday:
+
+"Star Trek Encrypted" substitution cipher puzzle book
+Oak Scissors Holder for the quilt room.
