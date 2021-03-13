@@ -1,0 +1,77 @@
+#+TITLE: 06 March 2021 - 12 March 2021
+
+Forestalling Minor Disasters
+
+* Santa Cruz Weather Station
+Mast sensors still broken
+* EPICS
+
+Test cases covering most of the SCPI commands so-far implemented.
+
+Adding functions to parse configuration and calibration memory blocks to u3a.
+
+Adding configuration memory interface to u3s.
+
+Implementing '*RST' SCPI reset.
+
+* Brini Tracker II
+Buttons still work after eight weeks week of runtime. GPS display update
+seems to be intermittent as it is not working at this moment. But the date
+*is* correct.
+
+* Perseverance mapping
+
+Still thinking on next steps.
+
+* CA-R
+
+Noticed that the population numbers in the county popup were wrong, see
+
+https://github.com/daniel-kelley/ca-r/issues/13
+
+This was because the columns moved around. Because of the way the
+columns were constructed, it wasn't obvious how to use the columns
+names as a key.  Now column lookup uses a regexp ("two problems"
+nonwithstanding, see
+
+ https://softwareengineering.stackexchange.com/questions/223634/what-is-meant-by-now-you-have-two-problems)
+
+and only look up the needed columns so as to not break on unneeded
+data.
+
+This morning, I am getting "500 Internal Server Error" when 'wget'ting the
+data; looking at the web page I see
+
+ COVID-19 Cases - Deprecated
+
+ This dataset has been replaced with an update that can be found here:
+
+ https://data.chhs.ca.gov/dataset/covid-19-time-series-metrics-by-county-and-state
+
+Looks I'll be having a fun morning.
+
+* Looks Interesting
+
+Reorganized top level pages: http://gmp.san-jose.ca.us/~dkelley/journal/
+
+** Musicologica Austriaca - Journal for Austrian Music Studies
+http://www.musau.org/
+
+* wktplot
+
+Gave wktplot something to do:
+
+** wktrand: Create random points
+** wktdel: Create Delaunay Triangulation from WKT input
+** wktvor: Create Voronoi Tessellation from WKT input
+
+* porch post
+
+Installed a "temporary" post at my Mom's house to support a failing
+beam over the front porch.
+
+* Paleogeography
+
+Potential new distraction:
+
+https://www.earthbyte.org/category/resources/data-models/paleogeography/
