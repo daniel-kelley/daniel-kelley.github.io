@@ -1,0 +1,36 @@
+#+TITLE: 13 March 2021 - 19 March 2021
+
+Spring has sprung. Kinda.
+
+* Santa Cruz Weather Station
+Mast sensors still broken
+* EPICS
+
+Added calibration and configuration expansion to u3a and u3s
+Implemented '*RST' SCPI reset.
+Implemented digital in/out reconfiguration.
+
+* Brini Tracker II
+Buttons still work after nine weeks week of runtime. GPS display update
+seems to be intermittent as it is not working at this moment. But the date
+*is* correct.
+
+* CA-R
+
+Implemented handling of new data files.
+Removed hospital graphs as the data was no longer provided.
+
+* wktplot
+
+Some differences between Voronoi polygonization between libgeos and
+Inkscape. Not sure why.
+
+* Reading
+
+** Hidden Figures
+https://www.barnesandnoble.com/w/hidden-figures-margot-lee-shetterly/1123655109?ean=9780062363602
+(neighborhood book box!)
+** Radiometric Tracking Techniques for Deep-Space Navigation
+https://descanso.jpl.nasa.gov/monograph/series1/Descanso1_all.pdf
+** Three Sigma Leadership
+https://www.nasa.gov/connect/ebooks/three-sigma-leadership_detail
