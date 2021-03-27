@@ -1,0 +1,35 @@
+#+TITLE: 20 March 2021 - 26 March 2021
+
+Spring has really sprung.
+
+* Santa Cruz Weather Station
+Mast sensors still broken
+* EPICS
+
+** u3hv-scpi
+*** Reimplemented syst:int:show? to accept a channel list
+*** Added CodeChecker analysis
+Fixed problems reported by same
+*** cleaned up and checked in
+* Brini Tracker II
+Buttons still work after ten weeks week of runtime. GPS display update
+seems to be intermittent as it is not working at this moment. But the date
+*is* correct.
+
+* wktcolor
+
+Started outline. Will use "modern C++" as the underlying libraries needed
+are in C++. Initial plan was to use CGAL (http://www.gcal.org) but some
+CGAL headers (like the exact Kernel) appear to hang clang-analyzer, or
+at least take over 15 min. to analyze. This seems to me true to CGAL form,
+as I recall from the old days when GCC barely supported templates, that a
+CGAL compile (if it worked) would take a *very* long time.
+
+Instead of CGAL, will probably use boost graph and geometry libraries.
+
+* Reading
+
+** I never danced at the White House
+https://www.goodreads.com/book/show/4780762-i-never-danced-at-the-white-house
+** Effective Modern C++
+https://www.aristeia.com/EMC++.html
