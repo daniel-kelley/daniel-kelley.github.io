@@ -1,0 +1,53 @@
+#+TITLE: 27 March 2021 - 02 April 2021
+
+Spring hot and cold with impending drought.
+
+* Santa Cruz Weather Station
+Mast sensors still broken
+* EPICS
+no progress
+* Brini Tracker II
+Buttons still work after eleven weeks week of runtime. GPS display update
+seems to be intermittent but is working at this moment.
+
+* wktcolor
+
+Various C++ distractions. "Well Known Text" format may be well known,
+and it *is* well documented, but doesn't seem to always be well or
+consistently implemented. Seems that neither boost nor CGAL can read
+the files produced by GEOS. Plus they can produce some entities that
+GEOS can't read.
+
+Explored flex/bison and ANTLR C++ bindings, which reminds me how
+poorly generated code interacts with style checkers.
+
+Now, instead of boost, may use GEOS for WKT, OpenMesh for geometry
+analysis (because it implements a comprehensible "half-edge" data
+structure) and igraph for graph analysis, which is needed for the
+coloring algorithm. Or do it in Go, Ruby, or Julia. Not
+python. Please, not python. Don't make me do it in python.
+
+* grass/dcw
+
+After I don't know after how many years - maybe decades - I finally
+imported DCW (Digital Chart of the World) geographic data into GRASS.
+
+* ca-r
+
+wget -O out/covid19cases_test.csv https://data.chhs.ca.gov/dataset/f333528b-4d38-4814-bebb-12db1f10f535/resource/046cdd2b-31e5-4d34-9ed3-b48cdbc4be7a/download/covid19cases_test.csv
+
+--2021-04-03 06:30:05--  https://data.chhs.ca.gov/dataset/f333528b-4d38-4814-bebb-12db1f10f535/resource/046cdd2b-31e5-4d34-9ed3-b48cdbc4be7a/download/covid19cases_test.csv
+
+Resolving data.chhs.ca.gov (data.chhs.ca.gov)... 104.19.218.112, 104.19.219.112, 2606:4700::6813:da70, ...
+
+Connecting to data.chhs.ca.gov (data.chhs.ca.gov)|104.19.218.112|:443... connected.
+
+HTTP request sent, awaiting response... 500 Internal Server Error
+
+2021-04-03 06:30:10 ERROR 500: Internal Server Error.
+
+make: *** [Makefile:19: out/covid19cases_test.csv] Error 8
+
+Grr.
+
+Covid-19 case data broken again - this time with no obvious replacement.
