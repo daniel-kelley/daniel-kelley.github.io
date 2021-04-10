@@ -1,0 +1,27 @@
+#+TITLE: 03 April 2021 - 09 April 2021
+
+Got Frustration?
+
+* Santa Cruz Weather Station
+  Mast sensors still broken
+* EPICS
+  no progress
+* Brini Tracker II
+  Buttons still work after twelve weeks week of runtime. GPS display
+  update seems to be intermittent but is not working at this moment.
+* wktcolor
+  Use wktlib (from wktplot); wkt header needs c++ guard. Need a
+  strategy to make unique vertices fro constructing faces.
+* ca-r
+  data file has returned, quality unknown. The data description page
+  indicates that there are known problems.
+* AMDGPU
+  Started looking at AMD GPU programming after a five year
+  hiatus. Still trying to get a working openmp toolchain. Updated
+  kmtrun which now compiles, but it fails at runtime to initialize a
+  work queue.  Tried building tools with GCC, LLVM/Clang, AMD AOMP,
+  and using AMD RPMs directly, and all show major problems of one sort
+  or another. Frustrating. Is this why NVidia is ahead GPU-wise?
+
+
+
