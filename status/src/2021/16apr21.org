@@ -1,0 +1,105 @@
+#+TITLE: 10 April 2021 - 16 April 2021
+
+Overcoming frustration
+
+* Santa Cruz Weather Station
+  Mast sensors still broken *but* started a test jig.
+  Using a subset of 'HHEM' as a test program.
+** Next step
+*** Construct DB9M test cable.
+*** Test sensors.
+* EPICS
+  No progress. Now that the Brini Tracker A/D is working (which was
+  the original motivation for getting U3 stuff working), this is no
+  longer "critical path" - not like anything is critical in this list.
+**  Next steps
+*** u3scpi network port testing
+*** initial EPICS interface
+*** u3scpi analog/digital port reconfiguration.
+* Brini Tracker II
+**  Fixed A/D
+
+    Readings were pegged because RIOT by default uses the 1V internal
+    reference, but the Adafruit M0 board assumes an external 3.3V
+    reference so it uses a 100k:100k voltage divider for VBAT
+    measurements, which I in turn used for the VBUS measurement.
+
+    I don't want to change the RIOT default A/D configuration, so I am
+    using a 470k:100k divider for both VBAT and VBUS and ignore the
+    internal VBAT divider.
+
+** Fixed GPS NMEA reader
+
+   Essentially the ringbuffer/message passing algorithm between the
+   UART RX and the NMEA parser was broken. Using tsrb (Thread Safe
+   Ring Buffer!) instead of ringbuffer. Not tracking line lengths but
+   explicitly using '*' and '\n' start and end line markers.
+
+   Time display now consistently updates.
+
+** Next steps
+*** Validate remaining standard GPS messages
+*** Investigate GPS chipset data logging
+*** Investigate LoRA radio interface
+* Weber Grill Handles
+Made new birch handles for Weber grill.
+* wktcolor
+  No progress.
+** Next steps
+*** finish wktlib c++ export.
+*** create vertex map for geometry importer
+
+* ca-r
+  See https://github.com/daniel-kelley/ca-r/issues/18
+** Next Step
+*** Fix issue 18
+* AMDGPU
+  For (likely) business reasons, AMD has chosen to prioritize non-APU devices for ROCm support.
+  Such devices also require ACPI BIOS support, which may or may not be available. In my case,
+  the CRAT table is incorrect according to the AMDGPU driver.
+
+  Either I need to wait to see if APU support will catch up, or
+  construct a HSA compatible runtime based on the AMDGPU driver, or
+  hack AMDGPU for APUs until it works with the released HSA runtime.
+
+  In either case, this will be a major time commitment if it goes
+  forward.
+** Next steps
+*** Reverse engineer HSAKMT programming.
+* GRASS geopackage import
+  Maureen asked me to evaluate the feasibility of importing one of her
+  GIS projects to GRASS. It's possible if the database gets cleaned up
+  as there were about 20 points with illegal coordinates.
+
+  *DONE*
+
+* Tessellation
+  Playing with 2x2 and 2x3 blocks, inspired by the back patio brickwork.
+
+  Questions:
+
+    What is the algorithm to fill a rectangular area with random tile placement?
+
+    What are the number of unique arrangements not counting rotations and reflections?
+
+* Ninja v Make
+
+  LLVM can use both Ninja and Make build systems with a preference for ninja.
+  Started a simple measurement, but ran out of disk space(!).
+** Next Step
+*** clean simple measurements
+* Plumbing
+  Santa Cruz kitchen sink has been slow draining, so I tried snaking
+  it, and made it worse - now it doesn't drain at all. A real plumber
+  has been called and he has been finding it a challenge. Trish called
+  out her assumption that the plumber was going to be a man.
+
+  Likely, but maybe things will change eventually:
+
+  https://www.servicetitan.com/blog/women-in-plumbing
+
+  *Hopefully Done*
+
+
+
+
