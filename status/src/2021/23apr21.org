@@ -1,0 +1,62 @@
+#+TITLE: 17 April 2021 - 23 April 2021
+
+A week of virus first and space seconds
+
+  First Moderna shot
+  Second Space X crew launch
+  Second Ingenuity flight
+
+* Santa Cruz Weather Station
+  Test cable constructed
+  Test Jig program complete
+  Particle sensor dead
+  I2C sensors work but have significant corrosion
+** Next step
+*** Order replacement sensor
+*** Order Adafruit 4649
+    Needs some more circutry (I2C A/D) and 555? but may be alternative
+    to Plantower sensor if it can be calibrated side by side.
+*** Clean BME680/VELM6075 boards
+*** Design more robust instrument shelter
+* EPICS
+  No progress. Now that the Brini Tracker A/D is working (which was
+  the original motivation for getting U3 stuff working), this is no
+  longer "critical path" - not like anything is critical in this list.
+**  Next steps
+*** u3scpi network port testing
+*** initial EPICS interface
+*** u3scpi analog/digital port reconfiguration.
+* Brini Tracker II
+No progress
+** Next steps
+*** Validate remaining standard GPS messages
+*** Investigate GPS chipset data logging
+*** Investigate LoRA radio interface
+* wktcolor
+** Coloring with igraph_vertex_coloring_greedy
+   When the doc says "coloring is not necessarily minimal", it's true.
+** Saves output in GraphML format
+** cleanup
+** graph simplification
+** smoke test
+** Next steps
+*** Explore how to get a minimal coloring
+* wktplot
+** wktlib: c++ export.
+** wktplot: read wktcolor file to label polygons
+** wktrand: add minimum distance parameter
+
+** Next steps
+   Understand why -r doesn't solve the wktvor/wktdel "sliver at edge" problem.
+* ca-r
+** Fixed: https://github.com/daniel-kelley/ca-r/issues/18
+** Next Step
+None
+* AMDGPU
+** Next steps
+*** Reverse engineer HSAKMT programming.
+* Ninja v Make
+** Next Step
+*** clean simple measurements
+* Plumbing
+  Shower backed up but snaked it clean
