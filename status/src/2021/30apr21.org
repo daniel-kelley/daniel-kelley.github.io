@@ -1,0 +1,67 @@
+#+TITLE: 24 April 2021 - 30 April 2021
+
+Another Birthday gone by
+
+* Santa Cruz Weather Station
+  Replacement Plantower sensor acquired
+** Next step
+*** Check replacement sensor
+*** Clean BME680/VELM6075 boards
+*** Design more robust instrument shelter
+    Use existing small mast for VEML6075; put others in larger shelter.
+
+* EPICS
+  No progress. Now that the Brini Tracker A/D is working (which was
+  the original motivation for getting U3 stuff working), this is no
+  longer "critical path" - not like anything is critical in this list.
+**  Next steps
+*** u3scpi network port testing
+*** initial EPICS interface
+*** u3scpi analog/digital port reconfiguration.
+* Brini Tracker II
+No progress
+** Next steps
+*** Validate remaining standard GPS messages
+*** Investigate GPS chipset data logging
+*** Investigate LoRA radio interface
+* wktcolor
+** Added ColPack coloring interface
+   Somewhat better, but not quite there
+** Fedora 34 changes
+** Next steps
+*** Explore how to get a minimal coloring
+    Need a specific planar graph four coloring.
+* wktplot
+** Fedora 34 changes
+** Next steps
+   Understand why -r doesn't solve the wktvor/wktdel "sliver at edge" problem.
+* ca-r
+** Seems to have survived Fedora 34 update
+** Next Step
+None
+* GMP Forth
+** minor Ruby 3.0 changes
+* AMDGPU
+** Next step
+*** Reverse engineer HSAKMT programming.
+* Ninja v Make
+** Next Step
+*** clean simple measurements
+* Fedora 34 update
+** Went mostly well
+*** TMUX mouse interface UI changed - need shift key for mouse
+*** copy/paste Firefox tended to hang when following links.
+    Turning off IPv6 seems to help, but still happens. Difficult to
+    characterize.
+* Linux Audio
+  Fedora 34 now uses PipeWire for audio, which integrates (among other
+  things) a JACK server interface. Refreshed all of the various audio
+  programs I use (snd, pd, faust, Carla) and all were made to work.
+  Snd still have some problems with setting the real-time priority of
+  the play thread.
+** Next Steps
+*** MIDI interfaces
+* Conical Rolling Pin
+Made a prototype conical rolling pin to facilitate rolling out pizza
+dough in the cast iron pizza pan. Yes, I know rolling out pizza dough
+is "not how you do it". Fine. Fire me. You don't have to eat my pizza.
