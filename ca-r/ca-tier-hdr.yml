@@ -1,24 +1,21 @@
 ---
-- 24
+- 22
 - - County
   - Date of Tier Assessment
-  - 'Ending Date of Week of Data: 04-11-21 to 04-17-21'
-  - Final Tier Assignment for 04-27-21
-  - Previous Tier Assignment, 04-19-21 Assessment
+  - 'Ending Date of Week of Data: 04-25-21 to 05-01-21'
+  - Final Tier Assignment ofr 05-11-21
+  - Previous Tier Assignment, 05-03-21 Assessment
   - First Date in Current Tier
   - County Tier Assignment Based on Meeting Accelerated Health Equity Criteria
   - Number of Weeks in Current Tier
   - Number of Consecutive Weeks Meeting Criteria for Less Restrictive Tier
   - Number of Consecutive Weeks Meeting Criteria for More Restrictive Tier
-  - Tier for Week 04-11-21 to 04-17-21, 04-26-21 Assessment
-  - Small County:Tier for Week 04-11-21 to 04-17-21, 04-26-21 Assessment (Includes
-    Case Threshold Rules)
   - Test Positivity excl prisons (7-day, 7-day lag)
   - Case Rate Used for Tier Adjusted Using Linear Adjustment (7-day avg, 7-day lag)
   - Unadjusted Case Rate per 100,000 excl prisons (7-day avg, 7-day lag)
   - Linear Adjustment Factor Applied to Case Rate
   - Tests per 100,000 excl prisons, with replaced approved county data (7-day avg,
-    7-day lag)  State Median Testing Rate= 333.03
+    7-day lag)  State Median Testing Rate= 325.91
   - Population^
   - 'Total New Cases: 7-Day, 7-day Lag'
   - Health Equity Quartile Test Positivity Excl Prison Cases (7 day, 7 day lag)
@@ -29,24 +26,20 @@
     (If No Progression Via Non-Accelerated Criteria)
   - Number of Consecutive Weeks Towards Movement to Less Restrictive Tier with Accelerated
     Healthy Equity Criteria
-- "County,Date of Tier Assessment,Ending Date of Week of Data: 04-11-21 to 04-17-21,Final
-  Tier Assignment for 04-27-21,\"Previous Tier Assignment, 04-19-21 Assessment\",First
+- 'County,Date of Tier Assessment,Ending Date of Week of Data: 04-25-21 to 05-01-21,Final
+  Tier Assignment ofr 05-11-21,"Previous Tier Assignment, 05-03-21 Assessment",First
   Date in Current Tier,County Tier Assignment Based on Meeting Accelerated Health
   Equity Criteria,Number of Weeks in Current Tier,Number of Consecutive Weeks Meeting
   Criteria for Less Restrictive Tier,Number of Consecutive Weeks Meeting Criteria
-  for More Restrictive Tier,\"Tier for Week 04-11-21 to 04-17-21, 04-26-21 Assessment\",\"Small
-  County:Tier for Week 04-11-21 to 04-17-21, 04-26-21 Assessment (Includes Case Threshold
-  Rules)\",\"Test Positivity excl prisons (7-day, 7-day lag)\",\"Case Rate Used for
-  Tier Adjusted Using Linear Adjustment (7-day avg, 7-day lag)\",\"Unadjusted Case
-  Rate per 100,000 excl prisons (7-day avg, 7-day lag)\",Linear Adjustment Factor
-  Applied to Case Rate,\"Tests per 100,000 excl prisons, with replaced approved county
-  data (7-day avg, 7-day lag)  State Median Testing Rate= 333.03\",Population^,\"Total
-  New Cases: 7-Day, 7-day Lag\",\"Health Equity Quartile Test Positivity Excl Prison
-  Cases (7 day, 7 day lag)\",HE Quartile (Test Positivity%) Within Threshold for Less
+  for More Restrictive Tier,"Test Positivity excl prisons (7-day, 7-day lag)","Case
+  Rate Used for Tier Adjusted Using Linear Adjustment (7-day avg, 7-day lag)","Unadjusted
+  Case Rate per 100,000 excl prisons (7-day avg, 7-day lag)",Linear Adjustment Factor
+  Applied to Case Rate,"Tests per 100,000 excl prisons, with replaced approved county
+  data (7-day avg, 7-day lag)  State Median Testing Rate= 325.91",Population^,"Total
+  New Cases: 7-Day, 7-day Lag","Health Equity Quartile Test Positivity Excl Prison
+  Cases (7 day, 7 day lag)",HE Quartile (Test Positivity%) Within Threshold for Less
   Restrictive Tier (Non-Accelerated),Number of Consecutive Weeks of Health Equity
   Metric Towards Movement to Less Restrictive Tier (Non-Accelerated),Eligible for
   Accelerated Health Equity Criteria to Move to Less Restrictive Tier (If No Progression
   Via Non-Accelerated Criteria),Number of Consecutive Weeks Towards Movement to Less
-  Restrictive Tier with Accelerated Healthy Equity Criteria\r CA,04-26-2021,04-17-2021,
-  \      ,       ,        ,,    ,,,       ,       ,1.5,    ,4.7,    ,467.0,40129160,
-  \         ,    ,,,,"
+  Restrictive Tier with Accelerated Healthy Equity Criteria'
