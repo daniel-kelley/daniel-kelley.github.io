@@ -1,0 +1,94 @@
+#+TITLE: 15 May 2021 - 21 May 2021
+
+Making Some Audio Progress
+
+* Linux Audio
+
+** Faust programming
+   Outlined "GAC" - "GMP Audio and Control". The idea here is to have
+   a library of audio and control blocks, and then generate Faust code
+   for a "panel" of selected blocks and an associated
+   interconnect. The interconnect is divided into three "types":
+   signal, control, and logic. This is mainly to reduce the size of
+   the interconnect, but, interestingly, roughly corresponds to the
+   patch separation used in Buchla modules. This is initially intended
+   as an exploratory tool, but I can foresee some utility in using this
+   approach for GPU audio programming, which can benefit from common
+   execution code controlled by data (here represented by the
+   interconnect). Control and audio interconnect is summing; logic
+   interconnect is multiplexing.
+
+    ~34 blocks are designed; 15 are implemented. The "rwtable" interfaces used for
+    a sequencer were by far were the most challenging, as I'm not using the tables
+    as strictly "audio rate" blocks.
+
+** Next Steps
+*** Analog Synthesizer modules
+    Generate interconnect.
+    Design waveshaper.
+*** LV2 autopatcher
+    Exploratory tool to generate (was pd, ecasound, now carla) patch for arbitrary LV2 plugin:
+    hook up audio inputs to signal source, audio outputs to speakers, control inputs to
+    control surface, etc.
+*** OSC control surface
+    Some sort of GUI tool (knob/slider) to OSC messages. This may be
+    as simple as a Faust UI program.
+*** Faust/csound
+    See if a faust generated unit works.
+* Santa Cruz Weather Station
+** Next step
+*** Check replacement sensor
+*** Clean BME680/VELM6075 boards
+*** Design more robust instrument shelter
+    Use existing small mast for VEML6075; put others in larger shelter.
+
+* EPICS
+**  Next steps
+*** u3scpi network port testing
+*** initial EPICS interface
+*** u3scpi analog/digital port reconfiguration.
+
+* Brini Tracker II
+Still working!
+** Next steps
+*** Validate remaining standard GPS messages
+*** Investigate GPS chipset data logging
+*** Investigate LoRA radio interface
+
+* wktcolor
+** Next steps
+*** Explore how to get a minimal coloring
+    Need a specific planar graph four coloring.
+
+* wktplot
+** Next steps
+   Understand why -r doesn't solve the wktvor/wktdel "sliver at edge" problem.
+
+* ca-r
+** Seems to have survived Fedora 34 update
+** Next Step
+None
+
+* AMDGPU
+** Next step
+*** Reverse engineer HSAKMT programming.
+
+* Ninja v Make
+** Next Step
+*** clean simple measurements
+
+* Conical Rolling Pin
+  Conical Rolling pin worked great except the sharp point dug into the
+  dough.  Point isn't necessary.
+** Next Step
+   Soften point.
+* Reading
+** Click Here to Kill Everybody
+   Bruce Schneier
+   https://www.schneier.com/books/click-here/
+   We're screwed.
+   Signed copy was a birthday gift from Mark Houde. Thanks Mark!
+** The Science of Can and Can't
+   Chiara Marletto
+   https://www.barnesandnoble.com/w/the-science-of-can-and-cant-chiara-marletto/1137528552?ean=9780525521921
+   A different approach to Quantum Mechanics and Quantum Information Theory
