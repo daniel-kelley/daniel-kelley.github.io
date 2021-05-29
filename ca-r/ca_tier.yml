@@ -3,405 +3,405 @@ Alameda:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 1.1
-  tests_per_100k: 470.4
+  test_positivity: 1.0
+  tests_per_100k: 454.2
   population: 1685886
 Alpine:
   final_tier: 4
   previous_tier: 4
   current_tier: 4
   test_positivity: 0.0
-  tests_per_100k: 115.1
+  tests_per_100k: 89.5
   population: 1117
 Amador:
   final_tier: 4
-  previous_tier: 3
+  previous_tier: 4
   current_tier: 4
-  test_positivity: 0.5
-  tests_per_100k: 340.0
+  test_positivity: 1.6
+  tests_per_100k: 292.9
   population: 38531
 Butte:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 3.8
-  tests_per_100k: 255.9
+  test_positivity: 3.4
+  tests_per_100k: 237.1
   population: 217769
 Calaveras:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 3.2
-  tests_per_100k: 241.6
+  test_positivity: 2.6
+  tests_per_100k: 232.9
   population: 44289
 Colusa:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 0.9
-  tests_per_100k: 212.5
+  test_positivity: 1.7
+  tests_per_100k: 216.9
   population: 22593
 Contra Costa:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 1.8
-  tests_per_100k: 367.6
+  test_positivity: 1.5
+  tests_per_100k: 325.9
   population: 1160099
 Del Norte:
   final_tier: 2
   previous_tier: 2
   current_tier: 2
-  test_positivity: 3.4
-  tests_per_100k: 557.8
+  test_positivity: 2.4
+  tests_per_100k: 472.3
   population: 27558
 El Dorado:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 2.8
-  tests_per_100k: 312.0
+  test_positivity: 2.3
+  tests_per_100k: 268.2
   population: 193098
 Fresno:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 2.3
-  tests_per_100k: 273.9
+  test_positivity: 1.9
+  tests_per_100k: 252.1
   population: 1032227
 Glenn:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 3.8
-  tests_per_100k: 153.3
+  test_positivity: 5.1
+  tests_per_100k: 171.3
   population: 29348
 Humboldt:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 4.2
-  tests_per_100k: 337.2
+  test_positivity: 7.0
+  tests_per_100k: 307.6
   population: 134098
 Imperial:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
   test_positivity: 3.3
-  tests_per_100k: 323.7
+  tests_per_100k: 287.2
   population: 191649
 Inyo:
-  final_tier: 3
+  final_tier: 4
   previous_tier: 3
-  current_tier: 3
-  test_positivity: 0.9
-  tests_per_100k: 168.0
+  current_tier: 4
+  test_positivity: 0.6
+  tests_per_100k: 137.0
   population: 18453
 Kern:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 1.6
-  tests_per_100k: 255.4
+  test_positivity: 1.5
+  tests_per_100k: 241.3
   population: 927251
 Kings:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 1.7
-  tests_per_100k: 428.1
+  test_positivity: 1.3
+  tests_per_100k: 356.8
   population: 156444
 Lake:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 2.0
-  tests_per_100k: 242.9
+  test_positivity: 2.1
+  tests_per_100k: 222.2
   population: 64871
 Lassen:
   final_tier: 4
   previous_tier: 4
   current_tier: 4
-  test_positivity: 0.8
-  tests_per_100k: 798.7
+  test_positivity: 1.1
+  tests_per_100k: 719.4
   population: 30065
 Los Angeles:
   final_tier: 4
   previous_tier: 4
   current_tier: 4
-  test_positivity: 0.6
-  tests_per_100k: 603.7
+  test_positivity: 0.5
+  tests_per_100k: 640.1
   population: 10257557
 Madera:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 1.6
-  tests_per_100k: 249.8
+  test_positivity: 1.5
+  tests_per_100k: 233.7
   population: 160089
 Marin:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 0.8
-  tests_per_100k: 393.7
+  test_positivity: 0.7
+  tests_per_100k: 336.1
   population: 260800
 Mariposa:
-  final_tier: 3
+  final_tier: 4
   previous_tier: 3
-  current_tier: 3
-  test_positivity: 1.1
-  tests_per_100k: 297.8
+  current_tier: 4
+  test_positivity: 1.0
+  tests_per_100k: 244.9
   population: 17795
 Mendocino:
   final_tier: 4
   previous_tier: 4
   current_tier: 4
-  test_positivity: 2.4
-  tests_per_100k: 187.2
+  test_positivity: 4.1
+  tests_per_100k: 219.0
   population: 88439
 Merced:
-  final_tier: 2
+  final_tier: 3
   previous_tier: 2
-  current_tier: 2
-  test_positivity: 2.3
-  tests_per_100k: 314.2
+  current_tier: 3
+  test_positivity: 2.1
+  tests_per_100k: 296.1
   population: 287420
 Modoc:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 5.1
-  tests_per_100k: 58.8
+  test_positivity: 5.4
+  tests_per_100k: 55.8
   population: 9475
 Mono:
   final_tier: 4
   previous_tier: 4
   current_tier: 4
-  test_positivity: 1.8
-  tests_per_100k: 348.9
+  test_positivity: 0.0
+  tests_per_100k: 304.9
   population: 13961
 Monterey:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
   test_positivity: 1.0
-  tests_per_100k: 261.0
+  tests_per_100k: 238.6
   population: 448732
 Napa:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 1.0
-  tests_per_100k: 487.8
+  test_positivity: 0.8
+  tests_per_100k: 455.5
   population: 139652
 Nevada:
   final_tier: 2
   previous_tier: 2
   current_tier: 2
-  test_positivity: 4.1
-  tests_per_100k: 267.7
+  test_positivity: 2.4
+  tests_per_100k: 238.5
   population: 98710
 Orange:
   final_tier: 4
-  previous_tier: 3
+  previous_tier: 4
   current_tier: 4
-  test_positivity: 0.9
-  tests_per_100k: 263.7
+  test_positivity: 0.8
+  tests_per_100k: 260.0
   population: 3228519
 Placer:
-  final_tier: 2
+  final_tier: 3
   previous_tier: 2
-  current_tier: 2
-  test_positivity: 2.2
-  tests_per_100k: 314.6
+  current_tier: 3
+  test_positivity: 2.0
+  tests_per_100k: 263.0
   population: 400434
 Plumas:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 0.9
-  tests_per_100k: 326.4
+  test_positivity: 1.0
+  tests_per_100k: 366.2
   population: 18997
 Riverside:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 1.6
-  tests_per_100k: 235.5
+  test_positivity: 1.5
+  tests_per_100k: 223.9
   population: 2468145
 Sacramento:
   final_tier: 2
   previous_tier: 2
   current_tier: 2
-  test_positivity: 2.5
-  tests_per_100k: 337.1
+  test_positivity: 2.4
+  tests_per_100k: 311.9
   population: 1567975
 San Benito:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 2.0
-  tests_per_100k: 327.6
+  test_positivity: 1.0
+  tests_per_100k: 300.6
   population: 64022
 San Bernardino:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
   test_positivity: 1.4
-  tests_per_100k: 265.6
+  tests_per_100k: 251.6
   population: 2217398
 San Diego:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 1.6
-  tests_per_100k: 396.7
+  test_positivity: 1.5
+  tests_per_100k: 449.2
   population: 3370418
 San Francisco:
   final_tier: 4
   previous_tier: 4
   current_tier: 4
-  test_positivity: 0.6
-  tests_per_100k: 551.9
+  test_positivity: 0.5
+  tests_per_100k: 503.6
   population: 892280
 San Joaquin:
   final_tier: 2
   previous_tier: 2
   current_tier: 2
-  test_positivity: 2.5
-  tests_per_100k: 323.1
+  test_positivity: 2.1
+  tests_per_100k: 298.6
   population: 782545
 San Luis Obispo:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 1.2
-  tests_per_100k: 364.1
+  test_positivity: 1.4
+  tests_per_100k: 356.6
   population: 278862
 San Mateo:
   final_tier: 4
   previous_tier: 4
   current_tier: 4
-  test_positivity: 0.5
-  tests_per_100k: 766.0
+  test_positivity: 0.3
+  tests_per_100k: 745.6
   population: 778001
 Santa Barbara:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
   test_positivity: 1.0
-  tests_per_100k: 365.9
+  tests_per_100k: 322.4
   population: 456373
 Santa Clara:
   final_tier: 4
-  previous_tier: 3
+  previous_tier: 4
   current_tier: 4
   test_positivity: 0.6
-  tests_per_100k: 615.5
+  tests_per_100k: 561.5
   population: 1967585
 Santa Cruz:
   final_tier: 4
-  previous_tier: 3
+  previous_tier: 4
   current_tier: 4
   test_positivity: 0.5
-  tests_per_100k: 500.6
+  tests_per_100k: 441.6
   population: 273999
 Shasta:
   final_tier: 2
   previous_tier: 2
   current_tier: 2
-  test_positivity: 3.4
-  tests_per_100k: 359.5
+  test_positivity: 3.7
+  tests_per_100k: 352.7
   population: 177925
 Sierra:
   final_tier: 4
   previous_tier: 4
   current_tier: 4
   test_positivity: 0.0
-  tests_per_100k: 233.9
+  tests_per_100k: 256.8
   population: 3115
 Siskiyou:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 12.6
-  tests_per_100k: 198.6
+  test_positivity: 6.5
+  tests_per_100k: 221.3
   population: 43956
 Solano:
   final_tier: 2
   previous_tier: 2
   current_tier: 2
-  test_positivity: 2.5
-  tests_per_100k: 337.8
+  test_positivity: 2.2
+  tests_per_100k: 297.4
   population: 444255
 Sonoma:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 0.9
-  tests_per_100k: 335.2
+  test_positivity: 0.7
+  tests_per_100k: 363.7
   population: 496668
 Stanislaus:
   final_tier: 2
   previous_tier: 2
   current_tier: 2
-  test_positivity: 3.6
-  tests_per_100k: 332.5
+  test_positivity: 3.1
+  tests_per_100k: 311.4
   population: 562303
 Sutter:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 2.8
-  tests_per_100k: 214.9
+  test_positivity: 2.5
+  tests_per_100k: 207.4
   population: 105747
 Tehama:
   final_tier: 3
-  previous_tier: 2
+  previous_tier: 3
   current_tier: 3
-  test_positivity: 3.6
-  tests_per_100k: 158.5
+  test_positivity: 5.0
+  tests_per_100k: 181.3
   population: 65885
 Trinity:
   final_tier: 4
   previous_tier: 4
   current_tier: 4
-  test_positivity: 0.0
-  tests_per_100k: 72.7
+  test_positivity: 2.0
+  tests_per_100k: 52.4
   population: 13354
 Tulare:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 1.2
-  tests_per_100k: 280.9
+  test_positivity: 1.9
+  tests_per_100k: 262.4
   population: 484423
 Tuolumne:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 1.7
-  tests_per_100k: 379.9
+  test_positivity: 1.6
+  tests_per_100k: 326.6
   population: 52351
 Ventura:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 1.0
-  tests_per_100k: 438.4
+  test_positivity: 0.7
+  tests_per_100k: 436.7
   population: 852747
 Yolo:
   final_tier: 3
   previous_tier: 3
   current_tier: 3
-  test_positivity: 0.4
-  tests_per_100k: 1187.3
+  test_positivity: 0.3
+  tests_per_100k: 1166.6
   population: 223612
 Yuba:
   final_tier: 2
   previous_tier: 2
   current_tier: 2
-  test_positivity: 4.1
-  tests_per_100k: 226.3
+  test_positivity: 3.8
+  tests_per_100k: 198.9
   population: 79290
