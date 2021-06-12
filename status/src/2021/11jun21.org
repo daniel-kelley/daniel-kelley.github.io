@@ -1,0 +1,74 @@
+#+TITLE: 05 June 2021 - 11 June 2021
+
+Not sure I want to re-open yet!
+
+* Linux Audio
+
+** Faust programming
+*** GAC code updates
+    Most of the initial modules are done
+*** xrso12332
+    Wrote exploratory software for the XOSHIRO-128 PRNG
+    https://github.com/daniel-kelley/xrso12832
+    In preparation for incorporation in GAC
+** Next Steps
+*** Analog Synthesizer modules
+    Waveshaper and Frequency Shifter
+*** GAC Patch save/restore
+*** LV2 autopatcher
+    Exploratory tool to generate (was pd, ecasound, now carla) patch for arbitrary LV2 plugin:
+    hook up audio inputs to signal source, audio outputs to speakers, control inputs to
+    control surface, etc.
+*** OSC control surface
+    Some sort of GUI tool (knob/slider) to OSC messages. This may be
+    as simple as a Faust UI program.
+*** Faust/csound
+    See if a faust generated unit works.
+* Santa Cruz Weather Station
+** Next step
+*** Check replacement sensor
+*** Clean BME680/VELM6075 boards
+*** Design more robust instrument shelter
+    Use existing small mast for VEML6075; put others in larger shelter.
+    Use oil based polyurethane as conformal coating to protect PCBs.
+    Have aquired larger shelter
+    Need to design small enclosure for particle sensor
+* EPICS
+**  Next steps
+*** u3scpi network port testing
+*** initial EPICS interface
+*** u3scpi analog/digital port reconfiguration.
+
+* Brini Tracker II
+Still working!
+** Next steps
+*** Validate remaining standard GPS messages
+*** Investigate GPS chipset data logging
+*** Investigate LoRA radio interface
+
+* wktcolor
+** Next steps
+*** Explore how to get a minimal coloring
+    Need a specific planar graph four coloring.
+
+* wktplot
+** Next steps
+   Understand why -r doesn't solve the wktvor/wktdel "sliver at edge" problem.
+
+* ca-r
+** Next Step
+None
+
+* AMDGPU
+** Next step
+*** Reverse engineer HSAKMT programming.
+
+* Ninja v Make
+** Next Step
+*** clean simple measurements
+
+* Conical Rolling Pin
+   Softened point.
+* GMP Forth
+  Need to think about adding floating point support
+  
