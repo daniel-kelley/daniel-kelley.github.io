@@ -1,0 +1,74 @@
+#+TITLE: 12 June 2021 - 18 June 2021
+
+The Great California Reopening - I guess
+
+* Santa Cruz Weather Station
+  Designed smaller shelter for particle monitor. Complications arising
+  from PMS5003 requirement to have inlet and exhaust airflow separated.
+
+  Replacement sensors checked, boards cleaned.
+
+  Printed gas vent shelter connector bracket.
+
+** Next step
+*** Check part assemblies
+    Freecad/Step
+*** Print parts
+
+* Swocer
+  Added STEP file generation (support for SCZWS assembly checks)
+
+* Linux Audio
+
+** Faust programming
+*** Analog Synthesizer modules
+    Waveshaper, Frequency Shifter, Karplus-Strong Plucked String
+** Next Steps
+*** GAC Patch save/restore
+*** LV2 autopatcher
+    Exploratory tool to generate (was pd, ecasound, now carla) patch for arbitrary LV2 plugin:
+    hook up audio inputs to signal source, audio outputs to speakers, control inputs to
+    control surface, etc.
+*** OSC control surface
+    Some sort of GUI tool (knob/slider) to OSC messages. This may be
+    as simple as a Faust UI program.
+*** Faust/csound
+    See if a faust generated unit works.
+* EPICS
+**  Next steps
+*** u3scpi network port testing
+*** initial EPICS interface
+*** u3scpi analog/digital port reconfiguration.
+
+* Brini Tracker II
+Still working!
+** Next steps
+*** Validate remaining standard GPS messages
+*** Investigate GPS chipset data logging
+*** Investigate LoRA radio interface
+
+* wktcolor
+** Next steps
+*** Explore how to get a minimal coloring
+    Need a specific planar graph four coloring.
+
+* wktplot
+** Next steps
+   Understand why -r doesn't solve the wktvor/wktdel "sliver at edge" problem.
+
+* ca-r
+** Next Step
+None, but expecting ca-tier to break now that the tier system is
+deprecated.
+
+* AMDGPU
+** Next step
+*** Reverse engineer HSAKMT programming.
+
+* Ninja v Make
+** Next Step
+*** clean simple measurements
+
+* GMP Forth
+  Need to think about adding floating point support
+
