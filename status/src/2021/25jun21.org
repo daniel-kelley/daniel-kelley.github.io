@@ -1,0 +1,98 @@
+#+TITLE: 19 June 2021 - 25 June 2021
+
+Summertime! and the mornings are mostly overcast
+
+* Santa Cruz Weather Station
+
+  Particle Monitor shelter assemblies checked.
+
+  | Part                 | Quan. | Designed? | Fabricated? |
+  |----------------------+-------+-----------+-------------|
+  | Vent connector mount |     1 | *         | *           |
+  | Vent connector cover |     1 | *         | *           |
+  | Vent mount           |     2 |           |             |
+  | PM box               |     1 | *         |             |
+  | PM lid               |     1 | *         | *           |
+  | PM Baffle            |     1 | *         |             |
+  | PM Screen mount      |     2 | *         |             |
+  | PM Screen holder     |     2 | *         |             |
+  | PM Inlet shroud      |     1 | *         |             |
+  | PM box mount         |     1 |           |             |
+  | Vent/UV mount        |     1 |           |             |
+  | PM Cable assembly    |     1 |           |             |
+  | UV Cable assembly    |     1 |           |             |
+
+
+** Next step
+*** Finish remaining part designs
+*** Update schematic
+    Cable assemblies
+*** Print parts
+*** Order any needed supplies
+    DB9 shells, jack screws, connectors, etc.
+*** Assemble and test
+
+* Gluing press
+  Made small gluing press
+* Swocer
+  Looked into what is needed to support screw thread generation.
+  Bunch of work...
+** Next steps
+   Plan that bunch of work.
+   Check out what's needed for gears.
+
+* Linux Audio
+
+** Faust programming
+*** Analog Synthesizer modules
+    Waveshaper, Frequency Shifter, Karplus-Strong Plucked String
+** Next Steps
+*** GAC Patch save/restore
+*** LV2 autopatcher
+    Exploratory tool to generate (was pd, ecasound, now carla) patch for arbitrary LV2 plugin:
+    hook up audio inputs to signal source, audio outputs to speakers, control inputs to
+    control surface, etc.
+*** OSC control surface
+    Some sort of GUI tool (knob/slider) to OSC messages. This may be
+    as simple as a Faust UI program.
+*** Faust/csound
+    See if a faust generated unit works.
+* EPICS
+**  Next steps
+*** u3scpi network port testing
+*** initial EPICS interface
+*** u3scpi analog/digital port reconfiguration.
+
+* Brini Tracker II
+Still working!
+** Next steps
+*** Validate remaining standard GPS messages
+*** Investigate GPS chipset data logging
+*** Investigate LoRA radio interface
+
+* wktcolor
+** Next steps
+*** Explore how to get a minimal coloring
+    Need a specific planar graph four coloring.
+
+* wktplot
+** Next steps
+   Understand why -r doesn't solve the wktvor/wktdel "sliver at edge" problem.
+   Explore biological cell Voronoi organization
+
+* ca-r
+** Next Step
+None, but expecting ca-tier to break now that the tier system is
+deprecated. Looks like thet just stopped updating the data file.
+
+* AMDGPU
+** Next step
+*** Reverse engineer HSAKMT programming.
+
+* Ninja v Make
+** Next Step
+*** clean simple measurements
+
+* GMP Forth
+  Need to think about adding floating point support
+
