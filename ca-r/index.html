@@ -11,7 +11,7 @@
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
 </head>
 <body>
-  <h3>California Estimated R by County as of 24 June 2021</h3>
+  <h3>California Estimated R by County as of 01 July 2021</h3>
   <!-- style="width: 350px; height: 350px;" -->
   <div id="mapid" class="map" ></div>
 
@@ -97,7 +97,6 @@
         s += app_data[name]['estimate_R_mean']
         s += '(' +  app_data[name]['estimate_R_std'] + ')';
         s += '<br>Cumulative cases:'+app_data[name]['C'];
-        s += '<br>Tier:'+app_data[name]['tier'];
         s += '<br><a href="'+app_data[name]['detail']+'">Details</a>';
 
         return s;
