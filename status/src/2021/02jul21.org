@@ -1,0 +1,100 @@
+#+TITLE: 26 June 2021 - 02 July 2021
+
+Almost Independent
+
+* Santa Cruz Weather Station
+
+  Particle Monitor shelter assemblies checked.
+
+  | Part                 | Quan. | Designed? | Fabricated? |
+  |----------------------+-------+-----------+-------------|
+  | Vent connector mount |     1 | *         | *           |
+  | Vent connector cover |     1 | *         | *           |
+  | Vent mount           |     2 |           |             |
+  | PM box               |     1 | *         | *           |
+  | PM lid               |     1 | *         | *           |
+  | PM Baffle            |     1 | *         |             |
+  | PM Screen mount      |     2 | *         | (1)         |
+  | PM Screen holder     |     2 | *         | (1)         |
+  | PM Inlet shroud      |     1 | *         | *           |
+  | PM box mount         |     1 |           |             |
+  | Vent/UV mount        |     1 |           |             |
+  | PM Cable assembly    |     1 |           |             |
+  | UV Cable assembly    |     1 |           |             |
+
+
+** Next step
+*** Print parts
+*** Order any needed supplies
+    DB9 shells, jack screws, connectors, etc.
+*** Assemble and test
+
+* Swocer
+  What a pain. Started adding classes to support 'bottle'
+  demo. Started crashing left and right. Probably incomplete
+  interface between OCC memory handling and ruby. Also turns out that
+  the packed I was using was deprecated last year. That explains why the OCC
+  API have been stable (!). Changed from the 'oce' to 'opencascade' package,
+  with the attendant API changes. Need to consider if swocer is sustainable
+  or if there's a different way of using OCC that makes the ruby interface
+  less problematic.
+
+** Next steps
+   Swocer future.
+   Check out what's needed for gears.
+
+* Linux Audio
+
+** Faust programming
+*** Analog Synthesizer modules
+    Waveshaper, Frequency Shifter, Karplus-Strong Plucked String
+** Next Steps
+*** GAC Patch save/restore
+*** LV2 autopatcher
+    Exploratory tool to generate (was pd, ecasound, now carla) patch for arbitrary LV2 plugin:
+    hook up audio inputs to signal source, audio outputs to speakers, control inputs to
+    control surface, etc.
+*** OSC control surface
+    Some sort of GUI tool (knob/slider) to OSC messages. This may be
+    as simple as a Faust UI program.
+*** Faust/csound
+    See if a faust generated unit works.
+* EPICS
+**  Next steps
+*** u3scpi network port testing
+*** initial EPICS interface
+*** u3scpi analog/digital port reconfiguration.
+
+* Brini Tracker II
+Still working!
+** Next steps
+*** Validate remaining standard GPS messages
+*** Investigate GPS chipset data logging
+*** Investigate LoRA radio interface
+
+* wktcolor
+** Next steps
+*** Explore how to get a minimal coloring
+    Need a specific planar graph four coloring.
+
+* wktplot
+** Next steps
+   Understand why -r doesn't solve the wktvor/wktdel "sliver at edge" problem.
+   Explore biological cell Voronoi organization
+
+* ca-r
+** Next Step
+None, but expecting ca-tier to break now that the tier system is
+deprecated. Looks like thet just stopped updating the data file.
+
+* AMDGPU
+** Next step
+*** Reverse engineer HSAKMT programming.
+
+* Ninja v Make
+** Next Step
+*** clean simple measurements
+
+* GMP Forth
+  Need to think about adding floating point support
+
