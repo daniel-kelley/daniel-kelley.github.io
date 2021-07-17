@@ -1,0 +1,113 @@
+#+TITLE: 10 July 2021 - 16 July 2021
+
+Cool summer weather
+
+* Santa Cruz Weather Station
+
+  Most Particle Monitor shelter parts fabricated.
+
+  | Part                 | Quan. | Designed? | Fabricated? |
+  |----------------------+-------+-----------+-------------|
+  | Vent connector mount |     1 | *         | *           |
+  | Vent connector cover |     1 | *         | *           |
+  | Vent mount           |     2 | *         |             |
+  | PM box               |     1 | *         | *           |
+  | PM lid               |     1 | *         | *           |
+  | PM Baffle            |     1 | *         | *           |
+  | PM Screen mount      |     2 | *         | *           |
+  | PM Screen holder     |     2 | *         | *           |
+  | PM Inlet shroud      |     1 | *         | *           |
+  | PM box mount         |     1 | *         |             |
+  | Vent/UV mount        |     1 |           |             |
+  | PM Cable assembly    |     1 | *         | (1)         |
+  | UV Cable assembly    |     1 | *         |             |
+
+  (1) Likely will just reuse previous assembly
+
+** Next step
+   Using hardware I have on hand.
+*** Order any needed supplies
+    Still need to establish a better source of hardware.
+
+*** Assemble and test
+
+* Soap Molds
+  Tried prototype mold (without drafts) based on C++ bottle demo. Printed.
+* Github
+  Added build actions to gmpforth, xrso12832, wktplot, libriffr and
+  libpvocf.  wktcolor needs more build fiddling as Ubuntu doesn't have
+  packages for ColPack or OpenMesh AFAICT.
+* Linux Audio
+** pvanal to spectrogram
+   Started. Much to my surprise, existing audio file libraries
+   (libsnd, audiofile) cannot read the extended WAV format used by
+   CSound.  To that end, started libriffr
+   https://github.com/daniel-kelley/libriffr for the RIFF file parsing
+   and libpvocf https://github.com/daniel-kelley/libpvocf for the PVOC
+   specific handling.
+
+** CSound programming.
+   The FORTRAN of computer music. Getting up to speed.
+*** Next Steps
+**** loscil demo
+**** spectrogram loop point analysis
+** Faust programming
+*** Next Steps
+**** GAC Patch save/restore
+**** LV2 autopatcher
+    Exploratory tool to generate (was pd, ecasound, now carla) patch for arbitrary LV2 plugin:
+    hook up audio inputs to signal source, audio outputs to speakers, control inputs to
+    control surface, etc.
+**** OSC control surface
+    Some sort of GUI tool (knob/slider) to OSC messages. This may be
+    as simple as a Faust UI program.
+**** Faust/csound
+    See if a faust generated unit works.
+* EPICS
+**  Next steps
+*** u3scpi network port testing
+*** initial EPICS interface
+*** u3scpi analog/digital port reconfiguration.
+
+* Brini Tracker II
+Suspended for now.
+** Next steps
+*** Validate remaining standard GPS messages
+*** Investigate GPS chipset data logging
+*** Investigate LoRA radio interface
+
+* wktcolor
+** Next steps
+*** Explore how to get a minimal coloring
+    Need a specific planar graph four coloring.
+
+* wktplot
+** Next steps
+   Understand why -r doesn't solve the wktvor/wktdel "sliver at edge" problem.
+   Explore biological cell Voronoi organization
+
+* AMDGPU
+** Next step
+*** Reverse engineer HSAKMT programming.
+
+* Ninja v Make
+** Next Step
+*** clean simple measurements
+
+* GMP Forth
+  Need to think about adding floating point support
+
+* ca-r
+  Tier data finally deprecated so processing is removed.
+** Next Step
+None.
+* Swocer
+** Most crashing addressed
+   Nullified 'handle' API free functions helped a lot.
+   Still see some errors in operations.
+** Added outline for 'bottle' test
+   Added all functions believed to be needed for 'bottle' demo test.
+   Test doesn't pass so is disabled.
+** Next steps
+   Swocer future.
+   Check out what's needed for gears.
