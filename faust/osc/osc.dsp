@@ -12,7 +12,7 @@ declare options         "[osc:on]";
 import("stdfaust.lib");
 
 vol 			= hslider("volume [unit:dB]", -96, -96, 0, 0.1) : ba.db2linear : si.smoo ;
-freq 			= hslider("freq [unit:Hz]", 1000, 20, 24000, 1);
+freq 			= nentry("freq [unit:Hz]", 1000, 20, 10000, 1);
 
 process 		= vgroup("Oscillator", os.osc(freq) * vol);
 
