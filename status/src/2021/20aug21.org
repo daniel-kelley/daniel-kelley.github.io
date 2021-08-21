@@ -1,0 +1,112 @@
+#+TITLE: 14 July 2021 - 20 August 2021
+
+First week of class (sorta)
+
+* MIT OCW
+** 18.01 - Single Variable Calculus
+   Completed sessions 1-9
+*** CRC problems
+   May have found some errors in Math CRC 30th ed. "Circular Functions
+   of Some Special Angles": shows sin(2*pi/3)=1/2, not sqrt(3)/2.  Not
+   listed in errata; Need to check all values. Not the first time I've
+   been led astray by Math CRC.
+** 8.01 - Physics I - Classical Mechanics
+   Completed Week 1; need to finish problem set 1
+* US index Map
+  Sister Maureen needs some help with a US index map for geography
+  dept.  map collection. Started looking seeing if GMT is faster to
+  figure out than GRASS.
+* Marble Computation
+  Collected materials (thin copper plate, copper PCB blanks) for prototyping.
+** Next Steps
+*** Continue Reversible Computation Study
+*** Prototype Marble inverter
+    Using dual rail differential logic (left/,right/1), an inverter
+    merely switches sides. I think little "kickers" on the side should
+    be sufficient for a purely mechanical approach.
+* Sun Ultra 10
+  Trying to see what state it is in. Fires up but no video. Need DB25M to
+  debug over serial port.
+** Next steps
+*** Serial debug
+* Apple iMac G4
+  Building userland may be a PITA due to lack of RAM. Build would often
+  segfault.
+** Next steps
+Not sure.
+
+* Davies Brothel
+  Next hearing: 02 September; Department 37
+* Linux Audio
+** pvanal to spectrogram
+   Enough of libriffr and libpvocf work to start pvoctool
+   https://github.com/daniel-kelley/pvoctool. Have HDF5 output and
+   text delimited output for octave. Can import PVOC data to octave
+   spectrogram for display.
+*** Next steps
+   Loop analysis
+** CSound programming.
+   The FORTRAN of computer music. Getting up to speed.
+*** Next Steps
+**** loscil demo
+**** spectrogram loop point analysis
+** Faust programming
+*** Next Steps
+**** GAC Patch save/restore
+**** LV2 autopatcher
+    Exploratory tool to generate (was pd, ecasound, now carla) patch for arbitrary LV2 plugin:
+    hook up audio inputs to signal source, audio outputs to speakers, control inputs to
+    control surface, etc.
+**** OSC control surface
+    Some sort of GUI tool (knob/slider) to OSC messages. This may be
+    as simple as a Faust UI program.
+**** Faust/csound
+    See if a faust generated unit works.
+* EPICS
+**  Next steps
+*** u3scpi network port testing
+*** initial EPICS interface
+*** u3scpi analog/digital port reconfiguration.
+
+* Brini Tracker II
+Suspended for now.
+** Next steps
+*** Validate remaining standard GPS messages
+*** Investigate GPS chipset data logging
+*** Investigate LoRA radio interface
+
+* wktcolor
+** Next steps
+*** Explore how to get a minimal coloring
+    Need a specific planar graph four coloring.
+
+* wktplot
+** Next steps
+   Understand why -r doesn't solve the wktvor/wktdel "sliver at edge" problem.
+   Explore biological cell Voronoi organization
+
+* AMDGPU
+** Next step
+*** Reverse engineer HSAKMT programming.
+
+* Ninja v Make
+** Next Step
+*** clean simple measurements
+
+* GMP Forth
+** Need to think about adding floating point support
+** Port to non-Linux OS
+* ca-r
+  Tier data finally deprecated so processing is removed.
+** Next Step
+None.
+* Swocer
+** Most crashing addressed
+   Nullified 'handle' API free functions helped a lot.
+   Still see some errors in operations.
+** Added outline for 'bottle' test
+   Added all functions believed to be needed for 'bottle' demo test.
+   Test doesn't pass so is disabled.
+** Next steps
+   Swocer future.
+   Check out what's needed for gears.
