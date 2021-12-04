@@ -1,0 +1,132 @@
+#+TITLE: 27 November 2021 - 03 December 2021
+
+December already?
+
+* MIT OCW
+** 18.01 - Single Variable Calculus
+*** Sessions 77-79
+** 8.01X - Physics I - Classical Mechanics with Labs
+   Planning complete, materials identified.
+* LA County index map
+  No changes.
+* Mill Controller #2
+  Need to design own IO board for 5V I/O.
+* WWVB Decoder
+  Need to re-think.
+* Santa Cruz Weather Station
+  Maybe Rain Gauge is still working. It's be nice to get some rain.
+* Marble Computation
+  Collected materials (thin copper plate, copper PCB blanks) for prototyping.
+** Next Steps
+*** Continue Reversible Computation Study
+*** Prototype Marble inverter
+    Using dual rail differential logic (left/,right/1), an inverter
+    merely switches sides. Now thinking an over-center spring controlling
+    a 'side gate' controlled by a pair of sense levers.
+* ca-r
+  Issue #33 seems to have fixed itself.
+** Next Step
+Wait for further breakage.
+* us-index-map
+** error analysis
+   Started an error analysis on the USGS topomaps_all.csv index file. Nothing obvious pops up,
+   and the error reported by Maureen would be impossible to catch anyway.
+* Sun Ultra 10
+  Trying to see what state it is in. Fires up but no video. Need DB25M to
+  debug over serial port.
+** Next steps
+*** Serial debug
+* Apple iMac G4
+  Building userland may be a PITA due to lack of RAM. Build would often
+  segfault.
+** Next steps
+Not sure.
+
+* Davies Brothel
+** New case C1923172, consolidated with *15* Parties.
+** Next hearing 14jan2022. Still no PACER.
+* Peter Kim
+** Broadcom CSG Employee indicted for trade secret theft.
+** United States v. Kim (5:21-cr-00438).
+** Next hearing: 1/31/2022 01:30 PM
+* Linux Audio
+** pvanal to spectrogram
+   Enough of libriffr and libpvocf work to start pvoctool
+   https://github.com/daniel-kelley/pvoctool. Have HDF5 output and
+   text delimited output for octave. Can import PVOC data to octave
+   spectrogram for display.
+*** Next steps
+   Loop analysis
+** CSound programming.
+   The FORTRAN of computer music. Getting up to speed.
+*** Next Steps
+**** loscil demo
+**** spectrogram loop point analysis
+** Faust programming
+*** Next Steps
+**** GAC Patch save/restore
+**** LV2 autopatcher
+    Exploratory tool to generate (was pd, ecasound, now carla) patch for arbitrary LV2 plugin:
+    hook up audio inputs to signal source, audio outputs to speakers, control inputs to
+    control surface, etc.
+**** OSC control surface
+    Some sort of GUI tool (knob/slider) to OSC messages. This may be
+    as simple as a Faust UI program.
+**** Faust/csound
+    See if a faust generated unit works.
+* EPICS
+**  Next steps
+*** Started CGR-101 SCPI interface
+**** Will help test u3scpi
+**** Using flex/bison SCPI parser
+     Initial SCPI design complete with code stubs. Refactored output/error
+     modules. Planning dev/emulation interface.
+*** u3scpi network port testing
+*** initial EPICS interface
+*** u3scpi analog/digital port reconfiguration.
+*** u3scpi 'DIGITIZER' subsystem.
+
+* Brini Tracker II
+Maybe this can be simplified to just the GPS module in 'tracking' mode
+(which gets carried around), and a separate docking module to extract
+the data.
+** Next steps
+*** Validate remaining standard GPS messages
+*** Investigate GPS chipset data logging
+*** Investigate LoRA radio interface
+
+* wktcolor
+** Next steps
+*** Explore how to get a minimal coloring
+    Need a specific planar graph four coloring.
+
+* wktplot
+** Next steps
+   Understand why -r doesn't solve the wktvor/wktdel "sliver at edge" problem.
+   Explore biological cell Voronoi organization
+
+* AMDGPU
+** Next step
+*** Reverse engineer HSAKMT programming.
+
+* Ninja v Make
+** Next Step
+*** clean simple measurements
+
+* GMP Forth
+** Need to think about adding floating point support
+** Port to non-Linux OS
+* Swocer
+** Most crashing addressed
+   Nullified 'handle' API free functions helped a lot.
+   Still see some errors in operations.
+** Added outline for 'bottle' test
+   Added all functions believed to be needed for 'bottle' demo test.
+   Test doesn't pass so is disabled.
+** Next steps
+   Swocer future.
+   Check out what's needed for gears.
+* Books
+** Janus Point, Julian Barbour
+   Latest on Shape Dynamics
+   https://www.barnesandnoble.com/w/the-janus-point-julian-barbour/1135968121?ean=9780465095469
