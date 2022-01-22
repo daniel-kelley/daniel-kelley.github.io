@@ -1,0 +1,142 @@
+#+TITLE: 15 January 2022 - 21 January 2022
+
+Tongonese Tsunami!
+
+* MIT OCW
+** 18.02 - Multiple Variable Calculus
+*** Sessions 09-13
+*** 3D Plotting in Sagemath.
+** 8.01X+8.01L - Physics I - Classical Mechanics with Labs
+*** Started U/P Chapter 5 reading.
+*** Received materials for 3 Low Voltage Power Supplies
+*** Almost ready for experiment ES
+    Do this two ways (rather than two partners): Analog: as described
+    in experiment manual with RC circuit (data capture with CGR101).
+    Digital: CGR101 digital event capture directly.
+** 21G.701 Spanish
+*** Finished Episode 3 'El Comienzo'
+*** Received English/Spanish Dictionary
+* CGR-101
+** Digital Event capture
+** PWM generation
+* Mill Controller #2
+  Simple TCL interface works great - no OpenGL required. Pulled display
+  controller for debugging.
+* WWVB Decoder
+  Need to re-think.
+* Santa Cruz Weather Station
+  Application exited due to communications error. Need to consider automatic
+  restart in this case.
+* Marble Computation
+  Collected materials (thin copper plate, copper PCB blanks) for prototyping.
+** Next Steps
+*** Continue Reversible Computation Study
+*** Prototype Marble inverter
+    Using dual rail differential logic (left/,right/1), an inverter
+    merely switches sides. Now thinking an over-center spring controlling
+    a 'side gate' controlled by a pair of sense levers. Now that there's
+    a pile of small magnets for physics experiments, maybe something that
+    uses those?
+* ca-r
+  Issue #33 seems to have fixed itself.
+** Next Step
+Wait for further breakage.
+* us-index-map
+** error analysis
+   Started an error analysis on the USGS topomaps_all.csv index file. Nothing obvious pops up,
+   and the error reported by Maureen would be impossible to catch anyway.
+* Sun Ultra 10
+  Trying to see what state it is in. Fires up but no video. Need DB25M to
+  debug over serial port.
+** Next steps
+*** Serial debug
+* Apple iMac G4
+  Building userland may be a PITA due to lack of RAM. Build would often
+  segfault.
+** Next steps
+Not sure.
+
+* Davies Brothel
+** New case C1923172, consolidated with *15* Parties.
+** Next hearing 4/5/2022.
+* Peter Kim
+** Broadcom CSG Employee indicted for trade secret theft.
+** United States v. Kim (5:21-cr-00438).
+** Next hearing: 1/31/2022 01:30 PM
+* Linux Audio
+** pvanal to spectrogram
+   Enough of libriffr and libpvocf work to start pvoctool
+   https://github.com/daniel-kelley/pvoctool. Have HDF5 output and
+   text delimited output for octave. Can import PVOC data to octave
+   spectrogram for display.
+*** Next steps
+   Loop analysis
+** CSound programming.
+   The FORTRAN of computer music. Getting up to speed.
+*** Next Steps
+**** loscil demo
+**** spectrogram loop point analysis
+** Faust programming
+*** Next Steps
+**** GAC Patch save/restore
+**** LV2 autopatcher
+    Exploratory tool to generate (was pd, ecasound, now carla) patch for arbitrary LV2 plugin:
+    hook up audio inputs to signal source, audio outputs to speakers, control inputs to
+    control surface, etc.
+**** OSC control surface
+    Some sort of GUI tool (knob/slider) to OSC messages. This may be
+    as simple as a Faust UI program.
+**** Faust/csound
+    See if a faust generated unit works.
+* EPICS
+**  Next steps
+*** CGR-101 SCPI interface
+    See above...
+*** u3scpi network port testing
+*** initial EPICS interface
+*** u3scpi analog/digital port reconfiguration.
+*** u3scpi 'DIGITIZER' subsystem.
+
+* Brini Tracker II
+Maybe this can be simplified to just the GPS module in 'tracking' mode
+(which gets carried around), and a separate docking module to extract
+the data.
+** Next steps
+*** Validate remaining standard GPS messages
+*** Investigate GPS chipset data logging
+*** Investigate LoRA radio interface
+
+* wktcolor
+** Next steps
+*** Explore how to get a minimal coloring
+    Need a specific planar graph four coloring.
+
+* wktplot
+** Next steps
+   Understand why -r doesn't solve the wktvor/wktdel "sliver at edge" problem.
+   Explore biological cell Voronoi organization
+
+* AMDGPU
+** Next step
+*** Reverse engineer HSAKMT programming.
+
+* Ninja v Make
+** Next Step
+*** clean simple measurements
+
+* GMP Forth
+** Need to think about adding floating point support
+** Port to non-Linux OS
+* Swocer
+  Likely will suspend future efforts in favor of just using C++ directly.
+  There's not much value in a wrapper that isn't able to leverage Ruby
+  very much.
+** Most crashing addressed
+   Nullified 'handle' API free functions helped a lot.
+   Still see some errors in operations.
+** Added outline for 'bottle' test
+   Added all functions believed to be needed for 'bottle' demo test.
+   Test doesn't pass so is disabled.
+** Next steps
+   Swocer future.
+   Check out what's needed for gears.
