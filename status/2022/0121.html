@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-01-22 Sat 05:54 -->
+<!-- 2022-01-29 Sat 06:10 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>15 January 2022 - 21 January 2022</title>
@@ -219,10 +219,635 @@
 <body>
 <div id="content">
 <h1 class="title">15 January 2022 - 21 January 2022</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org7fedf74">1. MIT OCW</a>
+<ul>
+<li><a href="#org455bcce">1.1. 18.02 - Multiple Variable Calculus</a>
+<ul>
+<li><a href="#org3f29890">1.1.1. Sessions 09-13</a></li>
+<li><a href="#org8efd34c">1.1.2. 3D Plotting in Sagemath.</a></li>
+</ul>
+</li>
+<li><a href="#orgbf18a5c">1.2. 8.01X+8.01L - Physics I - Classical Mechanics with Labs</a>
+<ul>
+<li><a href="#orgbf0a790">1.2.1. Started U/P Chapter 5 reading.</a></li>
+<li><a href="#org0de465a">1.2.2. Received materials for 3 Low Voltage Power Supplies</a></li>
+<li><a href="#org6198c8b">1.2.3. Almost ready for experiment ES</a></li>
+</ul>
+</li>
+<li><a href="#orgb1ff911">1.3. 21G.701 Spanish</a>
+<ul>
+<li><a href="#orgcc39885">1.3.1. Finished Episode 3 'El Comienzo'</a></li>
+<li><a href="#org7d3e877">1.3.2. Received English/Spanish Dictionary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgf967460">2. CGR-101</a>
+<ul>
+<li><a href="#org6e4397d">2.1. Digital Event capture</a></li>
+<li><a href="#org6b695cd">2.2. PWM generation</a></li>
+</ul>
+</li>
+<li><a href="#org753bb95">3. Mill Controller #2</a></li>
+<li><a href="#org8555881">4. WWVB Decoder</a></li>
+<li><a href="#orgb076c69">5. Santa Cruz Weather Station</a></li>
+<li><a href="#org8fcd6a1">6. Marble Computation</a>
+<ul>
+<li><a href="#orgc1d3571">6.1. Next Steps</a>
+<ul>
+<li><a href="#org354a3eb">6.1.1. Continue Reversible Computation Study</a></li>
+<li><a href="#orgd50bf66">6.1.2. Prototype Marble inverter</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org9229938">7. ca-r</a>
+<ul>
+<li><a href="#org59970d8">7.1. Next Step</a></li>
+</ul>
+</li>
+<li><a href="#org9620de7">8. us-index-map</a>
+<ul>
+<li><a href="#org4ce3f4d">8.1. error analysis</a></li>
+</ul>
+</li>
+<li><a href="#orgffabaa5">9. Sun Ultra 10</a>
+<ul>
+<li><a href="#org30e2f52">9.1. Next steps</a>
+<ul>
+<li><a href="#org69d1848">9.1.1. Serial debug</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org91f2b4c">10. Apple iMac G4</a>
+<ul>
+<li><a href="#org0331228">10.1. Next steps</a></li>
+</ul>
+</li>
+<li><a href="#org73a5d32">11. Davies Brothel</a>
+<ul>
+<li><a href="#orgc525b12">11.1. New case C1923172, consolidated with <b>15</b> Parties.</a></li>
+<li><a href="#orgd6693a1">11.2. Next hearing 4/5/2022.</a></li>
+</ul>
+</li>
+<li><a href="#org46fb1a2">12. Peter Kim</a>
+<ul>
+<li><a href="#org7e53a03">12.1. Broadcom CSG Employee indicted for trade secret theft.</a></li>
+<li><a href="#org03a7243">12.2. United States v. Kim (5:21-cr-00438).</a></li>
+<li><a href="#org84f34f3">12.3. Next hearing: 1/31/2022 01:30 PM</a></li>
+</ul>
+</li>
+<li><a href="#org119012e">13. Linux Audio</a>
+<ul>
+<li><a href="#org1782da5">13.1. pvanal to spectrogram</a>
+<ul>
+<li><a href="#orga0f1bc1">13.1.1. Next steps</a></li>
+</ul>
+</li>
+<li><a href="#orgafe71cc">13.2. CSound programming.</a>
+<ul>
+<li><a href="#org3a2884b">13.2.1. Next Steps</a></li>
+</ul>
+</li>
+<li><a href="#org877a4e3">13.3. Faust programming</a>
+<ul>
+<li><a href="#orgc80bbe8">13.3.1. Next Steps</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgc8c08ca">14. EPICS</a>
+<ul>
+<li><a href="#orgc7c6b93">14.1. Next steps</a>
+<ul>
+<li><a href="#orgecd8fad">14.1.1. CGR-101 SCPI interface</a></li>
+<li><a href="#org00f9608">14.1.2. u3scpi network port testing</a></li>
+<li><a href="#orgfe3f950">14.1.3. initial EPICS interface</a></li>
+<li><a href="#org31af252">14.1.4. u3scpi analog/digital port reconfiguration.</a></li>
+<li><a href="#org3df92b1">14.1.5. u3scpi 'DIGITIZER' subsystem.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org28b2911">15. Brini Tracker II</a>
+<ul>
+<li><a href="#orga1dace2">15.1. Next steps</a>
+<ul>
+<li><a href="#org74c702b">15.1.1. Validate remaining standard GPS messages</a></li>
+<li><a href="#org03e7465">15.1.2. Investigate GPS chipset data logging</a></li>
+<li><a href="#org95a7a8e">15.1.3. Investigate LoRA radio interface</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orga6b1462">16. wktcolor</a>
+<ul>
+<li><a href="#org6655373">16.1. Next steps</a>
+<ul>
+<li><a href="#orge6d17ea">16.1.1. Explore how to get a minimal coloring</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgde7e8f0">17. wktplot</a>
+<ul>
+<li><a href="#org7c441f5">17.1. Next steps</a></li>
+</ul>
+</li>
+<li><a href="#org3a73d93">18. AMDGPU</a>
+<ul>
+<li><a href="#org8b46e04">18.1. Next step</a>
+<ul>
+<li><a href="#org55fa91b">18.1.1. Reverse engineer HSAKMT programming.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org8fd6367">19. Ninja v Make</a>
+<ul>
+<li><a href="#org3c52001">19.1. Next Step</a>
+<ul>
+<li><a href="#org03b979a">19.1.1. clean simple measurements</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org7afc09f">20. GMP Forth</a>
+<ul>
+<li><a href="#org312f7a2">20.1. Need to think about adding floating point support</a></li>
+<li><a href="#org8e246b3">20.2. Port to non-Linux OS</a></li>
+</ul>
+</li>
+<li><a href="#orgb11ab44">21. Swocer</a>
+<ul>
+<li><a href="#org6f921dd">21.1. Most crashing addressed</a></li>
+<li><a href="#org38f2280">21.2. Added outline for 'bottle' test</a></li>
+<li><a href="#org21664ea">21.3. Next steps</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+Tongonese Tsunami!
+</p>
+
+<div id="outline-container-org7fedf74" class="outline-2">
+<h2 id="org7fedf74"><span class="section-number-2">1</span> MIT OCW</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org455bcce" class="outline-3">
+<h3 id="org455bcce"><span class="section-number-3">1.1</span> 18.02 - Multiple Variable Calculus</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-org3f29890" class="outline-4">
+<h4 id="org3f29890"><span class="section-number-4">1.1.1</span> Sessions 09-13</h4>
+</div>
+<div id="outline-container-org8efd34c" class="outline-4">
+<h4 id="org8efd34c"><span class="section-number-4">1.1.2</span> 3D Plotting in Sagemath.</h4>
+</div>
+</div>
+<div id="outline-container-orgbf18a5c" class="outline-3">
+<h3 id="orgbf18a5c"><span class="section-number-3">1.2</span> 8.01X+8.01L - Physics I - Classical Mechanics with Labs</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-orgbf0a790" class="outline-4">
+<h4 id="orgbf0a790"><span class="section-number-4">1.2.1</span> Started U/P Chapter 5 reading.</h4>
+</div>
+<div id="outline-container-org0de465a" class="outline-4">
+<h4 id="org0de465a"><span class="section-number-4">1.2.2</span> Received materials for 3 Low Voltage Power Supplies</h4>
+</div>
+<div id="outline-container-org6198c8b" class="outline-4">
+<h4 id="org6198c8b"><span class="section-number-4">1.2.3</span> Almost ready for experiment ES</h4>
+<div class="outline-text-4" id="text-1-2-3">
+<p>
+Do this two ways (rather than two partners): Analog: as described
+in experiment manual with RC circuit (data capture with CGR101).
+Digital: CGR101 digital event capture directly.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb1ff911" class="outline-3">
+<h3 id="orgb1ff911"><span class="section-number-3">1.3</span> 21G.701 Spanish</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-orgcc39885" class="outline-4">
+<h4 id="orgcc39885"><span class="section-number-4">1.3.1</span> Finished Episode 3 'El Comienzo'</h4>
+</div>
+<div id="outline-container-org7d3e877" class="outline-4">
+<h4 id="org7d3e877"><span class="section-number-4">1.3.2</span> Received English/Spanish Dictionary</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf967460" class="outline-2">
+<h2 id="orgf967460"><span class="section-number-2">2</span> CGR-101</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org6e4397d" class="outline-3">
+<h3 id="org6e4397d"><span class="section-number-3">2.1</span> Digital Event capture</h3>
+</div>
+<div id="outline-container-org6b695cd" class="outline-3">
+<h3 id="org6b695cd"><span class="section-number-3">2.2</span> PWM generation</h3>
+</div>
+</div>
+<div id="outline-container-org753bb95" class="outline-2">
+<h2 id="org753bb95"><span class="section-number-2">3</span> Mill Controller #2</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Simple TCL interface works great - no OpenGL required. Pulled display
+controller for debugging.
+</p>
+</div>
+</div>
+<div id="outline-container-org8555881" class="outline-2">
+<h2 id="org8555881"><span class="section-number-2">4</span> WWVB Decoder</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Need to re-think.
+</p>
+</div>
+</div>
+<div id="outline-container-orgb076c69" class="outline-2">
+<h2 id="orgb076c69"><span class="section-number-2">5</span> Santa Cruz Weather Station</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Application exited due to communications error. Need to consider automatic
+restart in this case.
+</p>
+</div>
+</div>
+<div id="outline-container-org8fcd6a1" class="outline-2">
+<h2 id="org8fcd6a1"><span class="section-number-2">6</span> Marble Computation</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Collected materials (thin copper plate, copper PCB blanks) for prototyping.
+</p>
+</div>
+<div id="outline-container-orgc1d3571" class="outline-3">
+<h3 id="orgc1d3571"><span class="section-number-3">6.1</span> Next Steps</h3>
+<div class="outline-text-3" id="text-6-1">
+</div>
+<div id="outline-container-org354a3eb" class="outline-4">
+<h4 id="org354a3eb"><span class="section-number-4">6.1.1</span> Continue Reversible Computation Study</h4>
+</div>
+<div id="outline-container-orgd50bf66" class="outline-4">
+<h4 id="orgd50bf66"><span class="section-number-4">6.1.2</span> Prototype Marble inverter</h4>
+<div class="outline-text-4" id="text-6-1-2">
+<p>
+Using dual rail differential logic (left/,right/1), an inverter
+merely switches sides. Now thinking an over-center spring controlling
+a 'side gate' controlled by a pair of sense levers. Now that there's
+a pile of small magnets for physics experiments, maybe something that
+uses those?
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org9229938" class="outline-2">
+<h2 id="org9229938"><span class="section-number-2">7</span> ca-r</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Issue #33 seems to have fixed itself.
+</p>
+</div>
+<div id="outline-container-org59970d8" class="outline-3">
+<h3 id="org59970d8"><span class="section-number-3">7.1</span> Next Step</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+Wait for further breakage.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org9620de7" class="outline-2">
+<h2 id="org9620de7"><span class="section-number-2">8</span> us-index-map</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-org4ce3f4d" class="outline-3">
+<h3 id="org4ce3f4d"><span class="section-number-3">8.1</span> error analysis</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+Started an error analysis on the USGS topomaps<sub>all.csv</sub> index file. Nothing obvious pops up,
+and the error reported by Maureen would be impossible to catch anyway.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgffabaa5" class="outline-2">
+<h2 id="orgffabaa5"><span class="section-number-2">9</span> Sun Ultra 10</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+Trying to see what state it is in. Fires up but no video. Need DB25M to
+debug over serial port.
+</p>
+</div>
+<div id="outline-container-org30e2f52" class="outline-3">
+<h3 id="org30e2f52"><span class="section-number-3">9.1</span> Next steps</h3>
+<div class="outline-text-3" id="text-9-1">
+</div>
+<div id="outline-container-org69d1848" class="outline-4">
+<h4 id="org69d1848"><span class="section-number-4">9.1.1</span> Serial debug</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-org91f2b4c" class="outline-2">
+<h2 id="org91f2b4c"><span class="section-number-2">10</span> Apple iMac G4</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+Building userland may be a PITA due to lack of RAM. Build would often
+segfault.
+</p>
+</div>
+<div id="outline-container-org0331228" class="outline-3">
+<h3 id="org0331228"><span class="section-number-3">10.1</span> Next steps</h3>
+<div class="outline-text-3" id="text-10-1">
+<p>
+Not sure.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org73a5d32" class="outline-2">
+<h2 id="org73a5d32"><span class="section-number-2">11</span> Davies Brothel</h2>
+<div class="outline-text-2" id="text-11">
+</div>
+<div id="outline-container-orgc525b12" class="outline-3">
+<h3 id="orgc525b12"><span class="section-number-3">11.1</span> New case C1923172, consolidated with <b>15</b> Parties.</h3>
+</div>
+<div id="outline-container-orgd6693a1" class="outline-3">
+<h3 id="orgd6693a1"><span class="section-number-3">11.2</span> Next hearing 4/5/2022.</h3>
+</div>
+</div>
+<div id="outline-container-org46fb1a2" class="outline-2">
+<h2 id="org46fb1a2"><span class="section-number-2">12</span> Peter Kim</h2>
+<div class="outline-text-2" id="text-12">
+</div>
+<div id="outline-container-org7e53a03" class="outline-3">
+<h3 id="org7e53a03"><span class="section-number-3">12.1</span> Broadcom CSG Employee indicted for trade secret theft.</h3>
+</div>
+<div id="outline-container-org03a7243" class="outline-3">
+<h3 id="org03a7243"><span class="section-number-3">12.2</span> United States v. Kim (5:21-cr-00438).</h3>
+</div>
+<div id="outline-container-org84f34f3" class="outline-3">
+<h3 id="org84f34f3"><span class="section-number-3">12.3</span> Next hearing: 1/31/2022 01:30 PM</h3>
+</div>
+</div>
+<div id="outline-container-org119012e" class="outline-2">
+<h2 id="org119012e"><span class="section-number-2">13</span> Linux Audio</h2>
+<div class="outline-text-2" id="text-13">
+</div>
+<div id="outline-container-org1782da5" class="outline-3">
+<h3 id="org1782da5"><span class="section-number-3">13.1</span> pvanal to spectrogram</h3>
+<div class="outline-text-3" id="text-13-1">
+<p>
+Enough of libriffr and libpvocf work to start pvoctool
+<a href="https://github.com/daniel-kelley/pvoctool">https://github.com/daniel-kelley/pvoctool</a>. Have HDF5 output and
+text delimited output for octave. Can import PVOC data to octave
+spectrogram for display.
+</p>
+</div>
+<div id="outline-container-orga0f1bc1" class="outline-4">
+<h4 id="orga0f1bc1"><span class="section-number-4">13.1.1</span> Next steps</h4>
+<div class="outline-text-4" id="text-13-1-1">
+<p>
+Loop analysis
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgafe71cc" class="outline-3">
+<h3 id="orgafe71cc"><span class="section-number-3">13.2</span> CSound programming.</h3>
+<div class="outline-text-3" id="text-13-2">
+<p>
+The FORTRAN of computer music. Getting up to speed.
+</p>
+</div>
+<div id="outline-container-org3a2884b" class="outline-4">
+<h4 id="org3a2884b"><span class="section-number-4">13.2.1</span> Next Steps</h4>
+<div class="outline-text-4" id="text-13-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org92d9b68"></a>loscil demo<br /></li>
+<li><a id="org88ce6e4"></a>spectrogram loop point analysis<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org877a4e3" class="outline-3">
+<h3 id="org877a4e3"><span class="section-number-3">13.3</span> Faust programming</h3>
+<div class="outline-text-3" id="text-13-3">
+</div>
+<div id="outline-container-orgc80bbe8" class="outline-4">
+<h4 id="orgc80bbe8"><span class="section-number-4">13.3.1</span> Next Steps</h4>
+<div class="outline-text-4" id="text-13-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org825ca44"></a>GAC Patch save/restore<br /></li>
+<li><a id="org32f8935"></a>LV2 autopatcher<br />
+<div class="outline-text-5" id="text-13-3-1-2">
+<p>
+Exploratory tool to generate (was pd, ecasound, now carla) patch for arbitrary LV2 plugin:
+hook up audio inputs to signal source, audio outputs to speakers, control inputs to
+control surface, etc.
+</p>
+</div>
+</li>
+<li><a id="org7222218"></a>OSC control surface<br />
+<div class="outline-text-5" id="text-13-3-1-3">
+<p>
+Some sort of GUI tool (knob/slider) to OSC messages. This may be
+as simple as a Faust UI program.
+</p>
+</div>
+</li>
+<li><a id="org28cf1df"></a>Faust/csound<br />
+<div class="outline-text-5" id="text-13-3-1-4">
+<p>
+See if a faust generated unit works.
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc8c08ca" class="outline-2">
+<h2 id="orgc8c08ca"><span class="section-number-2">14</span> EPICS</h2>
+<div class="outline-text-2" id="text-14">
+</div>
+<div id="outline-container-orgc7c6b93" class="outline-3">
+<h3 id="orgc7c6b93"><span class="section-number-3">14.1</span> Next steps</h3>
+<div class="outline-text-3" id="text-14-1">
+</div>
+<div id="outline-container-orgecd8fad" class="outline-4">
+<h4 id="orgecd8fad"><span class="section-number-4">14.1.1</span> CGR-101 SCPI interface</h4>
+<div class="outline-text-4" id="text-14-1-1">
+<p>
+See above&#x2026;
+</p>
+</div>
+</div>
+<div id="outline-container-org00f9608" class="outline-4">
+<h4 id="org00f9608"><span class="section-number-4">14.1.2</span> u3scpi network port testing</h4>
+</div>
+<div id="outline-container-orgfe3f950" class="outline-4">
+<h4 id="orgfe3f950"><span class="section-number-4">14.1.3</span> initial EPICS interface</h4>
+</div>
+<div id="outline-container-org31af252" class="outline-4">
+<h4 id="org31af252"><span class="section-number-4">14.1.4</span> u3scpi analog/digital port reconfiguration.</h4>
+</div>
+<div id="outline-container-org3df92b1" class="outline-4">
+<h4 id="org3df92b1"><span class="section-number-4">14.1.5</span> u3scpi 'DIGITIZER' subsystem.</h4>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org28b2911" class="outline-2">
+<h2 id="org28b2911"><span class="section-number-2">15</span> Brini Tracker II</h2>
+<div class="outline-text-2" id="text-15">
+<p>
+Maybe this can be simplified to just the GPS module in 'tracking' mode
+(which gets carried around), and a separate docking module to extract
+the data.
+</p>
+</div>
+<div id="outline-container-orga1dace2" class="outline-3">
+<h3 id="orga1dace2"><span class="section-number-3">15.1</span> Next steps</h3>
+<div class="outline-text-3" id="text-15-1">
+</div>
+<div id="outline-container-org74c702b" class="outline-4">
+<h4 id="org74c702b"><span class="section-number-4">15.1.1</span> Validate remaining standard GPS messages</h4>
+</div>
+<div id="outline-container-org03e7465" class="outline-4">
+<h4 id="org03e7465"><span class="section-number-4">15.1.2</span> Investigate GPS chipset data logging</h4>
+</div>
+<div id="outline-container-org95a7a8e" class="outline-4">
+<h4 id="org95a7a8e"><span class="section-number-4">15.1.3</span> Investigate LoRA radio interface</h4>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga6b1462" class="outline-2">
+<h2 id="orga6b1462"><span class="section-number-2">16</span> wktcolor</h2>
+<div class="outline-text-2" id="text-16">
+</div>
+<div id="outline-container-org6655373" class="outline-3">
+<h3 id="org6655373"><span class="section-number-3">16.1</span> Next steps</h3>
+<div class="outline-text-3" id="text-16-1">
+</div>
+<div id="outline-container-orge6d17ea" class="outline-4">
+<h4 id="orge6d17ea"><span class="section-number-4">16.1.1</span> Explore how to get a minimal coloring</h4>
+<div class="outline-text-4" id="text-16-1-1">
+<p>
+Need a specific planar graph four coloring.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgde7e8f0" class="outline-2">
+<h2 id="orgde7e8f0"><span class="section-number-2">17</span> wktplot</h2>
+<div class="outline-text-2" id="text-17">
+</div>
+<div id="outline-container-org7c441f5" class="outline-3">
+<h3 id="org7c441f5"><span class="section-number-3">17.1</span> Next steps</h3>
+<div class="outline-text-3" id="text-17-1">
+<p>
+Understand why -r doesn't solve the wktvor/wktdel "sliver at edge" problem.
+Explore biological cell Voronoi organization
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3a73d93" class="outline-2">
+<h2 id="org3a73d93"><span class="section-number-2">18</span> AMDGPU</h2>
+<div class="outline-text-2" id="text-18">
+</div>
+<div id="outline-container-org8b46e04" class="outline-3">
+<h3 id="org8b46e04"><span class="section-number-3">18.1</span> Next step</h3>
+<div class="outline-text-3" id="text-18-1">
+</div>
+<div id="outline-container-org55fa91b" class="outline-4">
+<h4 id="org55fa91b"><span class="section-number-4">18.1.1</span> Reverse engineer HSAKMT programming.</h4>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8fd6367" class="outline-2">
+<h2 id="org8fd6367"><span class="section-number-2">19</span> Ninja v Make</h2>
+<div class="outline-text-2" id="text-19">
+</div>
+<div id="outline-container-org3c52001" class="outline-3">
+<h3 id="org3c52001"><span class="section-number-3">19.1</span> Next Step</h3>
+<div class="outline-text-3" id="text-19-1">
+</div>
+<div id="outline-container-org03b979a" class="outline-4">
+<h4 id="org03b979a"><span class="section-number-4">19.1.1</span> clean simple measurements</h4>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7afc09f" class="outline-2">
+<h2 id="org7afc09f"><span class="section-number-2">20</span> GMP Forth</h2>
+<div class="outline-text-2" id="text-20">
+</div>
+<div id="outline-container-org312f7a2" class="outline-3">
+<h3 id="org312f7a2"><span class="section-number-3">20.1</span> Need to think about adding floating point support</h3>
+</div>
+<div id="outline-container-org8e246b3" class="outline-3">
+<h3 id="org8e246b3"><span class="section-number-3">20.2</span> Port to non-Linux OS</h3>
+</div>
+</div>
+<div id="outline-container-orgb11ab44" class="outline-2">
+<h2 id="orgb11ab44"><span class="section-number-2">21</span> Swocer</h2>
+<div class="outline-text-2" id="text-21">
+<p>
+Likely will suspend future efforts in favor of just using C++ directly.
+There's not much value in a wrapper that isn't able to leverage Ruby
+very much.
+</p>
+</div>
+<div id="outline-container-org6f921dd" class="outline-3">
+<h3 id="org6f921dd"><span class="section-number-3">21.1</span> Most crashing addressed</h3>
+<div class="outline-text-3" id="text-21-1">
+<p>
+Nullified 'handle' API free functions helped a lot.
+Still see some errors in operations.
+</p>
+</div>
+</div>
+<div id="outline-container-org38f2280" class="outline-3">
+<h3 id="org38f2280"><span class="section-number-3">21.2</span> Added outline for 'bottle' test</h3>
+<div class="outline-text-3" id="text-21-2">
+<p>
+Added all functions believed to be needed for 'bottle' demo test.
+Test doesn't pass so is disabled.
+</p>
+</div>
+</div>
+<div id="outline-container-org21664ea" class="outline-3">
+<h3 id="org21664ea"><span class="section-number-3">21.3</span> Next steps</h3>
+<div class="outline-text-3" id="text-21-3">
+<p>
+Swocer future.
+Check out what's needed for gears.
+</p>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Daniel Kelley</p>
-<p class="date">Created: 2022-01-22 Sat 05:54</p>
+<p class="date">Created: 2022-01-29 Sat 06:10</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
