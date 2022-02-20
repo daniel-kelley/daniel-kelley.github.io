@@ -58,7 +58,7 @@ Daniel Kelley<br />
 <div class="flushleft">
 
 <p>
-February 8, 2022
+February 20, 2022
 </p>
 </div>
 
@@ -635,10 +635,223 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 </tr>
 
 </table>
-<h3 id="autosec-77">Chapter&nbsp;<span class="sectionnumber">2&#x2003;</span>Science</h3>
+<h4 id="autosec-77"><span class="sectionnumber">1.4&#x2003;</span>Parametric Vector Calculus</h4>
 <a id="bwmse-autopage-77"></a>
-<h4 id="autosec-78"><span class="sectionnumber">2.1&#x2003;</span>Units</h4>
-<a id="bwmse-autopage-78"></a>
+<table>
+
+<tr>
+<td class="tdl">Position</td>
+<td class="tdl"></td>
+<td class="tdl"></td>
+<td class="tdl"><span
+    id="lateximage-bwmse-33"
+    class="lateximagesource"
+><!--
+ ⃗ = 𝑥(𝑡)𝑖 ̂ + 𝑦(𝑡)𝑗 ̂
+𝑟(𝑡)
+--> <img
+    src="bwmse-images/EF09D6BEA13EC4DBFFD8489DCCD74111.svg"
+    alt="\( \vec {r}(t)=x(t)\hat {i}+y(t)\hat {j} \)"
+    role="math"
+    style="width:9.96477em ; vertical-align:-0.2976em "
+    class="lateximage"
+></span></td>
+<td class="tdl"><span
+    id="lateximage-bwmse-34"
+    class="lateximagesource"
+><!--
+∫ 𝑣(𝑡)𝑑𝑡
+   ⃗
+--> <img
+    src="bwmse-images/82B84363D3DAA0153F9D3F696AE51A71.svg"
+    alt="\( \int \vec {v}(t) dt \)"
+    role="math"
+    style="width:4.07007em ; vertical-align:-0.36664em "
+    class="lateximage"
+></span></td>
+<td class="tdl"></td>
+</tr>
+
+
+<tr>
+<td class="tdl">Velocity</td>
+<td class="tdl"><span
+    id="lateximage-bwmse-35"
+    class="lateximagesource"
+><!--
+𝑑𝑟(𝑡)/𝑑𝑡
+  ⃗
+--> <img
+    src="bwmse-images/92E572B92CF0D3260F6C18557035399D.svg"
+    alt="\( d\vec {r}(t)/dt \)"
+    role="math"
+    style="width:4.25769em ; vertical-align:-0.3em "
+    class="lateximage"
+></span></td>
+<td class="tdl"></td>
+<td class="tdl"><span
+    id="lateximage-bwmse-36"
+    class="lateximagesource"
+><!--
+ ⃗ = 𝑥′ (𝑡)𝑖 ̂ + 𝑦′ (𝑡)𝑗 ̂
+𝑣(𝑡)
+--> <img
+    src="bwmse-images/BC70339FC45A79C3147FA4C63E59BDFA.svg"
+    alt="\( \vec {v}(t)=x&apos;(t)\hat {i}+y&apos;(t)\hat {j} \)"
+    role="math"
+    style="width:10.8213em ; vertical-align:-0.2976em "
+    class="lateximage"
+></span></td>
+<td class="tdl"><span
+    id="lateximage-bwmse-37"
+    class="lateximagesource"
+><!--
+∫ 𝑎(𝑡)𝑑𝑡
+   ⃗
+--> <img
+    src="bwmse-images/F5C66E27286C93676F0099DB7ED92ECD.svg"
+    alt="\( \int \vec {a}(t) dt \)"
+    role="math"
+    style="width:4.10966em ; vertical-align:-0.36664em "
+    class="lateximage"
+></span></td>
+<td class="tdl"><span
+    id="lateximage-bwmse-38"
+    class="lateximagesource"
+><!--
+𝑑𝑠 ⃗
+𝑑𝑡 𝑇
+--> <img
+    src="bwmse-images/4332496A6FD80373BCB2D34DDD3BAF7D.svg"
+    alt="\( \frac {ds}{dt} \vec {T} \)"
+    role="math"
+    style="width:1.92416em ; vertical-align:-0.42236em "
+    class="lateximage"
+></span></td>
+</tr>
+
+
+<tr>
+<td class="tdl">Acceleration</td>
+<td class="tdl"><span
+    id="lateximage-bwmse-39"
+    class="lateximagesource"
+><!--
+𝑑𝑣(𝑡)/𝑑𝑡
+  ⃗
+--> <img
+    src="bwmse-images/2E4A0D5F8FE4BD9ED8FF76C5928379E0.svg"
+    alt="\( d\vec {v}(t)/dt \)"
+    role="math"
+    style="width:4.2961em ; vertical-align:-0.3em "
+    class="lateximage"
+></span></td>
+<td class="tdl"><span
+    id="lateximage-bwmse-40"
+    class="lateximagesource"
+><!--
+𝑑2 𝑟(𝑡)/𝑑𝑡
+    ⃗     2
+--> <img
+    src="bwmse-images/929437EF216115F331C7AC9383349EA8.svg"
+    alt="\( d^2\vec {r}(t)/dt^2 \)"
+    role="math"
+    style="width:5.3768em ; vertical-align:-0.3em "
+    class="lateximage"
+></span></td>
+<td class="tdl"><span
+    id="lateximage-bwmse-41"
+    class="lateximagesource"
+><!--
+ ⃗ = 𝑥″ (𝑡)𝑖 ̂ + 𝑦″ (𝑡)𝑗 ̂
+𝑣(𝑡)
+--> <img
+    src="bwmse-images/45CFD6AC5B4F345C5808240703A46746.svg"
+    alt="\( \vec {v}(t)=x&apos;&apos;(t)\hat {i}+y&apos;&apos;(t)\hat {j} \)"
+    role="math"
+    style="width:11.2245em ; vertical-align:-0.2976em "
+    class="lateximage"
+></span></td>
+<td class="tdl"></td>
+<td class="tdl"></td>
+</tr>
+
+
+<tr>
+<td class="tdl">Arc Length</td>
+<td class="tdl"><span
+    id="lateximage-bwmse-42"
+    class="lateximagesource"
+><!--
+𝑑𝑠
+𝑑𝑡   = √𝑥′ (𝑡)𝑖 ̂ + 𝑦′ (𝑡)𝑗 ̂
+--> <img
+    src="bwmse-images/4EEAD120B795C56E8F3EC94E5A11DE62.svg"
+    alt="\( \frac {ds}{dt} = \sqrt {x&apos;(t)\hat {i}+y&apos;(t)\hat {j}} \)"
+    role="math"
+    style="width:11.25858em ; vertical-align:-0.6078em "
+    class="lateximage"
+></span></td>
+<td class="tdl"></td>
+<td class="tdl"></td>
+<td class="tdl"></td>
+<td class="tdl"></td>
+</tr>
+
+
+<tr>
+<td class="tdl">Unit Tangent</td>
+<td class="tdl"><span
+    id="lateximage-bwmse-43"
+    class="lateximagesource"
+><!--
+𝑇 ⃗ = 𝑣/⃗ |𝑣|⃗
+--> <img
+    src="bwmse-images/957CD85302D54B8086461C9E2718DAFF.svg"
+    alt="\( \vec {T}=\vec {v}/\left | \vec {v} \right | \)"
+    role="math"
+    style="width:5.16026em ; vertical-align:-0.30003em "
+    class="lateximage"
+></span></td>
+<td class="tdl"></td>
+<td class="tdl"></td>
+<td class="tdl"></td>
+<td class="tdl"></td>
+</tr>
+
+</table>
+<h4 id="autosec-101"><span class="sectionnumber">1.5&#x2003;</span>Partial Differentiation</h4>
+<a id="bwmse-autopage-101"></a>
+<table>
+
+<tr>
+<td class="tdl">Approximation</td>
+<td class="tdl"><span
+   id="lateximage-bwmse-44"
+   class="lateximagesource"
+><!--
+                 𝜕𝑓                 𝜕𝑓
+𝑓(𝑥, 𝑦) = 𝑧0 +   𝜕𝑥 (𝑥   − 𝑥0 ) +   𝜕𝑦 (𝑦   − 𝑦0 )
+--> <img
+    src="bwmse-images/8138CA9B4A452309ABD1857B42C68E57.svg"
+    alt="\( f(x,y)=z_0 + \frac {\partial {f}}{\partial {x}}(x-x_0) + \frac {\partial {f}}{\partial {y}}(y-y_0) \)"
+    role="math"
+    style="width:20.22887em ; vertical-align:-0.58531em "
+    class="lateximage"
+></span></td>
+</tr>
+
+
+<tr>
+<td class="tdl"></td>
+<td class="tdl"></td>
+</tr>
+
+</table>
+<h3 id="autosec-105">Chapter&nbsp;<span class="sectionnumber">2&#x2003;</span>Science</h3>
+<a id="bwmse-autopage-105"></a>
+<h4 id="autosec-106"><span class="sectionnumber">2.1&#x2003;</span>Units</h4>
+<a id="bwmse-autopage-106"></a>
 <table>
 
 <tr>
@@ -670,7 +883,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <td class="tdl"></td>
 <td class="tdl">steradian</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-33"
+    id="lateximage-bwmse-45"
     class="lateximagesource"
 ><!--
 𝑠𝑟
@@ -687,7 +900,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <tr>
 <td class="tdl">Area</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-34"
+    id="lateximage-bwmse-46"
     class="lateximagesource"
 ><!--
 𝑚2
@@ -706,7 +919,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <tr>
 <td class="tdl">Volume</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-35"
+    id="lateximage-bwmse-47"
     class="lateximagesource"
 ><!--
 𝑚3
@@ -725,7 +938,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <tr>
 <td class="tdl">Frequency</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-36"
+    id="lateximage-bwmse-48"
     class="lateximagesource"
 ><!--
 𝑠−1
@@ -738,7 +951,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 ></span></td>
 <td class="tdl">Hertz</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-37"
+    id="lateximage-bwmse-49"
     class="lateximagesource"
 ><!--
 𝐻𝑧
@@ -755,7 +968,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <tr>
 <td class="tdl">Velocity</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-38"
+    id="lateximage-bwmse-50"
     class="lateximagesource"
 ><!--
 𝑚 ⋅ 𝑠−1
@@ -774,7 +987,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <tr>
 <td class="tdl">Acceleration</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-39"
+    id="lateximage-bwmse-51"
     class="lateximagesource"
 ><!--
 𝑚 ⋅ 𝑠−2
@@ -793,7 +1006,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <tr>
 <td class="tdl">Angular Velocity</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-40"
+    id="lateximage-bwmse-52"
     class="lateximagesource"
 ><!--
 𝑟𝑎𝑑 ⋅ 𝑠−1
@@ -812,7 +1025,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <tr>
 <td class="tdl">Angular Acceleration</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-41"
+    id="lateximage-bwmse-53"
     class="lateximagesource"
 ><!--
 𝑟𝑎𝑑 ⋅ 𝑠−2
@@ -831,7 +1044,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <tr>
 <td class="tdl">Density</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-42"
+    id="lateximage-bwmse-54"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚−3
@@ -850,7 +1063,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <tr>
 <td class="tdl">Momentum</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-43"
+    id="lateximage-bwmse-55"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚 ⋅ 𝑠−1
@@ -869,7 +1082,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <tr>
 <td class="tdl">Angular Momentum</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-44"
+    id="lateximage-bwmse-56"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚2 ⋅ 𝑠−1
@@ -888,7 +1101,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <tr>
 <td class="tdl">Force</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-45"
+    id="lateximage-bwmse-57"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚 ⋅ 𝑠−2
@@ -901,7 +1114,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 ></span></td>
 <td class="tdl">Newton</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-46"
+    id="lateximage-bwmse-58"
     class="lateximagesource"
 ><!--
 𝑁
@@ -918,7 +1131,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <tr>
 <td class="tdl">Work, Energy</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-47"
+    id="lateximage-bwmse-59"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚2 ⋅ 𝑠−2
@@ -931,7 +1144,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 ></span></td>
 <td class="tdl">Joule</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-48"
+    id="lateximage-bwmse-60"
     class="lateximagesource"
 ><!--
 𝐽
@@ -948,7 +1161,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <tr>
 <td class="tdl">Power</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-49"
+    id="lateximage-bwmse-61"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚2 ⋅ 𝑠−3
@@ -961,7 +1174,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 ></span></td>
 <td class="tdl">Watt</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-50"
+    id="lateximage-bwmse-62"
     class="lateximagesource"
 ><!--
 𝑊
@@ -978,7 +1191,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <tr>
 <td class="tdl">Torque</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-51"
+    id="lateximage-bwmse-63"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚2 ⋅ 𝑠−2
@@ -997,7 +1210,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <tr>
 <td class="tdl">Pressure</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-52"
+    id="lateximage-bwmse-64"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚−1 ⋅ 𝑠−2
@@ -1010,7 +1223,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 ></span></td>
 <td class="tdl">Pascal</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-53"
+    id="lateximage-bwmse-65"
     class="lateximagesource"
 ><!--
 𝑃𝑎
@@ -1032,14 +1245,14 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 </tr>
 
 </table>
-<h4 id="autosec-122"><span class="sectionnumber">2.2&#x2003;</span>Laws</h4>
-<a id="bwmse-autopage-122"></a>
+<h4 id="autosec-150"><span class="sectionnumber">2.2&#x2003;</span>Laws</h4>
+<a id="bwmse-autopage-150"></a>
 <table>
 
 <tr>
 <td class="tdl">Newton’s 1st Law</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-54"
+    id="lateximage-bwmse-66"
     class="lateximagesource"
 ><!--
 ∑ F = 0 ⇔ v̇
@@ -1056,7 +1269,7 @@ lim 𝑓(𝑥)/𝑔(𝑥) = lim 𝑓 ′ (𝑥)/𝑔′ (𝑥)
 <tr>
 <td class="tdl">Newton’s 2nd Law</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-55"
+    id="lateximage-bwmse-67"
     class="lateximagesource"
 ><!--
 F = 𝑚a = ṗ
@@ -1073,7 +1286,7 @@ F = 𝑚a = ṗ
 <tr>
 <td class="tdl">Newton’s 3rd Law</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-56"
+    id="lateximage-bwmse-68"
     class="lateximagesource"
 ><!--
 F𝑎 = −F𝑎
@@ -1090,7 +1303,7 @@ F𝑎 = −F𝑎
 <tr>
 <td class="tdl">Gravity</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-57"
+    id="lateximage-bwmse-69"
     class="lateximagesource"
 ><!--
 F = 𝑚g
@@ -1101,7 +1314,7 @@ F = 𝑚g
     style="width:4.05548em ; vertical-align:-0.282em "
     class="lateximage"
 ></span>; <span
-    id="lateximage-bwmse-58"
+    id="lateximage-bwmse-70"
     class="lateximagesource"
 ><!--
 g = 9.81
@@ -1118,7 +1331,7 @@ g = 9.81
 <tr>
 <td class="tdl">Hooke’s Law</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-59"
+    id="lateximage-bwmse-71"
     class="lateximagesource"
 ><!--
 𝐹𝑥 = −𝑘Δ𝑥
@@ -1129,7 +1342,7 @@ g = 9.81
     style="width:6.27019em ; vertical-align:-0.30476em "
     class="lateximage"
 ></span>; <span
-    id="lateximage-bwmse-60"
+    id="lateximage-bwmse-72"
     class="lateximagesource"
 ><!--
 𝑘=
@@ -1146,7 +1359,7 @@ g = 9.81
 <tr>
 <td class="tdl">Force</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-61"
+    id="lateximage-bwmse-73"
     class="lateximagesource"
 ><!--
 𝑁 = 𝑘𝑔 ⋅ 𝑚 ⋅ 𝑠−2
@@ -1163,7 +1376,7 @@ g = 9.81
 <tr>
 <td class="tdl">Energy</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-62"
+    id="lateximage-bwmse-74"
     class="lateximagesource"
 ><!--
 𝐽 =𝑁 ⋅𝑚
@@ -1180,7 +1393,7 @@ g = 9.81
 <tr>
 <td class="tdl">Power</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-63"
+    id="lateximage-bwmse-75"
     class="lateximagesource"
 ><!--
 𝑊 = 𝐽 ⋅ 𝑠−1
@@ -1197,7 +1410,7 @@ g = 9.81
 <tr>
 <td class="tdl">Momentum</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-64"
+    id="lateximage-bwmse-76"
     class="lateximagesource"
 ><!--
 p=𝑚⋅v
@@ -1214,7 +1427,7 @@ p=𝑚⋅v
 <tr>
 <td class="tdl">Kinetic Energy</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-65"
+    id="lateximage-bwmse-77"
     class="lateximagesource"
 ><!--
                p2
@@ -1247,8 +1460,8 @@ p=𝑚⋅v
 </tr>
 
 </table>
-<h4 id="autosec-148"><span class="sectionnumber">2.3&#x2003;</span>Mechanics Problem Workflow</h4>
-<a id="bwmse-autopage-148"></a>
+<h4 id="autosec-176"><span class="sectionnumber">2.3&#x2003;</span>Mechanics Problem Workflow</h4>
+<a id="bwmse-autopage-176"></a>
 <table>
 
 <tr>
@@ -1296,15 +1509,15 @@ p=𝑚⋅v
 </tr>
 
 </table>
-<h3 id="autosec-150">Chapter&nbsp;<span class="sectionnumber">3&#x2003;</span>Engineering</h3>
-<a id="bwmse-autopage-150"></a>
-<h4 id="autosec-151"><span class="sectionnumber">3.1&#x2003;</span>DC Ohm’s Law</h4>
-<a id="bwmse-autopage-151"></a>
+<h3 id="autosec-178">Chapter&nbsp;<span class="sectionnumber">3&#x2003;</span>Engineering</h3>
+<a id="bwmse-autopage-178"></a>
+<h4 id="autosec-179"><span class="sectionnumber">3.1&#x2003;</span>DC Ohm’s Law</h4>
+<a id="bwmse-autopage-179"></a>
 <table>
 
 <tr>
 <td class="tdl"><span
-   id="lateximage-bwmse-66"
+   id="lateximage-bwmse-78"
    class="lateximagesource"
 ><!--
 𝐼
@@ -1316,7 +1529,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-67"
+    id="lateximage-bwmse-79"
     class="lateximagesource"
 ><!--
     𝐸
@@ -1329,7 +1542,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-68"
+    id="lateximage-bwmse-80"
     class="lateximagesource"
 ><!--
     𝑃
@@ -1342,7 +1555,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-69"
+    id="lateximage-bwmse-81"
     class="lateximagesource"
 ><!--
    𝑃
@@ -1359,7 +1572,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-70"
+    id="lateximage-bwmse-82"
     class="lateximagesource"
 ><!--
 𝑅
@@ -1371,7 +1584,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-71"
+    id="lateximage-bwmse-83"
     class="lateximagesource"
 ><!--
     𝐸
@@ -1384,7 +1597,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-72"
+    id="lateximage-bwmse-84"
     class="lateximagesource"
 ><!--
     𝐸2
@@ -1397,7 +1610,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-73"
+    id="lateximage-bwmse-85"
     class="lateximagesource"
 ><!--
     𝑃
@@ -1414,7 +1627,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-74"
+    id="lateximage-bwmse-86"
     class="lateximagesource"
 ><!--
 𝐸
@@ -1426,7 +1639,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-75"
+    id="lateximage-bwmse-87"
     class="lateximagesource"
 ><!--
 = 𝐼𝑅
@@ -1438,7 +1651,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-76"
+    id="lateximage-bwmse-88"
     class="lateximagesource"
 ><!--
     𝑃
@@ -1451,7 +1664,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-77"
+    id="lateximage-bwmse-89"
     class="lateximagesource"
 ><!--
     √
@@ -1468,7 +1681,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-78"
+    id="lateximage-bwmse-90"
     class="lateximagesource"
 ><!--
 𝑃
@@ -1480,7 +1693,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-79"
+    id="lateximage-bwmse-91"
     class="lateximagesource"
 ><!--
 = 𝐸𝐼
@@ -1492,7 +1705,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-80"
+    id="lateximage-bwmse-92"
     class="lateximagesource"
 ><!--
 = 𝐼 2𝑅
@@ -1504,7 +1717,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-81"
+    id="lateximage-bwmse-93"
     class="lateximagesource"
 ><!--
     𝐸2
@@ -1527,13 +1740,13 @@ p=𝑚⋅v
 </tr>
 
 </table>
-<h4 id="autosec-185"><span class="sectionnumber">3.2&#x2003;</span>AC Ohm’s Law</h4>
-<a id="bwmse-autopage-185"></a>
+<h4 id="autosec-213"><span class="sectionnumber">3.2&#x2003;</span>AC Ohm’s Law</h4>
+<a id="bwmse-autopage-213"></a>
 <table>
 
 <tr>
 <td class="tdl"><span
-   id="lateximage-bwmse-82"
+   id="lateximage-bwmse-94"
    class="lateximagesource"
 ><!--
 𝐼
@@ -1545,7 +1758,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-83"
+    id="lateximage-bwmse-95"
     class="lateximagesource"
 ><!--
     𝐸
@@ -1558,7 +1771,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-84"
+    id="lateximage-bwmse-96"
     class="lateximagesource"
 ><!--
       𝑃
@@ -1571,7 +1784,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-85"
+    id="lateximage-bwmse-97"
     class="lateximagesource"
 ><!--
       𝑃
@@ -1588,7 +1801,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-86"
+    id="lateximage-bwmse-98"
     class="lateximagesource"
 ><!--
 𝑍
@@ -1600,7 +1813,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-87"
+    id="lateximage-bwmse-99"
     class="lateximagesource"
 ><!--
     𝐸
@@ -1613,7 +1826,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-88"
+    id="lateximage-bwmse-100"
     class="lateximagesource"
 ><!--
     𝐸2 𝑐𝑜𝑠(𝜃)
@@ -1626,7 +1839,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-89"
+    id="lateximage-bwmse-101"
     class="lateximagesource"
 ><!--
          𝑃
@@ -1643,7 +1856,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-90"
+    id="lateximage-bwmse-102"
     class="lateximagesource"
 ><!--
 𝐸
@@ -1655,7 +1868,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-91"
+    id="lateximage-bwmse-103"
     class="lateximagesource"
 ><!--
 = 𝐼𝑍
@@ -1667,7 +1880,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-92"
+    id="lateximage-bwmse-104"
     class="lateximagesource"
 ><!--
        𝑃
@@ -1680,7 +1893,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-93"
+    id="lateximage-bwmse-105"
     class="lateximagesource"
 ><!--
      𝑃𝑍
@@ -1697,7 +1910,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-94"
+    id="lateximage-bwmse-106"
     class="lateximagesource"
 ><!--
 𝑃
@@ -1709,7 +1922,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-95"
+    id="lateximage-bwmse-107"
     class="lateximagesource"
 ><!--
 = 𝐸𝐼𝑐𝑜𝑠(𝜃)
@@ -1721,7 +1934,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-96"
+    id="lateximage-bwmse-108"
     class="lateximagesource"
 ><!--
 = 𝐼 2 𝑍𝑐𝑜𝑠(𝜃)
@@ -1733,7 +1946,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-97"
+    id="lateximage-bwmse-109"
     class="lateximagesource"
 ><!--
     𝐸2 𝑐𝑜𝑠(𝜃)
@@ -1756,8 +1969,8 @@ p=𝑚⋅v
 </tr>
 
 </table>
-<h3 id="autosec-219">Bibliography</h3>
-<a id="bwmse-autopage-219"></a>
+<h3 id="autosec-247">Bibliography</h3>
+<a id="bwmse-autopage-247"></a>
 
 
 <ul style="list-style-type:none">
