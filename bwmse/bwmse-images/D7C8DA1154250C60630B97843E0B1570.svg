@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8.892pt" height="8.136pt" viewBox="0 0 8.892 8.136" version="1.2">
+<defs>
+<g>
+<symbol overflow="visible" id="glyph0-0">
+<path style="stroke:none;" d=""/>
+</symbol>
+<symbol overflow="visible" id="glyph0-1">
+<path style="stroke:none;" d="M 8.640625 -8.0625 C 8.640625 -8.15625 8.578125 -8.15625 8.34375 -8.15625 L 3.296875 -8.15625 C 3.015625 -8.15625 3 -8.15625 2.921875 -7.921875 L 2.265625 -5.765625 C 2.25 -5.71875 2.234375 -5.609375 2.234375 -5.609375 C 2.234375 -5.609375 2.234375 -5.46875 2.375 -5.46875 C 2.484375 -5.46875 2.515625 -5.5625 2.53125 -5.59375 C 2.984375 -7 3.609375 -7.796875 5.46875 -7.796875 L 7.421875 -7.796875 L 0.734375 -0.328125 C 0.734375 -0.328125 0.6875 -0.140625 0.6875 -0.109375 C 0.6875 0 0.78125 0 0.984375 0 L 6.1875 0 C 6.484375 0 6.484375 -0.015625 6.5625 -0.234375 L 7.40625 -2.875 C 7.421875 -2.921875 7.453125 -3.015625 7.453125 -3.0625 C 7.453125 -3.125 7.40625 -3.1875 7.296875 -3.1875 C 7.203125 -3.1875 7.1875 -3.140625 7.09375 -2.890625 C 6.578125 -1.265625 6 -0.40625 3.96875 -0.40625 L 1.921875 -0.40625 L 8.609375 -7.875 C 8.625 -7.921875 8.640625 -7.984375 8.640625 -8.0625 Z M 8.640625 -8.0625 "/>
+</symbol>
+</g>
+<clipPath id="clip1">
+  <path d="M 0 7 L 1 7 L 1 7.703125 L 0 7.703125 Z M 0 7 "/>
+</clipPath>
+<image id="image7" width="1" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAAAmJLR0QA/4ePzL8AAAAKSURBVAiZY2ACAAAEAANTOtgzAAAAAElFTkSuQmCC"/>
+<mask id="mask0">
+<use xlink:href="#image7" transform="matrix(1,0,0,1,0,0.000000000000003553)"/>
+</mask>
+<image id="image6" width="1" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAABmJLR0QA/wD/AP+gvaeTAAAADElEQVQImWNgYGAAAAAEAAGjChXjAAAAAElFTkSuQmCC"/>
+<clipPath id="clip2">
+  <path d="M 0 0 L 8.839844 0 L 8.839844 7.703125 L 0 7.703125 Z M 0 0 "/>
+</clipPath>
+<clipPath id="clip3">
+  <path d="M 8 7 L 8.839844 7 L 8.839844 7.703125 L 8 7.703125 Z M 8 7 "/>
+</clipPath>
+<image id="image13" width="1" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAAAmJLR0QA/4ePzL8AAAAKSURBVAiZY2ACAAAEAANTOtgzAAAAAElFTkSuQmCC"/>
+<mask id="mask1">
+<use xlink:href="#image13" transform="matrix(1,0,0,1,0,0.000000000000003553)"/>
+</mask>
+<image id="image12" width="1" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAABmJLR0QA/wD/AP+gvaeTAAAADElEQVQImWNgYGAAAAAEAAGjChXjAAAAAElFTkSuQmCC"/>
+</defs>
+<g id="surface1">
+<g clip-path="url(#clip1)" clip-rule="nonzero">
+<use xlink:href="#image6" mask="url(#mask0)" transform="matrix(0.24,0,0,0.24,-0.054,7.457)"/>
+</g>
+<g clip-path="url(#clip2)" clip-rule="nonzero">
+<g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
+  <use xlink:href="#glyph0-1" x="0.186" y="7.697"/>
+</g>
+</g>
+<g clip-path="url(#clip3)" clip-rule="nonzero">
+<use xlink:href="#image12" mask="url(#mask1)" transform="matrix(0.24,0,0,0.24,8.351,7.457)"/>
+</g>
+</g>
+</svg>

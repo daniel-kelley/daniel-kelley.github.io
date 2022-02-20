@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.653pt" height="11.934pt" viewBox="0 0 18.653 11.934" version="1.2">
+<defs>
+<g>
+<symbol overflow="visible" id="glyph0-0">
+<path style="stroke:none;" d=""/>
+</symbol>
+<symbol overflow="visible" id="glyph0-1">
+<path style="stroke:none;" d="M 5.5 -3.828125 C 5.5 -4.78125 5.4375 -5.734375 5.015625 -6.625 C 4.46875 -7.765625 3.484375 -7.953125 2.984375 -7.953125 C 2.265625 -7.953125 1.40625 -7.65625 0.90625 -6.53125 C 0.53125 -5.71875 0.46875 -4.78125 0.46875 -3.828125 C 0.46875 -2.921875 0.515625 -1.859375 1 -0.9375 C 1.515625 0.03125 2.390625 0.265625 2.96875 0.265625 C 3.625 0.265625 4.53125 0.015625 5.0625 -1.125 C 5.4375 -1.953125 5.5 -2.875 5.5 -3.828125 Z M 4.5 -3.96875 C 4.5 -3.078125 4.5 -2.265625 4.375 -1.5 C 4.203125 -0.359375 3.515625 0 2.96875 0 C 2.515625 0 1.8125 -0.296875 1.59375 -1.453125 C 1.453125 -2.15625 1.453125 -3.265625 1.453125 -3.96875 C 1.453125 -4.734375 1.453125 -5.515625 1.546875 -6.171875 C 1.78125 -7.59375 2.671875 -7.703125 2.96875 -7.703125 C 3.375 -7.703125 4.15625 -7.484375 4.390625 -6.296875 C 4.5 -5.625 4.5 -4.71875 4.5 -3.96875 Z M 4.5 -3.96875 "/>
+</symbol>
+<symbol overflow="visible" id="glyph0-2">
+<path style="stroke:none;" d="M 5.3125 -8.71875 C 5.3125 -8.859375 5.21875 -8.96875 5.078125 -8.96875 C 4.96875 -8.96875 4.890625 -8.90625 4.859375 -8.8125 L 0.6875 2.671875 C 0.671875 2.6875 0.671875 2.71875 0.671875 2.75 C 0.671875 2.875 0.78125 2.984375 0.90625 2.984375 C 1.015625 2.984375 1.09375 2.921875 1.140625 2.828125 L 5.3125 -8.640625 C 5.3125 -8.671875 5.3125 -8.703125 5.3125 -8.71875 Z M 5.3125 -8.71875 "/>
+</symbol>
+</g>
+<image id="image7" width="1" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAAAmJLR0QA/4ePzL8AAAAKSURBVAiZY2ACAAAEAANTOtgzAAAAAElFTkSuQmCC"/>
+<mask id="mask0">
+<use xlink:href="#image7"/>
+</mask>
+<image id="image6" width="1" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAABmJLR0QA/wD/AP+gvaeTAAAADElEQVQImWNgYGAAAAAEAAGjChXjAAAAAElFTkSuQmCC"/>
+<clipPath id="clip1">
+  <path d="M 0 0 L 18 0 L 18 11.902344 L 0 11.902344 Z M 0 0 "/>
+</clipPath>
+<clipPath id="clip2">
+  <path d="M 18 9 L 18.480469 9 L 18.480469 10 L 18 10 Z M 18 9 "/>
+</clipPath>
+<image id="image15" width="1" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAAAmJLR0QA/4ePzL8AAAAKSURBVAiZY2ACAAAEAANTOtgzAAAAAElFTkSuQmCC"/>
+<mask id="mask1">
+<use xlink:href="#image15"/>
+</mask>
+<image id="image14" width="1" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAABmJLR0QA/wD/AP+gvaeTAAAADElEQVQImWNgYGAAAAAEAAGjChXjAAAAAElFTkSuQmCC"/>
+</defs>
+<g id="surface1">
+<use xlink:href="#image6" mask="url(#mask0)" transform="matrix(0.24,0,0,0.24,-0.1735,8.671)"/>
+<g clip-path="url(#clip1)" clip-rule="nonzero">
+<g style="fill:rgb(0%,0%,0%);fill-opacity:1;">
+  <use xlink:href="#glyph0-1" x="0.0665" y="8.911"/>
+  <use xlink:href="#glyph0-2" x="6.044085" y="8.911"/>
+  <use xlink:href="#glyph0-1" x="12.02167" y="8.911"/>
+</g>
+</g>
+<g clip-path="url(#clip2)" clip-rule="nonzero">
+<use xlink:href="#image14" mask="url(#mask1)" transform="matrix(0.24,0,0,0.24,18.2395,8.671)"/>
+</g>
+</g>
+</svg>
