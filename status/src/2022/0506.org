@@ -1,0 +1,48 @@
+#+TITLE: 30 April 2022 - 06 May 2022
+
+* MIT OCW
+** 18.02 - Multiple Variable Calculus
+*** Continue PS7
+** 8.01X+8.01L - Physics I - Classical Mechanics with Labs
+*** Started Problem Set 2
+*** Planning experiment to measure 'g'
+** 21G.701 Spanish
+*** Finished Episodes 30-31 (no progress this week)
+* Mill Controller #2
+** Potential for using old Compaq iPaq boards.
+** May use OLPC in the meantime.
+** Still having problems with mill controller booting reliably.
+   Needs a new RTC battery.
+* OLPC
+** Needs ML1120 coin batteries to fix "invalid system date".
+* Virtual Orchestra
+** Continued Bolero coding
+** Initial playback using fluidsynth
+   Awful, unless you *wanted* the bass clarinets to sound like farts.
+** Audio via liquidsfz
+   "batch" renderer partially completed
+* GAC
+  Updated faust, which revealed a couple of problems in 'gac'
+
+    https://github.com/daniel-kelley/gac/issues/23
+
+    https://github.com/daniel-kelley/gac/issues/22
+
+* Audio Distribution
+  Distributing audio in SCZ from office to family room. Using icecast as
+  server and a raspberry pi zero W as client (with mplayer). Most fiddly
+  part was feeding icecast with audio via 'jack'. After trying numerous
+  approaches (mixxx, butt, ezstream, vlc); settled on vlc. RPi still needs
+  some sort of screensaver that doesn't kill audio.
+* Quilting Frame Desk
+** Top sanded.
+** Two leg brackets need rework.
+* David Davies
+** Broadcom BCG? Employee indicted for running a brothel.
+** New case C1923172, consolidated with *15* Parties.
+** Next hearing 4/29/2022.
+** Court Records don't appear to be updated.
+* Peter Kim
+** Broadcom CSG Employee indicted for trade secret theft.
+** United States v. Kim (5:21-cr-00438).
+** Change of Plea Hearing set for 5/31/2022
