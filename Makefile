@@ -4,9 +4,19 @@
 #  Copyright (c) 2022 by Daniel Kelley
 #
 
-.PHONY: all
+CA_R := $(HOME)/src/ca-r/ws
+BWMSE := $(HOME)/work/dak/bwmse
 
-all:
-	cp $(HOME)/src/ca-r/ws/* ca-r
-	make -C $(HOME)/work/dak/bwmse REL=$(PWD)/bwmse release
-	cp $(HOME)/work/dak/bwmse/bwmse.pdf bwmse
+EXTERNS := $(CA_R)/DATE.txt
+EXTERNS += bwmse/bwmse.pdf
+
+.PHONY: all ca_r
+
+all: $(EXTERNS)
+
+ca-r/DATE.txt: $()/DATE.txt bwmse/bwmse.pdf
+	cp $(CA_R)/* ca-r
+
+bwmse/bwmse.pdf: $(BWMSE)/bwmse.pdf
+	make -k -C $(BWMSE) REL=$(PWD)/bwmse release
+	cp $(BWMSE)/bwmse.pdf bwmse
