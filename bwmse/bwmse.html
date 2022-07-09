@@ -56,7 +56,7 @@ Daniel Kelley<br />
 <div class="flushleft">
 
 <p>
-July 2, 2022
+July 4, 2022
 </p>
 </div>
 
@@ -2108,10 +2108,11 @@ Given an <em>objective</em> function <span
  ⃗ 𝑦) = 𝑀(𝑥, 𝑦)𝑖 ̂ + 𝑁(𝑥, 𝑦)𝑗 ̂
 𝐹(𝑥,
  curl 𝐹 ⃗ = 𝑁𝑥 − 𝑀𝑦
+  div 𝐹 ⃗ = 𝑀𝑥 + 𝑁𝑦
 --> <img
     src="bwmse-images/image-125.svg"
-    alt="(1.1–0) \{begin}{align*} \vec {F}(x,y) &amp;= \langle M,N \rangle \\ \vec {F}(x,y) &amp;= M(x,y)\hat {i} + N(x,y)\hat {j}\\ \text {curl}\,\vec {F} &amp;= N_x - M_y \\ \{end}{align*}
-"
+    alt="(1.1–0) \{begin}{align*} \vec {F}(x,y) &amp;= \langle M,N \rangle \\ \vec {F}(x,y) &amp;= M(x,y)\hat {i} + N(x,y)\hat {j}\\ \text {curl}\,\vec {F} &amp;= N_x - M_y \\ \text
+{div}\,\vec {F} &amp;= M_x + N_y \\ \{end}{align*} "
     style=""
     class="lateximage"
 ></span>
@@ -2342,11 +2343,15 @@ If <span
     id="lateximage-bwmse-133"
     class="lateximagesource"
 ><!--
-∮ 𝐹 ⃗ ⋅ 𝑑𝑟 ⃗ = ∫ ∫ 𝑐𝑢𝑟𝑙(𝐹)⃗ 𝑑𝐴
- 𝐶              𝑅
+ ∮ 𝐹 ⃗ ⋅ 𝑑𝑟 ⃗ = ∫ ∫ 𝑐𝑢𝑟𝑙(𝐹)⃗ 𝑑𝐴   tangental
+     𝐶           𝑅
+
+∮ 𝐹 ⃗ ⋅ 𝑛̂ 𝑑𝑠 = ∫ ∫ 𝑑𝑖𝑣(𝐹)⃗ 𝑑𝐴    normal
+ 𝐶               𝑅
 --> <img
     src="bwmse-images/image-133.svg"
-    alt="(1.1–0) \{begin}{align*} \oint _C \vec {F} \cdot d\vec {r} &amp;= \int \int _R curl(\vec {F})\,dA &amp;&amp; \\ \{end}{align*} "
+    alt="(1.1–0) \{begin}{align*} \oint _C \vec {F} \cdot d\vec {r} &amp;= \int \int _R curl(\vec {F})\,dA &amp;&amp; \text {tangental} \\ \oint _C \vec {F} \cdot \hat {n}\, ds &amp;= \int
+\int _R div(\vec {F})\,dA &amp;&amp; \text {normal} \\ \{end}{align*} "
     style=""
     class="lateximage"
 ></span>

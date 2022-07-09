@@ -7,14 +7,14 @@
 CA_R := $(HOME)/src/ca-r/ws
 BWMSE := $(HOME)/work/dak/bwmse
 
-EXTERNS := $(CA_R)/DATE.txt
+EXTERNS := ca-r/DATE.txt
 EXTERNS += bwmse/bwmse.pdf
 
-.PHONY: all ca_r
+.PHONY: all
 
 all: $(EXTERNS)
 
-ca-r/DATE.txt: $()/DATE.txt bwmse/bwmse.pdf
+ca-r/DATE.txt: $(CA_R)/DATE.txt
 	cp $(CA_R)/* ca-r
 
 bwmse/bwmse.pdf: $(BWMSE)/bwmse.pdf
