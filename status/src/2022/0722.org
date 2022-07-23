@@ -1,0 +1,38 @@
+#+TITLE: 16 July 2022 - 22 July 2022
+
+* MIT OCW
+** 18.02 - Multiple Variable Calculus
+*** Session 73, PS9 con't.
+* Emergency Crystal Radio
+** Have inductor selector - started desoldering
+* Mill Controller #2
+** Need to clone existing HD
+** Need to investigate new HW/SW for eventual replacements
+*** Old crap ain't gonna last forever
+*** Buildroot/Linux 5.15 PREEMPT + latency tools
+First pass done - boots on real hardware
+* Alum Rock Data Center
+** Using CentOS 7 for now - good until 2024?
+** need to check alma, rocky, others? for suitability
+* OLPC
+** Needs ML1120 coin batteries to fix "invalid system date".
+* Virtual Orchestra
+** sfz file tests
+*** Started new audio tool program to replace aftools
+* More project ideas
+** Zuse Z3 simulation in Verilog
+** ENIAC simulation in verilog
+** GMPForth ports to SIMH, DYCyber targets
+** GMPASM assembler
+* David Davies
+** Broadcom BCG? Employee indicted for running a brothel.
+** New case C1923172, consolidated with *15* Parties.
+** Next hearing 9/6/2022
+* Peter Kim
+** Broadcom CSG Employee indicted for trade secret theft.
+** United States v. Kim (5:21-cr-00438).
+** Change of Plea Hearing Held 5/10/2022 (Guilty on various counts)
+** Sentencing 9/20/2022
+* Books
+** The Elephant in the Universe - Govert Schilling
+** Higher Speculations - Helge Kragh
