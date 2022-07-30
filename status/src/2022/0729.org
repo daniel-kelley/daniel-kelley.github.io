@@ -1,0 +1,56 @@
+#+TITLE: 23 July 2022 - 29 July 2022
+
+* MIT OCW
+** 18.02 - Multiple Variable Calculus
+*** PS9 con't.
+* Emergency Crystal Radio
+** Broke inductor selector - oops. Fix/replace?
+* Mill Controller #2
+** Try Alpine Linux
+** Need to investigate new HW/SW for eventual replacements
+*** Old crap ain't gonna last forever
+*** Buildroot/Linux 5.15 PREEMPT + latency tools
+First pass done - boots on real hardware
+* Alum Rock Data Center
+** Using CentOS 7 for now - good until 2024?
+** need to check alma, rocky, others? for suitability
+* OLPC
+** Needs ML1120 coin batteries to fix "invalid system date".
+* Virtual Orchestra
+** sfz file tests
+*** Started new audio tool program to replace aftools
+* i5 system
+** delicate primes
+*** Verified 294001 is a delicate prime in base 10
+*** Determined 294001 is delicate in bases 2 and 10 but not in bases 3-9,11-16
+*** What is the smallest delicate prime N in *any* base 2..(N-1)?
+    Does this question even make sense?
+** i5-12600K CPU
+** 32GB DDR5 mem
+** 512GB SSD
+** AMD Radeon RX 6800 GPU
+** ~100 compute cores across all devices
+   Hopefully won't have to do this again for a while. This blows the
+   toy budget for the year.
+* More project ideas
+** Zuse Z3 simulation in Verilog
+   Good excuse for floating point ALU design.
+** ENIAC simulation in verilog
+   Probably too big a nut to chew.
+** GMPForth ports to SIMH, DYCyber targets
+*** SIMH maybe some targets (vax)
+*** DTCyber suboptimal due to data/addr word size mismatch
+*** MAME looks interesting for microprocessor system emulations
+    How to support erzatz systems?
+*** Ports to classic figFORTH targets
+** GMPASM assembler
+   May be useful for handbuilt systems.
+* David Davies
+** Broadcom BCG? Employee indicted for running a brothel.
+** New case C1923172, consolidated with *15* Parties.
+** Next hearing 9/6/2022
+* Peter Kim
+** Broadcom CSG Employee indicted for trade secret theft.
+** United States v. Kim (5:21-cr-00438).
+** Change of Plea Hearing Held 5/10/2022 (Guilty on various counts)
+** Sentencing 9/20/2022
