@@ -56,7 +56,7 @@ Daniel Kelley<br />
 <div class="flushleft">
 
 <p>
-July 4, 2022
+August 1, 2022
 </p>
 </div>
 
@@ -251,9 +251,9 @@ July 4, 2022
     id="lateximage-bwmse-11"
     class="lateximagesource"
 ><!--
-     𝑑𝑥        1      𝑥
-∫            = 𝑡𝑎𝑛−1 ( )
-    𝑎2 +𝑥2     𝑎      𝑎
+  𝑑𝑥       1      𝑥
+∫ 2      = 𝑡𝑎𝑛−1 ( )
+ 𝑎 +𝑥2     𝑎      𝑎
 --> <img
     src="bwmse-images/58BD9482834363E34FD3BCB12555C305.svg"
     alt="\( \int {\frac {dx}{a^2 + x^2}} = \frac {1}{a} tan^{-1}(\frac {x}{a}) \)"
@@ -1472,7 +1472,7 @@ The <em>gradient</em> <span
     role="math"
     style="width:1.61409em ; vertical-align:-0.27em "
     class="lateximage"
-></span> of function <span
+></span> of (<em>potential</em>) function <span
     id="lateximage-bwmse-84"
     class="lateximagesource"
 ><!--
@@ -2118,7 +2118,7 @@ Given an <em>objective</em> function <span
 ></span>
 </p>
 </div>
-<h4 id="autosec-287"><span class="sectionnumber">1.16&#x2003;</span>Line Integral</h4>
+<h4 id="autosec-287"><span class="sectionnumber">1.16&#x2003;</span>Rectangular/Polar Conversion</h4>
 <a id="bwmse-autopage-287"></a>
 
 
@@ -2132,44 +2132,73 @@ Given an <em>objective</em> function <span
     id="lateximage-bwmse-126"
     class="lateximagesource"
 ><!--
-  𝐶 = 𝑟(𝑡)
-       ⃗
-𝑟(𝑡)
- ⃗ = ⟨𝑥(𝑡), 𝑦(𝑡)⟩
-𝑃(𝑡) = 𝑀(𝑥, 𝑦)
-𝑄(𝑡) = 𝑁(𝑥, 𝑦)
+    𝑥 = 𝑟 𝑐𝑜𝑠(𝜃)
+    𝑦 = 𝑟 𝑠𝑖𝑛(𝜃)
+    𝜃 = 𝑡𝑎𝑛−1 (𝑦/𝑥)
+    𝑟 = √𝑥2 + 𝑦2
+𝑑𝑥 𝑑𝑦 = 𝑟 𝑑𝑟 𝑑𝜃
 --> <img
     src="bwmse-images/image-126.svg"
-    alt="(1.1–0) \{begin}{align*} C &amp;=\vec {r}(t) \\ \vec {r}(t) &amp;=\langle x(t),y(t) \rangle \\ P(t) &amp;= M(x,y) \\ Q(t) &amp;= N(x,y) \\ \{end}{align*} "
+    alt="(1.1–0) \{begin}{align*} x &amp;= r\,cos(\theta ) \\ y &amp;= r\,sin(\theta ) \\ \theta &amp;= tan^{-1}(y/x) \\ r &amp;= \sqrt {x^2+y^2} \\ dx\,dy &amp;= r\,dr\,d\theta \\
+\{end}{align*} "
     style=""
     class="lateximage"
 ></span>
 </p>
 </div>
-<h5 id="autosec-290">Work</h5>
+<h4 id="autosec-290"><span class="sectionnumber">1.17&#x2003;</span>Line Integral</h4>
 <a id="bwmse-autopage-290"></a>
 
 
-<p>
-Force on particle along a curve.
-</p>
-<figure id="autoid-10" class="figure ">
-<div class="center">
+
+<div class="displaymath">
+
+<a id="autoid-10" ></a >
 
 <p>
 <span
     id="lateximage-bwmse-127"
     class="lateximagesource"
 ><!--
-          𝑇̂
-     𝐶
+  𝐶 = 𝑟(𝑡)
+       ⃗
+   𝑠 = arc-length(𝐶)
+𝑟(𝑡)
+ ⃗ = ⟨𝑥(𝑡), 𝑦(𝑡)⟩
+𝑃(𝑡) = 𝑀(𝑥, 𝑦)
+𝑄(𝑡) = 𝑁(𝑥, 𝑦)
+--> <img
+    src="bwmse-images/image-127.svg"
+    alt="(1.1–0) \{begin}{align*} C &amp;=\vec {r}(t) \\ s &amp;= \text {arc-length}(C) \\ \vec {r}(t) &amp;=\langle x(t),y(t) \rangle \\ P(t) &amp;= M(x,y) \\ Q(t) &amp;= N(x,y) \\
+\{end}{align*} "
+    style=""
+    class="lateximage"
+></span>
+</p>
+</div>
+<h5 id="autosec-293">Work</h5>
+<a id="bwmse-autopage-293"></a>
 
-         𝐹⃗
+
+<p>
+Force on particle along a curve.
+</p>
+<figure id="autoid-11" class="figure ">
+<div class="center">
+
+<p>
+<span
+    id="lateximage-bwmse-128"
+    class="lateximagesource"
+><!--
+          𝑇̂
+     𝑠
+𝐶        𝐹⃗
 
 
 𝑟⃗
 --> <img
-    src="bwmse-images/image-127.svg"
+    src="bwmse-images/image-128.svg"
     alt="(-tikz-&nbsp;diagram)"
     style=""
     class="lateximage"
@@ -2189,11 +2218,11 @@ Figure&nbsp;3: Work
 
 <div class="displaymath">
 
-<a id="autoid-11" ></a >
+<a id="autoid-12" ></a >
 
 <p>
 <span
-    id="lateximage-bwmse-128"
+    id="lateximage-bwmse-129"
     class="lateximagesource"
 ><!--
 ∫ 𝐹 ⃗ ⋅ 𝑑𝑟 ⃗ = ∫ 𝐹 ⃗ ⋅ 𝑇̂ 𝑑𝑠
@@ -2208,7 +2237,7 @@ Figure&nbsp;3: Work
            = ∫(𝑃 + 𝑄) 𝑑𝑡
                 𝐶
 --> <img
-    src="bwmse-images/image-128.svg"
+    src="bwmse-images/image-129.svg"
     alt="(1.1–0) \{begin}{align*} \int _C \vec {F} \cdot d\vec {r} &amp;= \int _C \vec {F} \cdot \hat {T} \, ds \\ &amp;= \int _C \langle M,N \rangle \cdot \langle dx,dy \rangle \\ &amp;=
 \int _C M\,dx + N\,dy \\ &amp;= \int _C (P + Q) \,dt \\ \{end}{align*} "
     style=""
@@ -2216,29 +2245,29 @@ Figure&nbsp;3: Work
 ></span>
 </p>
 </div>
-<h5 id="autosec-296">Flow</h5>
-<a id="bwmse-autopage-296"></a>
+<h5 id="autosec-299">Flow</h5>
+<a id="bwmse-autopage-299"></a>
 
 
 <p>
 Flow across a curve.
 </p>
-<figure id="autoid-12" class="figure ">
+<figure id="autoid-13" class="figure ">
 <div class="center">
 
 <p>
 <span
-    id="lateximage-bwmse-129"
+    id="lateximage-bwmse-130"
     class="lateximagesource"
 ><!--
-     𝐶
-         𝑛̂
+     𝑠
+𝐶        𝑛̂
               𝐹⃗
 
 
 𝑟⃗
 --> <img
-    src="bwmse-images/image-129.svg"
+    src="bwmse-images/image-130.svg"
     alt="(-tikz-&nbsp;diagram)"
     style=""
     class="lateximage"
@@ -2258,11 +2287,11 @@ Figure&nbsp;4: Flow
 
 <div class="displaymath">
 
-<a id="autoid-13" ></a >
+<a id="autoid-14" ></a >
 
 <p>
 <span
-    id="lateximage-bwmse-130"
+    id="lateximage-bwmse-131"
     class="lateximagesource"
 ><!--
 ∫ 𝐹 ⃗ ⋅ 𝑛̂ 𝑑𝑠 = ∫⟨𝑀, 𝑁⟩ ⋅ ⟨𝑑𝑦, −𝑑𝑥⟩
@@ -2271,24 +2300,52 @@ Figure&nbsp;4: Flow
            = ∫ −𝑁 𝑑𝑥 + 𝑀 𝑑𝑦
               𝐶
 
-           = ∫(𝑄 + 𝑃) 𝑑𝑡
+           = ∫(𝑃 − 𝑄) 𝑑𝑡
               𝐶
 --> <img
-    src="bwmse-images/image-130.svg"
-    alt="(1.1–0) \{begin}{align*} \int _C \vec {F}\cdot \hat {n}\,ds &amp;= \int _C \langle M,N \rangle \cdot \langle dy,-dx \rangle \\ &amp;= \int _C -N\,dx + M\,dy \\ &amp;= \int _C (Q + P)
+    src="bwmse-images/image-131.svg"
+    alt="(1.1–0) \{begin}{align*} \int _C \vec {F}\cdot \hat {n}\,ds &amp;= \int _C \langle M,N \rangle \cdot \langle dy,-dx \rangle \\ &amp;= \int _C -N\,dx + M\,dy \\ &amp;= \int _C (P - Q)
 \,dt \\ \{end}{align*} "
     style=""
     class="lateximage"
 ></span>
 </p>
 </div>
-<h4 id="autosec-302"><span class="sectionnumber">1.17&#x2003;</span>Gradient Field</h4>
-<a id="bwmse-autopage-302"></a>
+<h5 id="autosec-305">Area</h5>
+<a id="bwmse-autopage-305"></a>
+
+
+<p>
+Area of a simply connected closed curve.
+</p>
+
+<div class="displaymath">
+
+<a id="autoid-15" ></a >
+
+<p>
+<span
+    id="lateximage-bwmse-132"
+    class="lateximagesource"
+><!--
+     1
+𝐴=     ∮ −𝑦 𝑑𝑥 + 𝑥 𝑑𝑦
+     2 𝐶
+--> <img
+    src="bwmse-images/image-132.svg"
+    alt="(1.1–0) \{begin}{align*} A &amp;= \frac {1}{2} \oint _C -y\,dx + x\,dy \\ \{end}{align*} "
+    style=""
+    class="lateximage"
+></span>
+</p>
+</div>
+<h4 id="autosec-308"><span class="sectionnumber">1.18&#x2003;</span>Gradient Field</h4>
+<a id="bwmse-autopage-308"></a>
 
 
 <p>
 If <span
-     id="lateximage-bwmse-131"
+     id="lateximage-bwmse-133"
      class="lateximagesource"
 ><!--
  ⃗ 𝑦) == ∇𝑓
@@ -2305,11 +2362,11 @@ If <span
 
 <div class="displaymath">
 
-<a id="autoid-14" ></a >
+<a id="autoid-16" ></a >
 
 <p>
 <span
-    id="lateximage-bwmse-132"
+    id="lateximage-bwmse-134"
     class="lateximagesource"
 ><!--
      𝑏
@@ -2321,7 +2378,7 @@ If <span
 
  ∮ 𝐹 ⃗ ⋅ 𝑑𝑟 ⃗ = 0             If 𝑟 ⃗ is a closed path
 --> <img
-    src="bwmse-images/image-132.svg"
+    src="bwmse-images/image-134.svg"
     alt="(1.1–0) \{begin}{align*} \int _a^b \vec {F} \cdot d\vec {r} &amp;= f(b) - f(a) &amp;&amp; \text {Fundamental Theorem for Line Integrals}\\ \int _{C_1} \vec {F} \cdot d\vec {r} &amp;=
 \int _{C_2} \vec {F} \cdot d\vec {r} &amp;&amp; \text {Path independence}\\ \oint \vec {F} \cdot d\vec {r} &amp;= 0 &amp;&amp; \text {If $\vec {r}$ is a closed path}\\ \{end}{align*} "
     style=""
@@ -2329,18 +2386,18 @@ If <span
 ></span>
 </p>
 </div>
-<h4 id="autosec-307"><span class="sectionnumber">1.18&#x2003;</span>Green’s Theorem</h4>
-<a id="bwmse-autopage-307"></a>
+<h4 id="autosec-313"><span class="sectionnumber">1.19&#x2003;</span>Green’s Theorem</h4>
+<a id="bwmse-autopage-313"></a>
 
 
 
 <div class="displaymath">
 
-<a id="autoid-15" ></a >
+<a id="autoid-17" ></a >
 
 <p>
 <span
-    id="lateximage-bwmse-133"
+    id="lateximage-bwmse-135"
     class="lateximagesource"
 ><!--
  ∮ 𝐹 ⃗ ⋅ 𝑑𝑟 ⃗ = ∫ ∫ 𝑐𝑢𝑟𝑙(𝐹)⃗ 𝑑𝐴   tangental
@@ -2349,7 +2406,7 @@ If <span
 ∮ 𝐹 ⃗ ⋅ 𝑛̂ 𝑑𝑠 = ∫ ∫ 𝑑𝑖𝑣(𝐹)⃗ 𝑑𝐴    normal
  𝐶               𝑅
 --> <img
-    src="bwmse-images/image-133.svg"
+    src="bwmse-images/image-135.svg"
     alt="(1.1–0) \{begin}{align*} \oint _C \vec {F} \cdot d\vec {r} &amp;= \int \int _R curl(\vec {F})\,dA &amp;&amp; \text {tangental} \\ \oint _C \vec {F} \cdot \hat {n}\, ds &amp;= \int
 \int _R div(\vec {F})\,dA &amp;&amp; \text {normal} \\ \{end}{align*} "
     style=""
@@ -2357,10 +2414,10 @@ If <span
 ></span>
 </p>
 </div>
-<h3 id="autosec-310">Chapter&nbsp;<span class="sectionnumber">2&#x2003;</span>Science</h3>
-<a id="bwmse-autopage-310"></a>
-<h4 id="autosec-311"><span class="sectionnumber">2.1&#x2003;</span>Units</h4>
-<a id="bwmse-autopage-311"></a>
+<h3 id="autosec-316">Chapter&nbsp;<span class="sectionnumber">2&#x2003;</span>Science</h3>
+<a id="bwmse-autopage-316"></a>
+<h4 id="autosec-317"><span class="sectionnumber">2.1&#x2003;</span>Units</h4>
+<a id="bwmse-autopage-317"></a>
 <table>
 
 <tr>
@@ -2392,7 +2449,7 @@ If <span
 <td class="tdl"></td>
 <td class="tdl">steradian</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-134"
+    id="lateximage-bwmse-136"
     class="lateximagesource"
 ><!--
 𝑠𝑟
@@ -2409,7 +2466,7 @@ If <span
 <tr>
 <td class="tdl">Area</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-135"
+    id="lateximage-bwmse-137"
     class="lateximagesource"
 ><!--
 𝑚2
@@ -2428,7 +2485,7 @@ If <span
 <tr>
 <td class="tdl">Volume</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-136"
+    id="lateximage-bwmse-138"
     class="lateximagesource"
 ><!--
 𝑚3
@@ -2447,7 +2504,7 @@ If <span
 <tr>
 <td class="tdl">Frequency</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-137"
+    id="lateximage-bwmse-139"
     class="lateximagesource"
 ><!--
 𝑠−1
@@ -2460,7 +2517,7 @@ If <span
 ></span></td>
 <td class="tdl">Hertz</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-138"
+    id="lateximage-bwmse-140"
     class="lateximagesource"
 ><!--
 𝐻𝑧
@@ -2477,7 +2534,7 @@ If <span
 <tr>
 <td class="tdl">Velocity</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-139"
+    id="lateximage-bwmse-141"
     class="lateximagesource"
 ><!--
 𝑚 ⋅ 𝑠−1
@@ -2496,7 +2553,7 @@ If <span
 <tr>
 <td class="tdl">Acceleration</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-140"
+    id="lateximage-bwmse-142"
     class="lateximagesource"
 ><!--
 𝑚 ⋅ 𝑠−2
@@ -2515,7 +2572,7 @@ If <span
 <tr>
 <td class="tdl">Angular Velocity</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-141"
+    id="lateximage-bwmse-143"
     class="lateximagesource"
 ><!--
 𝑟𝑎𝑑 ⋅ 𝑠−1
@@ -2534,7 +2591,7 @@ If <span
 <tr>
 <td class="tdl">Angular Acceleration</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-142"
+    id="lateximage-bwmse-144"
     class="lateximagesource"
 ><!--
 𝑟𝑎𝑑 ⋅ 𝑠−2
@@ -2553,7 +2610,7 @@ If <span
 <tr>
 <td class="tdl">Density</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-143"
+    id="lateximage-bwmse-145"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚−3
@@ -2572,7 +2629,7 @@ If <span
 <tr>
 <td class="tdl">Momentum</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-144"
+    id="lateximage-bwmse-146"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚 ⋅ 𝑠−1
@@ -2591,7 +2648,7 @@ If <span
 <tr>
 <td class="tdl">Angular Momentum</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-145"
+    id="lateximage-bwmse-147"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚2 ⋅ 𝑠−1
@@ -2610,7 +2667,7 @@ If <span
 <tr>
 <td class="tdl">Force</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-146"
+    id="lateximage-bwmse-148"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚 ⋅ 𝑠−2
@@ -2623,7 +2680,7 @@ If <span
 ></span></td>
 <td class="tdl">Newton</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-147"
+    id="lateximage-bwmse-149"
     class="lateximagesource"
 ><!--
 𝑁
@@ -2640,7 +2697,7 @@ If <span
 <tr>
 <td class="tdl">Work, Energy</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-148"
+    id="lateximage-bwmse-150"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚2 ⋅ 𝑠−2
@@ -2653,7 +2710,7 @@ If <span
 ></span></td>
 <td class="tdl">Joule</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-149"
+    id="lateximage-bwmse-151"
     class="lateximagesource"
 ><!--
 𝐽
@@ -2670,7 +2727,7 @@ If <span
 <tr>
 <td class="tdl">Power</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-150"
+    id="lateximage-bwmse-152"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚2 ⋅ 𝑠−3
@@ -2683,7 +2740,7 @@ If <span
 ></span></td>
 <td class="tdl">Watt</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-151"
+    id="lateximage-bwmse-153"
     class="lateximagesource"
 ><!--
 𝑊
@@ -2700,7 +2757,7 @@ If <span
 <tr>
 <td class="tdl">Torque</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-152"
+    id="lateximage-bwmse-154"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚2 ⋅ 𝑠−2
@@ -2719,7 +2776,7 @@ If <span
 <tr>
 <td class="tdl">Pressure</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-153"
+    id="lateximage-bwmse-155"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚−1 ⋅ 𝑠−2
@@ -2732,7 +2789,7 @@ If <span
 ></span></td>
 <td class="tdl">Pascal</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-154"
+    id="lateximage-bwmse-156"
     class="lateximagesource"
 ><!--
 𝑃𝑎
@@ -2754,8 +2811,8 @@ If <span
 </tr>
 
 </table>
-<h4 id="autosec-355"><span class="sectionnumber">2.2&#x2003;</span>Lab Reports</h4>
-<a id="bwmse-autopage-355"></a>
+<h4 id="autosec-361"><span class="sectionnumber">2.2&#x2003;</span>Lab Reports</h4>
+<a id="bwmse-autopage-361"></a>
 <table>
 
 <tr>
@@ -2798,14 +2855,14 @@ If <span
 </tr>
 
 </table>
-<h4 id="autosec-357"><span class="sectionnumber">2.3&#x2003;</span>Laws</h4>
-<a id="bwmse-autopage-357"></a>
+<h4 id="autosec-363"><span class="sectionnumber">2.3&#x2003;</span>Laws</h4>
+<a id="bwmse-autopage-363"></a>
 <table>
 
 <tr>
 <td class="tdl">Newton’s 1st Law</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-155"
+    id="lateximage-bwmse-157"
     class="lateximagesource"
 ><!--
 ∑ F = 0 ⇔ v̇
@@ -2822,7 +2879,7 @@ If <span
 <tr>
 <td class="tdl">Newton’s 2nd Law</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-156"
+    id="lateximage-bwmse-158"
     class="lateximagesource"
 ><!--
 F = 𝑚a = ṗ
@@ -2839,7 +2896,7 @@ F = 𝑚a = ṗ
 <tr>
 <td class="tdl">Newton’s 3rd Law</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-157"
+    id="lateximage-bwmse-159"
     class="lateximagesource"
 ><!--
 F𝑎 = −F𝑎
@@ -2856,7 +2913,7 @@ F𝑎 = −F𝑎
 <tr>
 <td class="tdl">Gravity</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-158"
+    id="lateximage-bwmse-160"
     class="lateximagesource"
 ><!--
 F = 𝑚g
@@ -2867,7 +2924,7 @@ F = 𝑚g
     style="width:3.92828em ; vertical-align:-0.282em "
     class="lateximage"
 ></span>; <span
-    id="lateximage-bwmse-159"
+    id="lateximage-bwmse-161"
     class="lateximagesource"
 ><!--
 g = 9.81
@@ -2884,7 +2941,7 @@ g = 9.81
 <tr>
 <td class="tdl">Hooke’s Law</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-160"
+    id="lateximage-bwmse-162"
     class="lateximagesource"
 ><!--
 𝐹𝑥 = −𝑘Δ𝑥
@@ -2895,7 +2952,7 @@ g = 9.81
     style="width:5.61848em ; vertical-align:-0.26038em "
     class="lateximage"
 ></span>; <span
-    id="lateximage-bwmse-161"
+    id="lateximage-bwmse-163"
     class="lateximagesource"
 ><!--
 𝑘=
@@ -2912,7 +2969,7 @@ g = 9.81
 <tr>
 <td class="tdl">Force</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-162"
+    id="lateximage-bwmse-164"
     class="lateximagesource"
 ><!--
 𝑁 = 𝑘𝑔 ⋅ 𝑚 ⋅ 𝑠−2
@@ -2929,7 +2986,7 @@ g = 9.81
 <tr>
 <td class="tdl">Energy</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-163"
+    id="lateximage-bwmse-165"
     class="lateximagesource"
 ><!--
 𝐽 =𝑁⋅𝑚
@@ -2946,7 +3003,7 @@ g = 9.81
 <tr>
 <td class="tdl">Power</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-164"
+    id="lateximage-bwmse-166"
     class="lateximagesource"
 ><!--
 𝑊 = 𝐽 ⋅ 𝑠−1
@@ -2963,7 +3020,7 @@ g = 9.81
 <tr>
 <td class="tdl">Momentum</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-165"
+    id="lateximage-bwmse-167"
     class="lateximagesource"
 ><!--
 p=𝑚⋅v
@@ -2980,7 +3037,7 @@ p=𝑚⋅v
 <tr>
 <td class="tdl">Kinetic Energy</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-166"
+    id="lateximage-bwmse-168"
     class="lateximagesource"
 ><!--
    1        p2
@@ -3014,8 +3071,8 @@ p=𝑚⋅v
 </tr>
 
 </table>
-<h4 id="autosec-383"><span class="sectionnumber">2.4&#x2003;</span>Mechanics Problem Workflow</h4>
-<a id="bwmse-autopage-383"></a>
+<h4 id="autosec-389"><span class="sectionnumber">2.4&#x2003;</span>Mechanics Problem Workflow</h4>
+<a id="bwmse-autopage-389"></a>
 <table>
 
 <tr>
@@ -3070,15 +3127,15 @@ p=𝑚⋅v
 </tr>
 
 </table>
-<h3 id="autosec-385">Chapter&nbsp;<span class="sectionnumber">3&#x2003;</span>Engineering</h3>
-<a id="bwmse-autopage-385"></a>
-<h4 id="autosec-386"><span class="sectionnumber">3.1&#x2003;</span>DC Ohm’s Law</h4>
-<a id="bwmse-autopage-386"></a>
+<h3 id="autosec-391">Chapter&nbsp;<span class="sectionnumber">3&#x2003;</span>Engineering</h3>
+<a id="bwmse-autopage-391"></a>
+<h4 id="autosec-392"><span class="sectionnumber">3.1&#x2003;</span>DC Ohm’s Law</h4>
+<a id="bwmse-autopage-392"></a>
 <table>
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-167"
+    id="lateximage-bwmse-169"
     class="lateximagesource"
 ><!--
 𝐼
@@ -3090,7 +3147,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-168"
+    id="lateximage-bwmse-170"
     class="lateximagesource"
 ><!--
     𝐸
@@ -3104,7 +3161,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-169"
+    id="lateximage-bwmse-171"
     class="lateximagesource"
 ><!--
     𝑃
@@ -3118,7 +3175,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-170"
+    id="lateximage-bwmse-172"
     class="lateximagesource"
 ><!--
      𝑃
@@ -3136,7 +3193,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-171"
+    id="lateximage-bwmse-173"
     class="lateximagesource"
 ><!--
 𝑅
@@ -3148,7 +3205,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-172"
+    id="lateximage-bwmse-174"
     class="lateximagesource"
 ><!--
     𝐸
@@ -3162,7 +3219,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-173"
+    id="lateximage-bwmse-175"
     class="lateximagesource"
 ><!--
     𝐸2
@@ -3176,7 +3233,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-174"
+    id="lateximage-bwmse-176"
     class="lateximagesource"
 ><!--
     𝑃
@@ -3194,7 +3251,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-175"
+    id="lateximage-bwmse-177"
     class="lateximagesource"
 ><!--
 𝐸
@@ -3206,7 +3263,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-176"
+    id="lateximage-bwmse-178"
     class="lateximagesource"
 ><!--
 = 𝐼𝑅
@@ -3218,7 +3275,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-177"
+    id="lateximage-bwmse-179"
     class="lateximagesource"
 ><!--
     𝑃
@@ -3232,7 +3289,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-178"
+    id="lateximage-bwmse-180"
     class="lateximagesource"
 ><!--
 = √𝑃𝑅
@@ -3248,7 +3305,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-179"
+    id="lateximage-bwmse-181"
     class="lateximagesource"
 ><!--
 𝑃
@@ -3260,7 +3317,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-180"
+    id="lateximage-bwmse-182"
     class="lateximagesource"
 ><!--
 = 𝐸𝐼
@@ -3272,7 +3329,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-181"
+    id="lateximage-bwmse-183"
     class="lateximagesource"
 ><!--
 = 𝐼2𝑅
@@ -3284,7 +3341,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-182"
+    id="lateximage-bwmse-184"
     class="lateximagesource"
 ><!--
     𝐸2
@@ -3308,13 +3365,13 @@ p=𝑚⋅v
 </tr>
 
 </table>
-<h4 id="autosec-420"><span class="sectionnumber">3.2&#x2003;</span>AC Ohm’s Law</h4>
-<a id="bwmse-autopage-420"></a>
+<h4 id="autosec-426"><span class="sectionnumber">3.2&#x2003;</span>AC Ohm’s Law</h4>
+<a id="bwmse-autopage-426"></a>
 <table>
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-183"
+    id="lateximage-bwmse-185"
     class="lateximagesource"
 ><!--
 𝐼
@@ -3326,7 +3383,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-184"
+    id="lateximage-bwmse-186"
     class="lateximagesource"
 ><!--
     𝐸
@@ -3340,7 +3397,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-185"
+    id="lateximage-bwmse-187"
     class="lateximagesource"
 ><!--
       𝑃
@@ -3354,7 +3411,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-186"
+    id="lateximage-bwmse-188"
     class="lateximagesource"
 ><!--
          𝑃
@@ -3372,7 +3429,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-187"
+    id="lateximage-bwmse-189"
     class="lateximagesource"
 ><!--
 𝑍
@@ -3384,7 +3441,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-188"
+    id="lateximage-bwmse-190"
     class="lateximagesource"
 ><!--
     𝐸
@@ -3398,7 +3455,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-189"
+    id="lateximage-bwmse-191"
     class="lateximagesource"
 ><!--
     𝐸 2 𝑐𝑜𝑠(𝜃)
@@ -3412,7 +3469,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-190"
+    id="lateximage-bwmse-192"
     class="lateximagesource"
 ><!--
         𝑃
@@ -3430,7 +3487,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-191"
+    id="lateximage-bwmse-193"
     class="lateximagesource"
 ><!--
 𝐸
@@ -3442,7 +3499,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-192"
+    id="lateximage-bwmse-194"
     class="lateximagesource"
 ><!--
 = 𝐼𝑍
@@ -3454,7 +3511,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-193"
+    id="lateximage-bwmse-195"
     class="lateximagesource"
 ><!--
       𝑃
@@ -3468,7 +3525,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-194"
+    id="lateximage-bwmse-196"
     class="lateximagesource"
 ><!--
         𝑃𝑍
@@ -3486,7 +3543,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-195"
+    id="lateximage-bwmse-197"
     class="lateximagesource"
 ><!--
 𝑃
@@ -3498,7 +3555,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-196"
+    id="lateximage-bwmse-198"
     class="lateximagesource"
 ><!--
 = 𝐸𝐼𝑐𝑜𝑠(𝜃)
@@ -3510,7 +3567,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-197"
+    id="lateximage-bwmse-199"
     class="lateximagesource"
 ><!--
 = 𝐼 2 𝑍𝑐𝑜𝑠(𝜃)
@@ -3522,7 +3579,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-198"
+    id="lateximage-bwmse-200"
     class="lateximagesource"
 ><!--
     𝐸 2 𝑐𝑜𝑠(𝜃)
@@ -3546,8 +3603,8 @@ p=𝑚⋅v
 </tr>
 
 </table>
-<h3 id="autosec-454">Bibliography</h3>
-<a id="bwmse-autopage-454"></a>
+<h3 id="autosec-460">Bibliography</h3>
+<a id="bwmse-autopage-460"></a>
 
 
 <ul style="list-style-type:none">
