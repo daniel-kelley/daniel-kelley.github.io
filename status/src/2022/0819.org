@@ -1,0 +1,71 @@
+#+TITLE: 13 August 2022 - 19 August 2022
+
+* MIT OCW
+** 18.02 - Multiple Variable Calculus
+*** Session 78, PS10
+* Emergency Crystal Radio
+** Fixed switch by removing broken wafer (1 of 2)
+* Mill Controller #2
+** Repurpose 'boss' hard drive
+** Need to investigate new HW/SW for eventual replacements
+*** Old crap ain't gonna last forever
+*** Buildroot/Linux 5.15 PREEMPT + latency tools
+First pass done - boots on real hardware
+* Alum Rock Data Center
+** Using CentOS 7 for now - good until 2024?
+** need to check alma, rocky, others? for suitability
+* OLPC
+** Needs ML1120 coin batteries to fix "invalid system date".
+* Virtual Orchestra
+** sfz file tests
+*** need tooling to edit sample files
+** increasingly skeptical whether quality results are possible
+* gat
+** spectrogram done - matches 'octave' output
+* abby
+** installed three wire chassis fan - too noisy
+** need to get 4 wire chassis fan
+* marble computing
+** Purely mechanical linkage likely too complex for most circuits
+*** Difficult to generalize
+*** Complexity grows with product of bits and stages
+*** Not sure how to 'AND' inputs efficiently
+*** Tofolli -> CNOT expansion increases complexity
+** Electromechanical linkage likely workable
+*** Easily generalizable
+*** 'Rocker' staging/sequencing allows infinite stages
+*** Complexity grows with bits only
+*** RC servos for CNOT gate control relatively inexpensive
+* More project ideas
+** Zuse Z3 simulation in Verilog
+   Good excuse for floating point ALU design.
+** GMPForth ports to SIMH
+*** SIMH maybe some targets (vax)
+*** MAME looks interesting for microprocessor system emulations
+    How to support erzatz systems?
+*** Ports to classic figFORTH targets
+** GMPASM assembler
+   May be useful for handbuilt and rare systems (DMX1000?).
+** Extracting ISO Superboard Forth ROMS for MAME emulation
+** 'bwocl' OpenCL tooling
+*** Offline compilation
+*** Standard Kernel Running
+** hardware support for classic 5V CPUs
+*** RTX2000, CDP1802 still in production!
+*** 6502, 68000, 320C30, others on hand
+*** CPUs with async bus may be supportable without RAM
+*** Use Nucleo w/ 5V tolerant IO as boot loader controller
+** Existing 'retro' hardware still working?
+*** OSI Superboard
+*** Super Jolt
+*** Ampro Little Board
+*** Etc.
+* David Davies
+** Broadcom BCG? Employee indicted for running a brothel.
+** New case C1923172, consolidated with *15* Parties.
+** Next hearing 9/6/2022
+* Peter Kim
+** Broadcom CSG Employee indicted for trade secret theft.
+** United States v. Kim (5:21-cr-00438).
+** Change of Plea Hearing Held 5/10/2022 (Guilty on various counts)
+** Sentencing 9/20/2022
