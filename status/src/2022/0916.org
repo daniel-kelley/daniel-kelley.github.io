@@ -1,0 +1,93 @@
+#+TITLE: 10 September 2022 - 16 September 2022
+
+* MIT OCW
+** 18.02 - Multiple Variable Calculus
+*** Session 88-91
+* Emergency Crystal Radio
+** Finished desoldering switch
+** Radio constructed
+** Need to test
+* Mill Controller #2
+** Repurpose 'boss' hard drive
+** Need to investigate new HW/SW for eventual replacements
+*** Old crap ain't gonna last forever
+*** Buildroot/Linux 5.15 PREEMPT + latency tools
+First pass done - boots on real hardware
+* Alum Rock Data Center
+** Using CentOS 7 for now - good until 2024?
+** need to check alma, rocky, others? for suitability
+* OLPC
+** Needs ML1120 coin batteries to fix "invalid system date".
+* Virtual Orchestra
+** sfz file tests
+*** need tooling to edit sample files
+** increasingly skeptical whether quality results are possible
+* gat
+** spectrogram done - matches 'octave' output
+* abby
+** installed three wire chassis fan - too noisy
+** have another 3 wire fan from DET which may be less noisy
+** need to get 4 wire chassis fan
+* marble computing
+** Programmable Marble Gate Array
+*** Logic table to operation 'compiler' done
+*** Nucleo-f303re controller IO done enough for servos
+*** Waiting for servos
+* small graphics display
+** Use 320x480 OLED display and ESP8266+WiFi
+Can write to display
+** VT340+Regis graphics (Abandoned)
+OLED display cannot hardware scroll in required direction
+** Direct btmap interface
+Cannot find suitable existing image format for memory
+constrained receiver, so constructing a new format.
+* mcd05 32 button/led box
+** Recovered schematics.
+** Planning software.
+* ca-r
+https://github.com/daniel-kelley/ca-r/issues/34
+Another ancient stalled project trying to be completed.
+* More project ideas
+** Zuse Z3 simulation in Verilog
+   Good excuse for floating point ALU design.
+** GMPForth ports to SIMH
+*** SIMH maybe some targets (vax)
+*** MAME looks interesting for microprocessor system emulations
+    How to support erzatz systems?
+*** Ports to classic figFORTH targets
+** GMPASM assembler
+   May be useful for handbuilt and rare systems (DMX1000?).
+** Extracting ISO Superboard Forth ROMS for MAME emulation
+** 'bwocl' OpenCL tooling
+*** Offline compilation
+*** Standard Kernel Running
+** hardware support for classic 5V CPUs
+*** RTX2000, CDP1802 still available!
+*** 6502, 68000, 320C30, others on hand
+*** CPUs with async bus may be supportable without RAM
+*** Use Nucleo w/ 5V tolerant IO as boot loader controller
+** Existing 'retro' hardware still working?
+*** OSI Superboard
+Unknown
+*** Super Jolt
+Unknown
+*** Ampro Little Board
+Not booting. Needs analysis.
+*** Rockwell R65F11 Demo board
+UART sending "NO ROM" at 2400 7N1 as expected with 2MHz xtal.
+*** Etc.
+* David Davies
+** Broadcom BCG? Employee indicted for running a brothel.
+** New case C1923172, consolidated with *15* Parties.
+** Next hearing 9/20/2022
+* Peter Kim
+** Broadcom CSG Employee indicted for trade secret theft.
+** United States v. Kim (5:21-cr-00438).
+** Change of Plea Hearing Held 5/10/2022 (Guilty on various counts)
+** Sentencing 9/20/2022
+** See Also
+https://www.theregister.com/2022/09/15/broadcom_engineer_ip_theft/
+
+* Reading
+** A New History of Modern Computing (Thomas Haigh and Paul E. Ceruzzi)
+https://mitpress.mit.edu/9780262542906/a-new-history-of-modern-computing/
