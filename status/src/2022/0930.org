@@ -23,7 +23,8 @@ First pass done - boots on real hardware
 * gat
 ** spectrogram done - matches 'octave' output
 * abby
-** need to install 4 wire chassis fan
+** installed 4 wire chassis fan
+now quiet again
 * marble computing
 ** Programmable Marble Gate Array
 *** Servo interface tested
