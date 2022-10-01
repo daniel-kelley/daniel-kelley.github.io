@@ -2,7 +2,7 @@
 
 * MIT OCW
 ** 18.02 - Multiple Variable Calculus
-*** Session 92-94
+*** Session 95-92,PSet2
 * Emergency Crystal Radio
 ** Need good ground straps
 * Mill Controller #2
@@ -27,7 +27,10 @@ First pass done - boots on real hardware
 * marble computing
 ** Programmable Marble Gate Array
 *** Servo interface tested
-*** Gate plate in design
+*** Gate plate designed
+Needs fabrication
+*** Gate ball sensor needs to be revisited
+Original approach (ball shorting rails) unreliable
 *** Gate controller in design
 *** Planning display integration
 * small graphics display
@@ -67,13 +70,9 @@ No output. Needs analysis.
 Not booting. Needs analysis.
 *** Rockwell R65F11 Demo board
 UART sending "NO ROM" at 2400 7N1 as expected with 2MHz xtal.
-*** Etc.
+*** NMIX-0016
+Works.
 * David Davies
 ** Broadcom BCG? Employee indicted for running a brothel.
 ** New case C1923172, consolidated with *15* Parties.
 ** Next hearing 9/20/2022
-* Peter Kim
-** Broadcom CSG Employee indicted for trade secret theft.
-** United States v. Kim (5:21-cr-00438).
-** Sentenced: 8 months.
-https://www.justice.gov/usao-ndca/pr/former-broadcom-engineer-sentenced-eight-months-prison-theft-trade-secrets
