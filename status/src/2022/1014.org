@@ -1,0 +1,76 @@
+#+TITLE: 08 October 2022 - 04 October 2022
+
+* MIT OCW
+** 18.02 - Multiple Variable Calculus
+*** PSet12 con't
+* Emergency Crystal Radio
+** Done.
+Gets only KSCO in SCZ.
+Need to test in SJ.
+* Mill Controller #2
+** Repurpose 'boss' hard drive
+** Need to investigate new HW/SW for eventual replacements
+*** Old crap ain't gonna last forever
+*** Buildroot/Linux 5.15 PREEMPT + latency tools
+First pass done - boots on real hardware
+* Alum Rock Data Center
+** Using CentOS 7 for now - good until 2024?
+** need to check alma, rocky, others? for suitability
+* OLPC
+** Needs ML1120 coin batteries to fix "invalid system date".
+* Virtual Orchestra
+** sfz file tests
+*** need tooling to edit sample files
+** increasingly skeptical whether quality results are possible
+* gat
+** spectrogram done - matches 'octave' output
+* marble computing
+** Programmable Marble Gate Array
+*** Platform
+Works!
+*** Ball sensor
+Clairex CdS not sensitive enough. Investigating alternatives.
+*** Display
+Pins resoldered. Needs testing.
+* small graphics display
+** Use 320x480 OLED display and ESP8266+WiFi
+** BWIF (Barely Working Image Format) designed
+** pamtobwif/bwiftopam mostly complete
+* mcd05 32 button/led box
+** Recovered schematics.
+** Planning software.
+** Will switch controller to Nucleo144 with Ethernet.
+* More project ideas
+** Zuse Z3 simulation in Verilog
+   Good excuse for floating point ALU design.
+** GMPForth ports to simulators
+*** SIMH for some targets (vax)
+*** MAME looks interesting for microprocessor system emulations
+    How to support erzatz systems?
+*** Ports to classic figFORTH targets
+** GMPASM assembler
+   May be useful for handbuilt and rare systems (DMX1000?).
+** Extracting ISO Superboard Forth ROMS for MAME emulation
+** 'bwocl' OpenCL tooling
+*** Offline compilation
+*** Standard Kernel Running
+** hardware support for classic 5V CPUs
+*** RTX2000, CDP1802 still available!
+*** 6502, 68000, 320C30, others on hand
+*** CPUs with async bus may be supportable without RAM
+*** Use Nucleo w/ 5V tolerant IO as boot loader controller
+** Existing 'retro' hardware still working?
+*** OSI Superboard
+Unknown. Received composite to VGA adapter.
+*** Super Jolt
+No output. Needs analysis.
+*** Ampro Little Board
+Not booting. Needs analysis.
+*** Rockwell R65F11 Demo board
+UART sending "NO ROM" at 2400 7N1 as expected with 2MHz xtal.
+*** NMIX-0016
+Works.
+* David Davies
+** Broadcom BCG? Employee indicted for running a brothel.
+** New case C1923172, consolidated with *15* Parties.
+** Next hearing 10/20/2022
