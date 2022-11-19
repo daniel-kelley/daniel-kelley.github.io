@@ -1,0 +1,73 @@
+#+TITLE: 12 November 2022 - 18 November 2022
+
+* MIT OCW
+** 18.02 - Multiple Variable Calculus
+*** Final, con't.
+* Mill Controller #2
+** Repurpose 'boss' hard drive
+S/W configuration done.
+** Need to investigate new HW/SW for eventual replacements
+*** Old crap ain't gonna last forever
+*** Buildroot/Linux 5.15 PREEMPT + latency tools
+First pass done - boots on real hardware
+* Alum Rock Data Center
+** need to check rocky, others? (arch?) for suitability
+* OLPC
+** Ordered ML1120 coin batteries to fix "invalid system date".
+* Virtual Orchestra
+** sfz file tests
+*** need tooling to edit sample files
+** increasingly skeptical whether quality results are possible
+** maybe should treat as platform for concatinative synthesis
+** maybe should just accept the limitations and work with it
+One should not be disappointed that a guitar can't sound like a flute.
+* gat
+** spectrogram done - matches 'octave' output
+* marble computing
+** Programmable Marble Gate Array
+*** Done (enough!)
+* small graphics display
+** Started WiFi integration
+* mcd05 32 button/led box
+** Recovered schematics.
+** Planning software.
+** Received STM32F767 Nucleo144 with Ethernet.
+*** Test program running.
+*** Need to consider CoAP multicast discovery.
+* More project ideas
+** Zuse Z3 simulation in Verilog
+   Good excuse for floating point ALU design.
+** GMPForth ports to simulators
+*** SIMH for some targets (vax)
+*** MAME looks interesting for microprocessor system emulations
+    How to support erzatz systems?
+*** Ports to classic figFORTH targets
+** GMPASM assembler
+   May be useful for handbuilt and rare systems (DMX1000?).
+** Extracting ISO Superboard Forth ROMS for MAME emulation
+** 'bwocl' OpenCL tooling
+*** Offline compilation
+*** Standard Kernel Running
+** hardware support for classic 5V CPUs
+*** RTX2000, CDP1802 still available!
+*** 6502, 68000, 320C30, others on hand
+*** CPUs with async bus may be supportable without RAM
+*** Use Nucleo w/ 5V tolerant IO as boot loader controller
+*** Could use small foorprint monitor in asm (gmpmon?)
+*** Started planning for 6502.
+** Existing 'retro' hardware still working?
+*** OSI Superboard
+Unknown. Composite to VGA adapter didn't seem to work. Needs analysis.
+Found OSI model 610 board underneath!
+*** Super Jolt
+No output. Needs analysis.
+*** Ampro Little Board
+Not booting. Needs analysis.
+*** Rockwell R65F11 Demo board
+UART sending "NO ROM" at 2400 7N1 as expected with 2MHz xtal.
+*** NMIX-0016
+Works. Found original prom in a parts stash(!).
+* David Davies
+** Broadcom BCG? Employee indicted for running a brothel.
+** New case C1923172, consolidated with *15* Parties.
+** Next hearing 12/15/2022
