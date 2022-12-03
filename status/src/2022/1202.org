@@ -26,6 +26,12 @@ One should not be disappointed that a guitar can't sound like a flute.
 * small graphics display
 ** TFTP rgb 565 graphic works.
 ** Hope to never use ESP platform ever again.
+** Done.
+* RIOT drivers
+Implemented - needs testing.
+** WS2801
+** Velleman KA03
+** Velleman KA05
 * mcd05 32 button/led box
 ** Recovered schematics.
 ** Planning software.
