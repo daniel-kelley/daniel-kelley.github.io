@@ -59,8 +59,13 @@ one part missing. As near as I can tell, that one part is some sort of
 programmable address decoder with a pinout that does not correspond to
 any part I can find. Kind of like a GAL but with inputs on top and
 outputs on bottom (as opposed to left and right in a standard GAL). I
-have know idea what the provenance of this board is and if it ever
+have no idea what the provenance of this board is and if it ever
 worked.
+* ACK
+Compiled Amsterdam Compiler Kit. Got completely distracted with 6502
+binary-to-hex conversion using decimal mode arithmetic.
+* POSIT
+Investigated Posit floating point format.
 * PLD programming
 Looks like Atmel 16V8 is the last 5V PLD part left standing. Maybe not
 surprising that there still doesn't appear to be a fully open source
