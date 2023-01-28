@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-16 Sat 08:18 -->
+<!-- 2023-01-28 Sat 07:04 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>25 October 2020 - 31 October 2020</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Daniel Kelley" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -40,22 +41,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -190,62 +191,15 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">25 October 2020 - 31 October 2020</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
 <li><a href="#orga644f13">1. Live Oak Weather Station</a>
 <ul>
@@ -282,7 +236,7 @@ Happy Halloween!
 </p>
 
 <div id="outline-container-orga644f13" class="outline-2">
-<h2 id="orga644f13"><span class="section-number-2">1</span> Live Oak Weather Station</h2>
+<h2 id="orga644f13"><span class="section-number-2">1.</span> Live Oak Weather Station</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Finishing sensors, starting packaging
@@ -290,7 +244,7 @@ Finishing sensors, starting packaging
 </div>
 
 <div id="outline-container-org3ce2fdf" class="outline-3">
-<h3 id="org3ce2fdf"><span class="section-number-3">1.1</span> PM interface</h3>
+<h3 id="org3ce2fdf"><span class="section-number-3">1.1.</span> PM interface</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 Ported user space driver from RIOT
@@ -298,7 +252,7 @@ Ported user space driver from RIOT
 </div>
 </div>
 <div id="outline-container-org9f43d82" class="outline-3">
-<h3 id="org9f43d82"><span class="section-number-3">1.2</span> UV interface</h3>
+<h3 id="org9f43d82"><span class="section-number-3">1.2.</span> UV interface</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 User space driver in progress
@@ -306,7 +260,7 @@ User space driver in progress
 </div>
 </div>
 <div id="outline-container-orgcb0ef8b" class="outline-3">
-<h3 id="orgcb0ef8b"><span class="section-number-3">1.3</span> BME680 interface</h3>
+<h3 id="orgcb0ef8b"><span class="section-number-3">1.3.</span> BME680 interface</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 Using Linux I2C IIO driver
@@ -314,7 +268,7 @@ Using Linux I2C IIO driver
 </div>
 </div>
 <div id="outline-container-org3ddf733" class="outline-3">
-<h3 id="org3ddf733"><span class="section-number-3">1.4</span> Argent WS-1</h3>
+<h3 id="org3ddf733"><span class="section-number-3">1.4.</span> Argent WS-1</h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 Using ancient MOS7703 serial dongle and random driver on github
@@ -327,7 +281,7 @@ Using ancient MOS7703 serial dongle and random driver on github
 </div>
 
 <div id="outline-container-orgd606739" class="outline-3">
-<h3 id="orgd606739"><span class="section-number-3">1.5</span> Sensor shelter</h3>
+<h3 id="orgd606739"><span class="section-number-3">1.5.</span> Sensor shelter</h3>
 <div class="outline-text-3" id="text-1-5">
 <p>
 One more section, plus top and bottom cover printed.
@@ -340,7 +294,7 @@ Need to build wiring harness and connectorization.
 </div>
 
 <div id="outline-container-orgbd80745" class="outline-3">
-<h3 id="orgbd80745"><span class="section-number-3">1.6</span> System shelter</h3>
+<h3 id="orgbd80745"><span class="section-number-3">1.6.</span> System shelter</h3>
 <div class="outline-text-3" id="text-1-6">
 <p>
 3x8x8 1/2" oak veneer ply finished with 3 coats of varathane
@@ -349,7 +303,7 @@ Need to build wiring harness and connectorization.
 </div>
 
 <div id="outline-container-org514ac1d" class="outline-3">
-<h3 id="org514ac1d"><span class="section-number-3">1.7</span> Sensor mount</h3>
+<h3 id="org514ac1d"><span class="section-number-3">1.7.</span> Sensor mount</h3>
 <div class="outline-text-3" id="text-1-7">
 <p>
 1/2" EMT with a 90 degree bend
@@ -367,7 +321,7 @@ Mount will be attached to underside of corner eave.
 </div>
 
 <div id="outline-container-orgc9141a7" class="outline-2">
-<h2 id="orgc9141a7"><span class="section-number-2">2</span> Three sided coin</h2>
+<h2 id="orgc9141a7"><span class="section-number-2">2.</span> Three sided coin</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 From:
@@ -391,14 +345,14 @@ need to rule out problems the flipping process first.
 </div>
 
 <div id="outline-container-orgadc2bb8" class="outline-2">
-<h2 id="orgadc2bb8"><span class="section-number-2">3</span> Fedora 33 update</h2>
+<h2 id="orgadc2bb8"><span class="section-number-2">3.</span> Fedora 33 update</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Always an adventure to see what breaks
 </p>
 </div>
 <div id="outline-container-org81b0d97" class="outline-3">
-<h3 id="org81b0d97"><span class="section-number-3">3.1</span> SSH</h3>
+<h3 id="org81b0d97"><span class="section-number-3">3.1.</span> SSH</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 Need additional configuration to connect to decrepit SSH servers:
@@ -415,7 +369,7 @@ PubkeyAcceptedKeyTypes=+ssh-rsa
 </div>
 
 <div id="outline-container-orga66ff8b" class="outline-3">
-<h3 id="orga66ff8b"><span class="section-number-3">3.2</span> x.org</h3>
+<h3 id="orga66ff8b"><span class="section-number-3">3.2.</span> x.org</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 Something decided to change the name of display outputs, so the 30-monitor
@@ -424,7 +378,7 @@ configuration was updated
 </div>
 </div>
 <div id="outline-container-org9ed2533" class="outline-3">
-<h3 id="org9ed2533"><span class="section-number-3">3.3</span> Firefox</h3>
+<h3 id="org9ed2533"><span class="section-number-3">3.3.</span> Firefox</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 Speaking of decrepit, I still need to connect to TLS 1.0 servers, which
@@ -447,11 +401,11 @@ I need to address the aforementioned decrepitude, too.
 </div>
 
 <div id="outline-container-org68b9a6b" class="outline-2">
-<h2 id="org68b9a6b"><span class="section-number-2">4</span> Alum Rock Data Center</h2>
+<h2 id="org68b9a6b"><span class="section-number-2">4.</span> Alum Rock Data Center</h2>
 <div class="outline-text-2" id="text-4">
 </div>
 <div id="outline-container-orge46c6c4" class="outline-3">
-<h3 id="orge46c6c4"><span class="section-number-3">4.1</span> Windstorm</h3>
+<h3 id="orge46c6c4"><span class="section-number-3">4.1.</span> Windstorm</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 Last Sunday's windstorm gifted me with a large branch on the ground from my
@@ -460,7 +414,7 @@ lovely Chinese Elm. Fortunately there was no collateral damage.
 </div>
 </div>
 <div id="outline-container-orgbe68737" class="outline-3">
-<h3 id="orgbe68737"><span class="section-number-3">4.2</span> Skylight</h3>
+<h3 id="orgbe68737"><span class="section-number-3">4.2.</span> Skylight</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 Replaced the skylight without falling off the roof.
@@ -469,7 +423,7 @@ Replaced the skylight without falling off the roof.
 </div>
 </div>
 <div id="outline-container-orga083954" class="outline-2">
-<h2 id="orga083954"><span class="section-number-2">5</span> Trips</h2>
+<h2 id="orga083954"><span class="section-number-2">5.</span> Trips</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Drove my sister Colleen to Kelsyville. First trip outside of Santa
@@ -478,7 +432,7 @@ Cruz and Santa Clara Counties since last year.
 </div>
 </div>
 <div id="outline-container-orgc43b2de" class="outline-2">
-<h2 id="orgc43b2de"><span class="section-number-2">6</span> Speaking of pandemic</h2>
+<h2 id="orgc43b2de"><span class="section-number-2">6.</span> Speaking of pandemic</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 While cleaning out my car, I found the receipt from Target for a half
@@ -517,8 +471,8 @@ So many principles violated!
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Daniel Kelley</p>
-<p class="date">Created: 2021-01-16 Sat 08:18</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2023-01-28 Sat 07:04</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
