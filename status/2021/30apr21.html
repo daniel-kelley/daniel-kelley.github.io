@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-05-08 Sat 05:42 -->
+<!-- 2023-01-28 Sat 07:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>24 April 2021 - 30 April 2021</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Daniel Kelley" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,21 +42,21 @@
   pre.src {
     position: relative;
     overflow: auto;
-    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
   pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -190,42 +191,19 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
-<script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
-<!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
-// @license-end
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">24 April 2021 - 30 April 2021</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
 <li><a href="#org198685e">1. Santa Cruz Weather Station</a>
 <ul>
-<li><a href="#org6782c2e">1.1. Next step</a>
+<li><a href="#orgc6c4a18">1.1. Next step</a>
 <ul>
 <li><a href="#org3816e05">1.1.1. Check replacement sensor</a></li>
 <li><a href="#org7a62fb7">1.1.2. Clean BME680/VELM6075 boards</a></li>
@@ -236,7 +214,7 @@
 </li>
 <li><a href="#org2a08bde">2. EPICS</a>
 <ul>
-<li><a href="#org927a540">2.1. Next steps</a>
+<li><a href="#org78ffd1a">2.1. Next steps</a>
 <ul>
 <li><a href="#org21d5a59">2.1.1. u3scpi network port testing</a></li>
 <li><a href="#org5ddd06a">2.1.2. initial EPICS interface</a></li>
@@ -247,7 +225,7 @@
 </li>
 <li><a href="#org9d5570f">3. Brini Tracker II</a>
 <ul>
-<li><a href="#orgb7409d5">3.1. Next steps</a>
+<li><a href="#org751d79f">3.1. Next steps</a>
 <ul>
 <li><a href="#org22a0fc0">3.1.1. Validate remaining standard GPS messages</a></li>
 <li><a href="#orgcd9f388">3.1.2. Investigate GPS chipset data logging</a></li>
@@ -259,8 +237,8 @@
 <li><a href="#orgd926f78">4. wktcolor</a>
 <ul>
 <li><a href="#org9c99ec8">4.1. Added ColPack coloring interface</a></li>
-<li><a href="#orgd4b8525">4.2. Fedora 34 changes</a></li>
-<li><a href="#org684882f">4.3. Next steps</a>
+<li><a href="#org9cb7890">4.2. Fedora 34 changes</a></li>
+<li><a href="#org752736f">4.3. Next steps</a>
 <ul>
 <li><a href="#orgf809f4b">4.3.1. Explore how to get a minimal coloring</a></li>
 </ul>
@@ -269,14 +247,14 @@
 </li>
 <li><a href="#orgf6021e8">5. wktplot</a>
 <ul>
-<li><a href="#org8d820bd">5.1. Fedora 34 changes</a></li>
-<li><a href="#org9da29f7">5.2. Next steps</a></li>
+<li><a href="#orgc4a2e7f">5.1. Fedora 34 changes</a></li>
+<li><a href="#orgd1a6b75">5.2. Next steps</a></li>
 </ul>
 </li>
 <li><a href="#org75e5959">6. ca-r</a>
 <ul>
 <li><a href="#orge45245f">6.1. Seems to have survived Fedora 34 update</a></li>
-<li><a href="#org3753dc9">6.2. Next Step</a></li>
+<li><a href="#org4e3d143">6.2. Next Step</a></li>
 </ul>
 </li>
 <li><a href="#org2406cb7">7. GMP Forth</a>
@@ -286,7 +264,7 @@
 </li>
 <li><a href="#orgd7c3328">8. AMDGPU</a>
 <ul>
-<li><a href="#org0fce8c1">8.1. Next step</a>
+<li><a href="#orgc797c75">8.1. Next step</a>
 <ul>
 <li><a href="#org124352f">8.1.1. Reverse engineer HSAKMT programming.</a></li>
 </ul>
@@ -295,7 +273,7 @@
 </li>
 <li><a href="#org50af545">9. Ninja v Make</a>
 <ul>
-<li><a href="#org6b328e4">9.1. Next Step</a>
+<li><a href="#orgd49031d">9.1. Next Step</a>
 <ul>
 <li><a href="#orga57eb67">9.1.1. clean simple measurements</a></li>
 </ul>
@@ -330,24 +308,24 @@ Another Birthday gone by
 </p>
 
 <div id="outline-container-org198685e" class="outline-2">
-<h2 id="org198685e"><span class="section-number-2">1</span> Santa Cruz Weather Station</h2>
+<h2 id="org198685e"><span class="section-number-2">1.</span> Santa Cruz Weather Station</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Replacement Plantower sensor acquired
 </p>
 </div>
-<div id="outline-container-org6782c2e" class="outline-3">
-<h3 id="org6782c2e"><span class="section-number-3">1.1</span> Next step</h3>
+<div id="outline-container-orgc6c4a18" class="outline-3">
+<h3 id="orgc6c4a18"><span class="section-number-3">1.1.</span> Next step</h3>
 <div class="outline-text-3" id="text-1-1">
 </div>
 <div id="outline-container-org3816e05" class="outline-4">
-<h4 id="org3816e05"><span class="section-number-4">1.1.1</span> Check replacement sensor</h4>
+<h4 id="org3816e05"><span class="section-number-4">1.1.1.</span> Check replacement sensor</h4>
 </div>
 <div id="outline-container-org7a62fb7" class="outline-4">
-<h4 id="org7a62fb7"><span class="section-number-4">1.1.2</span> Clean BME680/VELM6075 boards</h4>
+<h4 id="org7a62fb7"><span class="section-number-4">1.1.2.</span> Clean BME680/VELM6075 boards</h4>
 </div>
 <div id="outline-container-org4ff1668" class="outline-4">
-<h4 id="org4ff1668"><span class="section-number-4">1.1.3</span> Design more robust instrument shelter</h4>
+<h4 id="org4ff1668"><span class="section-number-4">1.1.3.</span> Design more robust instrument shelter</h4>
 <div class="outline-text-4" id="text-1-1-3">
 <p>
 Use existing small mast for VEML6075; put others in larger shelter.
@@ -358,7 +336,7 @@ Use existing small mast for VEML6075; put others in larger shelter.
 </div>
 
 <div id="outline-container-org2a08bde" class="outline-2">
-<h2 id="org2a08bde"><span class="section-number-2">2</span> EPICS</h2>
+<h2 id="org2a08bde"><span class="section-number-2">2.</span> EPICS</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 No progress. Now that the Brini Tracker A/D is working (which was
@@ -366,64 +344,64 @@ the original motivation for getting U3 stuff working), this is no
 longer "critical path" - not like anything is critical in this list.
 </p>
 </div>
-<div id="outline-container-org927a540" class="outline-3">
-<h3 id="org927a540"><span class="section-number-3">2.1</span> Next steps</h3>
+<div id="outline-container-org78ffd1a" class="outline-3">
+<h3 id="org78ffd1a"><span class="section-number-3">2.1.</span> Next steps</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
 <div id="outline-container-org21d5a59" class="outline-4">
-<h4 id="org21d5a59"><span class="section-number-4">2.1.1</span> u3scpi network port testing</h4>
+<h4 id="org21d5a59"><span class="section-number-4">2.1.1.</span> u3scpi network port testing</h4>
 </div>
 <div id="outline-container-org5ddd06a" class="outline-4">
-<h4 id="org5ddd06a"><span class="section-number-4">2.1.2</span> initial EPICS interface</h4>
+<h4 id="org5ddd06a"><span class="section-number-4">2.1.2.</span> initial EPICS interface</h4>
 </div>
 <div id="outline-container-org6623dfa" class="outline-4">
-<h4 id="org6623dfa"><span class="section-number-4">2.1.3</span> u3scpi analog/digital port reconfiguration.</h4>
+<h4 id="org6623dfa"><span class="section-number-4">2.1.3.</span> u3scpi analog/digital port reconfiguration.</h4>
 </div>
 </div>
 </div>
 <div id="outline-container-org9d5570f" class="outline-2">
-<h2 id="org9d5570f"><span class="section-number-2">3</span> Brini Tracker II</h2>
+<h2 id="org9d5570f"><span class="section-number-2">3.</span> Brini Tracker II</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 No progress
 </p>
 </div>
-<div id="outline-container-orgb7409d5" class="outline-3">
-<h3 id="orgb7409d5"><span class="section-number-3">3.1</span> Next steps</h3>
+<div id="outline-container-org751d79f" class="outline-3">
+<h3 id="org751d79f"><span class="section-number-3">3.1.</span> Next steps</h3>
 <div class="outline-text-3" id="text-3-1">
 </div>
 <div id="outline-container-org22a0fc0" class="outline-4">
-<h4 id="org22a0fc0"><span class="section-number-4">3.1.1</span> Validate remaining standard GPS messages</h4>
+<h4 id="org22a0fc0"><span class="section-number-4">3.1.1.</span> Validate remaining standard GPS messages</h4>
 </div>
 <div id="outline-container-orgcd9f388" class="outline-4">
-<h4 id="orgcd9f388"><span class="section-number-4">3.1.2</span> Investigate GPS chipset data logging</h4>
+<h4 id="orgcd9f388"><span class="section-number-4">3.1.2.</span> Investigate GPS chipset data logging</h4>
 </div>
 <div id="outline-container-org3b47c34" class="outline-4">
-<h4 id="org3b47c34"><span class="section-number-4">3.1.3</span> Investigate LoRA radio interface</h4>
+<h4 id="org3b47c34"><span class="section-number-4">3.1.3.</span> Investigate LoRA radio interface</h4>
 </div>
 </div>
 </div>
 <div id="outline-container-orgd926f78" class="outline-2">
-<h2 id="orgd926f78"><span class="section-number-2">4</span> wktcolor</h2>
+<h2 id="orgd926f78"><span class="section-number-2">4.</span> wktcolor</h2>
 <div class="outline-text-2" id="text-4">
 </div>
 <div id="outline-container-org9c99ec8" class="outline-3">
-<h3 id="org9c99ec8"><span class="section-number-3">4.1</span> Added ColPack coloring interface</h3>
+<h3 id="org9c99ec8"><span class="section-number-3">4.1.</span> Added ColPack coloring interface</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 Somewhat better, but not quite there
 </p>
 </div>
 </div>
-<div id="outline-container-orgd4b8525" class="outline-3">
-<h3 id="orgd4b8525"><span class="section-number-3">4.2</span> Fedora 34 changes</h3>
+<div id="outline-container-org9cb7890" class="outline-3">
+<h3 id="org9cb7890"><span class="section-number-3">4.2.</span> Fedora 34 changes</h3>
 </div>
-<div id="outline-container-org684882f" class="outline-3">
-<h3 id="org684882f"><span class="section-number-3">4.3</span> Next steps</h3>
+<div id="outline-container-org752736f" class="outline-3">
+<h3 id="org752736f"><span class="section-number-3">4.3.</span> Next steps</h3>
 <div class="outline-text-3" id="text-4-3">
 </div>
 <div id="outline-container-orgf809f4b" class="outline-4">
-<h4 id="orgf809f4b"><span class="section-number-4">4.3.1</span> Explore how to get a minimal coloring</h4>
+<h4 id="orgf809f4b"><span class="section-number-4">4.3.1.</span> Explore how to get a minimal coloring</h4>
 <div class="outline-text-4" id="text-4-3-1">
 <p>
 Need a specific planar graph four coloring.
@@ -433,14 +411,14 @@ Need a specific planar graph four coloring.
 </div>
 </div>
 <div id="outline-container-orgf6021e8" class="outline-2">
-<h2 id="orgf6021e8"><span class="section-number-2">5</span> wktplot</h2>
+<h2 id="orgf6021e8"><span class="section-number-2">5.</span> wktplot</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-org8d820bd" class="outline-3">
-<h3 id="org8d820bd"><span class="section-number-3">5.1</span> Fedora 34 changes</h3>
+<div id="outline-container-orgc4a2e7f" class="outline-3">
+<h3 id="orgc4a2e7f"><span class="section-number-3">5.1.</span> Fedora 34 changes</h3>
 </div>
-<div id="outline-container-org9da29f7" class="outline-3">
-<h3 id="org9da29f7"><span class="section-number-3">5.2</span> Next steps</h3>
+<div id="outline-container-orgd1a6b75" class="outline-3">
+<h3 id="orgd1a6b75"><span class="section-number-3">5.2.</span> Next steps</h3>
 <div class="outline-text-3" id="text-5-2">
 <p>
 Understand why -r doesn't solve the wktvor/wktdel "sliver at edge" problem.
@@ -449,14 +427,14 @@ Understand why -r doesn't solve the wktvor/wktdel "sliver at edge" problem.
 </div>
 </div>
 <div id="outline-container-org75e5959" class="outline-2">
-<h2 id="org75e5959"><span class="section-number-2">6</span> ca-r</h2>
+<h2 id="org75e5959"><span class="section-number-2">6.</span> ca-r</h2>
 <div class="outline-text-2" id="text-6">
 </div>
 <div id="outline-container-orge45245f" class="outline-3">
-<h3 id="orge45245f"><span class="section-number-3">6.1</span> Seems to have survived Fedora 34 update</h3>
+<h3 id="orge45245f"><span class="section-number-3">6.1.</span> Seems to have survived Fedora 34 update</h3>
 </div>
-<div id="outline-container-org3753dc9" class="outline-3">
-<h3 id="org3753dc9"><span class="section-number-3">6.2</span> Next Step</h3>
+<div id="outline-container-org4e3d143" class="outline-3">
+<h3 id="org4e3d143"><span class="section-number-3">6.2.</span> Next Step</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 None
@@ -465,52 +443,52 @@ None
 </div>
 </div>
 <div id="outline-container-org2406cb7" class="outline-2">
-<h2 id="org2406cb7"><span class="section-number-2">7</span> GMP Forth</h2>
+<h2 id="org2406cb7"><span class="section-number-2">7.</span> GMP Forth</h2>
 <div class="outline-text-2" id="text-7">
 </div>
 <div id="outline-container-org892a402" class="outline-3">
-<h3 id="org892a402"><span class="section-number-3">7.1</span> minor Ruby 3.0 changes</h3>
+<h3 id="org892a402"><span class="section-number-3">7.1.</span> minor Ruby 3.0 changes</h3>
 </div>
 </div>
 <div id="outline-container-orgd7c3328" class="outline-2">
-<h2 id="orgd7c3328"><span class="section-number-2">8</span> AMDGPU</h2>
+<h2 id="orgd7c3328"><span class="section-number-2">8.</span> AMDGPU</h2>
 <div class="outline-text-2" id="text-8">
 </div>
-<div id="outline-container-org0fce8c1" class="outline-3">
-<h3 id="org0fce8c1"><span class="section-number-3">8.1</span> Next step</h3>
+<div id="outline-container-orgc797c75" class="outline-3">
+<h3 id="orgc797c75"><span class="section-number-3">8.1.</span> Next step</h3>
 <div class="outline-text-3" id="text-8-1">
 </div>
 <div id="outline-container-org124352f" class="outline-4">
-<h4 id="org124352f"><span class="section-number-4">8.1.1</span> Reverse engineer HSAKMT programming.</h4>
+<h4 id="org124352f"><span class="section-number-4">8.1.1.</span> Reverse engineer HSAKMT programming.</h4>
 </div>
 </div>
 </div>
 <div id="outline-container-org50af545" class="outline-2">
-<h2 id="org50af545"><span class="section-number-2">9</span> Ninja v Make</h2>
+<h2 id="org50af545"><span class="section-number-2">9.</span> Ninja v Make</h2>
 <div class="outline-text-2" id="text-9">
 </div>
-<div id="outline-container-org6b328e4" class="outline-3">
-<h3 id="org6b328e4"><span class="section-number-3">9.1</span> Next Step</h3>
+<div id="outline-container-orgd49031d" class="outline-3">
+<h3 id="orgd49031d"><span class="section-number-3">9.1.</span> Next Step</h3>
 <div class="outline-text-3" id="text-9-1">
 </div>
 <div id="outline-container-orga57eb67" class="outline-4">
-<h4 id="orga57eb67"><span class="section-number-4">9.1.1</span> clean simple measurements</h4>
+<h4 id="orga57eb67"><span class="section-number-4">9.1.1.</span> clean simple measurements</h4>
 </div>
 </div>
 </div>
 <div id="outline-container-orgc86508e" class="outline-2">
-<h2 id="orgc86508e"><span class="section-number-2">10</span> Fedora 34 update</h2>
+<h2 id="orgc86508e"><span class="section-number-2">10.</span> Fedora 34 update</h2>
 <div class="outline-text-2" id="text-10">
 </div>
 <div id="outline-container-org61b2c08" class="outline-3">
-<h3 id="org61b2c08"><span class="section-number-3">10.1</span> Went mostly well</h3>
+<h3 id="org61b2c08"><span class="section-number-3">10.1.</span> Went mostly well</h3>
 <div class="outline-text-3" id="text-10-1">
 </div>
 <div id="outline-container-org96e6d10" class="outline-4">
-<h4 id="org96e6d10"><span class="section-number-4">10.1.1</span> TMUX mouse interface UI changed - need shift key for mouse</h4>
+<h4 id="org96e6d10"><span class="section-number-4">10.1.1.</span> TMUX mouse interface UI changed - need shift key for mouse</h4>
 </div>
 <div id="outline-container-orgb76db49" class="outline-4">
-<h4 id="orgb76db49"><span class="section-number-4">10.1.2</span> copy/paste Firefox tended to hang when following links.</h4>
+<h4 id="orgb76db49"><span class="section-number-4">10.1.2.</span> copy/paste Firefox tended to hang when following links.</h4>
 <div class="outline-text-4" id="text-10-1-2">
 <p>
 Turning off IPv6 seems to help, but still happens. Difficult to
@@ -521,7 +499,7 @@ characterize.
 </div>
 </div>
 <div id="outline-container-orgbb4a26c" class="outline-2">
-<h2 id="orgbb4a26c"><span class="section-number-2">11</span> Linux Audio</h2>
+<h2 id="orgbb4a26c"><span class="section-number-2">11.</span> Linux Audio</h2>
 <div class="outline-text-2" id="text-11">
 <p>
 Fedora 34 now uses PipeWire for audio, which integrates (among other
@@ -532,16 +510,16 @@ the play thread.
 </p>
 </div>
 <div id="outline-container-orgb88bb2c" class="outline-3">
-<h3 id="orgb88bb2c"><span class="section-number-3">11.1</span> Next Steps</h3>
+<h3 id="orgb88bb2c"><span class="section-number-3">11.1.</span> Next Steps</h3>
 <div class="outline-text-3" id="text-11-1">
 </div>
 <div id="outline-container-org27aeba6" class="outline-4">
-<h4 id="org27aeba6"><span class="section-number-4">11.1.1</span> MIDI interfaces</h4>
+<h4 id="org27aeba6"><span class="section-number-4">11.1.1.</span> MIDI interfaces</h4>
 </div>
 </div>
 </div>
 <div id="outline-container-org206be77" class="outline-2">
-<h2 id="org206be77"><span class="section-number-2">12</span> Conical Rolling Pin</h2>
+<h2 id="org206be77"><span class="section-number-2">12.</span> Conical Rolling Pin</h2>
 <div class="outline-text-2" id="text-12">
 <p>
 Made a prototype conical rolling pin to facilitate rolling out pizza
@@ -553,7 +531,7 @@ is "not how you do it". Fine. Fire me. You don't have to eat my pizza.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Daniel Kelley</p>
-<p class="date">Created: 2021-05-08 Sat 05:42</p>
+<p class="date">Created: 2023-01-28 Sat 07:05</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

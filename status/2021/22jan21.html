@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-01-30 Sat 05:41 -->
+<!-- 2023-01-28 Sat 07:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>16 January 2021 - 22 January 2021</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Daniel Kelley" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -40,22 +41,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -190,62 +191,15 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">16 January 2021 - 22 January 2021</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
 <li><a href="#orgc06640f">1. EPICS</a></li>
 <li><a href="#org8cc1e0c">2. Brini Tracker II</a></li>
@@ -266,7 +220,7 @@ A Page is Turned
 </p>
 
 <div id="outline-container-orgc06640f" class="outline-2">
-<h2 id="orgc06640f"><span class="section-number-2">1</span> EPICS</h2>
+<h2 id="orgc06640f"><span class="section-number-2">1.</span> EPICS</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 u3hv-scpi guts torn out and started rebuild toward new SCPI command
@@ -281,7 +235,7 @@ be a bit leaky itself. Did I ever tell you I hate USB?
 </div>
 
 <div id="outline-container-org8cc1e0c" class="outline-2">
-<h2 id="org8cc1e0c"><span class="section-number-2">2</span> Brini Tracker II</h2>
+<h2 id="org8cc1e0c"><span class="section-number-2">2.</span> Brini Tracker II</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Buttons work after a week of runtime. GPS display update still stops
@@ -291,7 +245,7 @@ responding after a few minutes.
 </div>
 
 <div id="outline-container-org467c7ec" class="outline-2">
-<h2 id="org467c7ec"><span class="section-number-2">3</span> Dodecahedron</h2>
+<h2 id="org467c7ec"><span class="section-number-2">3.</span> Dodecahedron</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Generating a polyhedron net using plotrb. Fixed plotrb GCC warning
@@ -301,7 +255,7 @@ with ruby 2.7.2p137. Nice to see this library getting some use again.
 </div>
 
 <div id="outline-container-org4f81e07" class="outline-2">
-<h2 id="org4f81e07"><span class="section-number-2">4</span> ca-r</h2>
+<h2 id="org4f81e07"><span class="section-number-2">4.</span> ca-r</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Added tier data. Have to scrape web page to get CSV data.
@@ -312,7 +266,7 @@ because of the way the CSV header is constructed.
 </div>
 
 <div id="outline-container-orgdc57e26" class="outline-2">
-<h2 id="orgdc57e26"><span class="section-number-2">5</span> GEOS</h2>
+<h2 id="orgdc57e26"><span class="section-number-2">5.</span> GEOS</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 No progress.
@@ -321,14 +275,14 @@ No progress.
 </div>
 
 <div id="outline-container-org0b63a25" class="outline-2">
-<h2 id="org0b63a25"><span class="section-number-2">6</span> Books</h2>
+<h2 id="org0b63a25"><span class="section-number-2">6.</span> Books</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 A couple of books received at Christmas:
 </p>
 </div>
 <div id="outline-container-org7fad8e1" class="outline-3">
-<h3 id="org7fad8e1"><span class="section-number-3">6.1</span> The Fabric of Civilization</h3>
+<h3 id="org7fad8e1"><span class="section-number-3">6.1.</span> The Fabric of Civilization</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 Excellent discussion of how fabric technology influences global civilization
@@ -338,7 +292,7 @@ from prehistory to now.
 </div>
 </div>
 <div id="outline-container-org94cdff7" class="outline-3">
-<h3 id="org94cdff7"><span class="section-number-3">6.2</span> League of Regrettable Superheros</h3>
+<h3 id="org94cdff7"><span class="section-number-3">6.2.</span> League of Regrettable Superheros</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 What some people will do to get a kid's dime. Hilarious!
@@ -350,8 +304,8 @@ What some people will do to get a kid's dime. Hilarious!
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Daniel Kelley</p>
-<p class="date">Created: 2021-01-30 Sat 05:41</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2023-01-28 Sat 07:05</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

@@ -9,8 +9,9 @@ BWMSE := $(HOME)/work/dak/bwmse
 
 EXTERNS := ca-r/DATE.txt
 EXTERNS += bwmse/bwmse.pdf
+EXTERNS += status/index.html
 
-.PHONY: all
+.PHONY: all env
 
 all: $(EXTERNS)
 
@@ -20,3 +21,11 @@ ca-r/DATE.txt: $(CA_R)/DATE.txt
 bwmse/bwmse.pdf: $(BWMSE)/bwmse.pdf
 	make -k -C $(BWMSE) REL=$(PWD)/bwmse release
 	cp $(BWMSE)/bwmse.pdf bwmse
+
+status/index.html: status/src/index.org
+	emacs -batch \
+		--load status/elisp/publish-doc.el \
+		--eval '(org-publish "status")'
+
+env:
+	set|sort

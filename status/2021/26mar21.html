@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-04-03 Sat 06:49 -->
+<!-- 2023-01-28 Sat 07:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>20 March 2021 - 26 March 2021</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Daniel Kelley" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -40,22 +41,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -190,62 +191,15 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">20 March 2021 - 26 March 2021</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
 <li><a href="#org2f560fd">1. Santa Cruz Weather Station</a></li>
 <li><a href="#orgde252c5">2. EPICS</a>
@@ -275,7 +229,7 @@ Spring has really sprung.
 </p>
 
 <div id="outline-container-org2f560fd" class="outline-2">
-<h2 id="org2f560fd"><span class="section-number-2">1</span> Santa Cruz Weather Station</h2>
+<h2 id="org2f560fd"><span class="section-number-2">1.</span> Santa Cruz Weather Station</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Mast sensors still broken
@@ -283,18 +237,18 @@ Mast sensors still broken
 </div>
 </div>
 <div id="outline-container-orgde252c5" class="outline-2">
-<h2 id="orgde252c5"><span class="section-number-2">2</span> EPICS</h2>
+<h2 id="orgde252c5"><span class="section-number-2">2.</span> EPICS</h2>
 <div class="outline-text-2" id="text-2">
 </div>
 <div id="outline-container-org115b781" class="outline-3">
-<h3 id="org115b781"><span class="section-number-3">2.1</span> u3hv-scpi</h3>
+<h3 id="org115b781"><span class="section-number-3">2.1.</span> u3hv-scpi</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
 <div id="outline-container-orga7e123b" class="outline-4">
-<h4 id="orga7e123b"><span class="section-number-4">2.1.1</span> Reimplemented syst:int:show? to accept a channel list</h4>
+<h4 id="orga7e123b"><span class="section-number-4">2.1.1.</span> Reimplemented syst:int:show? to accept a channel list</h4>
 </div>
 <div id="outline-container-orgba510e1" class="outline-4">
-<h4 id="orgba510e1"><span class="section-number-4">2.1.2</span> Added CodeChecker analysis</h4>
+<h4 id="orgba510e1"><span class="section-number-4">2.1.2.</span> Added CodeChecker analysis</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
 Fixed problems reported by same
@@ -302,12 +256,12 @@ Fixed problems reported by same
 </div>
 </div>
 <div id="outline-container-org6f6b28c" class="outline-4">
-<h4 id="org6f6b28c"><span class="section-number-4">2.1.3</span> cleaned up and checked in</h4>
+<h4 id="org6f6b28c"><span class="section-number-4">2.1.3.</span> cleaned up and checked in</h4>
 </div>
 </div>
 </div>
 <div id="outline-container-orgd8ba531" class="outline-2">
-<h2 id="orgd8ba531"><span class="section-number-2">3</span> Brini Tracker II</h2>
+<h2 id="orgd8ba531"><span class="section-number-2">3.</span> Brini Tracker II</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Buttons still work after ten weeks week of runtime. GPS display update
@@ -318,7 +272,7 @@ seems to be intermittent as it is not working at this moment. But the date
 </div>
 
 <div id="outline-container-org2a368e6" class="outline-2">
-<h2 id="org2a368e6"><span class="section-number-2">4</span> wktcolor</h2>
+<h2 id="org2a368e6"><span class="section-number-2">4.</span> wktcolor</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Started outline. Will use "modern C++" as the underlying libraries needed
@@ -336,11 +290,11 @@ Instead of CGAL, will probably use boost graph and geometry libraries.
 </div>
 
 <div id="outline-container-org56f712c" class="outline-2">
-<h2 id="org56f712c"><span class="section-number-2">5</span> Reading</h2>
+<h2 id="org56f712c"><span class="section-number-2">5.</span> Reading</h2>
 <div class="outline-text-2" id="text-5">
 </div>
 <div id="outline-container-org7fdbaf4" class="outline-3">
-<h3 id="org7fdbaf4"><span class="section-number-3">5.1</span> I never danced at the White House</h3>
+<h3 id="org7fdbaf4"><span class="section-number-3">5.1.</span> I never danced at the White House</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 <a href="https://www.goodreads.com/book/show/4780762-i-never-danced-at-the-white-house">https://www.goodreads.com/book/show/4780762-i-never-danced-at-the-white-house</a>
@@ -348,7 +302,7 @@ Instead of CGAL, will probably use boost graph and geometry libraries.
 </div>
 </div>
 <div id="outline-container-org3e2cbfb" class="outline-3">
-<h3 id="org3e2cbfb"><span class="section-number-3">5.2</span> Effective Modern C++</h3>
+<h3 id="org3e2cbfb"><span class="section-number-3">5.2.</span> Effective Modern C++</h3>
 <div class="outline-text-3" id="text-5-2">
 <p>
 <a href="https://www.aristeia.com/EMC++.html">https://www.aristeia.com/EMC++.html</a>
@@ -359,8 +313,8 @@ Instead of CGAL, will probably use boost graph and geometry libraries.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Daniel Kelley</p>
-<p class="date">Created: 2021-04-03 Sat 06:49</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2023-01-28 Sat 07:05</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

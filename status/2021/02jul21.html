@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-08-14 Sat 05:51 -->
+<!-- 2023-01-28 Sat 07:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>26 June 2021 - 02 July 2021</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Daniel Kelley" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,21 +42,21 @@
   pre.src {
     position: relative;
     overflow: auto;
-    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
   pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -190,42 +191,19 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
-<script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
-<!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
-// @license-end
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">26 June 2021 - 02 July 2021</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
 <li><a href="#org518d354">1. Santa Cruz Weather Station</a>
 <ul>
-<li><a href="#org0b28f7e">1.1. Next step</a>
+<li><a href="#org7786556">1.1. Next step</a>
 <ul>
 <li><a href="#orgf4a4e03">1.1.1. Print parts</a></li>
 <li><a href="#orgb7d8a93">1.1.2. Order any needed supplies</a></li>
@@ -236,7 +214,7 @@
 </li>
 <li><a href="#org62e14d3">2. Swocer</a>
 <ul>
-<li><a href="#org6d6997e">2.1. Next steps</a></li>
+<li><a href="#org097a52b">2.1. Next steps</a></li>
 </ul>
 </li>
 <li><a href="#org836ca76">3. Linux Audio</a>
@@ -258,7 +236,7 @@
 </li>
 <li><a href="#org54cf689">4. EPICS</a>
 <ul>
-<li><a href="#org326ff8a">4.1. Next steps</a>
+<li><a href="#org2b5041b">4.1. Next steps</a>
 <ul>
 <li><a href="#org1addb74">4.1.1. u3scpi network port testing</a></li>
 <li><a href="#org6c88f8f">4.1.2. initial EPICS interface</a></li>
@@ -269,7 +247,7 @@
 </li>
 <li><a href="#orgefdff9e">5. Brini Tracker II</a>
 <ul>
-<li><a href="#org24cbd29">5.1. Next steps</a>
+<li><a href="#orgdb673c4">5.1. Next steps</a>
 <ul>
 <li><a href="#orgb1aa6f2">5.1.1. Validate remaining standard GPS messages</a></li>
 <li><a href="#org4ff2e1e">5.1.2. Investigate GPS chipset data logging</a></li>
@@ -280,7 +258,7 @@
 </li>
 <li><a href="#org038800a">6. wktcolor</a>
 <ul>
-<li><a href="#org2bb720e">6.1. Next steps</a>
+<li><a href="#org357f33d">6.1. Next steps</a>
 <ul>
 <li><a href="#org2d8fbde">6.1.1. Explore how to get a minimal coloring</a></li>
 </ul>
@@ -289,17 +267,17 @@
 </li>
 <li><a href="#org89781a4">7. wktplot</a>
 <ul>
-<li><a href="#org3360c4e">7.1. Next steps</a></li>
+<li><a href="#orgbd8ac3b">7.1. Next steps</a></li>
 </ul>
 </li>
 <li><a href="#org8f5acd5">8. ca-r</a>
 <ul>
-<li><a href="#org53fc478">8.1. Next Step</a></li>
+<li><a href="#org40fe907">8.1. Next Step</a></li>
 </ul>
 </li>
 <li><a href="#orge55c923">9. AMDGPU</a>
 <ul>
-<li><a href="#orgc19ad2c">9.1. Next step</a>
+<li><a href="#org9310918">9.1. Next step</a>
 <ul>
 <li><a href="#orgc71ab4c">9.1.1. Reverse engineer HSAKMT programming.</a></li>
 </ul>
@@ -308,7 +286,7 @@
 </li>
 <li><a href="#org228783b">10. Ninja v Make</a>
 <ul>
-<li><a href="#orgb467c3e">10.1. Next Step</a>
+<li><a href="#org5b3e7e4">10.1. Next Step</a>
 <ul>
 <li><a href="#org4ec771b">10.1.1. clean simple measurements</a></li>
 </ul>
@@ -324,7 +302,7 @@ Almost Independent
 </p>
 
 <div id="outline-container-org518d354" class="outline-2">
-<h2 id="org518d354"><span class="section-number-2">1</span> Santa Cruz Weather Station</h2>
+<h2 id="org518d354"><span class="section-number-2">1.</span> Santa Cruz Weather Station</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Particle Monitor shelter assemblies checked.
@@ -446,15 +424,15 @@ Particle Monitor shelter assemblies checked.
 </div>
 
 
-<div id="outline-container-org0b28f7e" class="outline-3">
-<h3 id="org0b28f7e"><span class="section-number-3">1.1</span> Next step</h3>
+<div id="outline-container-org7786556" class="outline-3">
+<h3 id="org7786556"><span class="section-number-3">1.1.</span> Next step</h3>
 <div class="outline-text-3" id="text-1-1">
 </div>
 <div id="outline-container-orgf4a4e03" class="outline-4">
-<h4 id="orgf4a4e03"><span class="section-number-4">1.1.1</span> Print parts</h4>
+<h4 id="orgf4a4e03"><span class="section-number-4">1.1.1.</span> Print parts</h4>
 </div>
 <div id="outline-container-orgb7d8a93" class="outline-4">
-<h4 id="orgb7d8a93"><span class="section-number-4">1.1.2</span> Order any needed supplies</h4>
+<h4 id="orgb7d8a93"><span class="section-number-4">1.1.2.</span> Order any needed supplies</h4>
 <div class="outline-text-4" id="text-1-1-2">
 <p>
 DB9 shells, jack screws, connectors, etc.
@@ -462,13 +440,13 @@ DB9 shells, jack screws, connectors, etc.
 </div>
 </div>
 <div id="outline-container-org9810c74" class="outline-4">
-<h4 id="org9810c74"><span class="section-number-4">1.1.3</span> Assemble and test</h4>
+<h4 id="org9810c74"><span class="section-number-4">1.1.3.</span> Assemble and test</h4>
 </div>
 </div>
 </div>
 
 <div id="outline-container-org62e14d3" class="outline-2">
-<h2 id="org62e14d3"><span class="section-number-2">2</span> Swocer</h2>
+<h2 id="org62e14d3"><span class="section-number-2">2.</span> Swocer</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 What a pain. Started adding classes to support 'bottle'
@@ -482,8 +460,8 @@ less problematic.
 </p>
 </div>
 
-<div id="outline-container-org6d6997e" class="outline-3">
-<h3 id="org6d6997e"><span class="section-number-3">2.1</span> Next steps</h3>
+<div id="outline-container-org097a52b" class="outline-3">
+<h3 id="org097a52b"><span class="section-number-3">2.1.</span> Next steps</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Swocer future.
@@ -494,15 +472,15 @@ Check out what's needed for gears.
 </div>
 
 <div id="outline-container-org836ca76" class="outline-2">
-<h2 id="org836ca76"><span class="section-number-2">3</span> Linux Audio</h2>
+<h2 id="org836ca76"><span class="section-number-2">3.</span> Linux Audio</h2>
 <div class="outline-text-2" id="text-3">
 </div>
 <div id="outline-container-org017abef" class="outline-3">
-<h3 id="org017abef"><span class="section-number-3">3.1</span> Faust programming</h3>
+<h3 id="org017abef"><span class="section-number-3">3.1.</span> Faust programming</h3>
 <div class="outline-text-3" id="text-3-1">
 </div>
 <div id="outline-container-org77b6333" class="outline-4">
-<h4 id="org77b6333"><span class="section-number-4">3.1.1</span> Analog Synthesizer modules</h4>
+<h4 id="org77b6333"><span class="section-number-4">3.1.1.</span> Analog Synthesizer modules</h4>
 <div class="outline-text-4" id="text-3-1-1">
 <p>
 Waveshaper, Frequency Shifter, Karplus-Strong Plucked String
@@ -511,14 +489,14 @@ Waveshaper, Frequency Shifter, Karplus-Strong Plucked String
 </div>
 </div>
 <div id="outline-container-orgc6c479d" class="outline-3">
-<h3 id="orgc6c479d"><span class="section-number-3">3.2</span> Next Steps</h3>
+<h3 id="orgc6c479d"><span class="section-number-3">3.2.</span> Next Steps</h3>
 <div class="outline-text-3" id="text-3-2">
 </div>
 <div id="outline-container-org6866fb4" class="outline-4">
-<h4 id="org6866fb4"><span class="section-number-4">3.2.1</span> GAC Patch save/restore</h4>
+<h4 id="org6866fb4"><span class="section-number-4">3.2.1.</span> GAC Patch save/restore</h4>
 </div>
 <div id="outline-container-org50b4b17" class="outline-4">
-<h4 id="org50b4b17"><span class="section-number-4">3.2.2</span> LV2 autopatcher</h4>
+<h4 id="org50b4b17"><span class="section-number-4">3.2.2.</span> LV2 autopatcher</h4>
 <div class="outline-text-4" id="text-3-2-2">
 <p>
 Exploratory tool to generate (was pd, ecasound, now carla) patch for arbitrary LV2 plugin:
@@ -528,7 +506,7 @@ control surface, etc.
 </div>
 </div>
 <div id="outline-container-orga952e81" class="outline-4">
-<h4 id="orga952e81"><span class="section-number-4">3.2.3</span> OSC control surface</h4>
+<h4 id="orga952e81"><span class="section-number-4">3.2.3.</span> OSC control surface</h4>
 <div class="outline-text-4" id="text-3-2-3">
 <p>
 Some sort of GUI tool (knob/slider) to OSC messages. This may be
@@ -537,7 +515,7 @@ as simple as a Faust UI program.
 </div>
 </div>
 <div id="outline-container-org473991d" class="outline-4">
-<h4 id="org473991d"><span class="section-number-4">3.2.4</span> Faust/csound</h4>
+<h4 id="org473991d"><span class="section-number-4">3.2.4.</span> Faust/csound</h4>
 <div class="outline-text-4" id="text-3-2-4">
 <p>
 See if a faust generated unit works.
@@ -547,58 +525,58 @@ See if a faust generated unit works.
 </div>
 </div>
 <div id="outline-container-org54cf689" class="outline-2">
-<h2 id="org54cf689"><span class="section-number-2">4</span> EPICS</h2>
+<h2 id="org54cf689"><span class="section-number-2">4.</span> EPICS</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org326ff8a" class="outline-3">
-<h3 id="org326ff8a"><span class="section-number-3">4.1</span> Next steps</h3>
+<div id="outline-container-org2b5041b" class="outline-3">
+<h3 id="org2b5041b"><span class="section-number-3">4.1.</span> Next steps</h3>
 <div class="outline-text-3" id="text-4-1">
 </div>
 <div id="outline-container-org1addb74" class="outline-4">
-<h4 id="org1addb74"><span class="section-number-4">4.1.1</span> u3scpi network port testing</h4>
+<h4 id="org1addb74"><span class="section-number-4">4.1.1.</span> u3scpi network port testing</h4>
 </div>
 <div id="outline-container-org6c88f8f" class="outline-4">
-<h4 id="org6c88f8f"><span class="section-number-4">4.1.2</span> initial EPICS interface</h4>
+<h4 id="org6c88f8f"><span class="section-number-4">4.1.2.</span> initial EPICS interface</h4>
 </div>
 <div id="outline-container-org77068b8" class="outline-4">
-<h4 id="org77068b8"><span class="section-number-4">4.1.3</span> u3scpi analog/digital port reconfiguration.</h4>
+<h4 id="org77068b8"><span class="section-number-4">4.1.3.</span> u3scpi analog/digital port reconfiguration.</h4>
 </div>
 </div>
 </div>
 
 <div id="outline-container-orgefdff9e" class="outline-2">
-<h2 id="orgefdff9e"><span class="section-number-2">5</span> Brini Tracker II</h2>
+<h2 id="orgefdff9e"><span class="section-number-2">5.</span> Brini Tracker II</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Still working!
 </p>
 </div>
-<div id="outline-container-org24cbd29" class="outline-3">
-<h3 id="org24cbd29"><span class="section-number-3">5.1</span> Next steps</h3>
+<div id="outline-container-orgdb673c4" class="outline-3">
+<h3 id="orgdb673c4"><span class="section-number-3">5.1.</span> Next steps</h3>
 <div class="outline-text-3" id="text-5-1">
 </div>
 <div id="outline-container-orgb1aa6f2" class="outline-4">
-<h4 id="orgb1aa6f2"><span class="section-number-4">5.1.1</span> Validate remaining standard GPS messages</h4>
+<h4 id="orgb1aa6f2"><span class="section-number-4">5.1.1.</span> Validate remaining standard GPS messages</h4>
 </div>
 <div id="outline-container-org4ff2e1e" class="outline-4">
-<h4 id="org4ff2e1e"><span class="section-number-4">5.1.2</span> Investigate GPS chipset data logging</h4>
+<h4 id="org4ff2e1e"><span class="section-number-4">5.1.2.</span> Investigate GPS chipset data logging</h4>
 </div>
 <div id="outline-container-orgca6c50b" class="outline-4">
-<h4 id="orgca6c50b"><span class="section-number-4">5.1.3</span> Investigate LoRA radio interface</h4>
+<h4 id="orgca6c50b"><span class="section-number-4">5.1.3.</span> Investigate LoRA radio interface</h4>
 </div>
 </div>
 </div>
 
 <div id="outline-container-org038800a" class="outline-2">
-<h2 id="org038800a"><span class="section-number-2">6</span> wktcolor</h2>
+<h2 id="org038800a"><span class="section-number-2">6.</span> wktcolor</h2>
 <div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-org2bb720e" class="outline-3">
-<h3 id="org2bb720e"><span class="section-number-3">6.1</span> Next steps</h3>
+<div id="outline-container-org357f33d" class="outline-3">
+<h3 id="org357f33d"><span class="section-number-3">6.1.</span> Next steps</h3>
 <div class="outline-text-3" id="text-6-1">
 </div>
 <div id="outline-container-org2d8fbde" class="outline-4">
-<h4 id="org2d8fbde"><span class="section-number-4">6.1.1</span> Explore how to get a minimal coloring</h4>
+<h4 id="org2d8fbde"><span class="section-number-4">6.1.1.</span> Explore how to get a minimal coloring</h4>
 <div class="outline-text-4" id="text-6-1-1">
 <p>
 Need a specific planar graph four coloring.
@@ -609,11 +587,11 @@ Need a specific planar graph four coloring.
 </div>
 
 <div id="outline-container-org89781a4" class="outline-2">
-<h2 id="org89781a4"><span class="section-number-2">7</span> wktplot</h2>
+<h2 id="org89781a4"><span class="section-number-2">7.</span> wktplot</h2>
 <div class="outline-text-2" id="text-7">
 </div>
-<div id="outline-container-org3360c4e" class="outline-3">
-<h3 id="org3360c4e"><span class="section-number-3">7.1</span> Next steps</h3>
+<div id="outline-container-orgbd8ac3b" class="outline-3">
+<h3 id="orgbd8ac3b"><span class="section-number-3">7.1.</span> Next steps</h3>
 <div class="outline-text-3" id="text-7-1">
 <p>
 Understand why -r doesn't solve the wktvor/wktdel "sliver at edge" problem.
@@ -624,11 +602,11 @@ Explore biological cell Voronoi organization
 </div>
 
 <div id="outline-container-org8f5acd5" class="outline-2">
-<h2 id="org8f5acd5"><span class="section-number-2">8</span> ca-r</h2>
+<h2 id="org8f5acd5"><span class="section-number-2">8.</span> ca-r</h2>
 <div class="outline-text-2" id="text-8">
 </div>
-<div id="outline-container-org53fc478" class="outline-3">
-<h3 id="org53fc478"><span class="section-number-3">8.1</span> Next Step</h3>
+<div id="outline-container-org40fe907" class="outline-3">
+<h3 id="org40fe907"><span class="section-number-3">8.1.</span> Next Step</h3>
 <div class="outline-text-3" id="text-8-1">
 <p>
 None, but expecting ca-tier to break now that the tier system is
@@ -639,35 +617,35 @@ deprecated. Looks like thet just stopped updating the data file.
 </div>
 
 <div id="outline-container-orge55c923" class="outline-2">
-<h2 id="orge55c923"><span class="section-number-2">9</span> AMDGPU</h2>
+<h2 id="orge55c923"><span class="section-number-2">9.</span> AMDGPU</h2>
 <div class="outline-text-2" id="text-9">
 </div>
-<div id="outline-container-orgc19ad2c" class="outline-3">
-<h3 id="orgc19ad2c"><span class="section-number-3">9.1</span> Next step</h3>
+<div id="outline-container-org9310918" class="outline-3">
+<h3 id="org9310918"><span class="section-number-3">9.1.</span> Next step</h3>
 <div class="outline-text-3" id="text-9-1">
 </div>
 <div id="outline-container-orgc71ab4c" class="outline-4">
-<h4 id="orgc71ab4c"><span class="section-number-4">9.1.1</span> Reverse engineer HSAKMT programming.</h4>
+<h4 id="orgc71ab4c"><span class="section-number-4">9.1.1.</span> Reverse engineer HSAKMT programming.</h4>
 </div>
 </div>
 </div>
 
 <div id="outline-container-org228783b" class="outline-2">
-<h2 id="org228783b"><span class="section-number-2">10</span> Ninja v Make</h2>
+<h2 id="org228783b"><span class="section-number-2">10.</span> Ninja v Make</h2>
 <div class="outline-text-2" id="text-10">
 </div>
-<div id="outline-container-orgb467c3e" class="outline-3">
-<h3 id="orgb467c3e"><span class="section-number-3">10.1</span> Next Step</h3>
+<div id="outline-container-org5b3e7e4" class="outline-3">
+<h3 id="org5b3e7e4"><span class="section-number-3">10.1.</span> Next Step</h3>
 <div class="outline-text-3" id="text-10-1">
 </div>
 <div id="outline-container-org4ec771b" class="outline-4">
-<h4 id="org4ec771b"><span class="section-number-4">10.1.1</span> clean simple measurements</h4>
+<h4 id="org4ec771b"><span class="section-number-4">10.1.1.</span> clean simple measurements</h4>
 </div>
 </div>
 </div>
 
 <div id="outline-container-org84914d8" class="outline-2">
-<h2 id="org84914d8"><span class="section-number-2">11</span> GMP Forth</h2>
+<h2 id="org84914d8"><span class="section-number-2">11.</span> GMP Forth</h2>
 <div class="outline-text-2" id="text-11">
 <p>
 Need to think about adding floating point support
@@ -677,7 +655,7 @@ Need to think about adding floating point support
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Daniel Kelley</p>
-<p class="date">Created: 2021-08-14 Sat 05:51</p>
+<p class="date">Created: 2023-01-28 Sat 07:05</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
