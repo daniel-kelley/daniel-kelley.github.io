@@ -1,0 +1,107 @@
+#!/usr/bin/env ruby
+#
+# Create next status page and update index
+#
+
+# Open status/src/index.org
+# Search for most recent status entry
+# Break out date
+# Calculate next date
+# Create new status page
+# Create new status index
+# Rename old status page
+# Rename new status page
+
+require 'date'
+require 'fileutils'
+
+class StatusNext
+  STATUS = "status/src/"        # Status source dir
+  INDEX = STATUS + "index.org"  # Current index
+  UIDX  = INDEX + ".upd"        # Updated index
+  BIDX  = INDEX + "~"           # Backup index
+  def initialize
+    open_index
+    create_status_page
+    update_status_index
+  end
+
+  def open_index
+    nidx = File.open(UIDX, "w")
+    handled = false
+    IO.foreach(INDEX) do |line|
+      line.chomp!
+      if !handled
+        if line =~ %r{file:(\d\d\d\d)/(\d\d)(\d\d).org}
+          s = create_new_index_entry($1,$2,$3)
+          if !s.nil?
+            nidx.puts s
+            nidx.puts
+          end
+          handled = !handled
+        end
+      end
+      nidx.puts line
+    end
+    raise 'oops' if !handled
+  end
+
+  def date_string_form(date)
+    sd = "%02d" % date.day
+    sm = Date::MONTHNAMES[date.mon]
+    sy = date.year.to_s
+    "#{sd} #{sm} #{sy}"
+  end
+
+  def create_new_index_entry(ys,ms,ds)
+    y = Integer(ys)
+    m = Integer(ms)
+    d = Integer(ds)
+    @last_date = Date.new(y,m,d)
+    @next_date = @last_date + 7
+    @last_page = "#{ys}/#{ms}#{ds}"
+    STDERR.puts "Found index entry for #{@last_date}"
+    STDERR.puts "Create index entry for #{@next_date}"
+    ny = @next_date.year.to_s
+    nm = "%02d" % @next_date.mon
+    nd = "%02d" % @next_date.day
+    ns = date_string_form(@next_date)
+    @next_page = "#{ny}/#{nm}#{nd}.org"
+    "[[file:#{@next_page}][#{ns}]]"
+  end
+
+  def create_status_page
+    raise 'oops' if @next_page.nil?
+    last_dir = File.dirname(@last_page)
+    next_dir = File.dirname(@next_page)
+    if last_dir != next_dir
+      STDERR.puts "Year changed #{last_dir}->#{next_dir}"
+      FileUtils.mkdir(STATUS+next_dir)
+    end
+    npage = File.open(STATUS + @next_page, "w")
+    handled = false
+    IO.foreach(STATUS + @last_page + ".org") do |line|
+      line.chomp!
+      if !handled
+        if line =~ /^(#\+TITLE:)/
+          title = $1
+          date_from = date_string_form(@next_date)
+          date_to = date_string_form(@next_date+6)
+          line = "#{title} #{date_from} - #{date_to}"
+          handled = !handled
+        end
+      end
+      npage.puts line
+      raise 'oops' if !handled
+    end
+  end
+
+  def update_status_index
+    FileUtils.mv(INDEX,BIDX,force:true)
+    FileUtils.mv(UIDX, INDEX)
+  end
+
+end
+
+
+StatusNext.new

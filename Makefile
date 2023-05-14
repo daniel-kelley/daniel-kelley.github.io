@@ -27,5 +27,9 @@ status/index.html: status/src/index.org
 		--load status/elisp/publish-doc.el \
 		--eval '(org-publish "status")'
 
+# helper: create next status page
+next:
+	status/src/tools/next
+
 env:
 	set|sort
