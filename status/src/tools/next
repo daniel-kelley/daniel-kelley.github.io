@@ -78,15 +78,17 @@ class StatusNext
       STDERR.puts "Year changed #{last_dir}->#{next_dir}"
       FileUtils.mkdir(STATUS+next_dir)
     end
-    npage = File.open(STATUS + @next_page, "w")
+    nfile = STATUS + @next_page
+    STDERR.puts "Create status file #{nfile}"
+    npage = File.open(nfile, "w")
     handled = false
     IO.foreach(STATUS + @last_page + ".org") do |line|
       line.chomp!
       if !handled
         if line =~ /^(#\+TITLE:)/
           title = $1
-          date_from = date_string_form(@next_date)
-          date_to = date_string_form(@next_date+6)
+          date_from = date_string_form(@last_date+1)
+          date_to = date_string_form(@next_date)
           line = "#{title} #{date_from} - #{date_to}"
           handled = !handled
         end
