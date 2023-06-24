@@ -56,7 +56,7 @@ class StatusNext
   def create_new_index_entry(ys,ms,ds)
     y = Integer(ys)
     m = Integer(ms)
-    d = Integer(ds)
+    d = Integer(ds.gsub(/^0/,'')) # strip any leading zeros
     @last_date = Date.new(y,m,d)
     @next_date = @last_date + 7
     @last_page = "#{ys}/#{ms}#{ds}"
