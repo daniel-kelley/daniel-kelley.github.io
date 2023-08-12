@@ -1,6 +1,6 @@
 /*
   CSS stylesheet for the LaTeX Lwarp package
-  Copyright 2016-2021 Brian Dunn — BD Tech Concepts LLC
+  Copyright 2016-2022 Brian Dunn — BD Tech Concepts LLC
 */
 
 /* a fix for older browsers: */
@@ -69,9 +69,20 @@ kbd, span.texttt, p span.texttt {
 
 pre { padding: 3pt ; }
 
-span.strong, span.textbf, div.strong, div.textbf { font-weight: bold; }
+span.strong, span.textbf, div.strong, div.textbf, table td.tdbfseries { font-weight: bold; }
 
-span.textit, div.textit { font-style: italic; }
+span.textit, div.textit, table td.tditshape { font-style: italic; }
+
+table td.tdbfit { font-weight: bold ; font-style:italic }
+
+span.textnormal, div.textnormal {
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-variant-numeric: normal ;
+    font-family: "DejaVu Serif", "Bitstream Vera Serif",
+        "Lucida Bright", Georgia, serif;
+}
 
 span.textmd, div.textmd { font-weight: normal; }
 
@@ -486,7 +497,7 @@ div.bodywithoutsidetoc main.bodycontainer {
 }
 
 section.textbody div.footnotes{
-    margin: 3ex 2em .5ex 2em ;
+    margin: 1ex 2em 2ex 2em ;
     border-bottom: 2px solid silver ;
 }
 
@@ -520,6 +531,8 @@ body dir, body menu {
 }
 
 li { margin: 0ex 0em 1ex 0em; }
+
+li.p { display: inline ; }
 
 html {
   margin: 0;
@@ -687,7 +700,7 @@ div.wpminipage { border: 1px solid green ; margin: .5ex ; padding: .5ex ;}
 .fcolorbox .minipage, .fcolorboxBlock .minipage
     {border: none ; background: none;}
 
-.fbox, .fboxBlock { border: 1px solid black ; }
+.fbox, .fboxBlock { border: 1px solid black ; padding: 4pt }
 
 .fbox, .fboxBlock, .fcolorbox, .fcolorboxBlock, .colorbox, .colorboxBlock,
 .fminipage, .fcolorminipage
@@ -836,6 +849,15 @@ div.generalframe {
     border: 6px groove black ;
 }
 
+/* For beamerarticle: */
+div.beamerframe {
+    margin: 3ex 1em 3ex 1em ;
+   border: 1px solid gray;
+     border-radius: 0px ;
+    padding: .3ex 1em 0ex 1em ;
+  display: block ;
+}
+
 dl {
   margin: 1ex 2em 1ex 0em;
   line-height: 1.3;
@@ -950,6 +972,12 @@ figure.subfigure, figure.subtable  {
 
 div.figurecaption .minipage { margin:0 ; padding: 0 }
 
+/* for subcaptions: */
+figure div.minipage div.figurecaption {
+    max-width: 100% ;   /* fallback if min() does not work */
+    max-width: min(30em,100%)
+}
+
 div.minipage figure { border: none ; box-shadow: none ; }
 div.minipage figure.table { margin: 0ex }
 div.minipage div.footnotes { margin: 1ex 2em 0ex 2em }
@@ -961,12 +989,20 @@ div.floatrow figure { display: inline-block ; margin: 1ex 2% ; }
 div.floatfoot { font-size: .85em ;
     border-top: 1px solid silver ; line-height: 1.2 ; }
 
+/* Center if only one line, "start" align if more than one line: */
 div.figurecaption , .lstlistingtitle {
     font-size: .85em ;
-    text-align: center ;
     font-weight: bold ;
-    margin-top: 1ex ;
-    margin-bottom: 1ex ;
+    text-align: start ;
+    margin: 1ex auto;
+    width: max-content;
+    max-width: 100%;
+}
+
+/* A marginblock is small, so always center and don't mess with the width. */
+div.marginblock div.figurecaption {
+    width: 100% ;
+    text-align: center ;
 }
 
 figure.subfigure div.figurecaption, figure.subtable div.figurecaption  {
@@ -1030,9 +1066,6 @@ table td.tdr { text-align: right ; vertical-align: middle ; }
 table td.tdp { text-align: left ; vertical-align: bottom ; }
 table td.tdm { text-align: left ; vertical-align: middle ; }
 table td.tdb { text-align: left ; vertical-align: top ; }
-table td.tdP { text-align: center ; vertical-align: bottom ; }
-table td.tdM { text-align: center ; vertical-align: middle ; }
-table td.tdB { text-align: center ; vertical-align: top ; }
 
 table td.tvertbarl { border-left: 1px solid black }
 table td.tvertbarldouble { border-left: 4px double black }
@@ -1043,6 +1076,10 @@ table td.tvertbarldash { border-left: 1px dashed black }
 table td.tvertbarldoubledash { border-left: 2px dashed black }
 table td.tvertbarrdash { border-right: 1px dashed black }
 table td.tvertbarrdoubledash { border-right: 2px dashed black }
+
+table td.tdcenter { text-align: center}
+table td.tdleft { text-align: left}
+table td.tdright { text-align: right}
 
 /* for cmidrules: */
 table td.tdrule {
@@ -1196,6 +1233,7 @@ div.subtitle p { margin: 1ex ; }
 
 div.author
 {
+    text-align: center ;
     font-variant: normal ;
     font-style: normal ;
     font-size: 1em ;
@@ -1313,8 +1351,11 @@ section.textbody { margin: 0ex 1em 0ex 1em ;}
 
 div.multicolsheading { -webkit-column-span: all;
     -moz-column-span: all; column-span: all; }
-div.multicols { -webkit-columns: 3 380px ;
-    -moz-columns: 3 380px ; columns: 3 380px ; }
+div.multicols {
+    -webkit-columns: 3 auto ;
+    -moz-columns: 3 auto ;
+    columns: 3 auto ;
+}
 div.multicols p {margin-top: 0ex}
 
 /* Used for xfrac and nicefrac: */
@@ -1348,7 +1389,7 @@ div.alg2enoline{
 
 span.alg2elinenumber{
     margin-right: .5em ;
-    font-size: 50% ;
+    font-size: 60% ;
     color: red ;
 }
 
@@ -1604,6 +1645,14 @@ nav.botnavigation { display:none; }
 /* Only display the sidetoc's webpage title if a small screen */
 span.sidetocthetitle { display: none }
 
+@media screen and (max-width: 100em) {
+    div.multicols {
+        -webkit-columns: 2 auto ;
+        -moz-columns: 2 auto ;
+        columns: 2 auto ;
+    }
+}
+
 @media screen and (max-width: 50em) {
     div.sidetoccontainer {
         float: none ;
@@ -1623,6 +1672,11 @@ span.sidetocthetitle { display: none }
         float: none;
         display:block ;
         margin: 1ex 1em 1ex 1em ;
+    }
+    div.multicols {
+        -webkit-columns: 1 auto ;
+        -moz-columns: 1 auto ;
+        columns: 1 auto ;
     }
 }
 
