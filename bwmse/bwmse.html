@@ -57,7 +57,7 @@ Daniel Kelley<br />
 <div class="flushleft">
 
 <p>
-August 12, 2023
+September 30, 2023
 </p>
 </div>
 
@@ -2812,15 +2812,10 @@ If <span
 </p>
 </div>
 <!--
-...... section Fourier Series ......
+...... subsection Step and Delta Functions ......
 -->
-<h4 id="autosec-359"><span class="sectionnumber">1.24&#x2003;</span>Fourier Series</h4>
+<h5 id="autosec-359">Step and Delta Functions</h5>
 <a id="bwmse-autopage-359"></a>
-<!--
-...... subsection Fourier Coefficients ......
--->
-<h5 id="autosec-360">Fourier Coefficients</h5>
-<a id="bwmse-autopage-360"></a>
 
 
 
@@ -2831,6 +2826,60 @@ If <span
 <p>
 <span
     id="lateximage-bwmse-153"
+    class="lateximagesource"
+><!--
+                           𝑢(𝑡) = (𝑡 < 0) ? 0 ∶ 1        Unit step function
+                       𝑢(𝑡 − 𝑎) = (𝑡 < 𝑎) ? 0 ∶ 1        Unit step function at 𝑎
+                                   1
+                           𝑢(0) =                        Heaviside step function
+                                   2
+                         𝑢𝑎𝑏 (𝑡) = 𝑢(𝑡 − 𝑎) − 𝑢(𝑡 − 𝑏)   Box function 𝑎 < 𝑡 < 𝑏
+                           𝛿(𝑡) = (𝑡 = 0) ? ∞ ∶ 0        Dirac delta function
+                       𝑓(𝑡)𝛿(𝑡) = 𝑓(0)𝛿(𝑡)
+              𝑓(𝑡)𝛿(𝑡 − 𝑎) = 𝑓(𝑎)𝛿(𝑡)
+                    𝑑
+                      𝑢(𝑡) = 𝛿(𝑡)
+                   𝑑𝑡
+                       𝑑
+                  ∫ 𝛿(𝑡) 𝑑𝑡 = (𝑐 < 0 < 𝑑) ? 1 ∶ 0
+                   𝑐
+              𝑑
+         ∫ 𝑓(𝑡)𝛿(𝑡) 𝑑𝑡 = (𝑐 < 0 < 𝑑) ? 𝑓(0) ∶ 0
+          𝑐
+     𝑑
+∫ 𝑓(𝑡)𝛿(𝑡 − 𝑎) 𝑑𝑡 = (𝑐 < 𝑎 < 𝑑) ? 𝑓(𝑎) ∶ 0
+ 𝑐
+--><img
+    src="bwmse-images/image-153.svg"
+    alt="(1.1–0) \{begin}{align*} u(t) &amp;= (t&lt;0) \,?\, 0 : 1 &amp;&amp; \text {Unit step function}\\ u(t-a) &amp;= (t&lt;a) \,?\, 0 : 1 &amp;&amp; \text {Unit step function at $a$}\\
+u(0) &amp;= \frac {1}{2} &amp;&amp; \text {Heaviside step function}\\ u_{ab}(t) &amp;= u(t-a) - u(t-b) &amp;&amp; \text {Box function $a&lt;t&lt;b$}\\ \delta (t) &amp;= (t=0)\,?\,\infty : 0
+&amp;&amp; \text {Dirac delta function}\\ f(t)\delta (t) &amp;= f(0)\delta (t) \\ f(t)\delta (t-a) &amp;= f(a)\delta (t) \\ \frac {d}{dt}u(t) &amp;= \delta (t)\\ \int _c^d \delta (t)\,dt
+&amp;= (c&lt;0&lt;d)\,?\,1:0 \\ \int _c^d f(t)\delta (t)\,dt &amp;= (c&lt;0&lt;d)\,?\,f(0):0 \\ \int _c^d f(t)\delta (t-a)\,dt &amp;= (c&lt;a&lt;d)\,?\,f(a):0 \\ \{end}{align*} "
+    style=""
+    class="lateximage"
+></span>
+</p>
+</div>
+<!--
+...... section Fourier Series ......
+-->
+<h4 id="autosec-362"><span class="sectionnumber">1.24&#x2003;</span>Fourier Series</h4>
+<a id="bwmse-autopage-362"></a>
+<!--
+...... subsection Fourier Coefficients ......
+-->
+<h5 id="autosec-363">Fourier Coefficients</h5>
+<a id="bwmse-autopage-363"></a>
+
+
+
+<div class="displaymath">
+
+<a id="autoid-26" ></a >
+
+<p>
+<span
+    id="lateximage-bwmse-154"
     class="lateximagesource"
 ><!--
   𝐿 = half period
@@ -2861,7 +2910,7 @@ If <span
  𝑏𝑛 =     ∫ 𝑓(𝑡) 𝑠𝑖𝑛(𝑛 𝑡) 𝑑𝑡                𝑎0 = 0, 𝑓(−𝑡) = −𝑓(𝑡), odd function.
         𝐿 0           𝐿
 --><img
-    src="bwmse-images/image-153.svg"
+    src="bwmse-images/image-154.svg"
     alt="(1.1–0) \{begin}{align*} L &amp;= \text {half period}\\ t &amp;= \text {dependent variable, generally time} \\ f(t) &amp;= \text {given function}\\ f(t) &amp;= \frac {a_{0}}{2} +
 \sum _{n=1}^{\infty } a_ncos(nt) + b_nsin(nt)\\ a_0 &amp;= \frac {1}{L} \int _{-L}^{L} f(t)\,dt\\ a_n &amp;= \frac {1}{L} \int _{-L}^{L} f(t)\,cos(n\frac {\pi }{L}t)\,dt \\ b_n &amp;= \frac
 {1}{L} \int _{-L}^{L} f(t)\,sin(n\frac {\pi }{L}t)\,dt \\ a_n &amp;= \frac {2}{L} \int _{0}^{L} f(t)\,cos(n\frac {\pi }{L}t)\,dt &amp;&amp; b_0=0, f(t)=f(-t),\,\text {even function.} \\ b_n
@@ -2872,15 +2921,191 @@ If <span
 </p>
 </div>
 <!--
+...... section Laplace Transform ......
+-->
+<h4 id="autosec-366"><span class="sectionnumber">1.25&#x2003;</span>Laplace Transform</h4>
+<a id="bwmse-autopage-366"></a>
+<!--
+...... subsection Definitions ......
+-->
+<h5 id="autosec-367">Definitions</h5>
+<a id="bwmse-autopage-367"></a>
+
+
+
+<div class="displaymath">
+
+<a id="autoid-27" ></a >
+
+<p>
+<span
+    id="lateximage-bwmse-155"
+    class="lateximagesource"
+><!--
+                         ∞
+              𝐹(𝑠) = ∫ 𝑓(𝑡)𝑒−𝑠𝑡 𝑑𝑡                               Definition
+                       0−
+
+  𝑎 𝑓(𝑡) + 𝑏 𝑔(𝑡) = 𝑎 𝐹(𝑠) + 𝑏 𝐺(𝑠)                              Linearity
+           𝑎𝑧𝑡 𝑓(𝑡) = 𝐹(𝑠 − 𝑧)                                   s-shift
+𝑢(𝑡 − 𝑎)𝑓(𝑡 − 𝑎) = 𝑒−𝑎𝑠 𝐹(𝑠)                                     t-translation I
+    𝑢(𝑡 − 𝑎)𝑓(𝑡) = 𝑒−𝑎𝑠 ℒ(𝑓(𝑡 + 𝑎))                              t-translation II
+             𝑓′ (𝑡) = 𝑠𝐹(𝑠) − 𝑓(0− )
+             𝑓″ (𝑡) = 𝑠2 𝐹(𝑠) − 𝑠𝑓(0− ) − 𝑓′ (0− )
+           𝑓(𝑛) (𝑡) = 𝑠𝑛 𝐹(𝑠) − 𝑠𝑛−1 𝑓(0− ) − ... − 𝑓𝑛−1 (0− )
+             𝑡𝑓(𝑡) = −𝐹 ′ (𝑠)
+            𝑡𝑛 𝑓(𝑡) = (−1)𝑛 𝐹 𝑛 (𝑠)
+      (𝑓 ∗ 𝑔)(𝑡) = 𝐹(𝑠)𝐺(𝑠)
+      𝑡+
+                      𝐹(𝑠)
+    ∫ 𝑓(𝜏) 𝑑𝜏 =
+     0−
+                       𝑠
+--><img
+    src="bwmse-images/image-155.svg"
+    alt="(1.1–0) \{begin}{align*} F(s) &amp;= \int _{0^-}^{\infty }f(t)e^{-st}\,dt &amp;&amp; \text {Definition}\\ a\,f(t) + b\,g(t) &amp;= a\,F(s) + b\,G(s) &amp;&amp; \text {Linearity}\\
+a^{zt}f(t)&amp;= F(s-z) &amp;&amp; \text {s-shift} \\ u(t-a)f(t-a)&amp;= e^{-as}F(s) &amp;&amp; \text {t-translation I} \\ u(t-a)f(t)&amp;= e^{-as}\mathcal {L}(f(t+a)) &amp;&amp; \text
+{t-translation II} \\ f&apos;(t) &amp;= sF(s) - f(0^{-}) \\ f&apos;&apos;(t) &amp;= s^{2}F(s) - sf(0^{-}) - f&apos;(0^{-}) \\ f^{(n)}(t) &amp;= s^{n}F(s) - s^{n-1}f(0^{-}) - ... -
+f^{n-1}(0^{-}) \\ tf(t) &amp;= -F&apos;(s) \\ t^{n}f(t) &amp;= (-1)^{n}F^{n}(s) \\ (f*g)(t)&amp;= F(s)G(s) \\ \int _{0^-}^{t^+} f(\tau )\,d\tau &amp;= \frac {F(s)}{s} \\ \{end}{align*} "
+    style=""
+    class="lateximage"
+></span>
+</p>
+</div>
+<!--
+...... subsection Transforms ......
+-->
+<h5 id="autosec-370">Transforms</h5>
+<a id="bwmse-autopage-370"></a>
+
+
+
+<div class="displaymath">
+
+<a id="autoid-28" ></a >
+
+<p>
+<span
+    id="lateximage-bwmse-156"
+    class="lateximagesource"
+><!--
+                            1
+                      1=                   𝑅𝑒(𝑠) > 0
+                            𝑠
+                              1
+                    𝑒𝑎𝑡 =                  𝑅𝑒(𝑠) > 𝑎
+                           𝑠−𝑎
+                           1
+                       𝑡= 2                𝑅𝑒(𝑠) > 0
+                           𝑠
+                             𝑛!
+                     𝑡𝑛 = 𝑛+1              𝑅𝑒(𝑠) > 0
+                           𝑠
+                                𝑠
+                𝑐𝑜𝑠(𝜔 𝑡) = 2               𝑅𝑒(𝑠) > 0
+                           𝑠 + 𝜔2
+                               𝜔
+                𝑠𝑖𝑛(𝜔 𝑡) = 2               𝑅𝑒(𝑠) > 0
+                           𝑠 + 𝜔2
+                                (𝑠 − 𝑧)
+            𝑒𝑧𝑡 𝑐𝑜𝑠(𝜔 𝑡) =                 𝑅𝑒(𝑠) > 𝑅𝑒(𝑧)
+                           (𝑠 − 𝑧)2 + 𝜔2
+                                   𝜔
+            𝑒𝑧𝑡 𝑠𝑖𝑛(𝜔 𝑡) =                 𝑅𝑒(𝑠) > 𝑅𝑒(𝑧)
+                           (𝑠 − 𝑧)2 + 𝜔2
+                   𝛿(𝑡) = 1                ∀𝑠
+              𝛿(𝑡 − 𝑎) = 𝑒−𝑎𝑠              ∀𝑠
+               𝑢(𝑡 − 𝑎) = 𝑒−𝑎𝑠 /𝑠          𝑅𝑒(𝑠) > 0
+                                𝑠
+               𝑐𝑜𝑠ℎ(𝑘𝑡) = 2                𝑅𝑒(𝑠) > 𝑘
+                            𝑠 − 𝑘2
+                                𝑘
+               𝑠𝑖𝑛ℎ(𝑘𝑡) = 2                𝑅𝑒(𝑠) > 𝑘
+                            𝑠 − 𝑘2
+𝑠𝑖𝑛(𝜔 𝑡) − 𝜔 𝑡 𝑐𝑜𝑠(𝜔 𝑡)           1
+            3
+                          = 2              𝑅𝑒(𝑠) > 0
+         2𝜔                 (𝑠 + 𝜔2 )2
+              𝑡 𝑠𝑖𝑛(𝜔 𝑡)           𝑠
+                          = 2              𝑅𝑒(𝑠) > 0
+                  2𝜔        (𝑠 + 𝜔2 )2
+𝑠𝑖𝑛(𝜔 𝑡) + 𝜔 𝑡 𝑐𝑜𝑠(𝜔 𝑡)           𝑠2
+                          = 2              𝑅𝑒(𝑠) > 0
+          2𝜔                (𝑠 + 𝜔2 )2
+                                  𝑛!
+                   𝑡𝑛 𝑒𝑎𝑡 =                𝑅𝑒(𝑠) > 𝑎
+                            (𝑠 − 𝑎)𝑛+1
+                     1       1
+                          =                𝑅𝑒(𝑠) > 0
+                   √𝜋 𝑡 √𝑠
+                            Γ(𝑎 + 1)
+                       𝑡𝑎 =                𝑅𝑒(𝑠) > 0
+                               𝑠𝑎+1
+--><img
+    src="bwmse-images/image-156.svg"
+    alt="(1.1–0) \{begin}{align*} 1 &amp;= \frac {1}{s} &amp;&amp; Re(s) &gt; 0\\ e^{at} &amp;= \frac {1}{s-a} &amp;&amp; Re(s) &gt; a\\ t &amp;= \frac {1}{s^2} &amp;&amp; Re(s) &gt; 0\\ t^n
+&amp;= \frac {n!}{s^{n+1}} &amp;&amp; Re(s) &gt; 0\\ cos(\omega \,t) &amp;= \frac {s}{s^2+\omega ^2} &amp;&amp; Re(s) &gt; 0\\ sin(\omega \,t) &amp;= \frac {\omega }{s^2+\omega ^2} &amp;&amp;
+Re(s) &gt; 0\\ e^{zt}cos(\omega \,t) &amp;= \frac {(s-z)}{(s-z)^2+\omega ^2} &amp;&amp; Re(s) &gt; Re(z)\\ e^{zt}sin(\omega \,t) &amp;= \frac {\omega }{(s-z)^2+\omega ^2} &amp;&amp; Re(s) &gt;
+Re(z)\\ \delta (t) &amp;= 1 &amp;&amp; \forall \,s\\ \delta (t-a) &amp;= e^{-as} &amp;&amp; \forall \,s\\ u(t-a)&amp;= e^{-as}/s &amp;&amp; Re(s) &gt; 0\\ cosh(kt) &amp;= \frac {s}{s^2-k^2}
+&amp;&amp; Re(s) &gt; k\\ sinh(kt) &amp;= \frac {k}{s^2-k^2} &amp;&amp; Re(s) &gt; k\\ \frac {sin(\omega \,t)-\omega \,t\,cos(\omega \,t)}{2\omega ^3} &amp;= \frac {1}{(s^2+\omega ^2)^2}
+&amp;&amp; Re(s) &gt; 0\\ \frac {t\,sin(\omega \,t)}{2\omega } &amp;= \frac {s}{(s^2+\omega ^2)^2} &amp;&amp; Re(s) &gt; 0\\ \frac {sin(\omega \,t)+\omega \,t\,cos(\omega \,t)}{2\omega }
+&amp;= \frac {s^2}{(s^2+\omega ^2)^2} &amp;&amp; Re(s) &gt; 0\\ t^n\,e^{at} &amp;= \frac {n!}{(s-a)^{n+1}} &amp;&amp; Re(s) &gt; a\\ \frac {1}{\sqrt {\pi \,t}} &amp;= \frac {1}{\sqrt {s}}
+&amp;&amp; Re(s) &gt; 0\\ t^a &amp;= \frac {\Gamma (a+1)}{s^{a+1}} &amp;&amp; Re(s) &gt; 0\\ \{end}{align*} "
+    style=""
+    class="lateximage"
+></span>
+</p>
+</div>
+<!--
+...... subsection Heaviside Coverup ......
+-->
+<h5 id="autosec-373">Heaviside Coverup</h5>
+<a id="bwmse-autopage-373"></a>
+
+
+<p>
+Decomposition of Laplace transforms into partial fractions. Denominator must be distinct linear factors.
+</p>
+
+<div class="displaymath">
+
+<a id="autoid-29" ></a >
+
+<p>
+<span
+    id="lateximage-bwmse-157"
+    class="lateximagesource"
+><!--
+     𝐺(𝑠) = Π𝑘𝑛=1 𝐻𝑛 (𝑠)
+                𝐴
+𝐹(𝑠)/𝐺(𝑠) = Σ 𝑛
+              𝐻𝑛 (𝑠)
+             𝐺(𝑠)
+    𝐷𝑛 (𝑠) =
+             𝐻𝑛 (𝑠)
+             𝐹(𝑠) |
+      𝐴𝑛 =          |
+             𝐷𝑛 (𝑠) |𝑠𝑜𝑙𝑣𝑒(𝑠,𝐻 (𝑠)=0)
+                              𝑛
+--><img
+    src="bwmse-images/image-157.svg"
+    alt="(1.1–0) \{begin}{align*} G(s) &amp;= \Pi _{n=1}^{k} H_n(s)\\ F(s)/G(s) &amp;= \Sigma \frac {A_n}{H_{n}(s)}\\ D_{n}(s) &amp;=\frac {G(s)}{H_n(s)}\\ A_n &amp;= \frac {F(s)}{D_{n}(s)}
+\biggr \rvert _{solve(s,H_{n}(s)=0)}\\ \{end}{align*} "
+    style=""
+    class="lateximage"
+></span>
+</p>
+</div>
+<!--
 ...... chapter Science ......
 -->
-<h3 id="autosec-363">Chapter&nbsp;<span class="sectionnumber">2&#x2003;</span>Science</h3>
-<a id="bwmse-autopage-363"></a>
+<h3 id="autosec-376">Chapter&nbsp;<span class="sectionnumber">2&#x2003;</span>Science</h3>
+<a id="bwmse-autopage-376"></a>
 <!--
 ...... section Units ......
 -->
-<h4 id="autosec-364"><span class="sectionnumber">2.1&#x2003;</span>Units</h4>
-<a id="bwmse-autopage-364"></a>
+<h4 id="autosec-377"><span class="sectionnumber">2.1&#x2003;</span>Units</h4>
+<a id="bwmse-autopage-377"></a>
 <table>
 
 <tr style="display:none"><th>.</th></tr>
@@ -2911,7 +3136,7 @@ If <span
 <td class="tdl"></td>
 <td class="tdl">steradian</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-154"
+    id="lateximage-bwmse-158"
     class="lateximagesource"
 ><!--
 𝑠𝑟
@@ -2927,7 +3152,7 @@ If <span
 <tr>
 <td class="tdl">Area</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-155"
+    id="lateximage-bwmse-159"
     class="lateximagesource"
 ><!--
 𝑚2
@@ -2945,7 +3170,7 @@ If <span
 <tr>
 <td class="tdl">Volume</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-156"
+    id="lateximage-bwmse-160"
     class="lateximagesource"
 ><!--
 𝑚3
@@ -2963,7 +3188,7 @@ If <span
 <tr>
 <td class="tdl">Frequency</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-157"
+    id="lateximage-bwmse-161"
     class="lateximagesource"
 ><!--
 𝑠−1
@@ -2976,7 +3201,7 @@ If <span
 ></span></td>
 <td class="tdl">Hertz</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-158"
+    id="lateximage-bwmse-162"
     class="lateximagesource"
 ><!--
 𝐻𝑧
@@ -2992,7 +3217,7 @@ If <span
 <tr>
 <td class="tdl">Velocity</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-159"
+    id="lateximage-bwmse-163"
     class="lateximagesource"
 ><!--
 𝑚 ⋅ 𝑠−1
@@ -3010,7 +3235,7 @@ If <span
 <tr>
 <td class="tdl">Acceleration</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-160"
+    id="lateximage-bwmse-164"
     class="lateximagesource"
 ><!--
 𝑚 ⋅ 𝑠−2
@@ -3028,7 +3253,7 @@ If <span
 <tr>
 <td class="tdl">Angular Velocity</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-161"
+    id="lateximage-bwmse-165"
     class="lateximagesource"
 ><!--
 𝑟𝑎𝑑 ⋅ 𝑠−1
@@ -3046,7 +3271,7 @@ If <span
 <tr>
 <td class="tdl">Angular Acceleration</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-162"
+    id="lateximage-bwmse-166"
     class="lateximagesource"
 ><!--
 𝑟𝑎𝑑 ⋅ 𝑠−2
@@ -3064,7 +3289,7 @@ If <span
 <tr>
 <td class="tdl">Density</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-163"
+    id="lateximage-bwmse-167"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚−3
@@ -3082,7 +3307,7 @@ If <span
 <tr>
 <td class="tdl">Momentum</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-164"
+    id="lateximage-bwmse-168"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚 ⋅ 𝑠−1
@@ -3100,7 +3325,7 @@ If <span
 <tr>
 <td class="tdl">Angular Momentum</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-165"
+    id="lateximage-bwmse-169"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚2 ⋅ 𝑠−1
@@ -3118,7 +3343,7 @@ If <span
 <tr>
 <td class="tdl">Force</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-166"
+    id="lateximage-bwmse-170"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚 ⋅ 𝑠−2
@@ -3131,7 +3356,7 @@ If <span
 ></span></td>
 <td class="tdl">Newton</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-167"
+    id="lateximage-bwmse-171"
     class="lateximagesource"
 ><!--
 𝑁
@@ -3147,7 +3372,7 @@ If <span
 <tr>
 <td class="tdl">Work, Energy</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-168"
+    id="lateximage-bwmse-172"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚2 ⋅ 𝑠−2
@@ -3160,7 +3385,7 @@ If <span
 ></span></td>
 <td class="tdl">Joule</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-169"
+    id="lateximage-bwmse-173"
     class="lateximagesource"
 ><!--
 𝐽
@@ -3176,7 +3401,7 @@ If <span
 <tr>
 <td class="tdl">Power</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-170"
+    id="lateximage-bwmse-174"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚2 ⋅ 𝑠−3
@@ -3189,7 +3414,7 @@ If <span
 ></span></td>
 <td class="tdl">Watt</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-171"
+    id="lateximage-bwmse-175"
     class="lateximagesource"
 ><!--
 𝑊
@@ -3205,7 +3430,7 @@ If <span
 <tr>
 <td class="tdl">Torque</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-172"
+    id="lateximage-bwmse-176"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚2 ⋅ 𝑠−2
@@ -3223,7 +3448,7 @@ If <span
 <tr>
 <td class="tdl">Pressure</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-173"
+    id="lateximage-bwmse-177"
     class="lateximagesource"
 ><!--
 𝑘𝑔 ⋅ 𝑚−1 ⋅ 𝑠−2
@@ -3236,7 +3461,7 @@ If <span
 ></span></td>
 <td class="tdl">Pascal</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-174"
+    id="lateximage-bwmse-178"
     class="lateximagesource"
 ><!--
 𝑃𝑎
@@ -3253,8 +3478,8 @@ If <span
 <!--
 ...... section Lab Reports ......
 -->
-<h4 id="autosec-408"><span class="sectionnumber">2.2&#x2003;</span>Lab Reports</h4>
-<a id="bwmse-autopage-408"></a>
+<h4 id="autosec-421"><span class="sectionnumber">2.2&#x2003;</span>Lab Reports</h4>
+<a id="bwmse-autopage-421"></a>
 <table>
 
 <tr style="display:none"><th>.</th></tr>
@@ -3291,8 +3516,8 @@ If <span
 <!--
 ...... section Laws ......
 -->
-<h4 id="autosec-410"><span class="sectionnumber">2.3&#x2003;</span>Laws</h4>
-<a id="bwmse-autopage-410"></a>
+<h4 id="autosec-423"><span class="sectionnumber">2.3&#x2003;</span>Laws</h4>
+<a id="bwmse-autopage-423"></a>
 <table>
 
 <tr style="display:none"><th>.</th></tr>
@@ -3300,7 +3525,7 @@ If <span
 <tr>
 <td class="tdl">Newton’s 1st Law</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-175"
+    id="lateximage-bwmse-179"
     class="lateximagesource"
 ><!--
 ∑ F = 0 ⇔ v̇
@@ -3316,7 +3541,7 @@ If <span
 <tr>
 <td class="tdl">Newton’s 2nd Law</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-176"
+    id="lateximage-bwmse-180"
     class="lateximagesource"
 ><!--
 F = 𝑚a = ṗ
@@ -3332,7 +3557,7 @@ F = 𝑚a = ṗ
 <tr>
 <td class="tdl">Newton’s 3rd Law</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-177"
+    id="lateximage-bwmse-181"
     class="lateximagesource"
 ><!--
 F𝑎 = −F𝑎
@@ -3348,7 +3573,7 @@ F𝑎 = −F𝑎
 <tr>
 <td class="tdl">Gravity</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-178"
+    id="lateximage-bwmse-182"
     class="lateximagesource"
 ><!--
 F = 𝑚g
@@ -3359,7 +3584,7 @@ F = 𝑚g
     style="width:3.92828em ; vertical-align:-0.282em "
     class="lateximage"
 ></span>; <span
-    id="lateximage-bwmse-179"
+    id="lateximage-bwmse-183"
     class="lateximagesource"
 ><!--
 g = 9.81
@@ -3375,7 +3600,7 @@ g = 9.81
 <tr>
 <td class="tdl">Hooke’s Law</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-180"
+    id="lateximage-bwmse-184"
     class="lateximagesource"
 ><!--
 𝐹𝑥 = −𝑘Δ𝑥
@@ -3386,7 +3611,7 @@ g = 9.81
     style="width:5.62448em ; vertical-align:-0.26038em "
     class="lateximage"
 ></span>; <span
-    id="lateximage-bwmse-181"
+    id="lateximage-bwmse-185"
     class="lateximagesource"
 ><!--
 𝑘=
@@ -3402,7 +3627,7 @@ g = 9.81
 <tr>
 <td class="tdl">Force</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-182"
+    id="lateximage-bwmse-186"
     class="lateximagesource"
 ><!--
 𝑁 = 𝑘𝑔 ⋅ 𝑚 ⋅ 𝑠−2
@@ -3418,7 +3643,7 @@ g = 9.81
 <tr>
 <td class="tdl">Energy</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-183"
+    id="lateximage-bwmse-187"
     class="lateximagesource"
 ><!--
 𝐽 =𝑁⋅𝑚
@@ -3434,7 +3659,7 @@ g = 9.81
 <tr>
 <td class="tdl">Power</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-184"
+    id="lateximage-bwmse-188"
     class="lateximagesource"
 ><!--
 𝑊 = 𝐽 ⋅ 𝑠−1
@@ -3450,7 +3675,7 @@ g = 9.81
 <tr>
 <td class="tdl">Momentum</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-185"
+    id="lateximage-bwmse-189"
     class="lateximagesource"
 ><!--
 p=𝑚⋅v
@@ -3466,7 +3691,7 @@ p=𝑚⋅v
 <tr>
 <td class="tdl">Kinetic Energy</td>
 <td class="tdl"><span
-    id="lateximage-bwmse-186"
+    id="lateximage-bwmse-190"
     class="lateximagesource"
 ><!--
    1        p2
@@ -3495,8 +3720,8 @@ p=𝑚⋅v
 <!--
 ...... section Mechanics Problem Workflow ......
 -->
-<h4 id="autosec-436"><span class="sectionnumber">2.4&#x2003;</span>Mechanics Problem Workflow</h4>
-<a id="bwmse-autopage-436"></a>
+<h4 id="autosec-449"><span class="sectionnumber">2.4&#x2003;</span>Mechanics Problem Workflow</h4>
+<a id="bwmse-autopage-449"></a>
 <table>
 
 <tr style="display:none"><th>.</th></tr>
@@ -3546,20 +3771,20 @@ p=𝑚⋅v
 <!--
 ...... chapter Engineering ......
 -->
-<h3 id="autosec-438">Chapter&nbsp;<span class="sectionnumber">3&#x2003;</span>Engineering</h3>
-<a id="bwmse-autopage-438"></a>
+<h3 id="autosec-451">Chapter&nbsp;<span class="sectionnumber">3&#x2003;</span>Engineering</h3>
+<a id="bwmse-autopage-451"></a>
 <!--
 ...... section DC Ohm's Law ......
 -->
-<h4 id="autosec-439"><span class="sectionnumber">3.1&#x2003;</span>DC Ohm’s Law</h4>
-<a id="bwmse-autopage-439"></a>
+<h4 id="autosec-452"><span class="sectionnumber">3.1&#x2003;</span>DC Ohm’s Law</h4>
+<a id="bwmse-autopage-452"></a>
 <table>
 
 <tr style="display:none"><th>.</th></tr>
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-187"
+    id="lateximage-bwmse-191"
     class="lateximagesource"
 ><!--
 𝐼
@@ -3571,7 +3796,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-188"
+    id="lateximage-bwmse-192"
     class="lateximagesource"
 ><!--
     𝐸
@@ -3585,7 +3810,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-189"
+    id="lateximage-bwmse-193"
     class="lateximagesource"
 ><!--
     𝑃
@@ -3599,7 +3824,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-190"
+    id="lateximage-bwmse-194"
     class="lateximagesource"
 ><!--
      𝑃
@@ -3616,7 +3841,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-191"
+    id="lateximage-bwmse-195"
     class="lateximagesource"
 ><!--
 𝑅
@@ -3628,7 +3853,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-192"
+    id="lateximage-bwmse-196"
     class="lateximagesource"
 ><!--
     𝐸
@@ -3642,7 +3867,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-193"
+    id="lateximage-bwmse-197"
     class="lateximagesource"
 ><!--
     𝐸2
@@ -3656,7 +3881,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-194"
+    id="lateximage-bwmse-198"
     class="lateximagesource"
 ><!--
     𝑃
@@ -3673,7 +3898,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-195"
+    id="lateximage-bwmse-199"
     class="lateximagesource"
 ><!--
 𝐸
@@ -3685,7 +3910,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-196"
+    id="lateximage-bwmse-200"
     class="lateximagesource"
 ><!--
 = 𝐼𝑅
@@ -3697,7 +3922,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-197"
+    id="lateximage-bwmse-201"
     class="lateximagesource"
 ><!--
     𝑃
@@ -3711,7 +3936,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-198"
+    id="lateximage-bwmse-202"
     class="lateximagesource"
 ><!--
 = √𝑃𝑅
@@ -3726,7 +3951,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-199"
+    id="lateximage-bwmse-203"
     class="lateximagesource"
 ><!--
 𝑃
@@ -3738,7 +3963,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-200"
+    id="lateximage-bwmse-204"
     class="lateximagesource"
 ><!--
 = 𝐸𝐼
@@ -3750,7 +3975,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-201"
+    id="lateximage-bwmse-205"
     class="lateximagesource"
 ><!--
 = 𝐼2𝑅
@@ -3762,7 +3987,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-202"
+    id="lateximage-bwmse-206"
     class="lateximagesource"
 ><!--
     𝐸2
@@ -3781,15 +4006,15 @@ p=𝑚⋅v
 <!--
 ...... section AC Ohm's Law ......
 -->
-<h4 id="autosec-473"><span class="sectionnumber">3.2&#x2003;</span>AC Ohm’s Law</h4>
-<a id="bwmse-autopage-473"></a>
+<h4 id="autosec-486"><span class="sectionnumber">3.2&#x2003;</span>AC Ohm’s Law</h4>
+<a id="bwmse-autopage-486"></a>
 <table>
 
 <tr style="display:none"><th>.</th></tr>
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-203"
+    id="lateximage-bwmse-207"
     class="lateximagesource"
 ><!--
 𝐼
@@ -3801,7 +4026,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-204"
+    id="lateximage-bwmse-208"
     class="lateximagesource"
 ><!--
     𝐸
@@ -3815,7 +4040,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-205"
+    id="lateximage-bwmse-209"
     class="lateximagesource"
 ><!--
       𝑃
@@ -3829,7 +4054,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-206"
+    id="lateximage-bwmse-210"
     class="lateximagesource"
 ><!--
          𝑃
@@ -3846,7 +4071,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-207"
+    id="lateximage-bwmse-211"
     class="lateximagesource"
 ><!--
 𝑍
@@ -3858,7 +4083,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-208"
+    id="lateximage-bwmse-212"
     class="lateximagesource"
 ><!--
     𝐸
@@ -3872,7 +4097,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-209"
+    id="lateximage-bwmse-213"
     class="lateximagesource"
 ><!--
     𝐸2 𝑐𝑜𝑠(𝜃)
@@ -3886,7 +4111,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-210"
+    id="lateximage-bwmse-214"
     class="lateximagesource"
 ><!--
         𝑃
@@ -3903,7 +4128,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-211"
+    id="lateximage-bwmse-215"
     class="lateximagesource"
 ><!--
 𝐸
@@ -3915,7 +4140,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-212"
+    id="lateximage-bwmse-216"
     class="lateximagesource"
 ><!--
 = 𝐼𝑍
@@ -3927,7 +4152,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-213"
+    id="lateximage-bwmse-217"
     class="lateximagesource"
 ><!--
       𝑃
@@ -3941,7 +4166,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-214"
+    id="lateximage-bwmse-218"
     class="lateximagesource"
 ><!--
         𝑃𝑍
@@ -3958,7 +4183,7 @@ p=𝑚⋅v
 
 <tr>
 <td class="tdl"><span
-    id="lateximage-bwmse-215"
+    id="lateximage-bwmse-219"
     class="lateximagesource"
 ><!--
 𝑃
@@ -3970,7 +4195,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-216"
+    id="lateximage-bwmse-220"
     class="lateximagesource"
 ><!--
 = 𝐸𝐼𝑐𝑜𝑠(𝜃)
@@ -3982,7 +4207,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-217"
+    id="lateximage-bwmse-221"
     class="lateximagesource"
 ><!--
 = 𝐼 2 𝑍𝑐𝑜𝑠(𝜃)
@@ -3994,7 +4219,7 @@ p=𝑚⋅v
     class="lateximage"
 ></span></td>
 <td class="tdl"><span
-    id="lateximage-bwmse-218"
+    id="lateximage-bwmse-222"
     class="lateximagesource"
 ><!--
     𝐸2 𝑐𝑜𝑠(𝜃)
@@ -4013,8 +4238,8 @@ p=𝑚⋅v
 <!--
 ...... chapter Bibliography ......
 -->
-<h3 id="autosec-507">Bibliography</h3>
-<a id="bwmse-autopage-507"></a>
+<h3 id="autosec-520">Bibliography</h3>
+<a id="bwmse-autopage-520"></a>
 
 
 <ul style="list-style-type:none">
