@@ -19,6 +19,8 @@ ca-r/DATE.txt: $(CA_R)/DATE.txt
 	cp $(CA_R)/* ca-r
 
 bwmse/bwmse.pdf: $(BWMSE)/bwmse.pdf
+	make -k -C $(BWMSE) REL=$(PWD)/bwmse pdf
+	make -k -C $(BWMSE) REL=$(PWD)/bwmse html
 	make -k -C $(BWMSE) REL=$(PWD)/bwmse release
 	cp $(BWMSE)/bwmse.pdf bwmse
 
