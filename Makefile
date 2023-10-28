@@ -4,7 +4,7 @@
 #  Copyright (c) 2022 by Daniel Kelley
 #
 
-CA_R := $(HOME)/src/ca-r/ws
+CA_R := $(HOME)/work/dak/ca-r/build/ws
 BWMSE := $(HOME)/work/dak/bwmse
 
 EXTERNS := ca-r/DATE.txt

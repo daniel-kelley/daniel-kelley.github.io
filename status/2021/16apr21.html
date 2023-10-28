@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-01-28 Sat 07:05 -->
+<!-- 2023-10-28 Sat 04:39 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>10 April 2021 - 16 April 2021</title>
@@ -193,27 +193,38 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="content" class="content">
@@ -222,81 +233,81 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgd9a96eb">1. Santa Cruz Weather Station</a>
+<li><a href="#orgfddb6f9">1. Santa Cruz Weather Station</a>
 <ul>
-<li><a href="#orgdbdd6aa">1.1. Next step</a>
+<li><a href="#org15dc4be">1.1. Next step</a>
 <ul>
-<li><a href="#orge9d9b82">1.1.1. Construct DB9M test cable.</a></li>
-<li><a href="#orgcd3cb7e">1.1.2. Test sensors.</a></li>
+<li><a href="#orgfd24979">1.1.1. Construct DB9M test cable.</a></li>
+<li><a href="#org2017483">1.1.2. Test sensors.</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orga527ccc">2. EPICS</a>
+<li><a href="#orgd5567a3">2. EPICS</a>
 <ul>
-<li><a href="#org5299106">2.1. Next steps</a>
+<li><a href="#orgd93715a">2.1. Next steps</a>
 <ul>
-<li><a href="#org7547a7b">2.1.1. u3scpi network port testing</a></li>
-<li><a href="#orgd754e47">2.1.2. initial EPICS interface</a></li>
-<li><a href="#orge8154de">2.1.3. u3scpi analog/digital port reconfiguration.</a></li>
+<li><a href="#orgc21429b">2.1.1. u3scpi network port testing</a></li>
+<li><a href="#org3c3fe53">2.1.2. initial EPICS interface</a></li>
+<li><a href="#org4c45fe8">2.1.3. u3scpi analog/digital port reconfiguration.</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org914cf6b">3. Brini Tracker II</a>
+<li><a href="#orgd69d060">3. Brini Tracker II</a>
 <ul>
-<li><a href="#org9645cbc">3.1. Fixed A/D</a></li>
-<li><a href="#org0d62ba6">3.2. Fixed GPS NMEA reader</a></li>
-<li><a href="#orgf5ef6d7">3.3. Next steps</a>
+<li><a href="#org2084a53">3.1. Fixed A/D</a></li>
+<li><a href="#org2dd2e90">3.2. Fixed GPS NMEA reader</a></li>
+<li><a href="#org79cc4e2">3.3. Next steps</a>
 <ul>
-<li><a href="#org51ad7d6">3.3.1. Validate remaining standard GPS messages</a></li>
-<li><a href="#orgd883cbc">3.3.2. Investigate GPS chipset data logging</a></li>
-<li><a href="#orgee17751">3.3.3. Investigate LoRA radio interface</a></li>
+<li><a href="#orge70f496">3.3.1. Validate remaining standard GPS messages</a></li>
+<li><a href="#org6a82760">3.3.2. Investigate GPS chipset data logging</a></li>
+<li><a href="#org0cb193c">3.3.3. Investigate LoRA radio interface</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org9a359b6">4. Weber Grill Handles</a></li>
-<li><a href="#org966ea62">5. wktcolor</a>
+<li><a href="#orga3885f9">4. Weber Grill Handles</a></li>
+<li><a href="#orgdc46556">5. wktcolor</a>
 <ul>
-<li><a href="#org4f412c7">5.1. Next steps</a>
+<li><a href="#org601be74">5.1. Next steps</a>
 <ul>
-<li><a href="#org8075231">5.1.1. finish wktlib c++ export.</a></li>
-<li><a href="#org736f028">5.1.2. create vertex map for geometry importer</a></li>
+<li><a href="#orgee31bde">5.1.1. finish wktlib c++ export.</a></li>
+<li><a href="#orgc8139b4">5.1.2. create vertex map for geometry importer</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orga9c99dc">6. ca-r</a>
+<li><a href="#org9417a30">6. ca-r</a>
 <ul>
-<li><a href="#org81147f1">6.1. Next Step</a>
+<li><a href="#org97f4655">6.1. Next Step</a>
 <ul>
-<li><a href="#org653a398">6.1.1. Fix issue 18</a></li>
+<li><a href="#org0a3c27a">6.1.1. Fix issue 18</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org490ed38">7. AMDGPU</a>
+<li><a href="#orgc0fe27b">7. AMDGPU</a>
 <ul>
-<li><a href="#org51c7881">7.1. Next steps</a>
+<li><a href="#org83900d9">7.1. Next steps</a>
 <ul>
-<li><a href="#org3fdc752">7.1.1. Reverse engineer HSAKMT programming.</a></li>
+<li><a href="#org0be26bd">7.1.1. Reverse engineer HSAKMT programming.</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org7e9a1ef">8. GRASS geopackage import</a></li>
-<li><a href="#orged94c99">9. Tessellation</a></li>
-<li><a href="#orgd84adf1">10. Ninja v Make</a>
+<li><a href="#orgf4eaf78">8. GRASS geopackage import</a></li>
+<li><a href="#org7dd5e23">9. Tessellation</a></li>
+<li><a href="#org7ab7b6c">10. Ninja v Make</a>
 <ul>
-<li><a href="#org917d13d">10.1. Next Step</a>
+<li><a href="#org27ed842">10.1. Next Step</a>
 <ul>
-<li><a href="#orgcf76741">10.1.1. clean simple measurements</a></li>
+<li><a href="#org263ce9c">10.1.1. clean simple measurements</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org138d5c3">11. Plumbing</a></li>
+<li><a href="#org25ebac5">11. Plumbing</a></li>
 </ul>
 </div>
 </div>
@@ -304,28 +315,28 @@
 Overcoming frustration
 </p>
 
-<div id="outline-container-orgd9a96eb" class="outline-2">
-<h2 id="orgd9a96eb"><span class="section-number-2">1.</span> Santa Cruz Weather Station</h2>
+<div id="outline-container-orgfddb6f9" class="outline-2">
+<h2 id="orgfddb6f9"><span class="section-number-2">1.</span> Santa Cruz Weather Station</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Mast sensors still broken <b>but</b> started a test jig.
 Using a subset of 'HHEM' as a test program.
 </p>
 </div>
-<div id="outline-container-orgdbdd6aa" class="outline-3">
-<h3 id="orgdbdd6aa"><span class="section-number-3">1.1.</span> Next step</h3>
+<div id="outline-container-org15dc4be" class="outline-3">
+<h3 id="org15dc4be"><span class="section-number-3">1.1.</span> Next step</h3>
 <div class="outline-text-3" id="text-1-1">
 </div>
-<div id="outline-container-orge9d9b82" class="outline-4">
-<h4 id="orge9d9b82"><span class="section-number-4">1.1.1.</span> Construct DB9M test cable.</h4>
+<div id="outline-container-orgfd24979" class="outline-4">
+<h4 id="orgfd24979"><span class="section-number-4">1.1.1.</span> Construct DB9M test cable.</h4>
 </div>
-<div id="outline-container-orgcd3cb7e" class="outline-4">
-<h4 id="orgcd3cb7e"><span class="section-number-4">1.1.2.</span> Test sensors.</h4>
+<div id="outline-container-org2017483" class="outline-4">
+<h4 id="org2017483"><span class="section-number-4">1.1.2.</span> Test sensors.</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-orga527ccc" class="outline-2">
-<h2 id="orga527ccc"><span class="section-number-2">2.</span> EPICS</h2>
+<div id="outline-container-orgd5567a3" class="outline-2">
+<h2 id="orgd5567a3"><span class="section-number-2">2.</span> EPICS</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 No progress. Now that the Brini Tracker A/D is working (which was
@@ -333,27 +344,27 @@ the original motivation for getting U3 stuff working), this is no
 longer "critical path" - not like anything is critical in this list.
 </p>
 </div>
-<div id="outline-container-org5299106" class="outline-3">
-<h3 id="org5299106"><span class="section-number-3">2.1.</span> Next steps</h3>
+<div id="outline-container-orgd93715a" class="outline-3">
+<h3 id="orgd93715a"><span class="section-number-3">2.1.</span> Next steps</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-org7547a7b" class="outline-4">
-<h4 id="org7547a7b"><span class="section-number-4">2.1.1.</span> u3scpi network port testing</h4>
+<div id="outline-container-orgc21429b" class="outline-4">
+<h4 id="orgc21429b"><span class="section-number-4">2.1.1.</span> u3scpi network port testing</h4>
 </div>
-<div id="outline-container-orgd754e47" class="outline-4">
-<h4 id="orgd754e47"><span class="section-number-4">2.1.2.</span> initial EPICS interface</h4>
+<div id="outline-container-org3c3fe53" class="outline-4">
+<h4 id="org3c3fe53"><span class="section-number-4">2.1.2.</span> initial EPICS interface</h4>
 </div>
-<div id="outline-container-orge8154de" class="outline-4">
-<h4 id="orge8154de"><span class="section-number-4">2.1.3.</span> u3scpi analog/digital port reconfiguration.</h4>
+<div id="outline-container-org4c45fe8" class="outline-4">
+<h4 id="org4c45fe8"><span class="section-number-4">2.1.3.</span> u3scpi analog/digital port reconfiguration.</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org914cf6b" class="outline-2">
-<h2 id="org914cf6b"><span class="section-number-2">3.</span> Brini Tracker II</h2>
+<div id="outline-container-orgd69d060" class="outline-2">
+<h2 id="orgd69d060"><span class="section-number-2">3.</span> Brini Tracker II</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org9645cbc" class="outline-3">
-<h3 id="org9645cbc"><span class="section-number-3">3.1.</span> Fixed A/D</h3>
+<div id="outline-container-org2084a53" class="outline-3">
+<h3 id="org2084a53"><span class="section-number-3">3.1.</span> Fixed A/D</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 Readings were pegged because RIOT by default uses the 1V internal
@@ -370,8 +381,8 @@ internal VBAT divider.
 </div>
 </div>
 
-<div id="outline-container-org0d62ba6" class="outline-3">
-<h3 id="org0d62ba6"><span class="section-number-3">3.2.</span> Fixed GPS NMEA reader</h3>
+<div id="outline-container-org2dd2e90" class="outline-3">
+<h3 id="org2dd2e90"><span class="section-number-3">3.2.</span> Fixed GPS NMEA reader</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 Essentially the ringbuffer/message passing algorithm between the
@@ -386,67 +397,67 @@ Time display now consistently updates.
 </div>
 </div>
 
-<div id="outline-container-orgf5ef6d7" class="outline-3">
-<h3 id="orgf5ef6d7"><span class="section-number-3">3.3.</span> Next steps</h3>
+<div id="outline-container-org79cc4e2" class="outline-3">
+<h3 id="org79cc4e2"><span class="section-number-3">3.3.</span> Next steps</h3>
 <div class="outline-text-3" id="text-3-3">
 </div>
-<div id="outline-container-org51ad7d6" class="outline-4">
-<h4 id="org51ad7d6"><span class="section-number-4">3.3.1.</span> Validate remaining standard GPS messages</h4>
+<div id="outline-container-orge70f496" class="outline-4">
+<h4 id="orge70f496"><span class="section-number-4">3.3.1.</span> Validate remaining standard GPS messages</h4>
 </div>
-<div id="outline-container-orgd883cbc" class="outline-4">
-<h4 id="orgd883cbc"><span class="section-number-4">3.3.2.</span> Investigate GPS chipset data logging</h4>
+<div id="outline-container-org6a82760" class="outline-4">
+<h4 id="org6a82760"><span class="section-number-4">3.3.2.</span> Investigate GPS chipset data logging</h4>
 </div>
-<div id="outline-container-orgee17751" class="outline-4">
-<h4 id="orgee17751"><span class="section-number-4">3.3.3.</span> Investigate LoRA radio interface</h4>
+<div id="outline-container-org0cb193c" class="outline-4">
+<h4 id="org0cb193c"><span class="section-number-4">3.3.3.</span> Investigate LoRA radio interface</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org9a359b6" class="outline-2">
-<h2 id="org9a359b6"><span class="section-number-2">4.</span> Weber Grill Handles</h2>
+<div id="outline-container-orga3885f9" class="outline-2">
+<h2 id="orga3885f9"><span class="section-number-2">4.</span> Weber Grill Handles</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Made new birch handles for Weber grill.
 </p>
 </div>
 </div>
-<div id="outline-container-org966ea62" class="outline-2">
-<h2 id="org966ea62"><span class="section-number-2">5.</span> wktcolor</h2>
+<div id="outline-container-orgdc46556" class="outline-2">
+<h2 id="orgdc46556"><span class="section-number-2">5.</span> wktcolor</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 No progress.
 </p>
 </div>
-<div id="outline-container-org4f412c7" class="outline-3">
-<h3 id="org4f412c7"><span class="section-number-3">5.1.</span> Next steps</h3>
+<div id="outline-container-org601be74" class="outline-3">
+<h3 id="org601be74"><span class="section-number-3">5.1.</span> Next steps</h3>
 <div class="outline-text-3" id="text-5-1">
 </div>
-<div id="outline-container-org8075231" class="outline-4">
-<h4 id="org8075231"><span class="section-number-4">5.1.1.</span> finish wktlib c++ export.</h4>
+<div id="outline-container-orgee31bde" class="outline-4">
+<h4 id="orgee31bde"><span class="section-number-4">5.1.1.</span> finish wktlib c++ export.</h4>
 </div>
-<div id="outline-container-org736f028" class="outline-4">
-<h4 id="org736f028"><span class="section-number-4">5.1.2.</span> create vertex map for geometry importer</h4>
+<div id="outline-container-orgc8139b4" class="outline-4">
+<h4 id="orgc8139b4"><span class="section-number-4">5.1.2.</span> create vertex map for geometry importer</h4>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orga9c99dc" class="outline-2">
-<h2 id="orga9c99dc"><span class="section-number-2">6.</span> ca-r</h2>
+<div id="outline-container-org9417a30" class="outline-2">
+<h2 id="org9417a30"><span class="section-number-2">6.</span> ca-r</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 See <a href="https://github.com/daniel-kelley/ca-r/issues/18">https://github.com/daniel-kelley/ca-r/issues/18</a>
 </p>
 </div>
-<div id="outline-container-org81147f1" class="outline-3">
-<h3 id="org81147f1"><span class="section-number-3">6.1.</span> Next Step</h3>
+<div id="outline-container-org97f4655" class="outline-3">
+<h3 id="org97f4655"><span class="section-number-3">6.1.</span> Next Step</h3>
 <div class="outline-text-3" id="text-6-1">
 </div>
-<div id="outline-container-org653a398" class="outline-4">
-<h4 id="org653a398"><span class="section-number-4">6.1.1.</span> Fix issue 18</h4>
+<div id="outline-container-org0a3c27a" class="outline-4">
+<h4 id="org0a3c27a"><span class="section-number-4">6.1.1.</span> Fix issue 18</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org490ed38" class="outline-2">
-<h2 id="org490ed38"><span class="section-number-2">7.</span> AMDGPU</h2>
+<div id="outline-container-orgc0fe27b" class="outline-2">
+<h2 id="orgc0fe27b"><span class="section-number-2">7.</span> AMDGPU</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 For (likely) business reasons, AMD has chosen to prioritize non-APU devices for ROCm support.
@@ -465,17 +476,17 @@ In either case, this will be a major time commitment if it goes
 forward.
 </p>
 </div>
-<div id="outline-container-org51c7881" class="outline-3">
-<h3 id="org51c7881"><span class="section-number-3">7.1.</span> Next steps</h3>
+<div id="outline-container-org83900d9" class="outline-3">
+<h3 id="org83900d9"><span class="section-number-3">7.1.</span> Next steps</h3>
 <div class="outline-text-3" id="text-7-1">
 </div>
-<div id="outline-container-org3fdc752" class="outline-4">
-<h4 id="org3fdc752"><span class="section-number-4">7.1.1.</span> Reverse engineer HSAKMT programming.</h4>
+<div id="outline-container-org0be26bd" class="outline-4">
+<h4 id="org0be26bd"><span class="section-number-4">7.1.1.</span> Reverse engineer HSAKMT programming.</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org7e9a1ef" class="outline-2">
-<h2 id="org7e9a1ef"><span class="section-number-2">8.</span> GRASS geopackage import</h2>
+<div id="outline-container-orgf4eaf78" class="outline-2">
+<h2 id="orgf4eaf78"><span class="section-number-2">8.</span> GRASS geopackage import</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 Maureen asked me to evaluate the feasibility of importing one of her
@@ -489,8 +500,8 @@ as there were about 20 points with illegal coordinates.
 </div>
 </div>
 
-<div id="outline-container-orged94c99" class="outline-2">
-<h2 id="orged94c99"><span class="section-number-2">9.</span> Tessellation</h2>
+<div id="outline-container-org7dd5e23" class="outline-2">
+<h2 id="org7dd5e23"><span class="section-number-2">9.</span> Tessellation</h2>
 <div class="outline-text-2" id="text-9">
 <p>
 Playing with 2x2 and 2x3 blocks, inspired by the back patio brickwork.
@@ -510,25 +521,25 @@ What are the number of unique arrangements not counting rotations and reflection
 </div>
 </div>
 
-<div id="outline-container-orgd84adf1" class="outline-2">
-<h2 id="orgd84adf1"><span class="section-number-2">10.</span> Ninja v Make</h2>
+<div id="outline-container-org7ab7b6c" class="outline-2">
+<h2 id="org7ab7b6c"><span class="section-number-2">10.</span> Ninja v Make</h2>
 <div class="outline-text-2" id="text-10">
 <p>
 LLVM can use both Ninja and Make build systems with a preference for ninja.
 Started a simple measurement, but ran out of disk space(!).
 </p>
 </div>
-<div id="outline-container-org917d13d" class="outline-3">
-<h3 id="org917d13d"><span class="section-number-3">10.1.</span> Next Step</h3>
+<div id="outline-container-org27ed842" class="outline-3">
+<h3 id="org27ed842"><span class="section-number-3">10.1.</span> Next Step</h3>
 <div class="outline-text-3" id="text-10-1">
 </div>
-<div id="outline-container-orgcf76741" class="outline-4">
-<h4 id="orgcf76741"><span class="section-number-4">10.1.1.</span> clean simple measurements</h4>
+<div id="outline-container-org263ce9c" class="outline-4">
+<h4 id="org263ce9c"><span class="section-number-4">10.1.1.</span> clean simple measurements</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org138d5c3" class="outline-2">
-<h2 id="org138d5c3"><span class="section-number-2">11.</span> Plumbing</h2>
+<div id="outline-container-org25ebac5" class="outline-2">
+<h2 id="org25ebac5"><span class="section-number-2">11.</span> Plumbing</h2>
 <div class="outline-text-2" id="text-11">
 <p>
 Santa Cruz kitchen sink has been slow draining, so I tried snaking
@@ -553,7 +564,7 @@ Likely, but maybe things will change eventually:
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Daniel Kelley</p>
-<p class="date">Created: 2023-01-28 Sat 07:05</p>
+<p class="date">Created: 2023-10-28 Sat 04:39</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

@@ -57,7 +57,7 @@ Daniel Kelley<br />
 <div class="flushleft">
 
 <p>
-September 30, 2023
+October 28, 2023
 </p>
 </div>
 
@@ -2942,31 +2942,35 @@ u(0) &amp;= \frac {1}{2} &amp;&amp; \text {Heaviside step function}\\ u_{ab}(t) 
     id="lateximage-bwmse-155"
     class="lateximagesource"
 ><!--
-                         ∞
-              𝐹(𝑠) = ∫ 𝑓(𝑡)𝑒−𝑠𝑡 𝑑𝑡                               Definition
-                       0−
+                        ∞
+             𝐹(𝑠) = ∫ 𝑓(𝑡)𝑒−𝑠𝑡 𝑑𝑡 = ℒ(𝑓(𝑡))           Definition
+                      0−
 
-  𝑎 𝑓(𝑡) + 𝑏 𝑔(𝑡) = 𝑎 𝐹(𝑠) + 𝑏 𝐺(𝑠)                              Linearity
-           𝑎𝑧𝑡 𝑓(𝑡) = 𝐹(𝑠 − 𝑧)                                   s-shift
-𝑢(𝑡 − 𝑎)𝑓(𝑡 − 𝑎) = 𝑒−𝑎𝑠 𝐹(𝑠)                                     t-translation I
-    𝑢(𝑡 − 𝑎)𝑓(𝑡) = 𝑒−𝑎𝑠 ℒ(𝑓(𝑡 + 𝑎))                              t-translation II
+  𝑎 𝑓(𝑡) + 𝑏 𝑔(𝑡) = 𝑎 𝐹(𝑠) + 𝑏 𝐺(𝑠)                   Linearity
+           𝑒𝑧𝑡 𝑓(𝑡) = 𝐹(𝑠 − 𝑧)                        s-shift
+𝑢(𝑡 − 𝑎)𝑓(𝑡 − 𝑎) = 𝑒−𝑎𝑠 𝐹(𝑠)                          t-translation I
+    𝑢(𝑡 − 𝑎)𝑓(𝑡) = 𝑒−𝑎𝑠 ℒ(𝑓(𝑡 + 𝑎))                   t-translation II
              𝑓′ (𝑡) = 𝑠𝐹(𝑠) − 𝑓(0− )
-             𝑓″ (𝑡) = 𝑠2 𝐹(𝑠) − 𝑠𝑓(0− ) − 𝑓′ (0− )
-           𝑓(𝑛) (𝑡) = 𝑠𝑛 𝐹(𝑠) − 𝑠𝑛−1 𝑓(0− ) − ... − 𝑓𝑛−1 (0− )
-             𝑡𝑓(𝑡) = −𝐹 ′ (𝑠)
-            𝑡𝑛 𝑓(𝑡) = (−1)𝑛 𝐹 𝑛 (𝑠)
+            𝑓″ (𝑡) = 𝑠2 𝐹(𝑠) − 𝑠𝑓(0− ) − 𝑓′ (0− )
+                                 𝑛−1
+           𝑓(𝑛) (𝑡) = 𝑠𝑛 𝐹(𝑠) − ∑ 𝑠𝑛−𝑘−1 𝑓(𝑘) (0− )
+                                 𝑘=0
+                           ′
+             𝑡𝑓(𝑡) = −𝐹 (𝑠)
+           𝑡𝑛 𝑓(𝑡) = (−1)𝑛 𝐹 𝑛 (𝑠)
       (𝑓 ∗ 𝑔)(𝑡) = 𝐹(𝑠)𝐺(𝑠)
       𝑡+
-                      𝐹(𝑠)
+                     𝐹(𝑠)
     ∫ 𝑓(𝜏) 𝑑𝜏 =
      0−
-                       𝑠
+                      𝑠
 --><img
     src="bwmse-images/image-155.svg"
-    alt="(1.1–0) \{begin}{align*} F(s) &amp;= \int _{0^-}^{\infty }f(t)e^{-st}\,dt &amp;&amp; \text {Definition}\\ a\,f(t) + b\,g(t) &amp;= a\,F(s) + b\,G(s) &amp;&amp; \text {Linearity}\\
-a^{zt}f(t)&amp;= F(s-z) &amp;&amp; \text {s-shift} \\ u(t-a)f(t-a)&amp;= e^{-as}F(s) &amp;&amp; \text {t-translation I} \\ u(t-a)f(t)&amp;= e^{-as}\mathcal {L}(f(t+a)) &amp;&amp; \text
-{t-translation II} \\ f&apos;(t) &amp;= sF(s) - f(0^{-}) \\ f&apos;&apos;(t) &amp;= s^{2}F(s) - sf(0^{-}) - f&apos;(0^{-}) \\ f^{(n)}(t) &amp;= s^{n}F(s) - s^{n-1}f(0^{-}) - ... -
-f^{n-1}(0^{-}) \\ tf(t) &amp;= -F&apos;(s) \\ t^{n}f(t) &amp;= (-1)^{n}F^{n}(s) \\ (f*g)(t)&amp;= F(s)G(s) \\ \int _{0^-}^{t^+} f(\tau )\,d\tau &amp;= \frac {F(s)}{s} \\ \{end}{align*} "
+    alt="(1.1–0) \{begin}{align*} F(s) &amp;= \int _{0^-}^{\infty }f(t)e^{-st}\,dt = \mathcal {L}(f(t)) &amp;&amp; \text {Definition}\\ a\,f(t) + b\,g(t) &amp;= a\,F(s) + b\,G(s) &amp;&amp;
+\text {Linearity}\\ e^{zt}f(t)&amp;= F(s-z) &amp;&amp; \text {s-shift} \\ u(t-a)f(t-a)&amp;= e^{-as}F(s) &amp;&amp; \text {t-translation I} \\ u(t-a)f(t)&amp;= e^{-as}\mathcal {L}(f(t+a))
+&amp;&amp; \text {t-translation II} \\ f&apos;(t) &amp;= sF(s) - f(0^{-}) \\ f&apos;&apos;(t) &amp;= s^{2}F(s) - sf(0^{-}) - f&apos;(0^{-}) \\ f^{(n)}(t) &amp;= s^{n}F(s) - \sum
+_{k=0}^{n-1}\,s^{n-k-1}\,f^{(k)}(0^{-}) \\ tf(t) &amp;= -F&apos;(s) \\ t^{n}f(t) &amp;= (-1)^{n}F^{n}(s) \\ (f*g)(t)&amp;= F(s)G(s) \\ \int _{0^-}^{t^+} f(\tau )\,d\tau &amp;= \frac {F(s)}{s}
+\\ \{end}{align*} "
     style=""
     class="lateximage"
 ></span>
@@ -3076,21 +3080,23 @@ Decomposition of Laplace transforms into partial fractions. Denominator must be 
     id="lateximage-bwmse-157"
     class="lateximagesource"
 ><!--
-     𝐺(𝑠) = Π𝑘𝑛=1 𝐻𝑛 (𝑠)
-                𝐴
-𝐹(𝑠)/𝐺(𝑠) = Σ 𝑛
-              𝐻𝑛 (𝑠)
-             𝐺(𝑠)
-    𝐷𝑛 (𝑠) =
+              𝑘
+    𝐺(𝑠) = ∏ 𝐻𝑛 (𝑠)
+            𝑛=1
+               𝐴𝑛
+𝐹(𝑠)/𝐺(𝑠) = Σ
              𝐻𝑛 (𝑠)
-             𝐹(𝑠) |
-      𝐴𝑛 =          |
-             𝐷𝑛 (𝑠) |𝑠𝑜𝑙𝑣𝑒(𝑠,𝐻 (𝑠)=0)
-                              𝑛
+            𝐺(𝑠)
+   𝐷𝑛 (𝑠) =
+            𝐻𝑛 (𝑠)
+            𝐹(𝑠) |
+     𝐴𝑛 =          |
+            𝐷𝑛 (𝑠) |𝑠𝑜𝑙𝑣𝑒(𝑠,𝐻 (𝑠)=0)
+                            𝑛
 --><img
     src="bwmse-images/image-157.svg"
-    alt="(1.1–0) \{begin}{align*} G(s) &amp;= \Pi _{n=1}^{k} H_n(s)\\ F(s)/G(s) &amp;= \Sigma \frac {A_n}{H_{n}(s)}\\ D_{n}(s) &amp;=\frac {G(s)}{H_n(s)}\\ A_n &amp;= \frac {F(s)}{D_{n}(s)}
-\biggr \rvert _{solve(s,H_{n}(s)=0)}\\ \{end}{align*} "
+    alt="(1.1–0) \{begin}{align*} G(s) &amp;= \prod \limits _{n=1}^{k} H_n(s)\\ F(s)/G(s) &amp;= \Sigma \frac {A_n}{H_{n}(s)}\\ D_{n}(s) &amp;=\frac {G(s)}{H_n(s)}\\ A_n &amp;= \frac
+{F(s)}{D_{n}(s)} \biggr \rvert _{solve(s,H_{n}(s)=0)}\\ \{end}{align*} "
     style=""
     class="lateximage"
 ></span>
