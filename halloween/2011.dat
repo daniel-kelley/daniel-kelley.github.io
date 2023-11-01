@@ -1,0 +1,26 @@
+# 2011
+# total:46
+# gnuplot 2011.gnuplot
+
+# time kids
+18:30 1
+18:35 2
+18:43 4
+18:56 2
+19:04 2
+19:07 3
+19:13 6
+19:15 6
+19:21 2
+19:32 3
+19:41 4
+19:45 2
+19:49 2
+20:02 3
+20:07 2
+20:09 2
+
+
+# time dogs - simulate stacked, so this value is kids+dogs
+19:04 3
+
