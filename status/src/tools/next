@@ -20,10 +20,28 @@ class StatusNext
   INDEX = STATUS + "index.org"  # Current index
   UIDX  = INDEX + ".upd"        # Updated index
   BIDX  = INDEX + "~"           # Backup index
+  YPAT = %r{^\*\s(\d\d\d\d)}                    # year pattern
+  FPAT = %r{file:(\d\d\d\d)/(\d\d)(\d\d).org}   # file pattern
   def initialize
+    check_index
     open_index
     create_status_page
     update_status_index
+  end
+
+  # check for year change
+  def check_index
+    index_year = nil
+    IO.foreach(INDEX) do |line|
+      case line
+      when YPAT
+        index_year = Integer($1)
+      when FPAT
+        raise 'oops: expected year before file' if index_year.nil?
+        create_new_index_dates($1,$2,$3,index_year)
+        break
+      end
+    end
   end
 
   def open_index
@@ -32,13 +50,21 @@ class StatusNext
     IO.foreach(INDEX) do |line|
       line.chomp!
       if !handled
-        if line =~ %r{file:(\d\d\d\d)/(\d\d)(\d\d).org}
-          s = create_new_index_entry($1,$2,$3)
-          if !s.nil?
-            nidx.puts s
+        if @year_changed
+          # wait for blank line
+          if line.length == 0
             nidx.puts
+            nidx.puts "* #{@next_date.year}"
+            nidx.puts
+            nidx.puts create_new_index_entry
+            handled = !handled
           end
-          handled = !handled
+        else
+          if line =~ FPAT
+            nidx.puts create_new_index_entry
+            nidx.puts
+            handled = !handled
+          end
         end
       end
       nidx.puts line
@@ -53,15 +79,23 @@ class StatusNext
     "#{sd} #{sm} #{sy}"
   end
 
-  def create_new_index_entry(ys,ms,ds)
+  def create_new_index_dates(ys,ms,ds,iy)
+    raise 'oops' if iy.nil?
     y = Integer(ys)
     m = Integer(ms.sub(/^0/,'')) # strip any leading zeros
     d = Integer(ds.sub(/^0/,'')) #        -"-
     @last_date = Date.new(y,m,d)
     @next_date = @last_date + 7
     @last_page = "#{ys}/#{ms}#{ds}"
+    @year_changed = (@next_date.year != iy)
     STDERR.puts "Found index entry for #{@last_date}"
     STDERR.puts "Create index entry for #{@next_date}"
+    if @year_changed
+      STDERR.puts "Year changed #{iy}->#{@next_date.year}"
+    end
+  end
+
+  def create_new_index_entry
     ny = @next_date.year.to_s
     nm = "%02d" % @next_date.mon
     nd = "%02d" % @next_date.day
@@ -72,10 +106,8 @@ class StatusNext
 
   def create_status_page
     raise 'oops' if @next_page.nil?
-    last_dir = File.dirname(@last_page)
     next_dir = File.dirname(@next_page)
-    if last_dir != next_dir
-      STDERR.puts "Year changed #{last_dir}->#{next_dir}"
+    if @year_changed
       FileUtils.mkdir(STATUS+next_dir)
     end
     nfile = STATUS + @next_page
