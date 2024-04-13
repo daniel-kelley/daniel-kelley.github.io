@@ -7,7 +7,7 @@
 CA_R := $(HOME)/work/dak/ca-r/build/ws
 BWMSE := $(HOME)/work/dak/bwmse
 
-EXTERNS := ca-r/DATE.txt
+EXTERNS := #ca-r/DATE.txt
 EXTERNS += bwmse/bwmse.pdf
 EXTERNS += status/index.html
 
