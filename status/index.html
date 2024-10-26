@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-10-26 Sat 09:22 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Daniel Kelley Project Status</title>
+<meta name="author" content="Daniel Kelley" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Daniel Kelley Project Status</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org594a7ec">1. 2024</a></li>
+<li><a href="#orga941da1">2. 2023</a></li>
+<li><a href="#orgccb717d">3. 2022</a></li>
+<li><a href="#orgfc6c53d">4. 2021</a></li>
+<li><a href="#orgd471620">5. 2020</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org594a7ec" class="outline-2">
+<h2 id="org594a7ec"><span class="section-number-2">1.</span> 2024</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+<a href="2024/1025.html">25 October 2024</a>
+</p>
+
+<p>
+<a href="2024/1018.html">18 October 2024</a>
+</p>
+
+<p>
+<a href="2024/1011.html">11 October 2024</a>
+</p>
+
+<p>
+<a href="2024/1004.html">04 October 2024</a>
+</p>
+
+<p>
+<a href="2024/0927.html">27 September 2024</a>
+</p>
+
+<p>
+<a href="2024/0920.html">20 September 2024</a>
+</p>
+
+<p>
+<a href="2024/0913.html">13 September 2024</a>
+</p>
+
+<p>
+<a href="2024/0906.html">06 September 2024</a>
+</p>
+
+<p>
+<a href="2024/0830.html">30 August 2024</a>
+</p>
+
+<p>
+<a href="2024/0823.html">23 August 2024</a>
+</p>
+
+<p>
+<a href="2024/0816.html">16 August 2024</a>
+</p>
+
+<p>
+<a href="2024/0809.html">09 August 2024</a>
+</p>
+
+<p>
+<a href="2024/0802.html">02 August 2024</a>
+</p>
+
+<p>
+<a href="2024/0726.html">26 July 2024</a>
+</p>
+
+<p>
+<a href="2024/0719.html">19 July 2024</a>
+</p>
+
+<p>
+<a href="2024/0712.html">12 July 2024</a>
+</p>
+
+<p>
+<a href="2024/0705.html">05 July 2024</a>
+</p>
+
+<p>
+<a href="2024/0628.html">28 June 2024</a>
+</p>
+
+<p>
+<a href="2024/0621.html">21 June 2024</a>
+</p>
+
+<p>
+<a href="2024/0614.html">14 June 2024</a>
+</p>
+
+<p>
+<a href="2024/0607.html">07 June 2024</a>
+</p>
+
+<p>
+<a href="2024/0531.html">31 May 2024</a>
+</p>
+
+<p>
+<a href="2024/0524.html">24 May 2024</a>
+</p>
+
+<p>
+<a href="2024/0517.html">17 May 2024</a>
+</p>
+
+<p>
+<a href="2024/0510.html">10 May 2024</a>
+</p>
+
+<p>
+<a href="2024/0503.html">03 May 2024</a>
+</p>
+
+<p>
+<a href="2024/0426.html">26 April 2024</a>
+</p>
+
+<p>
+<a href="2024/0419.html">19 April 2024</a>
+</p>
+
+<p>
+<a href="2024/0412.html">12 April 2024</a>
+</p>
+
+<p>
+<a href="2024/0405.html">05 April 2024</a>
+</p>
+
+<p>
+<a href="2024/0329.html">29 March 2024</a>
+</p>
+
+<p>
+<a href="2024/0322.html">22 March 2024</a>
+</p>
+
+<p>
+<a href="2024/0315.html">15 March 2024</a>
+</p>
+
+<p>
+<a href="2024/0308.html">08 March 2024</a>
+</p>
+
+<p>
+<a href="2024/0301.html">01 March 2024</a>
+</p>
+
+<p>
+<a href="2024/0223.html">23 February 2024</a>
+</p>
+
+<p>
+<a href="2024/0216.html">16 February 2024</a>
+</p>
+
+<p>
+<a href="2024/0209.html">09 February 2024</a>
+</p>
+
+<p>
+<a href="2024/0202.html">02 February 2024</a>
+</p>
+
+<p>
+<a href="2024/0126.html">26 January 2024</a>
+</p>
+
+<p>
+<a href="2024/0119.html">19 January 2024</a>
+</p>
+
+<p>
+<a href="2024/0112.html">12 January 2024</a>
+</p>
+
+<p>
+<a href="2024/0105.html">05 January 2024</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga941da1" class="outline-2">
+<h2 id="orga941da1"><span class="section-number-2">2.</span> 2023</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+<a href="2023/1229.html">29 December 2023</a>
+</p>
+
+<p>
+<a href="2023/1222.html">22 December 2023</a>
+</p>
+
+<p>
+<a href="2023/1215.html">15 December 2023</a>
+</p>
+
+<p>
+<a href="2023/1208.html">08 December 2023</a>
+</p>
+
+<p>
+<a href="2023/1201.html">01 December 2023</a>
+</p>
+
+<p>
+<a href="2023/1124.html">24 November 2023</a>
+</p>
+
+<p>
+<a href="2023/1117.html">17 November 2023</a>
+</p>
+
+<p>
+<a href="2023/1110.html">10 November 2023</a>
+</p>
+
+<p>
+<a href="2023/1103.html">03 November 2023</a>
+</p>
+
+<p>
+<a href="2023/1027.html">27 October 2023</a>
+</p>
+
+<p>
+<a href="2023/1020.html">20 October 2023</a>
+</p>
+
+<p>
+<a href="2023/1013.html">13 October 2023</a>
+</p>
+
+<p>
+<a href="2023/1006.html">06 October 2023</a>
+</p>
+
+<p>
+<a href="2023/0929.html">29 September 2023</a>
+</p>
+
+<p>
+<a href="2023/0922.html">22 September 2023</a>
+</p>
+
+<p>
+<a href="2023/0915.html">15 September 2023</a>
+</p>
+
+<p>
+<a href="2023/0908.html">08 September 2023</a>
+</p>
+
+<p>
+<a href="2023/0901.html">01 September 2023</a>
+</p>
+
+<p>
+<a href="2023/0825.html">25 August 2023</a>
+</p>
+
+<p>
+<a href="2023/0818.html">18 August 2023</a>
+</p>
+
+<p>
+<a href="2023/0811.html">11 August 2023</a>
+</p>
+
+<p>
+<a href="2023/0804.html">04 August 2023</a>
+</p>
+
+<p>
+<a href="2023/0728.html">28 July 2023</a>
+</p>
+
+<p>
+<a href="2023/0721.html">21 July 2023</a>
+</p>
+
+<p>
+<a href="2023/0714.html">14 July 2023</a>
+</p>
+
+<p>
+<a href="2023/0707.html">07 July 2023</a>
+</p>
+
+<p>
+<a href="2023/0630.html">30 June 2023</a>
+</p>
+
+<p>
+<a href="2023/0623.html">23 June 2023</a>
+</p>
+
+<p>
+<a href="2023/0609.html">09 June 2023</a>
+</p>
+
+<p>
+<a href="2023/0602.html">02 June 2023</a>
+</p>
+
+<p>
+<a href="2023/0526.html">26 May 2023</a>
+</p>
+
+<p>
+<a href="2023/0519.html">19 May 2023</a>
+</p>
+
+<p>
+<a href="2023/0512.html">12 May 2023</a>
+</p>
+
+<p>
+<a href="2023/0505.html">05 May 2023</a>
+</p>
+
+<p>
+<a href="2023/0428.html">28 April 2023</a>
+</p>
+
+<p>
+<a href="2023/0421.html">21 April 2023</a>
+</p>
+
+<p>
+<a href="2023/0414.html">14 April 2023</a>
+</p>
+
+<p>
+<a href="2023/0407.html">07 April 2023</a>
+</p>
+
+<p>
+<a href="2023/0331.html">31 March 2023</a>
+</p>
+
+<p>
+<a href="2023/0324.html">24 March 2023</a>
+</p>
+
+<p>
+<a href="2023/0317.html">17 March 2023</a>
+</p>
+
+<p>
+<a href="2023/0310.html">10 March 2023</a>
+</p>
+
+<p>
+<a href="2023/0303.html">03 March 2023</a>
+</p>
+
+<p>
+<a href="2023/0224.html">24 February 2023</a>
+</p>
+
+<p>
+<a href="2023/0217.html">17 February 2023</a>
+</p>
+
+<p>
+<a href="2023/0210.html">10 February 2023</a>
+</p>
+
+<p>
+<a href="2023/0203.html">03 February 2023</a>
+</p>
+
+<p>
+<a href="2023/0127.html">27 January 2023</a>
+</p>
+
+<p>
+<a href="2023/0120.html">20 January 2023</a>
+</p>
+
+<p>
+<a href="2023/0113.html">13 January 2023</a>
+</p>
+
+<p>
+<a href="2023/0106.html">06 January 2023</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgccb717d" class="outline-2">
+<h2 id="orgccb717d"><span class="section-number-2">3.</span> 2022</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+<a href="2022/1231.html">31 December 2022</a>
+</p>
+
+<p>
+<a href="2022/1223.html">23 December 2022</a>
+</p>
+
+<p>
+<a href="2022/1216.html">16 December 2022</a>
+</p>
+
+<p>
+<a href="2022/1209.html">09 December 2022</a>
+</p>
+
+<p>
+<a href="2022/1202.html">02 December 2022</a>
+</p>
+
+<p>
+<a href="2022/1125.html">25 November 2022</a>
+</p>
+
+<p>
+<a href="2022/1118.html">18 November 2022</a>
+</p>
+
+<p>
+<a href="2022/1111.html">11 November 2022</a>
+</p>
+
+<p>
+<a href="2022/1104.html">04 November 2022</a>
+</p>
+
+<p>
+<a href="2022/1028.html">28 October 2022</a>
+</p>
+
+<p>
+<a href="2022/1021.html">21 October 2022</a>
+</p>
+
+<p>
+<a href="2022/1014.html">14 October 2022</a>
+</p>
+
+<p>
+<a href="2022/1007.html">07 October 2022</a>
+</p>
+
+<p>
+<a href="2022/0930.html">30 September 2022</a>
+</p>
+
+<p>
+<a href="2022/0923.html">23 September 2022</a>
+</p>
+
+<p>
+<a href="2022/0916.html">16 September 2022</a>
+</p>
+
+<p>
+<a href="2022/0909.html">09 September 2022</a>
+</p>
+
+<p>
+<a href="2022/0902.html">02 September 2022</a>
+</p>
+
+<p>
+<a href="2022/0826.html">26 August 2022</a>
+</p>
+
+<p>
+<a href="2022/0819.html">19 August 2022</a>
+</p>
+
+<p>
+<a href="2022/0812.html">12 August 2022</a>
+</p>
+
+<p>
+<a href="2022/0805.html">05 August 2022</a>
+</p>
+
+<p>
+<a href="2022/0729.html">29 July 2022</a>
+</p>
+
+<p>
+<a href="2022/0722.html">22 July 2022</a>
+</p>
+
+<p>
+<a href="2022/0715.html">15 July 2022</a>
+</p>
+
+<p>
+<a href="2022/0708.html">08 July 2022</a>
+</p>
+
+<p>
+<a href="2022/0701.html">01 July 2022</a>
+</p>
+
+<p>
+<a href="2022/0624.html">24 June 2022</a>
+</p>
+
+<p>
+<a href="2022/0617.html">17 June 2022</a>
+</p>
+
+<p>
+<a href="2022/0610.html">10 June 2022</a>
+</p>
+
+<p>
+<a href="2022/0603.html">03 June 2022</a>
+</p>
+
+<p>
+<a href="2022/0527.html">27 May 2022</a>
+</p>
+
+<p>
+<a href="2022/0520.html">20 May 2022</a>
+</p>
+
+<p>
+<a href="2022/0513.html">13 May 2022</a>
+</p>
+
+<p>
+<a href="2022/0506.html">06 May 2022</a>
+</p>
+
+<p>
+<a href="2022/0429.html">29 April 2022</a>
+</p>
+
+<p>
+<a href="2022/0422.html">22 April 2022</a>
+</p>
+
+<p>
+<a href="2022/0415.html">15 April 2022</a>
+</p>
+
+<p>
+<a href="2022/0408.html">08 April 2022</a>
+</p>
+
+<p>
+<a href="2022/0401.html">01 April 2022</a>
+</p>
+
+<p>
+<a href="2022/0325.html">25 March 2022</a>
+</p>
+
+<p>
+<a href="2022/0318.html">18 March 2022</a>
+</p>
+
+<p>
+<a href="2022/0311.html">11 March 2022</a>
+</p>
+
+<p>
+<a href="2022/0304.html">04 March 2022</a>
+</p>
+
+<p>
+<a href="2022/0225.html">25 February 2022</a>
+</p>
+
+<p>
+<a href="2022/0218.html">18 February 2022</a>
+</p>
+
+<p>
+<a href="2022/0211.html">11 February 2022</a>
+</p>
+
+<p>
+<a href="2022/0204.html">04 February 2022</a>
+</p>
+
+<p>
+<a href="2022/0128.html">28 January 2022</a>
+</p>
+
+<p>
+<a href="2022/0121.html">21 January 2022</a>
+</p>
+
+<p>
+<a href="2022/0114.html">14 January 2022</a>
+</p>
+
+<p>
+<a href="2022/0107.html">07 January 2022</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfc6c53d" class="outline-2">
+<h2 id="orgfc6c53d"><span class="section-number-2">4.</span> 2021</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+<a href="2021/31dec21.html">31 December 2021</a>
+</p>
+
+<p>
+<a href="2021/24dec21.html">24 December 2021</a>
+</p>
+
+<p>
+<a href="2021/17dec21.html">17 December 2021</a>
+</p>
+
+<p>
+<a href="2021/10dec21.html">10 December 2021</a>
+</p>
+
+<p>
+<a href="2021/03dec21.html">03 December 2021</a>
+</p>
+
+<p>
+<a href="2021/26nov21.html">26 November 2021</a>
+</p>
+
+<p>
+<a href="2021/19nov21.html">19 November 2021</a>
+</p>
+
+<p>
+<a href="2021/12nov21.html">12 November 2021</a>
+</p>
+
+<p>
+<a href="2021/05nov21.html">05 November 2021</a>
+</p>
+
+<p>
+<a href="2021/29oct21.html">29 October 2021</a>
+</p>
+
+<p>
+<a href="2021/22oct21.html">22 October 2021</a>
+</p>
+
+<p>
+<a href="2021/15oct21.html">15 October 2021</a>
+</p>
+
+<p>
+<a href="2021/08oct21.html">08 October 2021</a>
+</p>
+
+<p>
+<a href="2021/01oct21.html">01 October 2021</a>
+</p>
+
+<p>
+<a href="2021/24sep21.html">24 September 2021</a>
+</p>
+
+<p>
+<a href="2021/17sep21.html">17 September 2021</a>
+</p>
+
+<p>
+<a href="2021/10sep21.html">10 September 2021</a>
+</p>
+
+<p>
+<a href="2021/03sep21.html">03 September 2021</a>
+</p>
+
+<p>
+<a href="2021/27aug21.html">27 August 2021</a>
+</p>
+
+<p>
+<a href="2021/20aug21.html">20 August 2021</a>
+</p>
+
+<p>
+<a href="2021/13aug21.html">13 August 2021</a>
+</p>
+
+<p>
+<a href="2021/06aug21.html">06 August 2021</a>
+</p>
+
+<p>
+<a href="2021/30jul21.html">30 July 2021</a>
+</p>
+
+<p>
+<a href="2021/23jul21.html">23 July 2021</a>
+</p>
+
+<p>
+<a href="2021/16jul21.html">16 July 2021</a>
+</p>
+
+<p>
+<a href="2021/09jul21.html">09 July 2021</a>
+</p>
+
+<p>
+<a href="2021/02jul21.html">02 July 2021</a>
+</p>
+
+<p>
+<a href="2021/25jun21.html">25 June 2021</a>
+</p>
+
+<p>
+<a href="2021/18jun21.html">18 June 2021</a>
+</p>
+
+<p>
+<a href="2021/11jun21.html">11 June 2021</a>
+</p>
+
+<p>
+<a href="2021/04jun21.html">04 June 2021</a>
+</p>
+
+<p>
+<a href="2021/28may21.html">28 May 2021</a>
+</p>
+
+<p>
+<a href="2021/21may21.html">21 May 2021</a>
+</p>
+
+<p>
+<a href="2021/14may21.html">14 May 2021</a>
+</p>
+
+<p>
+<a href="2021/07may21.html">07 May 2021</a>
+</p>
+
+<p>
+<a href="2021/30apr21.html">30 April 2021</a>
+</p>
+
+<p>
+<a href="2021/23apr21.html">23 April 2021</a>
+</p>
+
+<p>
+<a href="2021/16apr21.html">16 April 2021</a>
+</p>
+
+<p>
+<a href="2021/09apr21.html">09 April 2021</a>
+</p>
+
+<p>
+<a href="2021/02apr21.html">02 April 2021</a>
+</p>
+
+<p>
+<a href="2021/26mar21.html">26 March 2021</a>
+</p>
+
+<p>
+<a href="2021/19mar21.html">19 March 2021</a>
+</p>
+
+<p>
+<a href="2021/12mar21.html">12 March 2021</a>
+</p>
+
+<p>
+<a href="2021/05mar21.html">05 March 2021</a>
+</p>
+
+<p>
+<a href="2021/26feb21.html">26 February 2021</a>
+</p>
+
+<p>
+<a href="2021/19feb21.html">19 February 2021</a>
+</p>
+
+<p>
+<a href="2021/12feb21.html">12 February 2021</a>
+</p>
+
+<p>
+<a href="2021/05feb21.html">05 February 2021</a>
+</p>
+
+<p>
+<a href="2021/29jan21.html">29 January 2021</a>
+</p>
+
+<p>
+<a href="2021/22jan21.html">22 January 2021</a>
+</p>
+
+<p>
+<a href="2021/15jan21.html">15 January 2021</a>
+</p>
+
+<p>
+<a href="2021/08jan21.html">08 January 2021</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgd471620" class="outline-2">
+<h2 id="orgd471620"><span class="section-number-2">5.</span> 2020</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+<a href="2020/31dec20.html">31 December 2020</a>
+</p>
+
+<p>
+<a href="2020/26dec20.html">26 December 2020</a>
+</p>
+
+<p>
+<a href="2020/19dec20.html">19 December 2020</a>
+</p>
+
+<p>
+<a href="2020/12dec20.html">12 December 2020</a>
+</p>
+
+<p>
+<a href="2020/05dec20.html">05 December 2020</a>
+</p>
+
+<p>
+<a href="2020/28nov20.html">28 November 2020</a>
+</p>
+
+<p>
+<a href="2020/21nov20.html">21 November 2020</a>
+</p>
+
+<p>
+<a href="2020/14nov20.html">14 November 2020</a>
+</p>
+
+<p>
+<a href="2020/07nov20.html">07 November 2020</a>
+</p>
+
+<p>
+<a href="2020/31oct20.html">31 October 2020</a>
+</p>
+
+<p>
+<a href="2020/24oct20.html">24 October 2020</a>
+</p>
+
+<p>
+<a href="2020/17oct20.html">17 October 2020</a>
+</p>
+
+<p>
+<a href="2020/10oct20.html">10 October 2020</a>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Daniel Kelley</p>
+<p class="date">Created: 2024-10-26 Sat 09:22</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
