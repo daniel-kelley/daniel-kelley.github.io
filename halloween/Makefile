@@ -14,6 +14,7 @@ PNG += 2018.png
 PNG += 2019.png
 PNG += 2022.png
 PNG += 2023.png
+PNG += 2024.png
 
 all: $(PNG)
 
