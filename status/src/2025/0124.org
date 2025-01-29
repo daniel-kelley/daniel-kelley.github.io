@@ -1,0 +1,346 @@
+#+TITLE: 18 January 2025 - 24 January 2025
+
+* MIT OCW
+** 18.05 - Introduction to Probability and Statistics
+*** Starting in February
+* Sonic Fiber
+** exposing by hand via barelyworking.com
+** IP addr changes every power outage
+Probably should get a UPS
+** bind notifies not working
+need to debug
+* Night Light
+Stuck on. Looks like the SCR has an anode-cathode low impedance
+path. Amazingly enough, the SCR it uses is still available from
+Digikey.
+* GMPASM assembler
+** per-stmt exec lists
+More work than expected
+** dynamic token buffer
+ditto
+* GMPForth
+** QEMU linux targets
+...now segfault. Need to debug.
+** QEMU bare-metal targets
+Starting to think about appoach. May start with running under u-boot
+to ease the inital effort of CPU initialization.
+** Multitasking
+*** How would a classic round-robin multitasker interact with multiple cores?
+*** Any insight from CSP or the Golang concurrency model?
+*** Continuations?
+* SJ grounds
+nothing going on...
+* Lapuz Peking/Panerus
+Laid out keys. Keys are too big for Burhan's "restaraunt" cases. Ray to
+think about the next steps. Haven't heard anything back in months.
+* Mill
+** Supposedly working now.
+** Except I can't get it to turn on.
+There's some trick I'm missing.
+* EDA workflow
+** FPGA programming
+** RV32I
+Seeing if a very simple RV32I is possible at ~600 ice40 cells. Likely
+not possible with a barrel shifter unless a multiplier is
+used. Certainly won't be fast, if possible at all at this size. This
+comes out to 18 gates per bit, which seems to be a ridiculously low
+number. Need to refine counting methodology to count LUTs and flops
+separately. Maybe further refinements for post-placement utilization
+(for example, how many LUTs get combined with a flop vs. separate LUTs
+and flops).
+*** 'almanor' RV32I
+**** Three port register file, simplify decoder (~1100 LUTs, 300 FFs, 4 BRAM)
+Not too happy with the result. Messier than expected.
+**** Refactoring
+Still trying to understand what's driving the gate count. need to
+do some scaling experiments (FF/LUT per bit for various constructs).
+**** Post-synthesis testbench
+Fragility much reduced after aggressive process splitting.
+**** Verilator testbench
+Started planning.
+**** CSR/Debug interfaces
+Seeing if it's worth it to implement minimal CSR and debug interfaces
+**** Picosoc analysis
+Understanding picosoc implementation as a reference
+**** Standard tests
+***** riscv-arch-test
+Ported and running. After changing verilog memory image generation to
+use objcopy, and correcting JALR masking, all RV32I tests pass.
+***** riscv-torture
+****** Used picorv32 patches to generate test cases.
+Tried generalizing the Scala code, but looks like it was going to
+require more changes than I was comfortable with making - particularly
+for the E reduced register profiles.
+****** Regex filter
+Wrote a regex based filter to change opcodes and various ranges for
+RV32I, RV32E and RV64E.
+****** Tests pass
+All torture tests pass.
+**** Compare with a pipelined implementation
+Still thinking about it.
+**** Debug and Interrupt architecture
+Working out what's needed.
+** RTX-2000
+Pulled out the RTX-2000 manual. Going to be a slog if I do it.
+** Synthesizable sparc v8
+*** Seeing what it takes to make 'bs' synthesizable.
+No way. Need to start fresh.
+*** make smaller than picorv32?
+Want to see if I can get something substantially smaller than
+picorv32 - although I doubt it. Better to start with RV32I though.
+*** Found a bug
+in load base/offset register instructions.
+*** Found maybe another bug
+Not sure about condition codes on 'sub'. Difficulty porting to rv32
+leads to questions.
+*** Cleanups
+Apparently never run though verilator. Cleaned up.
+*** Need legion
+Need to see if the UltraSparc 10 is still running for legion tests.
+*** u10
+**** Serial port works so boot is trying to do something.
+**** Doesn't seem to respond to 'break'
+Enhanced 'sp' to send break command.
+**** NVRAM battery is dead. Not a FRU.
+Needs an invasive fix or part replacement. NVRAM held MAC address, so
+that would be unavailable so could explain not booting. DHCP database
+has programmed MAC for static IP assignment so that at least is
+recoverable.
+**** Video dongle.
+Dongle works with VGA monitor. Updating NVRAM parameters on console allows
+system to boot.
+**** Recovered legion
+Copied off legion simulator binaries.
+* Spark/QEMU
+Tested QEMU sparc simulator running Solaris 5. Probably a reasonable
+alternative to using u10.
+* Cross compilers
+** Toolchain scripts running.
+*** moxie-elf c, c++, and ada.
+*** sparc-elf c, c++, and ada.
+*** riscv-elf c, c++, and ada.
+gdb riscv simulator seems to not handle logical right shifts correctly
+in 32 bit mode. Arithmetic right shift has specific checks for 32 bit
+mode, but logical right shift does not and is clearly right shifting a
+64 bit value.
+* SCZ Front Step
+** Starting to fit.
+Hanging up on something hidden.
+** Need to fix mistake under window.
+Have a patch piece.
+* Spacewire-like PHY
+Poking that this long-standing problem. Building infrastructure to
+test if it's possible to construct a PHY layer with acceptable BER to
+50 MBit which should be sufficient for 32 16-bit channels at 48 KHz
+sample rate. Need to re-establish EDA workflow.
+
+Not sure this is practical.
+
+* CA Root Key Generation
+Nice to have an appliance that manages keys.  Need to make this
+simple. Really don't have time for a science project.  Too, bad,
+though. It kind of *is* a science project.  Could just buy something
+from nitrokey https://www.nitrokey.com/ but I really don't want to
+spend money on it of I have hardware already.  Looking at nitrokey in
+more detail, it doesn't seem to be any simpler than what I'm doing
+already.
+** First pass done
+*** Based on https://pki-tutorial.readthedocs.io/en/latest/simple/
+Interesting that the certs generated fail with openssl s_server testing because
+the cryptographic algorithms are too weak.
+*** Work continues
+**** Have an outline with ECDSA/NIST-384
+**** Have consolidated configuration across CAs.
+**** Trying to decide if/how to deal with revocation. What a PITA.
+** Need to be clear on security properties.
+Definitely protect against remote access to private keys. How strong
+does the protection against *local* access need to be?
+** Simple hardware.
+*** Use beagleboard with local interface
+*** Use some modern device TPM
+Need to export data for backup.
+*** Or something that uses PKCS11 interface
+** USB Serial interface only but no credentials across USB I/F.
+But this potentially exposes the hardware to remote access via the USB
+I/F when connected.
+** Use Sneakernet
+Doesn't scale. Should use something so cert updates are automatable.
+But that's a science project it seems.
+* Compilers
+** Compiled Wikipedia PL/0 example
+** Work out overall plan.
+Lots of moving pieces.
+** Looking into LLVM MLIR.
+Will not use immediately, but perhaps trend in that direction.
+** ASDL
+*** current smlnj C++ implementation incomplete
+*** old versions asdl source fail to build with new versions of smlnj
+*** old versions of smlnj not easily buildable on x86_64
+*** ancient binary of asdl 1.2 compiler seems to work
+but associated libraries are to old to link because of missing ctype symbol
+*** analyzing asdl 1.2 generated code
+Most of the code is for serialization, which is going to be replaced
+anyway, so can be removed by hand.
+*** run in vm?
+Analysis of binaries shows that it was built on some redhat os using
+gcc 2.8.1. Redhat-6.2? No. Tried various ancient Redhat OSs.
+* Piper dovecot
+** Update broke dovecot auth.
+Looks PAM related, but PAM update failed to fix.
+** Set tuffy up as a staging server
+So I don't debug on 'production'.
+** piper dovecot SSL certificate *NOT* broken
+At least not obviously broken (yet). Further investigation needed.
+* Various i686
+*** netbsd
+was installed. But needed the box for something else.
+*** buildroot
+builds complete.
+* piper
+** dovecot
+*** Raising apparmor error.
+Not sure how to resolve.
+** pidgeonhole
+*** procmail replacement.
+*** Considering integration.
+** httpd
+*** Still stable.
+But seems to occassionally mis-serve files.
+** SSL cert
+Trying letsencrypt with certbot. http problem above may be interfering.
+** redmine
+Still not sure I want to go down this rabbit hole.
+** openvpn
+Need to consider cert construction.
+* Buffalo WZR-HP-G300NH
+** Update
+Sometime next year.
+* SJC weather station
+** Proper enclosure mostly constructed
+*** Needs a redo on bottom plate
+*** Seems to have improved wireless connectivity somewhat
+* opencl
+** Studying. Have some examples working.
+** Need to look at arrayfire as an alternative.
+** This is a bit of a hammer looking for a nail.
+* EPLDH
+** MPFI interval arithmetic better alternative
+* wktpqb
+** needs a new approach
+** Verifying edge construction (con't.)
+** 'gcd' algorithm doesn't work
+* Mill Controller #2
+** Mounted on mill - ready or testing
+** Need to investigate new HW/SW for eventual replacements
+*** Old crap ain't gonna last forever
+*** Buildroot/Linux 5.15 PREEMPT + latency tools
+First pass done - boots on real hardware
+** Alternative architecture
+*** Split off stepper motor controller to separate board
+Increase latency tolerance on controller
+*** Use emc2 MODBUS/TCP protocol for stepper and other IO
+* Alum Rock Data Center
+** May have problem with network power module.
+It's only 30 years old or something like that.
+** Added Ethernet card to tuffy
+Preparing  as backup/staging server.
+** Need a VPS with static IP
+Just use dynamic interface to bind.
+* Virtual Orchestra
+** sfz file tests
+*** need tooling to edit sample files
+** increasingly skeptical whether quality results are possible
+** maybe should treat as platform for concatinative synthesis
+** maybe should just accept the limitations and work with it
+One should not be disappointed that a guitar can't sound like a flute.
+* gat
+** spectrogram done - matches 'octave' output
+* RIOT drivers
+Implemented - needs testing.
+** WS2801
+** Velleman KA03
+** Velleman KA05
+* mcd05 32 button/led box
+** Recovered schematics.
+** Planning software.
+** Received STM32F767 Nucleo144 with Ethernet.
+*** Test program running.
+*** Need to consider CoAP multicast discovery.
+*** Consider simpler architecture with STM32F767 as a 'hub'.
+*** Consider CAN interface to hub.
+* AMD 2900 bitslice computing
+** Probably my oldest uncompleted project
+** Exploring possibilities for something constructive
+Create verilog models for 2903/2910 and verify against hardware?
+* Hitachi HD68B09E CPU
+** RAM/UART/IO
+** Started schematic
+*** Standard peripheral set for 8 bit CPU bringups
+Board schematic planned - need Kicad symbols
+** Arduino Mega 2560 DMA loader
+...Along with standard 8 bit loader
+** Generate quadrature clock directly
+** Full Bus SW Emulation infeasible
+6809 1000ns maximum cycle time too short
+* Rockwell R65F11
+** Still evaluating.
+** Dev board
+Reverse engineered some of a mostly fully built development board with
+one part missing. As near as I can tell, that one part is some sort of
+programmable address decoder with a pinout that does not correspond to
+any part I can find. Kind of like a GAL but with inputs on top and
+outputs on bottom (as opposed to left and right in a standard GAL). I
+have no idea what the provenance of this board is and if it ever
+worked.
+* PLD programming
+Looks like Atmel 16V8 is the last 5V PLD part left standing. Maybe not
+surprising that there still doesn't appear to be a fully open source
+tool chain for programming. How hard could it be? (!) Could next-pnr
+generic help? Might be easier to use espresso for logic array and program
+output logic bits directly for simple stuff.
+* EPROM Programming
+Found some software for Needham programmer. Need to check electrolytic
+caps on ISA board.
+* POSIT
+** Use POSITs for YRX?
+No. Existing library is fine.
+* MAME
+** Subset builds in debug mode
+Full debug fails - not enough disk or memory.
+** gs6809 serial IO doesn't work right with PTY and other streams
+** ampro (Z80/Z80SIO) *does* work with PTY
+** Evaluating what is needed for other emulators.
+* More project ideas
+** Zuse Z3 simulation in Verilog
+   Good excuse for floating point ALU design. Try posit format?
+** GMPForth ports to simulators
+*** SIMH for some targets (vax)
+*** MAME looks interesting for microprocessor system emulations
+    How to support ersatz systems?
+*** Ports to classic figFORTH targets
+** Extracting ISO Superboard Forth ROMS for MAME emulation
+** 'bwocl' OpenCL tooling
+*** Offline compilation
+*** Standard Kernel Running
+** hardware support for classic 5V CPUs
+*** RTX2000, CDP1802 still available!
+*** 6502, 68000, 320C30, others on hand
+*** CPUs with totally async bus may be supportable without RAM
+*** Could use small footprint monitor in asm (gmpmon?)
+** Existing 'retro' hardware still working?
+*** OSI Superboard
+Unknown. Composite to VGA adapter didn't seem to work. Needs analysis.
+Found OSI model 610 board underneath!
+*** Super Jolt
+No output. Needs analysis.
+*** Ampro Little Board
+Not booting. Needs analysis.
+*** Rockwell R65F11 Demo board
+UART sending "NO ROM" at 2400 7N1 as expected with 2MHz xtal.
+MAME emulator possibilities?
+*** NMIX-0016
+Works. Found original prom in a parts stash(!).
+* David Davies
+** Broadcom (BCG?) Employee indicted for running a brothel.
+** New case C1923172, consolidated with *15* Parties.
+** Court website no longer allows seaching (grrr!)
